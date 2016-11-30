@@ -131,8 +131,8 @@ figure.lazyload {
 
 // Headroom.js
 
-// > 992
-@media (min-width: $break-md-screen) {
+// > 800
+@media (min-width: 50em) {
 
   .headroom {
     .main-content {
