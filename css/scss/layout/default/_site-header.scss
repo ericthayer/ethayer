@@ -1,0 +1,164 @@
+// Site Header
+
+.site-header {
+ 
+}
+
+
+// Site Title
+
+.site-title {
+  background: #363c3f;
+  display: block;  
+  //background: linear-gradient(45deg, #518c54 0%,#6bba70 100%);
+  font-size: 1rem; 
+  line-height: 0; 
+  margin-bottom: 0;
+  text-align: center;
+  width: 100%;
+  a {
+    display: inline-block;  
+    padding-top: 10vw;
+    padding-right: 2rem; 
+    padding-bottom: 10vw;
+    padding-left: 2rem;
+    width: 100%;  
+  }
+  // > 1600
+  @media (min-width: $break-xl-screen) {
+    a {
+      padding-right: 2.5rem;
+      padding-left: 2.5rem;
+    } 
+  }    
+}
+
+// Logo
+
+.alt-logo,
+.main-logo {
+  display: block; 
+  margin-right: auto;
+  margin-left: auto;
+  max-height: 3.125em;
+  min-height: 2em;  
+  max-width: 15rem;      
+  width: 100%;
+}
+
+.alt-logo {
+  display: block; 
+  fill: white;  
+  // > 240 ~ < 667
+  @media (min-width: $break-240) and (max-width: $break-ml-phone - .01em) {
+    display: none;  
+  }  
+}
+
+.logo-icon-left { 
+  fill: $light-tan;
+  fill: white;
+}
+
+.logo-icon-right { 
+  fill: $med-green;
+  fill: #DDD;
+}
+
+// Main logo
+
+.main-logo {
+  display: none;
+  // > 240 ~ < 667
+  @media (min-width: $break-240) and (max-width: $break-ml-phone - .01em) {
+    display: block;  
+  }
+}
+
+// SVG path
+
+.svg-logo-path {
+  fill: white;
+}
+
+// layout styles
+
+// > 667
+@media (min-width: $break-ml-phone) {
+  .site-header {
+    display: table;
+    margin-bottom: 2rem;
+    width: 100%;   
+  }
+  .site-title,
+  .main-nav {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .site-title {
+    width: 30%;
+    a {
+      padding-top: 0;
+      padding-bottom: 0;
+    } 
+  }
+  .main-nav {
+    width: 70%;
+  }
+}
+
+// > 900
+@media (min-width: $break-900) {
+  .site-header {
+    margin-bottom: 3.5rem;  
+  }
+  .site-title {
+    width: 25%; 
+  }
+  .main-nav {
+    width: 75%; 
+  }
+}
+
+// > 1200
+@media (min-width: $break-lg-screen) {
+  .site-title {
+    width: 20%; 
+  }
+  .main-nav {
+    width: 80%; 
+  }
+}
+
+// > 1600
+@media (min-width: $break-xl-screen) {
+ .site-title {
+    width: 15%; 
+  }
+  .main-nav {
+    width: 85%; 
+  } 
+}
+
+// for IE > 992
+//@media (min-width: $break-md-screen) {
+  //@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    //.site-header {
+      //height: 100px;  
+    //}
+    //.site-title {
+      //flex-grow: 1;
+    //}
+    //.main-logo {
+      //min-width: 0;
+      //max-width: 275px;
+      //width: 100%;    
+    //}
+    //.main-nav {
+      //flex-grow: 3;
+      //> a {
+        //height: 100%; 
+      //}
+    //}
+  //}
+//}

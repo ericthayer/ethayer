@@ -1,0 +1,16 @@
+/* --- Template Style Tags  --- */
+
+.template-style-tags {
+  a {
+    @extend .btn-txt;
+    display: block;
+    padding: 0; 
+    text-align: left; 
+  }
+  // 480
+  @media (min-width: $break-sm-phone) {
+    a {
+      display: inline-block;  
+    }
+  }
+}

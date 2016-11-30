@@ -1,0 +1,26 @@
+/* --- User Login --- */
+
+.user-login {
+	@include mod-block;
+	display: flex;
+	flex-flow: row wrap; 
+	justify-content: flex-start;	
+}
+
+.current-user {
+	padding-bottom: 0.625em;	
+	.user-name {
+		font-size: 0.875em;	
+		padding-right: 0.625em;	
+	}
+}
+
+.user-links {
+	a {
+		@extend .btn;
+		margin-right: 0.625em;
+		&:last-child {
+			margin-right: 0;	
+		}	
+	}
+}

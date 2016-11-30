@@ -1,0 +1,343 @@
+/* --- Hero Banner --- */
+
+.hero-banner {
+  background: linear-gradient(135deg, rgba(119,185,221,1) 0%,rgba(41,137,216,1) 50%,rgba(33,127,176,1) 100%);
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 2em;   
+  position: relative;
+  .container {
+    //padding: 0; 
+  }
+  // 480
+  @media (min-width: $break-sm-phone) {
+    .btn-hero {
+      max-width: 300px; 
+    }
+  }
+  // 540
+  @media (min-width: $break-md-phone) {
+    &.media-banner + section {
+      padding-top: 9.5em;  
+    }
+  }
+  // 768
+  @media (min-width: $break-lg-phone) {
+    &.media-banner + section {
+      padding-top: 10em;  
+    }
+    .btn-hero {
+      font-size: 1em;  
+    }
+  }
+  // 992
+  @media (min-width: $break-md-screen) {
+    &.media-banner + section {
+      padding-top: 20em;  
+    }
+    .btn-hero {
+      font-size: 1.35em;
+      max-width: 450px; 
+    }
+  } 
+}
+
+// Hero Content
+
+.hero-content {
+  font-size: 1em;
+  margin: 0 auto;
+  //max-width: 75.00em;
+  position: relative;
+  text-align: center;
+  transition: padding 400ms ease;
+  width: 100%;  
+  &:last-child {
+    margin-bottom: 0; 
+  }
+  // 480
+  @media (min-width: $break-sm-phone) {
+    //font-size: 1.5em; 
+  }  
+/*
+  // 667
+  @media (min-width: $break-ml-phone) {
+    padding-top: 2%;
+    padding-bottom: 2%; 
+  }
+  // 768
+  @media (min-width: $break-lg-phone) {
+      
+  }
+  // 2000
+  @media (min-width: $break-xxl-screen) {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  } 
+*/
+}
+
+// Hero Text
+
+.hero-txt {
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+}
+
+// Hero Headline
+.hero-headline {
+  font-size: 3.5em;
+  line-height: 0.79;
+  letter-spacing: -0.05em;
+  margin-top: 0;
+  margin-bottom: 8px;
+  text-align: left;
+  -webkit-transition: font-size 500ms ease;
+  transition: font-size 500ms ease;
+  display: flex;
+  flex-flow: column;
+  .tag-line {
+    opacity: 0.8;
+    font-size: 46%;
+    margin-right: 0;
+    padding-left: 1em;
+    text-align: right;
+    position: relative;     
+  }
+  .amp-lg {
+/*
+    display: block;
+    text-align: center;  
+    font-size: 5em;
+    line-height: 0;
+    opacity: 0.35; 
+    //position: absolute;
+    top: 50%;
+    right: 50%;
+    
+*/    opacity: 0.6; 
+  }
+  br {
+    //display: none;  
+  }  
+  // 480
+  @media (min-width: $break-sm-phone) {
+     
+  } 
+  // 540
+  @media (min-width: $break-md-phone) {
+    font-size: 1.875em;
+     br {
+      display: block; 
+    }
+  }
+  // 667
+  @media (min-width: $break-ml-phone) {
+    //font-size: 2.125em; 
+  }
+  // 700
+  @media (min-width: 700px) {
+    //font-size: 2.5em;   
+  }
+  // 992
+  @media (min-width: $break-md-screen) {
+    //font-size: 4vmax; 
+  }
+  // 1200
+  @media (min-width: $break-lg-screen) {
+    //font-size: 3vmax;
+  }
+  // 2000
+  @media (min-width: $break-xxl-screen) {
+     //font-size: 3.25em; 
+  }  
+}
+
+.hero-description {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;     
+  // 667
+  @media (min-width: $break-ml-phone) {
+    font-size: 1.25em; 
+    margin: 0 auto;   
+    width: 80%;  
+  }
+  // 1200
+  @media (min-width: $break-lg-screen) {
+    font-size: 1.45em;  
+  }   
+}
+
+// Hero CTA
+
+.hero-cta {
+  .btn-hero {
+    margin: 0 0 1em;  
+  }
+  // 667
+  @media (min-width: $break-ml-phone) {
+     .btn-hero {
+     margin: 0;  
+    }
+  }
+  // 768
+  @media (min-width: $break-lg-phone) {
+    
+  }
+}
+
+// Hero Media {
+.hero-media {
+  margin: 0 auto;
+  max-height: 100px;    
+  max-width: 30em;  
+  overflow: visible;
+  &:after {
+    content: "";
+    display: block; 
+    width: 100%;   
+  }
+  // 
+  @media (min-width: $break-md-screen) {
+    max-width: 48em;   
+  } 
+}
+
+// Hero Content Image
+
+.hero-img {
+
+  // 480
+  @media (min-width: $break-sm-phone) {
+
+  }
+  // 1600
+  @media (min-width: $break-xl-screen) {
+  
+  } 
+}
+
+// CTA
+
+.hero-banner {
+  &.cta {
+    background: {
+      image: url("images/hero-banner/hero-bg-Workspace-SM.jpg");
+      color: $blue-med;
+      position: top left;
+      repeat: no-repeat;
+      size: cover;
+    }
+    .hero-content {
+      padding: 1.5em 3%;
+    }
+    .hero-headline {
+      text-transform: none; 
+    }
+    .hero-img {
+      display: none; 
+    }
+    // 480
+    @media (min-width: $break-sm-phone) {
+      .hero-headline {
+        font-size: 1.65em;  
+      }
+      .hero-img {
+        display: inline-block;
+        margin-top: 1em;  
+      }
+    }
+    // 568
+    @media (min-width: $break-md-phone) {
+      .hero-headline {
+        font-size: 2.25em;
+        margin-top: 0;
+        margin-bottom: 0.35em; 
+      }
+    }
+    // 667
+    @media (min-width: $break-ml-phone) {
+      background: {
+        image: url("images/hero-banner/hero-bg-Workspace-1200.jpg");
+      }
+       .hero-content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding-top: 2em;
+        padding-bottom: 2em;   
+        padding-left: 0;
+      }
+      .hero-txt {
+        align-self: flex-start;
+        padding-left: 2em;
+      }
+      .hero-headline {
+        padding-right: 1em;
+        padding-left: 1em; 
+      }
+      .hero-cta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .helper-link {
+          padding: 0 1.5em; 
+        }
+      }
+    }
+    // 768
+    @media (min-width: $break-lg-phone) {
+      background: {
+        image: url("images/hero-banner/hero-bg-Workspace-1200.jpg");
+      }
+      .hero-content {
+        flex-flow: row nowrap;
+        text-align: left;
+      }
+      .hero-headline {
+       padding: 0;  
+      }
+      .hero-cta {
+        justify-content: flex-start;
+        .helper-link {
+          text-align: left;
+        }
+      }
+    }
+    // 1200
+    @media (min-width: $break-lg-screen) {
+      background: {
+        image: url("images/hero-banner/hero-bg-Workspace-1600.jpg");
+      }
+      .hero-content {
+        font-size: 1.35em;
+      }
+    }
+    // 1600
+    @media (min-width: $break-xl-screen) {
+      background: {
+        image: url("images/hero-banner/hero-bg-Workspace-1920.jpg");
+        //size: 100% 370px;
+      }
+      .hero-txt {
+        padding-top: 2em;
+      }
+      .hero-img {
+        margin-top: 3em;  
+      }
+    }
+    // 2000
+    @media (min-width: $break-xl-screen) {
+      background-image: url("images/hero-banner/hero-bg-Workspace-2200.jpg");
+    }
+    // 2400
+    @media (min-width: $break-widescreen) {
+      background-image: url("images/hero-banner/hero-bg-Workspace-2600.jpg");
+    }
+    .hero-headline {
+      font-size: 2.5em;
+    }
+  }
+}

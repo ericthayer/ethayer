@@ -1,0 +1,202 @@
+
+@mixin button {
+  background-color: #CCC;
+  color: currentColor;
+	border-radius: 3px;
+	display: inline-block;
+	font-weight: 600; 	
+	letter-spacing: -.02em; 		
+	margin-bottom: .5em;
+	margin-bottom: 1rem;	
+	padding: {
+  	top: .75em;
+  	right: 2em;
+  	bottom: .75em;
+  	left: 2em;
+  }
+	text-align: center;	
+	text-decoration: none;
+	text-shadow: none;
+	transition: color .4s ease,
+	            background .4s ease;
+	vertical-align: middle;  
+	width: 100%;
+	-webkit-font-smoothing: antialiased; 	
+	&:hover,
+	&:focus {
+		cursor: pointer;
+	}
+}
+
+// Button CTA
+
+@mixin button-cta {
+  //border: none;
+  //background-color: $btn-primary;
+	//color: #FFF;
+	position: relative;
+  &:after {
+    background-color: darken($btn-primary, 10%);
+    border-radius: 0 2px 2px 0;
+    content: '\e80d';
+    color: #FFF;
+    // Add BS caret
+    //font-family:  $font-icon;
+    font-size: .983em; 
+    margin-left: .5em;
+    line-height: 41px;  
+    height: 100%;
+    width: 3em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center; 
+    transition: all .4s ease; 
+  }
+  &:hover,
+	&:focus {
+		background-color: darken($btn-primary, 15%);
+	}
+  &:active {
+    background-color: darken($btn-primary, 20%);
+  }
+	&:hover:after,
+	&:focus:after {
+		background-color: lighten($btn-primary, 1%);
+		box-shadow: -1px 0 8px rgba(black, .25);
+		font-size: 1.1rem;
+		text-shadow: $blk-text-shadow-neg;    
+		//width: 3.25rem;  
+	}
+  &:active:after {
+    background-color: darken($btn-primary, 30%);
+  }
+  // > 320
+  @media (min-width: $break-tiny-phone) {
+    padding-right: 4em;
+    padding-left: 2em;     
+  }
+  // > 480
+  @media (min-width: $break-sm-phone) {
+    padding-right: 5em;   
+  }   
+}
+
+// Button Hero
+
+@mixin button-hero {
+  background: transparent;
+  border: .5em solid rgba(white, .25);
+  box-shadow: 0 0 0 1px rgba(white, .5) inset, 0 0 0 1px rgba(white, .5);
+  padding-top: .5em;
+  padding-bottom: .5em;
+  &:hover,
+  &:focus {
+    background: rgba(black, .15);
+    border: .5em solid rgba(white, .9);
+    box-shadow: 0 0 0 1px rgba(white, 0) inset, 0 0 0 1px rgba(white, 0);
+  }  
+}
+
+button,
+.btn,
+[class*="-button"] {
+  @include button;
+}
+
+// Button Wrap
+
+%button-wrap {
+  background: none;  
+  display: flex;
+  flex-flow: column;
+  //align-items: center;
+  //justify-content: center;
+	padding: 0;
+	width: 100%;
+	&:before {
+    content: '300 400 540 700';
+    display: none;
+  }
+	&[data-minwidth~="300"] {
+	
+	}
+	&[data-minwidth~="400"] {
+  	flex-flow: row wrap;
+	  [class^="btn-"] {
+  	  margin-bottom: 0;
+  	  width: auto;   
+	  }
+	}
+	&[data-minwidth~="540"] {
+	
+	}   
+	.btn,
+	[class^="btn-"] {
+		//flex: 1 0 auto;
+		margin: {
+  		top: .35em;
+  		right: .3em;
+  		bottom: .35em;
+  		left: .3em;
+    }   
+		&:last-child {
+  		//margin-bottom: 0; 
+		}	 	
+	}
+	// 375
+	@media (min-width: 23.438em) {
+  	flex-flow: row wrap;
+  	.btn,
+  	[class^="btn-"] {
+      width: auto;    
+    }
+	} 
+	// 667
+	@media (min-width: $break-ml-phone) {
+		.btn-txt {  
+			width: 22%;	
+		}
+	}
+  // 768
+	@media (min-width: $break-lg-phone) {
+  	.no-js &, {		
+  		flex-flow: row wrap;
+    	.btn,
+    	[class^="btn-"] {
+      	margin-bottom: 0;
+      }
+    } 	
+		.btn-txt {
+			width: 44%;	
+			&:nth-child(3n) {
+				margin-bottom: 0;	
+			}
+		}
+	}
+	
+  // Fallback
+	.no-flexbox & {
+  	display: inline-block;  
+		.btn,
+		[class^="btn-"] {   
+  		margin-bottom: .5em;
+  		margin-left: 0; 
+  		//width: auto; 
+		}
+		// 667
+		@media (min-width: $break-ml-phone) {
+  		.btn,
+  		[class^="btn-"] {
+    		display: inline-block;   
+    		margin-bottom: 0;
+    		&:first-child {
+      		margin-right: .25em;  
+    		}
+    		&:last-child {
+      		margin-left: .25em; 
+    		}  
+  		}
+		}
+	}
+}

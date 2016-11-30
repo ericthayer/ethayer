@@ -1,0 +1,150 @@
+/* --- Tab Pager --- */
+
+.tab-pager {
+	background-color: $blue-med;
+}
+
+// Tab Btns
+
+.tab-btns {
+	background-color: white;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;	
+	.wrap {
+		background-color: white;	
+		border-radius: 15px;
+		margin: 0 auto;
+		max-width: 1000px;		
+		overflow: hidden;
+		width: 100%;
+	}		
+}
+
+.btn-tab {
+	background-color: white;
+	border: 2px solid #D9D9D9;
+	border-radius: 0;
+	color: $blue-light;
+	font-size: 1em;	
+	margin-bottom: 0;	
+	max-width: 100%;
+	width: 100%;
+	text-shadow: none;	
+	&.events {
+		border-bottom: none;
+		border-radius: 15px 15px 0 0;		
+	}
+	&.features {
+		border-top: 2px solid #D9D9D9;
+		border-bottom: 2px solid #D9D9D9;
+	}
+	&.dept {
+		border-top: none;
+		border-radius: 0 0 15px 15px;
+	}
+	&:hover {
+		background-color: #E5E5E5;
+		box-shadow: none;
+		margin-left: 0;
+		opacity: 1;
+		text-shadow: $blk-text-shadow-neg;
+	}
+	&.active {
+		color: white;
+		background-color: #D9D9D9;
+		border-color: #D9D9D9;
+		pointer-events: none;
+		text-shadow: $blk-text-shadow-neg;
+	}
+	// 568
+	@media (min-width: $break-md-phone) {
+		display: inline-block;
+		padding: 1em 0;
+		width: 33.333333333%;
+		&.events {
+			border-bottom: 2px solid #D9D9D9;
+			border-right: none;
+			border-radius: 15px 0 0 15px;  
+		}
+		&.features {
+			border-top: 2px solid #D9D9D9;
+			border-bottom: 2px solid #D9D9D9;
+		}
+		&.dept {
+			border-top: 2px solid #D9D9D9;
+		  border-left: none;
+		  border-radius: 0 15px 15px 0;
+		}
+	}
+}
+
+.tab-content {
+	color: white;
+	font-family: $Montserrat;
+	.wrap {
+		@extend %clearfix;
+		padding: 5em 0 15em;	
+		position: relative;	
+	}
+	a {
+		color: white;
+		// text-decoration: underline;	
+	}
+	a.btn {
+		text-decoration: none;	
+	}	
+}
+
+.tab-content-pg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	padding-top: 0;							
+	opacity: 0;
+	transform: scale(0.5);
+	transition: all 500ms ease;
+	&.show {
+		opacity: 1;
+		padding-top: 3em;
+		transform: scale(1);
+	}
+	// 768
+	@media (min-width: $break-lg-phone) {			
+		&.show {
+			left: 50%;
+			margin-left: -320px;	
+			width: 640px;
+		}			
+	}
+	// 992
+	@media (min-width: $break-md-screen) {			
+		&.show {
+			margin-left: -450px;	
+			width: 900px;
+		}			
+	}
+	// 1200
+	@media (min-width: $break-lg-screen) {
+		&.show {
+			margin-left: -500px;	
+			width: 1000px;
+		}
+	}
+}
+
+.tab-features {
+	a {
+		display: block;	
+	}
+	// 768
+	@media (min-width: $break-lg-phone) {
+		a {
+			display: inline-block;
+			padding:0 0.5em 2em;	
+			vertical-align: middle;
+			width: 30%;			
+		}
+	}
+}

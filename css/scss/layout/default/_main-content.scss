@@ -1,0 +1,55 @@
+/* --- Main Content --- */
+
+.main-content {
+  &:last-child {
+    padding-bottom: 0;  
+  }	
+}
+
+// Page Layout
+.page-content,
+.page-sidebar {
+	display: inline-block;
+	width: 100%;
+	&:last-child {
+		margin-bottom: 0;
+	}		
+}
+
+// Page Sidebar
+.page-sidebar {
+	background-color: #EEE;
+	border-radius: 0.625em;	
+	padding: 0 0.75em 1em;	
+	&:empty {
+		display: none;	
+	}
+}
+
+// Two Col
+.two-col {
+	.page-content {
+		padding-bottom: 2em;
+	}
+	// 800
+	@media (min-width: 800px) {
+		.container {
+			display: flex;
+		}
+		.page-content {
+			padding-right: 2em;
+			padding-bottom: 0;
+			width: 64%;				
+		}
+		.page-sidebar {
+			padding: 1em;	
+			width: 35%;	
+		}	
+	}
+	// 992
+	@media (min-width: $break-md-screen) {
+		.page-content {
+			padding-bottom: 0;	
+		}
+	}	
+}

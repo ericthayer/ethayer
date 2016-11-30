@@ -1,0 +1,184 @@
+// Flex Layout
+
+.flex-layout {
+ @include clearfix;
+ 
+ > * {
+   padding-bottom: .25rem;  
+ }
+ 
+	// 480
+	@media (min-width: $break-sm-phone) {
+		display: flex;
+		justify-content: center;
+		> * {
+  		float: left;   
+  		//flex: 1 1 auto;
+  		flex-grow: 1;
+  		padding-right: 1.5rem;
+  		padding-left: 1.5rem;
+  		min-height: 0;
+  		min-width: 0;   
+  		width: 50%; 
+		}	
+	}
+	// > 667
+	@media (min-width: $break-ml-phone) and (max-width: $break-md-screen) {
+  	.flex-lead {
+  		flex-basis: 100%;
+		}
+	}
+	// > 900
+	@media (min-width: $break-900) {
+  	> * {
+    	padding-right: 2rem;
+      padding-left: 2rem;
+  	}   
+	}
+	// > 992
+	@media (min-width: $break-md-screen) {
+  	> * {
+    	flex-basis: 0%;
+  	} 	
+	}
+	// > 2000
+	@media (min-width: $break-xxl-screen) {
+  	> * {
+    	padding-right: 3rem;
+      padding-left: 3rem;
+  	}  
+	}
+}
+
+// Media Layout
+
+.l-media-grid {
+  > * {
+    flex: 1 0 auto;
+    padding: .25rem;  
+  }
+	// 480
+	@media (min-width: $break-sm-phone) {
+  	flex-flow: row wrap;
+		> * {		
+      &:first-child {
+        width: 100%;
+      } 
+		}	
+	}		
+	// 667 ~ 992
+	@media (min-width: $break-ml-phone) and (max-width: $break-md-screen) {
+  	> * {
+    	width: 25%;
+    	&:first-child,
+    	&:nth-child(2),
+    	&:nth-child(3) {
+      	width: 33%;
+    	}
+  	}
+	}
+	// > 992
+	@media (min-width: $break-md-screen) {
+  	> * {
+    	width: 33%;
+    	&:first-child,
+    	&:first-child + * {
+      	width: 50%;
+    	}
+  	}
+	}
+}
+
+// ** Flex modifiers ** //
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+  min-width: 0; // 1 
+  min-height: 0; // 1
+}
+
+.flex-1-1 {
+  > *:nth-child(1) {
+    margin-bottom: 1.5rem;  
+  }
+  // > 540
+  @media (min-width: $break-ml-phone) {
+    > * {
+     flex: 1 0 50%; 
+    }
+    > *:nth-child(1) {
+      margin-bottom: 0; 
+      padding-right: 1.5rem;  
+    }
+    > *:nth-child(2) {
+      padding-left: 1.5rem;    
+    }
+  }
+}
+
+.flex-1-2-1 {
+  // > 540
+  @media (min-width: $break-ml-phone) {
+    > *:nth-child(odd) {
+      flex: 1 0 25%;
+    }
+    > *:nth-child(even) {
+      flex: 2 0 50%;   
+    }
+  } 
+}
+
+.flex-2 {
+  flex-grow: 2;
+}
+
+.flex-g-3 {
+  flex-grow: 3;
+}
+
+.flex-g-4 {
+  flex-grow: 4;
+}
+
+// flex order
+
+.flex-lead {
+  
+}
+
+.flex-sm {
+  // > 540
+  @media (min-width: $break-md-phone) {
+    width: auto;
+  } 
+}
+
+
+// Skill Block
+
+.skill-block {
+  // > 540 - 992
+  @media (min-width: $break-md-phone) and (max-width: $break-md-screen) {
+    padding-right: 0;
+  }
+  // > 667
+  @media (min-width: $break-ml-phone) {
+    order: 3;
+  }
+  // > 1200
+  @media (min-width: $break-md-screen) {
+    flex-grow: 0;
+    min-width: 17em;  
+  }
+}
+
+
+

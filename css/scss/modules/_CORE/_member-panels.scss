@@ -1,0 +1,135 @@
+/* --- Member Panel --- */
+
+.member-slider {
+	padding-right: 1em;
+	padding-left: 1em;	
+	// 667
+	@media (min-width: $break-ml-phone) {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+}
+
+.member-panels {
+	@include mod-block;
+	background-color: $orange-med;
+	min-height: 800px;	
+	text-align: center;
+	.module-title {
+		color: white;
+		font-size: 1.5em;	
+		margin-top: 1em;
+		margin-bottom: 0;	
+	}	
+	.gallery-cell {
+		display: flex;
+		flex-flow: column;
+		padding-top: 6em;
+		padding-right: 1em;
+		padding-bottom: 2em;
+		padding-left: 1em;
+		width: 100%;			
+	}
+	// 667
+	@media (min-width: $break-ml-phone) {
+		.module-title {
+			font-size: 1.875em;	
+			margin-bottom: 2.5em;	
+		}
+		.gallery-cell {
+			flex-flow: row wrap;
+			justify-content: center;
+			flex: 1 0 50%;
+		}
+	}
+	// 900
+	@media (min-width: 900px) {
+		.gallery-cell {
+			flex: 1 0 33%;
+		}
+	}
+}
+
+.member-panel {
+	background-color: white;
+	border: 2px solid white;
+	border-radius: 15px;
+	overflow: visible;
+	margin: 0 auto;
+	max-width: 400px;	
+	text-align: center;	
+	// header
+	.panel-header {
+		color: $blue-light;
+		text-align: center;
+		h2,
+		h3 {
+			text-transform: none;
+		}
+	}
+	// footer
+	.panel-links {
+		@extend %clearfix;
+		background-color: $blue-med;
+		border-radius: 0 0 15px 15px;
+		padding: 0.75em 1.5em;	
+		a {
+			float: left;	
+			color: white;
+		}
+		.video-link {
+			font: 1.15em $Montserrat;
+			text-transform: uppercase;
+			span[class*="icon"] {
+				font-weight: bold;
+				float: right;		
+			}
+		}
+		.soc-icons {
+			float: right;
+			a {
+				font-size: 1.25em;	
+			}	
+		}
+	}
+	// 768
+	@media (min-width: $break-lg-phone) {
+	}	
+}
+
+.member-img {
+	@include circle-thumb;
+	border: 4px solid white;
+	height: 125px;
+	width: 125px;	
+	margin-top: -4em;
+	// 480
+	@media (min-width: $break-sm-phone) {
+		height: 200px;
+		width: 200px;
+		margin-top: -7em;		
+	}
+	// 900
+	@media (min-width: $break-lg-phone) {
+		height: 175px;
+		width: 175px;	
+	}	
+}
+
+.member-name {
+	color: $blue-light;
+	font-size: 1.5em;
+	margin-bottom: 0.125em;		
+}
+
+.member-title {
+	color: $blue-light;
+	font-size: 1.2em;
+	margin-bottom: 0.1em;		
+}
+
+.member-bio {
+	margin-bottom: 1.25em;	
+	padding: 0.5em 0.875em;	
+}

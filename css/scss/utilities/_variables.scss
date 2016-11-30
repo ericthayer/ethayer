@@ -1,0 +1,76 @@
+// Media Queries
+
+$break-240: 15em; // 240px
+
+$break-tiny-phone: 20em; // 320px
+
+$break-375: 23.438em; // 375px
+ 
+$break-sm-phone: 30em; // 480px
+
+$break-md-phone: 33.750em; // > 540px
+
+$break-ml-phone: 41.688em; // 667px
+
+$break-lg-phone: 48em; // 768px
+
+$break-800: 50em; // 800px
+
+$break-900: 56.25em; // 900px 
+
+$break-md-screen: 62em; // 992px
+
+$break-lg-screen: 75em; // 1200px 
+
+$break-xl-screen: 100em; // 1600px
+
+$break-xxl-screen: 125em; // 2000px
+
+$break-widescreen: 150em; // 2400px
+
+// Default Font Stacks
+
+$sans-serif: 'Helvetica Neue', Helvetica, sans-serif;
+
+$serif: 'Cambria', Georgia, serif;
+
+$KO94: 'Knockout-94', $sans-serif;
+
+$KO29: 'Knockout-29', $sans-serif;
+
+// Colors
+
+$light-tan: #DDDACC;
+
+$med-green: #9CB2B0;
+
+$p-link: #3A8DDA;
+
+
+// Specific Helpers
+
+$wht-text-shadow: 0 1px 0 rgba(white, 0.35);
+
+$blk-text-shadow: 1px 1px 0 rgba(black, 0.15);
+
+$blk-text-shadow-neg: 0 -1px 1px rgba(black, 0.25);
+
+// Theme Colors  
+$dark: #3B3322; // hsl 41, 42%, 23%
+$medium: #595942; // hsl 60, 26%, 35%
+$primary: #5F6747; // hsl 75, 31%, 40%
+$secondary: #A1A278; // hsl 61, 26%, 64%
+$light: #FEFFDA; // hsl 62, 15%, 100%
+$accent: #61140E; // hsl 4, 86%, 38%
+  
+// Primary Color
+$primary-light: lighten($primary, 15%);
+$primary-medium: lighten($primary, 10%);
+$primary-heavy: darken($primary, 15%);
+$primary-dark: darken($primary, 25%);
+
+// Secondary Color
+$secondary-light: lighten($secondary, 15%);
+$secondary-medium: lighten($secondary, 10%);
+$secondary-heavy: darken($secondary, 10%);
+$secondary-dark: darken($secondary, 20%);

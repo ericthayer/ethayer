@@ -1,0 +1,61 @@
+// Circle Mask
+
+.circle-mask {
+	@include circle-mask;
+	img {
+  	border-radius: 100%;
+	}
+	figcaption {
+		@include circle-mask;
+		height: 40%;  
+		width: 100%;				
+		padding: 0;			
+		bottom: 0;				
+		//padding: 1em 2em;
+		text-align: center;
+		//display: flex;
+		//justify-content: center;
+		a {
+			//display: flex;
+		}
+	}
+	
+	// Figcaption Animations 
+	 
+	.slide-down {
+  	height: 100%; 
+	}
+	.slide-down,
+	.slide-left,
+	.slide-right {
+  
+	}
+	
+	// Image Caption		
+	.image-caption {
+		float: none;		
+		text-align: center;	
+	}
+}
+
+// Rounded Thumbnail
+
+.rounded-mask {
+	@include rounded-mask;
+	image {
+  	border-radius: 15px;
+	}
+	figcaption {
+		//border-radius: 0 0 15px 15px;
+	}
+}
+
+// Media Item (image or iframe only)
+
+.media-item {
+  line-height: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  will-change: transform scale;  
+}

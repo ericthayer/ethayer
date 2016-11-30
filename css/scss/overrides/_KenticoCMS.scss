@@ -1,0 +1,51 @@
+/* --- Kentico CMS overrides --- */
+
+.cms-bootstrap .btn-actions,
+.btn-dropdown,
+.btn-dropdown button {
+	background: none;
+	border-radius: 0;
+	max-width: 100%;  
+	padding: 0;
+	text-shadow: none;
+	width: auto;  
+	&:hover,
+	&:focus {
+		margin: 0;
+		opacity: 1;	
+	}
+}
+
+.cms-bootstrap .btn {
+	&:hover,
+	&:focus {
+		opacity: 1;
+		text-shadow: none;
+	}
+}
+
+.cms-bootstrap [class^="icon-"], 
+.cms-bootstrap [class*=" icon-"],
+.cms-bootstrap [class^="icon-"]:before,
+.cms-bootstrap [class*=" icon-"]:before {
+  font-family: 'Core-icons';
+  display: inline-block;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cms-bootstrap .cms-navbar>.navbar-nav>li>a[href="#cms-nav-help"] {
+  display: none;
+}  
+
+.WebPartZoneBorder,
+.WebPartZoneBorderActive {
+  box-sizing: content-box;
+}

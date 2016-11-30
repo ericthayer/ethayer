@@ -1,0 +1,158 @@
+// Lazy Load Styles
+
+.enhanced {
+  .lazyload {
+  	opacity: 0;
+  }
+   figure.lazyload a:first-child,
+   img.lazyload {
+    display: block;  
+  }
+  
+  .lazyloaded {
+  	opacity: 1;
+  	transition: opacity .3s;
+  }
+  
+  // 667
+  @media (min-width: $break-ml-phone) {
+  
+    .lazyload {
+      will-change: transform scale;
+    	transform: scale(.8);
+    }
+    
+    .lazyloaded {
+    	transform: scale(1);
+    	transition: opacity, .5s, transform 1s cubic-bezier(.42,.06,.65,.99);  	 
+    }
+  }
+}
+
+.lazyload {
+  opacity: 1;  
+}
+
+img.lazyload {
+  display: none;  
+}
+
+figure.lazyload {
+  & > a:first-child {
+    display: none;  
+  }
+}
+
+// Collapsible plugin
+
+.enhanced .collapsible-collapsed .collapsible-content,
+.collapsible-enhanced.collapsible-collapsed .collapsible-content {
+	display: none;
+}
+
+// Corner Ribbon
+
+// via http://codepen.io/eode9/
+// http://codepen.io/eode9/pen/twkKm?editors=110
+
+.wip {
+  //display: none;
+  opacity: .8;
+  @include corner-ribbon;
+  background: rgba(darkred, 1);
+  font-size: .9em;
+  line-height: 2;
+  position: fixed;  
+  width: 400px;
+  z-index: 5000; 
+  &.top-right {
+    top: 35px;
+    right: -100px;
+    top: -180px;
+    right: -205px;
+    padding-top: 12rem; 
+    transform: rotate(35deg);
+     // < 240
+     @media (max-width: 15em) {
+      top: -160px; 
+    }
+  }
+  &:hover {
+    cursor: help;
+  }
+  svg {
+    fill: white;
+    height: 45px; 
+    right: -1px;
+    position: relative;
+    top: 6px;
+  }
+  span {
+    display: block;
+    font-size: .8em;   
+  }
+  .art-credit {
+    position: absolute;
+    top: 0;
+    left: 0;   
+  }     
+}
+
+// Top Anchor button
+
+.top-anchor {
+  display: none; 
+  background: #34bb6a;
+  color: #FFF;
+  margin-right: auto; 
+  margin-left: auto;  
+  padding: .5rem .875rem;
+  //position: relative;
+  //bottom: 0;
+  //right: 50%;
+  width: 100px;
+  //margin-left: -50px;
+  text-align: center;     
+}
+
+// Porthole.js
+
+[data-scroll-activate] .top-anchor {
+  opacity: 0;
+  bottom: 1rem; 
+  transition: bottom .3s ease-in, opacity .3s;
+}
+
+.inviewport .top-anchor {
+  opacity: 1;
+  bottom: 2rem; 
+  transition: bottom .3s ease-out, opacity .3s;
+}
+
+// Headroom.js
+
+// > 992
+@media (min-width: $break-md-screen) {
+
+  .headroom {
+    .main-content {
+      padding-top: 7rem;
+    }  
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;  
+      z-index: 1000;
+      will-change: transform;
+      transition: transform .3s linear;
+    }
+  }
+  .headroom--pinned header {     
+    transform: translateY(0%);
+  }
+  .headroom--unpinned header {
+    transform: translateY(-100%);
+  }
+  
+}

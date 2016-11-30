@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="10;URL=http://ethayer.co/">
+    <title>Common Movement :: a creative collective of like-minded designers, artists and developers that value communication and future-forward problem solving.</title>
+    <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+    	html, body {height: 100%;}
+	    body {
+		    background: #DDD;
+		    color: #AAA;
+		    display: table;
+		    font-family: sans-serif;
+		    font-size: 16px;
+		    margin: 0 auto;
+		    padding: 1.5em 1.35em 0;
+		    text-align: center;
+		    text-shadow: 1px 1px 0 lightgrey, 3px 3px 0 rgba(0,0,0,.15);
+		    max-width: 65em;
+	    }
+	    .container {
+	    	display: table-cell;
+		    margin: 0 auto;
+		    padding: 0;
+		    position: relative;
+		    vertical-align: middle;
+	    }
+	    h1 {	    	
+	    	color: #999;
+		    font:2em 'Bree Serif', serif;
+		    margin:0.25em 0 1em;
+		  }	    
+	    .site-link {
+    		color: #999;
+    		display: block;
+    		padding-top: .25em;
+				text-decoration: none;
+    	}
+	    	sup {vertical-align: text-top;}	    
+	    i.fa {
+	    	color: #999;
+		    font-size: 4em;
+		    text-shadow: none;
+	    }
+	    i.fa.fa-heart {
+	    	color: #777;
+	    	font-size: 3.4em;
+	    	margin: 0 3%;
+	    	text-shadow: 0 0 15px #CCC;
+	    }
+	    .icons i {
+		    display: inline-block;
+	    }
+	    span#countdown {
+/*
+	    	background: #C9C9C9;
+	    	border: 0.1em solid #BBB;
+*/
+				color: #888;
+				display: block;
+				font-size: 1.75em;
+				line-height: normal;
+				margin: 0 auto;
+				padding: 0 28px 10px;
+				text-shadow: 2px 2px 0 lightgrey, 4px 4px 1px rgba(0,0,0,.15);
+				border-radius: 100%;
+/* 				box-shadow: 1px 1px 0 #AAA,2px 2px 0 #AAA,3px 3px 0 #AAA,4px 4px 0 #AAA,5px 5px 0 #AAA,6px 6px 0 #AAA; */
+	    }
+	    span:empty {background: none !important;}
+	    .disclaimer {
+				color: #999;
+				display: block;
+				font-size: 0.4em;
+				font-style: italic;
+				margin: 0.7em 0 0;
+				/*
+position: absolute;
+				bottom: 0;
+*/
+				width: 100%;
+			}
+	    @media (min-width: 45em) {
+		    h1 {font-size: 3em;}
+		    i.fa {font-size: 6.2em;}
+		    i.fa.fa-heart {font-size: 4.7em;}
+		    span#countdown {
+		    	padding-right:38px;
+		    	padding-left:38px;
+		    }
+	    }	    
+    </style>
+    </head>
+<body>
+	<section class="container">
+		<div class="icons"><i class="fa fa-eye"></i> <i class="fa fa-heart"></i> <i class="fa fa-code"></i></div>
+		<h1>I'm hoping to use this domain for a creative collective. Until then, enjoy this re-direct to <a href="http://ethayer.co/" class="site-link">ethayer.co</a><span id="countdown">10</span>
+		</h1>				
+		</section>
+		<script>
+    	var interval;
+	    var minutes = 0;
+	    var seconds = 10;
+	    window.onload = function() {
+	        countdown('countdown');
+	    }	
+	    function countdown(element) {
+	        interval = setInterval(function() {
+	            var el = document.getElementById(element);
+	            if(seconds == 0) {
+	                if(minutes == 0) {
+	                    el.innerHTML = "0";                    
+	                    clearInterval(interval);
+	                    return;
+	                } else {
+	                    minutes--;
+	                    seconds = 60;
+	                }
+	            }
+	            if(minutes > 0) {
+	                var minute_text = minutes + (minutes > 1 ? ' minutes' : ' minute');
+	            } else {
+	                var minute_text = '';
+	            }
+	            var second_text = seconds > 1 ? '' : '';
+	            el.innerHTML = '' + minute_text + ' ' + seconds + ' ' + second_text ;
+	            seconds--;
+	        }, 1000);
+	    }
+    </script>
+</body>
+</html>

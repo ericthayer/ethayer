@@ -1,0 +1,50 @@
+// JavaScript Disabled
+
+.no-js {
+/*
+  &:before {
+		background: shade(red, 85%);
+		color: white;
+		content: "Please enable JavaScript for a better experience.";
+		font-weight: bold;
+		display: block; 
+		position: relative;
+		padding: 1em;
+		text-align: center;
+		top:0;
+		right: 0;
+		width: 100%;
+	}
+*/
+  noscript {
+    display: block;  
+  }
+  figure {
+    & > a:first-child {
+      display: none;  
+    }
+  }
+ .content-post
+ img,
+ figcaption {
+   opacity: 1;
+ }
+ .video-player {     
+  	&:after {
+    	color: darkRed;
+    	content: "Please enable JavaScript to view this video";
+    	font-size: 0.938em;
+    	font-weight: bold;
+    	line-height: 1.5em;
+    	margin-top: -1.5em;   
+    	position: absolute; 
+    	padding: 0 3em;
+    	text-align: center;
+    	top: 50%;
+    	right: 0;
+    	height: auto;
+    	word-wrap: break-word; 
+    	width: 100%;
+	  }
+  }
+}

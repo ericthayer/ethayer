@@ -1,0 +1,26 @@
+.icon {
+  display: inline-block;
+  fill: currentColor;
+  height: 1em;
+  width: 1em;   
+  vertical-align: middle;
+  position: relative;
+  top: -.0625em;
+  margin-right: 0.25em;
+  margin-left: 0.25em;   
+  text-align: center;  
+}
+
+// Icon directions. Used mostly for arrows
+
+.dir-right {
+  transform: rotate(180deg);
+}
+
+.dir-up {
+  transform: rotate(90deg);
+}
+
+.dir-down {
+  transform: rotate(-90deg);
+}

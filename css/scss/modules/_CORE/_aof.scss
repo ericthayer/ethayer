@@ -1,0 +1,166 @@
+/* --- Areas of Focus --- */
+
+.aof-item-group {
+	background-color: $brand-black;
+	color: white;
+	padding: 2em 0;
+		text-align: center;
+	h2 {
+		font-size: 1.5em;	
+		margin-bottom: 5em;	
+		text-align: center;	
+	}
+	// 992
+	@media (min-width: $break-md-screen) {
+		padding-right: 1em;
+		padding-left: 1em;		
+	}
+	// 1200
+	@media (min-width: $break-lg-screen) {
+		padding-right: 3em;
+		padding-left: 3em;		
+	}
+	// 1600
+	@media (min-width: $break-xl-screen) {
+		padding-right: 6em;
+		padding-left: 6em;	
+	}		
+}
+
+.aof-items {
+	align-items: center;
+	display: inline-block;	
+	justify-content: center;
+	padding-right: 1.5em;
+	padding-left: 1.5em;
+	width: 100%;
+	transition: padding 500ms ease;
+	// 320
+	@media (min-width: 320px) {
+		padding-right: 3.5em;
+		padding-left: 3.5em;
+	}	
+	// 480
+	@media (min-width: $break-sm-phone) {
+		padding-right: 0.5em;	
+		padding-left: 0.5em;
+	}			
+	// 992
+	@media (min-width: $break-md-screen) {
+		border-top: 2px solid white;
+		border-bottom: 2px solid white;
+		margin-top: 5em;
+		margin-bottom: 2em;		
+		padding: 0.25em 0;
+	}
+}
+
+.aof-item {
+	display: inline-block;	
+	padding: 4em 0 7em;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	transition: width 500ms ease;					
+	h3 {
+		border-top: 2px solid white;
+		border-bottom: 2px solid white;
+		font-size: 1em;	
+		padding: 0.4em 0;
+		margin-bottom: 0;
+	}
+	&:before {		
+		@include circle-thumb;
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;	
+		height: 120px;
+		width: 120px;
+		margin-top: -175px;	
+		margin-left: -60px;			
+	}
+	// Circle Colors	
+	&.red {	
+		&:before {
+			background-color: $red-med;
+		}
+	}
+	&.orange {	
+		&:before {
+			background-color: $orange-dark;
+		}
+	}
+	&.green {	
+		&:before {
+			background-color: $green-med;
+		}
+	}
+	&.blue {	
+		&:before {
+			background-color: $blue-med;
+		}
+	}
+	&.purple {	
+		&:before {
+			background-color: $purple-med;
+		}
+	}
+	// tweener
+	@media (min-width: $break-sm-phone) and (max-width: $break-md-phone) {
+		&.red {	
+			width: 57%;	
+		}	
+	}
+	// 480
+	@media (min-width: $break-sm-phone) {
+		margin: 0.25em;	
+		width: 40%;
+	}
+	// 568
+	@media (min-width: $break-md-phone) {
+		width: 31%;	
+	}
+	// 992
+	@media (min-width: $break-md-screen) {
+		padding: 0;	
+		width: 17%;
+		h3 {
+			border: none;
+		}
+		&:before {
+			margin-top: -165px;			
+		}
+		&.red {
+			width: 15%;	
+		}
+		&.orange {
+/*
+			margin-right: 1%;	
+			width: 14%;	
+*/
+		}
+		&.blue {
+/*
+			margin-right: 1%;
+			margin-left: 0.5%;		
+			width: 18%;
+*/			
+		}
+		&.purple {
+			width: 19%;		
+		}	
+	}
+	// 1200
+	@media (min-width: $break-lg-screen) {
+		h3 {
+			font-size: 1.125em;	
+		}
+	}
+	// 1400
+	@media (min-width: 1400px) {
+		h3 {
+			font-size: 1.25em;	
+		}
+	}	
+}
