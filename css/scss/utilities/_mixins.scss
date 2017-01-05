@@ -594,6 +594,7 @@
 }
 
 @mixin fonts-loaded-KO94 {
+  font-family: $sans-serif;
 	.fonts-loaded & {
   	font-family: $KO94;
   	font-weight: normal;  
@@ -601,6 +602,7 @@
 }
 
 @mixin fonts-loaded-KO29 {
+  font-family: $sans-serif;
 	.fonts-loaded & {
   	font-family: $KO29;
   	font-weight: normal;  
