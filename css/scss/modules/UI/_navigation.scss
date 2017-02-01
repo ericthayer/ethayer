@@ -18,25 +18,48 @@ nav {
   
 }
 
-// contact Nav
-
-.contact-nav {
-  	
-}
-
+// icon link
 .icon-link {
-	font-size: .75rem;
-	font-weight: 600;  
-  text-transform: uppercase;
+  //@include fonts-loaded-KO29;
+	.icon {
+    font-size: 1.5rem;
+    fill: $link;
+  }
 }
 
-// icon-nav
+// icon nav
 
 .example-links {
   a {
+    color: $link;
     margin-right: .35rem; 
   }
   .icon {
-    display: none;  
+    //display: none;  
   }
+}
+
+// contact nav
+
+.contact-nav {
+  nav {
+    margin-bottom: 0;
+  }
+  h2 {
+    margin-bottom: .75rem;
+  }
+	// 480
+	@media (min-width: $break-sm-phone) {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+    h2 {
+      margin-bottom: 0;
+    }
+		nav a {
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 1.75rem;
+		}
+	}
 }

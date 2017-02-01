@@ -1,11 +1,15 @@
 // Main Navigation Styles
 
 .main-nav {
+  background: #EEE;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 2rem;     
   text-align: center;
   > a {
     color: #333;
-    background: #CCC;
+    background: #EEE;
+    flex-grow: 1;
     font-weight: 500;
     font-size: 1rem;
     margin-right: 0;  
@@ -14,10 +18,10 @@
     text-transform: uppercase;
     transition: background .3s ease;
     vertical-align: top;
-    width: 100%;  
+    //width: 100%;  
     -webkit-font-smoothing: antialiased;
     &:hover {
-      background: #BBB;
+      background: #CCC;
     }
     // font type
     @include fonts-loaded-KO29;
@@ -28,44 +32,42 @@
   // < 180
   @media (max-width: 11.25em) {
     > a {
-      border-bottom: 1px solid #BBB;
+      //border-bottom: 1px solid #CCC;
     }
   }
   // > 180 ~ 375
   @media (min-width: 11.25em) and (max-width: $break-375) {
     > a { 
-      width: 50%;
+      flex-basis: 50%;
       &:nth-child(3),
       &:nth-child(4) {
-        border-top: 1px solid #BBB;
-        border-bottom: 1px solid #BBB;
+        //border-top: 1px solid #CCC;
+        //border-bottom: 1px solid #CCC;
       }
       &:nth-child(odd) {
-        border-right: 1px solid #BBB;
+        //border-right: 1px solid #CCC;
       } 
     }
   }
   // > 375
   @media (min-width: $break-375) {
     > a {
-      border-right: 1px solid #BBB;
-      border-bottom: 1px solid #BBB; 
-      width: 25%;
+      //border-right: 1px solid #CCC;
+      //border-bottom: 1px solid #CCC; 
+      //width: 25%;
       &:last-child {
         border-right: none;
       } 
     }
   }
-  // > 375 - 667
-  @media (min-width: $break-375) and (max-width: $break-ml-phone - .01em) { 
-    display: flex;
-  }
   // > 667
   @media (min-width: $break-ml-phone - .01em) {
+    
     margin-bottom: 0;  
     > a {
       border-bottom: none;
-      padding: 1rem;  
+      flex-grow: 1;
+      padding: 1rem; 
     }
   }
   // > 768
@@ -77,6 +79,8 @@
   // > 1200
   @media (min-width: $break-lg-screen) {
     > a {
+      flex-grow: 0;
+      padding: 1.5rem 2.5rem;
       .fonts-loaded & {
         font-size: 1.5rem;
       }

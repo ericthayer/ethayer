@@ -57,5 +57,11 @@
   margin-right: 0;
   margin-left: 0;
   margin-bottom: 0;
-  will-change: transform scale;  
+  will-change: transform scale; 
+	.icon {
+		height: 100%;
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+	} 
 }

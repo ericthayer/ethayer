@@ -6,272 +6,218 @@
 // Copyright (c) 2014 Filament Group, Inc.
 // Licensed under the MIT, GPL licenses.
 
-;(function ($, window, document, undefined) {
+// ;(function ($, window, document, undefined) {
 
-	// Defaults
-	var pluginName = "collapsible";
-	var idInt = 0;
-	// overrideable defaults
-	var defaults = {
-		pluginClass: pluginName,
-		collapsedClass: pluginName + "-collapsed",
-		expandedClass: pluginName + "-expanded", // NOTE: don't use this class for showing/hiding collapsible-content. Instead, use it for expanded visual exceptions.
-		headerClass: pluginName + "-header",
-		contentClass: pluginName + "-content",
-		enhancedClass: pluginName + "-enhanced",
-		instructions: false,
-		collapsed: false
-	};
+// 	// Defaults
+// 	var pluginName = "collapsible";
+// 	var idInt = 0;
+// 	// overrideable defaults
+// 	var defaults = {
+// 		pluginClass: pluginName,
+// 		collapsedClass: pluginName + "-collapsed",
+// 		expandedClass: pluginName + "-expanded", // NOTE: don't use this class for showing/hiding collapsible-content. Instead, use it for expanded visual exceptions.
+// 		headerClass: pluginName + "-header",
+// 		contentClass: pluginName + "-content",
+// 		enhancedClass: pluginName + "-enhanced",
+// 		instructions: false,
+// 		collapsed: false
+// 	};
 
-	// plugin constructor
-	function Plugin(element, options) {
-		this.element = $( element );
-		var self = this,
-			dataOptions = {};
+// 	// plugin constructor
+// 	function Plugin(element, options) {
+// 		this.element = $( element );
+// 		var self = this,
+// 			dataOptions = {};
 
-		// Allow data-attr option setting
-		if( this.element.is( "[data-config]" ) ){
-			for( var option in defaults ){
-					if( defaults.hasOwnProperty( option) ){
-					var value = self.element.attr( "data-" + option.replace( /[A-Z]/g, function( c ) {
-									return "-" + c.toLowerCase();
-								}));
+// 		// Allow data-attr option setting
+// 		if( this.element.is( "[data-config]" ) ){
+// 			for( var option in defaults ){
+// 					if( defaults.hasOwnProperty( option) ){
+// 					var value = self.element.attr( "data-" + option.replace( /[A-Z]/g, function( c ) {
+// 									return "-" + c.toLowerCase();
+// 								}));
 
-					if ( value !== undefined ) {
-						if( value === "true" || value === "false" ){
-							dataOptions[ option ] = value === "true";
-						}
-						else {
-							dataOptions[ option ] = value;
-						}
-					}
-				}
-			}
-		}
+// 					if ( value !== undefined ) {
+// 						if( value === "true" || value === "false" ){
+// 							dataOptions[ option ] = value === "true";
+// 						}
+// 						else {
+// 							dataOptions[ option ] = value;
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
 
-		this.options = $.extend( {}, defaults, dataOptions, options );
+// 		this.options = $.extend( {}, defaults, dataOptions, options );
 
-		// allow the collapsedClass to set the option if specified
-		if( this.element.is( "." + this.options.collapsedClass ) ){
-			this.options.collapsed= true;
-		}
+// 		// allow the collapsedClass to set the option if specified
+// 		if( this.element.is( "." + this.options.collapsedClass ) ){
+// 			this.options.collapsed= true;
+// 		}
 
-		this._defaults = defaults;
-		this._name = pluginName;
-		this.init();
-	}
+// 		this._defaults = defaults;
+// 		this._name = pluginName;
+// 		this.init();
+// 	}
 
-	Plugin.prototype = {
-		init: function () {
-			this.header = this.element.children().filter( "." + this.options.headerClass );
-			if( !this.header.length ){
-				this.header = this.element.children().eq( 0 );
-			}
-			this.content = this.element.children().filter( "." + this.options.contentClass );
-			if( !this.content.length ){
-				this.content = this.header.next();
-			}
-			this._addAttributes();
-			this._bindEvents();
-			idInt++;
-			this.element.data( pluginName, this );
-			this.element.trigger( "init" );
-		},
+// 	Plugin.prototype = {
+// 		init: function () {
+// 			this.header = this.element.children().filter( "." + this.options.headerClass );
+// 			if( !this.header.length ){
+// 				this.header = this.element.children().eq( 0 );
+// 			}
+// 			this.content = this.element.children().filter( "." + this.options.contentClass );
+// 			if( !this.content.length ){
+// 				this.content = this.header.next();
+// 			}
+// 			this._addAttributes();
+// 			this._bindEvents();
+// 			idInt++;
+// 			this.element.data( pluginName, this );
+// 			this.element.trigger( "init" );
+// 		},
 
-		_addAttributes: function(){
-			this.element
-				.addClass( this.options.pluginClass )
-				.addClass( this.options.enhancedClass );
+// 		_addAttributes: function(){
+// 			this.element
+// 				.addClass( this.options.pluginClass )
+// 				.addClass( this.options.enhancedClass );
 
-			this.header.addClass( this.options.headerClass );
+// 			this.header.addClass( this.options.headerClass );
 
-			if( this.options.instructions ){
-				this.header.attr( "title", this.options.instructions );
-			}
+// 			if( this.options.instructions ){
+// 				this.header.attr( "title", this.options.instructions );
+// 			}
 
-			var id = "collapsible-" + idInt;
+// 			var id = "collapsible-" + idInt;
 
-			this.header.attr( "role", "button" );
+// 			this.header.attr( "role", "button" );
 
-			this.header.attr( "aria-haspopup", "true" );
+// 			this.header.attr( "aria-haspopup", "true" );
 
-			this.header.attr( "aria-controls", id );
+// 			this.header.attr( "aria-controls", id );
 
-			this.header.attr( "tabindex", "0" );
+// 			this.header.attr( "tabindex", "0" );
 
-			this.content.attr( "role", "menu" );
+// 			this.content.attr( "role", "menu" );
 
-			this.content.addClass( this.options.contentClass );
+// 			this.content.addClass( this.options.contentClass );
 
-			this.content.attr( "id", id );
-		},
+// 			this.content.attr( "id", id );
+// 		},
 
-		_bindEvents: function(){
-			var self = this;
+// 		_bindEvents: function(){
+// 			var self = this;
 
-			this.header
-				// use the tappy plugin if it's available
-				// tap can't be namespaced yet without special events api: https://github.com/filamentgroup/tappy/issues/22
-				.bind( ( window.tappy ? "tap" : "click" ), function( e ){
-					self.toggle( e.target );
-					e.preventDefault();
-				})
-				.bind( "keydown." + pluginName, function( e ){
-					if( e.which === 13 || e.which === 32 ){
-						self.toggle( e.target );
-						e.preventDefault();
-					}
-				});
+// 			this.header
+// 				// use the tappy plugin if it's available
+// 				// tap can't be namespaced yet without special events api: https://github.com/filamentgroup/tappy/issues/22
+// 				.bind( ( window.tappy ? "tap" : "click" ), function( e ){
+// 					self.toggle( e.target );
+// 					e.preventDefault();
+// 				})
+// 				.bind( "keydown." + pluginName, function( e ){
+// 					if( e.which === 13 || e.which === 32 ){
+// 						self.toggle( e.target );
+// 						e.preventDefault();
+// 					}
+// 				});
 
-			if( this.options.collapsed ){
-				this._collapse();
-			}
-			else {
-				this._expand();
-			}
-		},
+// 			if( this.options.collapsed ){
+// 				this._collapse();
+// 			}
+// 			else {
+// 				this._expand();
+// 			}
+// 		},
 
-		collapsed: false,
+// 		collapsed: false,
 
-		// used internally to expand without triggering events (for init)
-		_expand: function() {
-			this.element.removeClass( this.options.collapsedClass );
-			this.element.addClass( this.options.expandedClass );
-			this.collapsed = false;
-			this.header.attr( "aria-expanded", "true" );
-			this.content.attr( "aria-hidden", "false" );
-		},
+// 		// used internally to expand without triggering events (for init)
+// 		_expand: function() {
+// 			this.element.removeClass( this.options.collapsedClass );
+// 			this.element.addClass( this.options.expandedClass );
+// 			this.collapsed = false;
+// 			this.header.attr( "aria-expanded", "true" );
+// 			this.content.attr( "aria-hidden", "false" );
+// 		},
 
-		expand: function () {
-			var self = $( this ).data( pluginName ) || this;
-			self._expand();
-			self.element.trigger( "expand" );
-		},
+// 		expand: function () {
+// 			var self = $( this ).data( pluginName ) || this;
+// 			self._expand();
+// 			self.element.trigger( "expand" );
+// 		},
 
-		// used internally to expand without triggering events (for init)
-		_collapse: function() {
-			this.element.addClass( this.options.collapsedClass );
-			this.element.removeClass( this.options.expandedClass );
-			this.collapsed = true;
-			this.header.attr( "aria-expanded", "false" );
-			this.content.attr( "aria-hidden", "true" );
-		},
+// 		// used internally to expand without triggering events (for init)
+// 		_collapse: function() {
+// 			this.element.addClass( this.options.collapsedClass );
+// 			this.element.removeClass( this.options.expandedClass );
+// 			this.collapsed = true;
+// 			this.header.attr( "aria-expanded", "false" );
+// 			this.content.attr( "aria-hidden", "true" );
+// 		},
 
-		collapse: function() {
-			var self = $( this ).data( pluginName ) || this;
-			self._collapse();
-			self.element.trigger( "collapse" );
-		},
+// 		collapse: function() {
+// 			var self = $( this ).data( pluginName ) || this;
+// 			self._collapse();
+// 			self.element.trigger( "collapse" );
+// 		},
 
-		toggle: function(){
-			if(  this.collapsed ){
-				this.expand();
-			} else {
-				this.collapse();
-			}
-		},
+// 		toggle: function(){
+// 			if(  this.collapsed ){
+// 				this.expand();
+// 			} else {
+// 				this.collapse();
+// 			}
+// 		},
 
-		focusable: "a, input, textarea, select, button, [tabindex='0']"
+// 		focusable: "a, input, textarea, select, button, [tabindex='0']"
 		
-	};
+// 	};
 
-	// lightweight plugin wrapper around the constructor,
-	// preventing against multiple instantiations
-	$.fn[ pluginName ] = function (options) {
-		return this.each(function () {
-			if ( !$( this ).data( pluginName ) ) {
-				new Plugin( this, options );
-			}
-		});
-	};
+// 	// lightweight plugin wrapper around the constructor,
+// 	// preventing against multiple instantiations
+// 	$.fn[ pluginName ] = function (options) {
+// 		return this.each(function () {
+// 			if ( !$( this ).data( pluginName ) ) {
+// 				new Plugin( this, options );
+// 			}
+// 		});
+// 	};
 
-	// Simple auto-init by selector that runs when the dom is ready. Trigger "enhance" if desirable.
-	$( document ).bind( "enhance", function( e ){
-		var selector = "." + pluginName;
-		$( $( e.target ).is( selector ) && e.target ).add( selector, e.target ).filter( selector )[ pluginName ]();
-	});
+// 	// Simple auto-init by selector that runs when the dom is ready. Trigger "enhance" if desirable.
+// 	$( document ).bind( "enhance", function( e ){
+// 		var selector = "." + pluginName;
+// 		$( $( e.target ).is( selector ) && e.target ).add( selector, e.target ).filter( selector )[ pluginName ]();
+// 	});
 
-})(jQuery, window, document);
+// })(jQuery, window, document);
 
-// Collapsible widget extension: tabs behavior
-// https://github.com/filamentgroup/collapsible
-// Copyright (c) 2014 Filament Group, Inc.
-// Licensed under the MIT, GPL licenses.
-
-;(function ($, window, document) {
-
-	$( document ).bind( "init", function( e ){
-		var pluginName = "collapsible";
-		var activeTabClass = "tab-active";
-		var $collapsible = $( e.target ).closest( "." + pluginName );
-		var $tabContainer = $collapsible.parent();
-		var $tabNav = $tabContainer.find( ".tabnav" );
-		var self;
-		var id;
-
-		if( $collapsible.is( "." + pluginName ) && $tabContainer.is( ".tabs" ) ){
-			self = $collapsible.data( pluginName );
-			id = self.content.attr( "id" );
-			$tabNav.find( "[aria-controls=" + id + "]" ).remove();
-
-			self.$tabHeader = $( "<a href='#'>" + self.header[0].innerHTML + "</a>" ).attr( "aria-controls", id );
-			self.header.css( 'display', 'none' );
-
-			self.$tabHeader.bind( window.tappy ? "tap" : "click", function( e ){
-				e.preventDefault();
-				e.stopPropagation();
-
-				if( self.$tabHeader.is( '.' + activeTabClass ) ) {
-					self.$tabHeader.removeClass( activeTabClass );
-				} else {
-					$tabContainer.find( '.' + activeTabClass ).removeClass( activeTabClass );
-					self.$tabHeader.addClass( activeTabClass );
-				}
-
-				self.toggle();
-			});
-
-			if( !$tabNav.length ) {
-				$tabNav = $( "<nav class='tabnav'></nav>" );
-				$tabContainer.prepend( $tabNav );
-			}
-
-			if( !self.collapsed ) {
-				self.$tabHeader.addClass( activeTabClass );
-				self._expand();
-			}
-
-			$tabNav.append( self.$tabHeader );
-		}
-	});
-
-})(jQuery, window, document);
-
-// Set "enhance" class for filamentgroup js
+// Set "enhanced" class for filamentgroup js
 
 document.documentElement.className += " enhanced";
 
-$(function(){
-	$( document ).trigger( "enhance" );
-})
+// $(function(){
+// 	$( document ).trigger( "enhance" );
+// })
 
 // Smooth Scrolling thanks to css-tricks
 // https://css-tricks.com/snippets/jquery/smooth-scrolling/
 
-$(function() {
-  $('.scroll-nav a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
+// $(function() {
+//   $('.scroll-nav a[href*=#]:not([href=#])').click(function() {
+//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+//       var target = $(this.hash);
+//       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+//       if (target.length) {
+//         $('html,body').animate({
+//           scrollTop: target.offset().top
+//         }, 1000);
+//         return false;
+//       }
+//     }
+//   });
+// });
 
 // headroom.js v0.9.3 - Give your page some headroom. Hide your header until you need it
 // Copyright (c) 2016 Nick Williams - http://wicky.nillia.ms/headroom.js
@@ -281,13 +227,14 @@ $(function() {
 
 // Media Queries
 var mq = window.matchMedia('(min-width: 50em)');
-		if(mq.matches) {
+	if(mq.matches) {
   	// grab an element
     var myElement = document.querySelector("body");
     // construct an instance of Headroom, passing the element
     var headroom  = new Headroom(myElement);	
     // initialise
     headroom.init();
-	} else {  
+	} 
+	else {  
     headroom.destroy();
-} 
+	} 
