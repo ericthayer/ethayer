@@ -1,16 +1,11 @@
-// Site Header
-
-.site-header {
- 
-}
-
-
 // Site Title
 
 .site-title {
-  background: #363c3f;
-  display: block;  
+  background-color: #3E7F78;
+  //background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%23FFFFFF' fill-opacity='0.05'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
+  background-blend-mode: overlay;
   //background: linear-gradient(45deg, #518c54 0%,#6bba70 100%);
+  display: block;  
   font-size: 1rem; 
   line-height: 0; 
   margin-bottom: 0;
@@ -55,12 +50,12 @@
   }  
 }
 
-.logo-icon-left { 
+%logo-icon-left { 
   fill: $light-tan;
   fill: white;
 }
 
-.logo-icon-right { 
+%logo-icon-right { 
   fill: $med-green;
   fill: #DDD;
 }
@@ -87,11 +82,10 @@
 @media (min-width: $break-ml-phone) {
   .site-header {
     display: table;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     width: 100%;   
   }
-  .site-title,
-  .main-nav {
+  .site-title {
     display: table-cell;
     vertical-align: middle;
   }
@@ -102,63 +96,21 @@
       padding-bottom: 0;
     } 
   }
-  .main-nav {
-    //width: 70%;
-  }
 }
 
-// > 900
-@media (min-width: $break-900) {
-  .site-header {
-    margin-bottom: 3.5rem;  
-  }
+ // > 768
+ @media (min-width: $break-lg-phone) {
   .site-title {
     width: 25%; 
   }
   .main-nav {
-    //width: 75%; 
+    justify-content: flex-end;
   }
 }
 
 // > 1200
 @media (min-width: $break-lg-screen) {
-  .site-title {
+ .site-title {
     width: 20%; 
   }
-  .main-nav {
-   justify-content: flex-end;
-  }
 }
-
-// > 1600
-@media (min-width: $break-xl-screen) {
- .site-title {
-    width: 15%; 
-  }
-  .main-nav {
-    //width: 85%; 
-  } 
-}
-
-// for IE > 992
-//@media (min-width: $break-md-screen) {
-  //@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    //.site-header {
-      //height: 100px;  
-    //}
-    //.site-title {
-      //flex-grow: 1;
-    //}
-    //.main-logo {
-      //min-width: 0;
-      //max-width: 275px;
-      //width: 100%;    
-    //}
-    //.main-nav {
-      //flex-grow: 3;
-      //> a {
-        //height: 100%; 
-      //}
-    //}
-  //}
-//}

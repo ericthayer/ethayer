@@ -1,15 +1,14 @@
 /* --- Main Content --- */
 
 .main-content {
-	padding-top: 2rem;
   &:last-child {
     padding-bottom: 0;  
   }	
 }
 
 // Page Layout
-.page-content,
-.page-sidebar {
+%page-content,
+%page-sidebar {
 	display: inline-block;
 	width: 100%;
 	&:last-child {
@@ -18,7 +17,7 @@
 }
 
 // Page Sidebar
-.page-sidebar {
+%page-sidebar {
 	background-color: #EEE;
 	border-radius: 0.625em;	
 	padding: 0 0.75em 1em;	
@@ -28,7 +27,7 @@
 }
 
 // Two Col
-.two-col {
+%two-col {
 	.page-content {
 		padding-bottom: 2em;
 	}
@@ -48,7 +47,7 @@
 		}	
 	}
 	// 992
-	@media (min-width: $break-md-screen) {
+	@media (min-width: $break-900) {
 		.page-content {
 			padding-bottom: 0;	
 		}

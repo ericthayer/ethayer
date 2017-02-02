@@ -1,32 +1,31 @@
 // Main Navigation Styles
 
 .main-nav {
-  background: #EEE;
+  background: #EBEBEB;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 2rem;     
   text-align: center;
   > a {
-    color: #333;
-    background: #EEE;
+    color: #555;
+    background: #EBEBEB;
     flex-grow: 1;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin-right: 0;  
     margin-left: 0;  
-    padding: 1rem .25rem;   
-    text-transform: uppercase;
+    padding: 1rem .25rem;
     transition: background .3s ease;
     vertical-align: top;
     //width: 100%;  
     -webkit-font-smoothing: antialiased;
     &:hover {
-      background: #CCC;
+      background: #E5E5E5;
     }
     // font type
     @include fonts-loaded-KO29;
     .fonts-loaded & {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
     } 
   }
   // < 180
@@ -35,8 +34,8 @@
       //border-bottom: 1px solid #CCC;
     }
   }
-  // > 180 ~ 375
-  @media (min-width: 11.25em) and (max-width: $break-375) {
+  // > 180 ~ 320
+  @media (min-width: 11.25em) and (max-width: $break-tiny-phone) {
     > a { 
       flex-basis: 50%;
       &:nth-child(3),
@@ -61,8 +60,7 @@
     }
   }
   // > 667
-  @media (min-width: $break-ml-phone - .01em) {
-    
+  @media (min-width: $break-ml-phone - .01em) {    
     margin-bottom: 0;  
     > a {
       border-bottom: none;
@@ -70,20 +68,18 @@
       padding: 1rem; 
     }
   }
+ 
   // > 768
   @media (min-width: $break-lg-phone) {
     > a {
-      padding: 1.5rem 1rem; 
+      flex-grow: 0;
+      padding: 1.5rem 2rem;
     }
   }
-  // > 1200
-  @media (min-width: $break-lg-screen) {
+  // > 768
+  @media (min-width: $break-md-screen) {
     > a {
-      flex-grow: 0;
       padding: 1.5rem 2.5rem;
-      .fonts-loaded & {
-        font-size: 1.5rem;
-      }
     }
   }
 }

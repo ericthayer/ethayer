@@ -335,7 +335,7 @@
 		margin: 5px 15px 10px 0;
 		width: 30%;
 	}
-	@media (min-width: $break-md-screen) {
+	@media (min-width: $break-900) {
 		margin: 5px 20px 15px 0;
 		width: 40%;
 	}	
@@ -348,9 +348,9 @@
 	//height: 100%;
 	width: 100%;
 	overflow: hidden;
-  max-height: 300px;
-	max-width: 300px;
-	margin-bottom: 0;
+  //max-height: 300px;
+	//max-width: 300px;
+  shape-outside: circle();
 	img {
   	border-radius: 100%;
   	overflow: hidden;
@@ -605,7 +605,9 @@
   font-family: $sans-serif;
 	.fonts-loaded & {
   	font-family: $KO29;
-  	font-weight: normal;  
+  	font-weight: normal;
+    -moz-osx-font-smoothing: greyscale;
+    -webkit-font-smoothing: antialiased;  
 	}
 }
 

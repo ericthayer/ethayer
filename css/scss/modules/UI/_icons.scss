@@ -17,14 +17,14 @@
 
 // Icon directions. Used mostly for arrows
 
-.dir-right {
+%dir-right {
   transform: rotate(180deg);
 }
 
-.dir-up {
+%dir-up {
   transform: rotate(90deg);
 }
 
-.dir-down {
+%dir-down {
   transform: rotate(-90deg);
 }

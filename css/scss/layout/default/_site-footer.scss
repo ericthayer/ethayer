@@ -1,27 +1,11 @@
-// Footer Styles
-
-.site-footer {
-  position: relative; 
-}
-
-// Footer Logo
-
-.footer-logo {
-  margin-bottom: 1em;
-  a {
-    display: block;   
-    height: 25px; 
-  }
-  img {
-    max-width: 225px; 
-  } 
-}
-
 // site copyright
 
 .copyrights {
-  color: #999;
+  color: #BBB;
   display: block; 
-  font-size: .75em;
-  margin-bottom: 0; 
+  font-size: .875em;
+  margin-bottom: 0;
+  a {
+    color: currentColor;
+  } 
 }

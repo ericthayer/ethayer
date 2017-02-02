@@ -7,8 +7,7 @@ nav {
     margin-right: 1rem;
   }
   .icon {
-    font-size: 1rem;
-    margin-right: .5rem;    
+    font-size: 1rem;    
   }
 }
 
@@ -33,6 +32,9 @@ nav {
   a {
     color: $link;
     margin-right: .35rem; 
+  }
+  strong {
+    font-weight: normal;
   }
   .icon {
     //display: none;  
@@ -59,7 +61,7 @@ nav {
 		nav a {
 			margin-right: 0;
 			margin-bottom: 0;
-			margin-left: 1.75rem;
+			margin-left: 1.25rem;
 		}
 	}
 }

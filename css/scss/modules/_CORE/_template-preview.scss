@@ -41,7 +41,7 @@
 		}
 	}
   // 992
-  @media (min-width: $break-md-screen) {
+  @media (min-width: $break-900) {
     .content-post-wrap {
       justify-content: flex-start;
       padding: 0;
@@ -109,7 +109,7 @@
     }
   }
   // 992
-  @media (min-width: $break-md-screen) {
+  @media (min-width: $break-900) {
     font-size: 2.5vmin;
     .content-post-wrap {
       justify-content: flex-start;

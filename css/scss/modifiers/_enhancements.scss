@@ -61,6 +61,7 @@ figure.lazyload {
   @include corner-ribbon;
   background: rgba(darkred, 1);
   font-size: .9em;
+  font-family: $sans-serif;
   line-height: 2;
   position: fixed;  
   width: 400px;
@@ -156,8 +157,8 @@ figure.lazyload {
 
 // Headroom.js
 
-// > 800
-@media (min-width: 50em) {
+// > 640
+@media (min-width: $break-ml-phone) {
 
   .headroom {
     .main-content {
@@ -180,4 +181,13 @@ figure.lazyload {
     transform: translateY(-100%);
   }
   
+}
+
+// > 900
+@media (min-width: $break-900) {
+  .headroom {
+    .main-content {
+      padding-top: 10rem;
+    }
+  } 
 }

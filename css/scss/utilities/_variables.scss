@@ -10,7 +10,7 @@ $break-sm-phone: 30em; // 480px
 
 $break-md-phone: 33.750em; // > 540px
 
-$break-ml-phone: 41.688em; // 667px
+$break-ml-phone: 40em; // 640px
 
 $break-lg-phone: 48em; // 768px
 
@@ -30,13 +30,15 @@ $break-widescreen: 150em; // 2400px
 
 // Default Font Stacks
 
-$sans-serif: 'Helvetica Neue', Helvetica, sans-serif;
+$sans-serif: "Helvetica Neue", Helvetica, sans-serif;
 
-$serif: 'Cambria', Georgia, serif;
+$sans-serif-narrow: "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, sans-serif;
 
-$KO94: 'Knockout-94', $sans-serif;
+$serif: "Cambria", Georgia, serif;
 
-$KO29: 'Knockout-29', $sans-serif;
+$KO94: "Knockout-94", $sans-serif-narrow;
+
+$KO29: "Knockout-29", $sans-serif-narrow;
 
 // Colors
 

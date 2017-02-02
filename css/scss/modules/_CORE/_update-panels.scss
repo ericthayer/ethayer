@@ -76,7 +76,7 @@
 		font-size: 1.15em;	
 	}
 	// 992
-	@media (min-width: $break-md-screen) {
+	@media (min-width: $break-900) {
 		align-items: center;
 		display: flex;		
 	}
@@ -85,7 +85,7 @@
 
 .panel-txt {	
 	// 992
-	@media (min-width: $break-md-screen) {		
+	@media (min-width: $break-900) {		
 		float: left;
 		padding-right: 2em;
 		width: 90%;			
@@ -94,7 +94,7 @@
 .panel-icon-btn {
 	padding-top: 0.25em;	
 	// 992
-	@media (min-width: $break-md-screen) {
+	@media (min-width: $break-900) {
 		float: right;
 		padding-top: 0;	
 		width: 10%;		

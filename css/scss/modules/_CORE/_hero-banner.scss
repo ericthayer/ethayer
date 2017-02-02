@@ -31,7 +31,7 @@
     }
   }
   // 992
-  @media (min-width: $break-md-screen) {
+  @media (min-width: $break-900) {
     &.media-banner + section {
       padding-top: 20em;  
     }
@@ -142,7 +142,7 @@
     //font-size: 2.5em;   
   }
   // 992
-  @media (min-width: $break-md-screen) {
+  @media (min-width: $break-900) {
     //font-size: 4vmax; 
   }
   // 1200
@@ -200,7 +200,7 @@
     width: 100%;   
   }
   // 
-  @media (min-width: $break-md-screen) {
+  @media (min-width: $break-900) {
     max-width: 48em;   
   } 
 }

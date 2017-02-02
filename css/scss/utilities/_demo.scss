@@ -158,7 +158,7 @@
 		max-width: 740px;		
 	}
 	// 992
-	@media (min-width: $break-md-screen) {
+	@media (min-width: $break-900) {
 		margin-left: -450px;
 		max-width: 900px;
 	}
@@ -268,7 +268,7 @@
 				}
 			}
 			// 992
-			@media (min-width: $break-md-screen) {
+			@media (min-width: $break-900) {
   			justify-content: center;
   			i {
     			padding: 1.25em 0.75em;  
@@ -374,7 +374,7 @@
 .toggle-mobile {
 	display: none;
 	// 992
-	@media (min-width: $break-md-screen) {
+	@media (min-width: $break-900) {
 		display: block;	
 	}	
 }	
