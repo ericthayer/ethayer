@@ -30,12 +30,14 @@
 
 // headshot
 .mug {
+  display: none;
   margin-bottom: 2em;
   margin-right: auto;
   margin-left: auto;
   max-width: 12em;
   // > 400
   @media (min-width: 25em) {
+    display: block;
     float: right;
     margin-top: 2em;
     margin-left: 1.5em;

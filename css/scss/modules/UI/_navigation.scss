@@ -50,6 +50,9 @@ nav {
   h2 {
     margin-bottom: .75rem;
   }
+  a:first-child .icon {
+    margin-left: 0;
+  }
 	// 480
 	@media (min-width: $break-sm-phone) {
 		display: flex;

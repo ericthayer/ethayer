@@ -1,11 +1,13 @@
 // site copyright
 
-.copyrights {
-  color: #BBB;
+p.copyrights {
+  color: #999;
   display: block; 
-  font-size: .875em;
+  font-size: .75em;
+  font-family: $sans-serif;
   margin-bottom: 0;
   a {
     color: currentColor;
+    text-decoration: underline;
   } 
 }

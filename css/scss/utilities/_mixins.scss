@@ -586,28 +586,21 @@
   @include sr-only-focusable;
 }
 
-@mixin fonts-loaded-BN {
-	.fonts-loaded & {
-  	font-family: $BenchNine;
-  	font-weight: 700;
-	}
-}
-
-@mixin fonts-loaded-KO94 {
-  font-family: $sans-serif;
-	.fonts-loaded & {
-  	font-family: $KO94;
-  	font-weight: normal;  
-	}
-}
-
 @mixin fonts-loaded-KO29 {
-  font-family: $sans-serif;
+  font-family: $sans-serif-narrow;
 	.fonts-loaded & {
   	font-family: $KO29;
   	font-weight: normal;
     -moz-osx-font-smoothing: greyscale;
     -webkit-font-smoothing: antialiased;  
+	}
+}
+
+@mixin fonts-loaded-Roboto {
+  font-family: $sans-serif;
+	.fonts-loaded & {
+  	font-family: $Roboto;
+  	font-weight: normal;  
 	}
 }
 
