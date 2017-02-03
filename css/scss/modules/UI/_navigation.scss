@@ -11,10 +11,16 @@ nav {
   }
 }
 
-// simple nav
+// cta link
 
-.simple-nav {
-  
+.cta-link {
+  color: $link;
+  display: inline-block;
+  @include fonts-loaded-KO29;
+  margin-bottom: .625em;
+  .icon {
+    font-size: .875em;
+  }
 }
 
 // icon link

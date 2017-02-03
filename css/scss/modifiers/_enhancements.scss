@@ -135,7 +135,7 @@ figure.lazyload {
 
   .headroom {
     .main-content {
-      padding-top: 6rem;
+      padding-top: 7rem;
     }  
     header {
       position: fixed;
@@ -160,7 +160,7 @@ figure.lazyload {
 @media (min-width: $break-900) {
   .headroom {
     .main-content {
-      padding-top: 10rem;
+      padding-top: 9rem;
     }
   } 
 }
@@ -190,5 +190,11 @@ figure.lazyload {
   max-height: 100px;
   padding-top: .5em;
   padding-bottom: .5em;
-  transition: .3s ease;
+  //transition: .3s ease;
+}
+
+// focus style
+:focus {
+  outline: none;
+  box-shadow: 0 0 15px 0 rgb(0, 0, 0);
 }

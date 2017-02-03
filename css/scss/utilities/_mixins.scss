@@ -597,7 +597,7 @@
 }
 
 @mixin fonts-loaded-Roboto {
-  font-family: $sans-serif;
+  font-family: $sans-serif-narrow;
 	.fonts-loaded & {
   	font-family: $Roboto;
   	font-weight: normal;  

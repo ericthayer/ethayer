@@ -10,23 +10,26 @@
     color: #555;
     background: #EBEBEB;
     flex-grow: 1;
+    @include fonts-loaded-KO29;
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: 1.25rem;    
+    .fonts-loaded & {
+      font-size: 1.5rem;
+    } 
     margin-right: 0;  
     margin-left: 0;  
     padding: 1rem .25rem;
     transition: background .3s ease;
     vertical-align: top;
-    //width: 100%;  
+    //width: 100%;
+    -moz-osx-font-smoothing: greyscale;  
     -webkit-font-smoothing: antialiased;
     &:hover {
       background: #E5E5E5;
     }
-    // font type
-    @include fonts-loaded-KO29;
-    .fonts-loaded & {
-      font-size: 1.5rem;
-    } 
+    &:focus {
+      z-index: 0;
+    }
   }
   // < 180
   @media (max-width: 11.25em) {
