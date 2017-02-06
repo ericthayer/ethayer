@@ -55,23 +55,32 @@
     max-width: 7em;
   }
   h3 {
-    margin-bottom: 0;
+    margin-bottom: .25rem;
   }
   .icon {
     fill: $link;
   }
-  // 375
-  @media (min-width: $break-375) {
+  // > 320
+  @media (min-width: $break-tiny-phone) {
     display: flex;
 	  flex-wrap: wrap;
     > * {
       width: 50%;
     }
   }
-  // > 900
+  // > 640
 	@media (min-width: $break-ml-phone) {
   	> * {
     	width: 33%;
+    }
+     h3 {
+      margin-bottom: .9rem;
+    }
+  }
+  // > 900
+	@media (min-width: $break-900) {
+    > * {
+      padding: 2em 1.75em;
     }
   }
 }

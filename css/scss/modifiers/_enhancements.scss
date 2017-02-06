@@ -1,12 +1,33 @@
 // Lazy Load Styles
 
+.lazyload {
+  opacity: 1;  
+}
+
+img.lazyload {
+  display: none;
+  .media-caption {
+    display: none;
+  }  
+}
+
+figure.lazyload {
+  & > a:first-child {
+    display: none;  
+  }
+}
+
+
 .enhanced {
   .lazyload {
   	opacity: 0;
   }
    figure.lazyload a:first-child,
    img.lazyload {
-    display: block;  
+    display: block; 
+    .media-caption {
+      display: block;
+    } 
   }
   
   .lazyloaded {
@@ -26,20 +47,6 @@
     	transform: scale(1);
     	transition: opacity, .5s, transform 1s cubic-bezier(.42,.06,.65,.99);  	 
     }
-  }
-}
-
-.lazyload {
-  opacity: 1;  
-}
-
-img.lazyload {
-  display: none;  
-}
-
-figure.lazyload {
-  & > a:first-child {
-    display: none;  
   }
 }
 
@@ -186,15 +193,11 @@ figure.lazyload {
   }
 }
 
-.skip-link:focus {
+a.skip-link:focus {
+  box-shadow: none;
+  color: #FFF;
   max-height: 100px;
   padding-top: .5em;
   padding-bottom: .5em;
   //transition: .3s ease;
-}
-
-// focus style
-:focus {
-  outline: none;
-  box-shadow: 0 0 15px 0 rgb(0, 0, 0);
 }

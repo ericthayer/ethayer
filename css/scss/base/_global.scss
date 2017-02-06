@@ -24,12 +24,8 @@ body {
 	}
 	// > 1600
 	@media (min-width: $break-xl-screen) {
-		max-width: 60.00em;
+		//max-width: 80.00em;
 	}
-}
-
-%container-fluid {
-  max-width: 100%;  
 }
 
 .container-flex {
@@ -38,4 +34,22 @@ body {
     padding-right: 0;
     padding-left: 0;  
   }
+	// > 1600
+	@media (min-width: $break-xl-screen) {
+		//max-width: 80.00em;
+	}
+}
+
+.container-fluid {
+	// > 1600
+	@media (min-width: $break-lg-screen) {
+		max-width: 80%;
+		padding-right: .5em;
+		padding-left: .5em;
+	}
+}
+
+main:focus,
+section:focus {
+	box-shadow: none;
 }

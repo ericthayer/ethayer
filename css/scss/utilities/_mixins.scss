@@ -578,12 +578,55 @@
   }
 }
 
+@mixin focus-pink {
+  &:hover,
+  &:focus {
+    color: hotpink;
+    .icon {
+      fill: hotpink;
+    }
+  }
+}
+
+@mixin focus-arrows {
+  position: relative;
+  &:before,
+  &:after {
+    content: "‣ ";
+    font-size: 1.5em;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    line-height: 1;
+  }
+  &:before {
+    content: "‣ ";
+    left: -.65em;
+  }
+  &:after {
+    top: -1px;
+    right: -.6em;
+    transform: rotateY(180deg);
+  }
+  &:hover,
+  &:focus {
+    &:before,
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+
 .sr-only {
   @include sr-only;
 }
 
 .sr-only-focusable {
   @include sr-only-focusable;
+}
+
+%focus-pink {
+  @include focus-pink;
 }
 
 @mixin fonts-loaded-KO29 {

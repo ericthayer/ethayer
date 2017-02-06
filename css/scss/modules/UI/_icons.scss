@@ -8,7 +8,10 @@
   top: -.0625em;
   margin-right: 0.25em;
   margin-left: 0.25em;   
-  text-align: center;  
+  text-align: center; 
+  transition: fill .3s ease,
+              transform .2s ease-in;
+  will-change: transform scale; 
 }
 
 .icon-wide {

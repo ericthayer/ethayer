@@ -21,6 +21,24 @@ nav {
   .icon {
     font-size: .875em;
   }
+  @include focus-arrows;
+  &:hover,
+  &:focus {
+    color: hotpink;
+    .icon {
+      transform: scale(1);
+    }
+    &:before,
+    &:after {
+      line-height: 1.3;
+    }
+    &:before {
+      left: -.5em;
+    }
+    &:after {
+      right: -.35em;
+    }
+  }
 }
 
 // icon link

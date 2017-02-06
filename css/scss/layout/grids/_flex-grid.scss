@@ -7,7 +7,7 @@
    padding-bottom: .25rem;  
  }
  
-	// 540
+	// > 540
 	@media (min-width: $break-md-phone) {
 		display: flex;
 		flex-wrap: wrap;
@@ -61,10 +61,10 @@
 
 .l-media-grid {
   > * {
-    flex: 1 0 auto;
-    padding: .5rem;  
+    flex: 1 1 auto;
+    padding: .5rem 0;  
   }
-	// 480
+	// > 480
 	@media (min-width: $break-sm-phone) {
   	flex-flow: row wrap;
 		> * {		
@@ -72,7 +72,13 @@
         width: 100%;
       } 
 		}	
-	}		
+	}
+  // 540
+  @media (min-width: $break-md-phone) {
+    > * {
+      padding: .5rem;
+    }
+  }
 	// 667 ~ 900
 	@media (min-width: $break-ml-phone) and (max-width: $break-900) {
   	> * {
@@ -93,14 +99,16 @@
 	// > 1200
 	@media (min-width: $break-lg-screen) {
   	> * {
-    	&:nth-child(6),
-      &:nth-child(7),
-      &:nth-child(8) {
-        //width: 33%;
+      width: 33%;
+    	&:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(9),
+      &:nth-child(10) {
+        width: 50%;
       }
     	&:first-child,
     	&:first-child + * {
-      	//width: 50%;
+      	//width: 33%;
     	}
   	}
 	}
@@ -118,46 +126,27 @@
 
 .flex-auto {
   flex: 1 1 auto;
-  min-width: 0; // 1 
-  min-height: 0; // 1
+  min-width: 0; 
+  min-height: 0;
 }
 
-%flex-1-1 {
-  > *:nth-child(1) {
-    margin-bottom: 1.5rem;  
-  }
-  // > 540
-  @media (min-width: $break-ml-phone) {
-    > * {
-     flex: 1 0 50%; 
-    }
-    > *:nth-child(1) {
-      margin-bottom: 0; 
-      padding-right: 1.5rem;  
-    }
-    > *:nth-child(2) {
-      padding-left: 1.5rem;    
-    }
-  }
-}
-
-%flex-1-2-1 {
-  // > 540
-  @media (min-width: $break-ml-phone) {
+.flex-1-2-1 {
+  // > 640
+  @media (min-width: $break-md-phone) {
     > *:nth-child(odd) {
-      flex: 1 0 25%;
+      width: 25%;
     }
     > *:nth-child(even) {
-      flex: 2 0 50%;   
+      //width: 50%;   
     }
   } 
 }
 
-%flex-33 {
-  // > 540
-  @media (min-width: $break-ml-phone) {
+.flex-33 {
+  // > 640
+  @media (min-width: $break-md-phone) {
     > * {
-      flex: 1 0 33%;
+      width: 33%;
     }
   } 
 }
@@ -172,12 +161,6 @@
 
 .flex-g-4 {
   flex-grow: 4;
-}
-
-// flex order
-
-.flex-lead {
-  
 }
 
 .flex-sm {

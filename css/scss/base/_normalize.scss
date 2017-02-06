@@ -474,7 +474,6 @@ optgroup {
 
 // Remove most spacing between table cells.
 
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -488,10 +487,10 @@ th {
 // reset list items
 
  
- address {
-	 font-style: normal;
-	 word-wrap: break-word;	
- }
+address {
+  font-style: normal;
+  word-wrap: break-word;	
+}
 
 dl,
 ol,
@@ -515,4 +514,28 @@ li {
 
 p {
   margin-top: 0;  
+}
+
+// focus style
+:focus {
+  outline: none;
+  //box-shadow: 0 0 15px 0 rgb(0, 0, 0);
+  box-shadow: none;
+}
+
+p a:hover,
+p:focus,
+a:focus { 
+  @include focus-pink;
+  text-shadow: none;
+}
+
+p a:focus { 
+  font-size: 125%;
+}
+
+a:hover .icon,
+a:focus .icon {
+  fill: hotpink; 
+  transform: scale(1.3);
 }

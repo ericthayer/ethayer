@@ -1,5 +1,22 @@
 // Main Navigation Styles
 
+@keyframes nav-hover {
+  0% {
+    transform: translateX(-101%) translateY(-101%);
+  }  
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+@keyframes nav-hover-rev {
+  0% {
+    transform: translateX(0) translateY(0);
+  }  
+  100% {
+    transform: translateX(101%) translateY(101%);
+  }
+}
+
 .main-nav {
   background: #EBEBEB;
   display: flex;
@@ -7,8 +24,8 @@
   margin-bottom: 2rem;     
   text-align: center;
   > a {
-    color: #555;
     background: #EBEBEB;
+    color: #555;
     flex-grow: 1;
     @include fonts-loaded-KO29;
     font-weight: 500;
@@ -17,18 +34,47 @@
       font-size: 1.5rem;
     } 
     margin-right: 0;  
-    margin-left: 0;  
+    margin-left: 0;
+    overflow: hidden;  
     padding: 1rem .25rem;
-    transition: background .3s ease;
-    vertical-align: top;
+    position: relative;
+    transition: background .5s ease,
+                color .5s ease;
+    z-index: 1;
     //width: 100%;
     -moz-osx-font-smoothing: greyscale;  
     -webkit-font-smoothing: antialiased;
-    &:hover {
-      background: #E5E5E5;
+    span {
+      position: relative;
     }
-    &:focus {
+    &:before {
+      background: linear-gradient(135deg, #40a59f 0%,#1e6c67 100%);
+      background: linear-gradient(135deg, rgba(178,167,214,1) 0%,rgba(80,75,96,1) 100%);
+      background: #BBB;
+      border-radius: 100%;
+      content: "";
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      animation: nav-hover-rev .5s ease forwards;
+      transition: border-radius .5s ease,
+                  opacity .8s ease,
+                  transform .3s ease;
       z-index: 0;
+    }
+    &:hover,
+    &:focus {
+      box-shadow: none;
+      color: #FFF;
+      &:before {        
+        animation: nav-hover .5s ease forwards;
+        border-radius: 0;
+        opacity: 1;
+        transform: none;
+      }
     }
   }
   // < 180
