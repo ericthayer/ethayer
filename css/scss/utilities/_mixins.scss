@@ -294,12 +294,12 @@
 
 // Box Styles
 
-@mixin white-box {
+@mixin card-white {
 	background: white;
 	border: 1px solid #DDD;
 }
 
-@mixin media-box {
+@mixin card-media {
 	background: #EEE;
 	padding: 0.5em;
 	.sidebar-main &,
@@ -308,14 +308,45 @@
 	}	
 }
 
-@mixin grey-box {
+@mixin card-grey {
 	background: #EEE;
 	border: 1px solid #DDD;
 }
 
-@mixin reset-box {
+@mixin card-reset {
 	background: none;
 	border:none;
+}
+
+// counter item
+
+@mixin counter-item {
+  counter-increment: sequential;
+  &:before {
+    background-color: $orange-red;
+    border-radius: 50%;
+    color: #FFF;
+    content: counter(sequential);
+    font-size: .875rem;
+    line-height: .5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto 1em;
+    padding: 1em;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    max-height: 2em;
+    max-width: 2em;  
+  }
+  // > 640
+  @media (min-width: $break-ml-phone) {
+    .title {
+      margin-bottom: .9rem;
+    }
+  }
 }
 
 // Blog Image Styles
@@ -597,7 +628,7 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    line-height: 1;
+    line-height: .9;
   }
   &:before {
     content: "‣ ";
@@ -615,6 +646,17 @@
       opacity: 1;
     }
   }
+}
+
+@mixin link-shadow {
+  text-shadow: .05em 0 0 #F9F9F9, -0.05em 0 0 #F9F9F9,
+      0 .05em 0 #F9F9F9, 0 -0.05em 0 #F9F9F9,
+      .1em 0 0 #F9F9F9, -0.1em 0 0 #F9F9F9,
+      0 .1em 0 #F9F9F9, 0 -0.1em 0 #F9F9F9;
+  background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
+  background-repeat: repeat-x;
+  background-position: bottom .05em center;
+  background-size: 100% .07em;
 }
 
 .sr-only {

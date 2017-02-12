@@ -2,12 +2,21 @@
 
 p.copyrights {
   color: #999;
-  display: block; 
   font-size: .75em;
   font-family: $sans-serif;
   margin-bottom: 0;
   a {
     color: currentColor;
-    text-decoration: underline;
+  }
+  // 480 
+  @media (min-width: $break-tiny-phone) {
+    display: flex;
+    align-items: center;
+    span {
+      display: none;
+    }
+    a {
+      margin-left: auto;
+    }
   } 
 }

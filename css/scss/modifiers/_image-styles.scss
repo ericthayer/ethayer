@@ -91,11 +91,15 @@
   margin-right: 0;
   margin-left: 0;
   margin-bottom: 0;
-  will-change: transform scale;
+  //will-change: transform scale;
+	transition: all .4s ease;
 	a {
 		display: inline-block;
 		overflow: hidden;
 		position: relative;
+		.lazyloaded & {
+			overflow: visible;
+		}
 	}
 	img {
 		animation: filter-hue-animation-rev .5s ease forwards;
@@ -145,11 +149,15 @@
 
 .media-caption {
 	bottom: 0;
+	opacity: 0;
 	.fonts-loaded & {
 		font-size: 1.25rem;
 	}
 	transform-origin: top center;
 	transform: translateX(0%) translateY(0%);
+	.lazyloaded & {
+		opacity: 1;
+	}
 }
 
 .project-desc {
@@ -197,9 +205,9 @@
   @media (min-width: 25em) {
     display: block;
     float: right;
-    margin-top: 2em;
-    margin-left: 1.5em;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-bottom: 1em;
   }
   // < 480
   @media (max-width: $break-sm-phone) {

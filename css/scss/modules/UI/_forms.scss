@@ -1,5 +1,21 @@
 // BASE FORM STYLES
 
+input::-webkit-input-placeholder {
+  transition: all .3s ease;
+}
+
+::-moz-placeholder {
+  transition: all .3s ease;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+ 
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
 .form-wrap {
   div {
     width: 100%; 

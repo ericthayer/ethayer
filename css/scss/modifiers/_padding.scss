@@ -760,8 +760,8 @@
   } 
 } 
 
-// > 900
-@media (min-width: $break-900) {
+// > 1200
+@media (min-width: $break-lg-screen) {
   // Padding
 
   .lg-p-0 {

@@ -5,15 +5,12 @@
 }
 
 img.lazyload {
-  display: none;
-  .media-caption {
-    display: none;
-  }  
+ // display: none;    
 }
 
 figure.lazyload {
   & > a:first-child {
-    display: none;  
+    //display: none;  
   }
 }
 
@@ -24,9 +21,9 @@ figure.lazyload {
   }
    figure.lazyload a:first-child,
    img.lazyload {
-    display: block; 
+    //display: block; 
     .media-caption {
-      display: block;
+      //display: block;
     } 
   }
   
@@ -38,15 +35,16 @@ figure.lazyload {
   // 667
   @media (min-width: $break-ml-phone) {
   
-    .lazyload {
-      will-change: transform scale;
-    	transform: scale(.8);
-    }
+    // .lazyload {
+    //   will-change: transform scale;
+    // 	transform: scale(.8);
+    // }
     
-    .lazyloaded {
-    	transform: scale(1);
-    	transition: opacity, .5s, transform 1s cubic-bezier(.42,.06,.65,.99);  	 
-    }
+    // .lazyloaded {
+    // 	transform: scale(1);
+    // 	transition: opacity .5s, transform .5s cubic-bezier(.42,.06,.65,.99); 	 
+    // }
+
   }
 }
 

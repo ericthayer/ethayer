@@ -94,17 +94,20 @@
 	@media (min-width: $break-900) {
   	> * {
     	//width: 33%;
+      &:first-child {
+        //width: 33%;
+      }
     }
   }
 	// > 1200
 	@media (min-width: $break-lg-screen) {
   	> * {
-      width: 33%;
+      //width: 33%;
     	&:nth-child(1),
       &:nth-child(2),
-      &:nth-child(9),
-      &:nth-child(10) {
-        width: 50%;
+      &:nth-child(6),
+      &:nth-child(7) {
+        //width: 50%;
       }
     	&:first-child,
     	&:first-child + * {

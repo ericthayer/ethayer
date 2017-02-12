@@ -14,10 +14,13 @@ nav {
 // cta link
 
 .cta-link {
+  background: none;
   color: $link;
   display: inline-block;
   @include fonts-loaded-KO29;
-  margin-bottom: .625em;
+  font-size: 1.3rem;
+  padding-left: .15em;
+  text-shadow: none;
   .icon {
     font-size: .875em;
   }
