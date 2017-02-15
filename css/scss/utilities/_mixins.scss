@@ -627,6 +627,7 @@
     font-size: 1.5em;
     opacity: 0;
     position: absolute;
+    transition: opacity .4s ease;
     top: 0;
     line-height: .9;
   }

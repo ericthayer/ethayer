@@ -213,8 +213,12 @@
   @media (max-width: $break-sm-phone) {
     max-width: 10em;
   }
-  // @supports (clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%)) {
+  // @supports (-webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%)) {
   //   border-radius: 0;
-  //   clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+	// 	img {
+	// 		border-radius: 0;
+	// 	}
+  //   clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+	// 	shape-outside: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
   // }
 }
