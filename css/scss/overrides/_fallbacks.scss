@@ -1,7 +1,6 @@
 // JavaScript Disabled
 
-.no-js {
-/*
+%no-js {
   &:before {
 		background: shade(red, 85%);
 		color: white;
@@ -15,7 +14,6 @@
 		right: 0;
 		width: 100%;
 	}
-*/
   noscript {
     display: block;  
   }

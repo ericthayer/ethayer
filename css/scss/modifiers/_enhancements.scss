@@ -5,7 +5,7 @@
 }
 
 img.lazyload {
- // display: none;    
+ display: none;    
 }
 
 figure.lazyload {
@@ -21,7 +21,7 @@ figure.lazyload {
   }
    figure.lazyload a:first-child,
    img.lazyload {
-    //display: block; 
+    display: block; 
     .media-caption {
       //display: block;
     } 
@@ -100,8 +100,8 @@ figure.lazyload {
       }
     }
   }
-  // 640
-  @media (min-width: $break-ml-phone) {
+  // 768
+  @media (min-width: $break-lg-phone) {
     display: block;
   }     
 }
@@ -109,7 +109,8 @@ figure.lazyload {
 // wip disclaimer
 
 .wip-disclaimer {
-  background: linear-gradient(135deg, rgba(#639, .85) 0%, mix(black, #639, 50%) 100%);
+  //background: linear-gradient(135deg, rgba(#639, .85) 0%, mix(black, #639, 50%) 100%);
+  background-color: rgba(black,.85);
   color: #fff;
   font-size: .9rem;
   font-family: $sans-serif;
@@ -123,6 +124,7 @@ figure.lazyload {
   width: 100%;
   button {
     background-color: mix(black, #639, 60%);
+    background-color: black;
     overflow: hidden;
     font-size: 1.4rem;
     position: absolute;
@@ -147,9 +149,9 @@ figure.lazyload {
   // 1200
   @media (min-width: $break-900) {
     .headroom & {
-      right: 0;
-      left: auto;
-      width: 40%;
+      //right: 0;
+      //left: auto;
+      //width: 40%;
     }
   }
 }
@@ -195,7 +197,7 @@ figure.lazyload {
       margin-bottom: 0;
     }
     .main-content {
-      padding-top: 7rem;
+      padding-top: 5rem;
     }  
     header {
       position: fixed;
@@ -220,7 +222,7 @@ figure.lazyload {
 @media (min-width: $break-900) {
   .headroom {
     .main-content {
-      padding-top: 9rem;
+      padding-top: 7rem;
     }
   } 
 }

@@ -17,29 +17,28 @@ nav {
   background: none;
   color: $link;
   display: inline-block;
+  font-size: 1.5rem;
   @include fonts-loaded-KO29;
-  font-size: 1.3rem;
-  padding-left: .15em;
   text-shadow: none;
   .icon {
     font-size: .875em;
   }
-  @include focus-arrows;
+  //@include focus-arrows;
+  &:before,
+  &:after {
+    line-height: 1.3;
+  }
   &:hover,
   &:focus {
     color: hotpink;
     .icon {
       transform: scale(1);
     }
-    &:before,
-    &:after {
-      line-height: 1.3;
-    }
     &:before {
-      left: -.5em;
+      //left: -.5em;
     }
     &:after {
-      right: -.35em;
+      //right: -.35em;
     }
   }
 }

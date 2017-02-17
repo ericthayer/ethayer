@@ -2,20 +2,38 @@
 
 p.copyrights {
   color: #999;
+  //font-weight: 600;
   font-size: .75em;
   font-family: $sans-serif;
   margin-bottom: 0;
   a {
+    background: none;
     color: currentColor;
+    text-decoration: none;
+  }
+  .top-anchor {
+    background-color: $link;
+    color: #fff;
+    font-weight: 600;
+    font-size: .9em;
+    margin-left: .5rem;
+    padding: 0 .25rem;
+    text-transform: uppercase;
+    text-shadow: none;
+    &:hover {
+      background-color: hotpink;
+      color: #fff;
+      //opacity: .7;
+    }
   }
   // 480 
   @media (min-width: $break-tiny-phone) {
     display: flex;
     align-items: center;
-    span {
+    .dot {
       display: none;
     }
-    a {
+    .source-link {
       margin-left: auto;
     }
   } 

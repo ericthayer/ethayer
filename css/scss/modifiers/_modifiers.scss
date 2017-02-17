@@ -1,10 +1,5 @@
 // Display Options
 
-.hide,
-.hidden {
-  display: none;  
-}
-
 .show,
 .block {
   display: block; 
@@ -34,12 +29,8 @@
   visibility: visible;
 }
 
-.is-visible {
-  //opacity: 1; 
-}
-
-.is-hidden {
-  //opacity: 0; 
+.hidden {
+  display: none;  
 }
 
 // Postion

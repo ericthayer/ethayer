@@ -530,8 +530,10 @@ a:focus {
   text-shadow: none;
 }
 
-p a:focus { 
-  font-size: 125%;
+p a:focus {
+  background: rgba(#333, .85); 
+  color: #fff !important;
+  //font-size: 105%;
 }
 
 a:hover .icon,

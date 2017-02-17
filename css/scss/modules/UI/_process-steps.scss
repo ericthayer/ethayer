@@ -1,7 +1,18 @@
+// Process Home
+
 // Process Steps
 
+#process-steps {
+  .iframe {
+    iframe {
+      box-shadow: 0 0 2em 0 rgba(black, .35);
+      padding-bottom: 0;
+    }
+  }
+}
+
 .process-steps {
-  color: mix(black, $link, 40%);
+  //color: mix(black, $link, 40%);
   text-align: center;
   // > 320
   @media (min-width: $break-tiny-phone) {

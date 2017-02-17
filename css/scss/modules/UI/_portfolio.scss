@@ -1,0 +1,26 @@
+// portfolio
+
+.projects {
+  .container {
+    max-width: 100%;
+  }
+  .l-media-grid {
+    // 900
+    @media (min-width: $break-900) {
+      > * {
+        &:first-child {
+          width: 50%;
+        }
+      }
+    }
+    // 1200
+    @media (min-width: $break-lg-screen) {
+      > * {
+        width: 33%;
+        &:first-child {
+          width: 33%;
+        }
+      }
+    }
+  } 
+}

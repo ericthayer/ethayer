@@ -1,4 +1,8 @@
 .contact-form {
+  display: none;
+  [data-scroll-id="contact"] & {
+    display: block;
+  }
   // > 667
   @media (min-width: $break-ml-phone) {
     .form-wrap {

@@ -54,32 +54,32 @@
 
 @keyframes filter-animation {
 	0% {
-		filter: invert(0) saturate(.7);
+		filter: invert(0) saturate(1);
 	}  
 	100% {
-		filter: invert(.8) saturate(1.25);
+		filter: invert(1) saturate(.7);
 	}
 }
 @keyframes filter-animation-rev {
 	0% {
-		filter: invert(.8) saturate(1.25);
+		filter: invert(1) saturate(.7);
 	}  
 	100% {
-		filter: invert(0) saturate(.7);
+		filter: invert(0) saturate(1);
 	}
 }
 
 @keyframes filter-hue-animation {
 	0% {
-		filter: hue-rotate(0deg)saturate(.7);
+		filter: hue-rotate(0deg) saturate(.7);
 	}  
 	100% {
-		filter: hue-rotate(20deg) saturate(2);
+		filter: hue-rotate(20deg) saturate(2.5);
 	}
 }
 @keyframes filter-hue-animation-rev {
 	0% {
-		filter: hue-rotate(20deg) saturate(2);
+		filter: hue-rotate(20deg) saturate(2.5);
 	}  
 	100% {
 		filter: hue-rotate(0deg) saturate(.7);
@@ -116,9 +116,19 @@
 // adds border for lighter examples
 
 .media-light {
+	.media-caption {
+		right: 1px;
+		bottom: 1px;
+	}
   img, iframe {
-    box-shadow: 0 0 0 1px #EEE;
+    border: 1px solid #E5E5E5;
   }
+	&:hover,
+	&:focus {
+		img, iframe {
+			border: 1px solid transparent;
+		}
+	}
 }
 
 // time stamp & figcaption
@@ -141,9 +151,9 @@
 
 .time-stamp {
 	@include sr-only;
-	background-color: rgba(darkRed, .85);
-	padding-bottom: .25em;
-	top: calc(100% - 4.25em);
+	//background-color: rgba(darkRed, .85);
+	padding: 0;
+	//top: calc(100% - 4.25em);
 	//transform: translateX(-101%);
 }
 
