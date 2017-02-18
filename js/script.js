@@ -21,7 +21,7 @@ document.documentElement.className += " enhanced";
 var mq = window.matchMedia('(min-width: 40em)');
 if(mq.matches) {
 	// grab an element
-	var myElement = document.querySelector(".fixed-nav");
+	var myElement = document.querySelector("body");
 	// construct an instance of Headroom, passing the element
 	var headroom  = new Headroom(myElement);	
 	// initialise

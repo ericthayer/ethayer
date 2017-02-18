@@ -531,9 +531,9 @@ a:focus {
 }
 
 p a:focus {
-  background: rgba(#333, .85); 
-  color: #fff !important;
-  //font-size: 105%;
+  //background: rgba($link, .25); 
+  //color: #fff !important;
+  font-size: 105%;
 }
 
 a:hover .icon,

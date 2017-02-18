@@ -79,6 +79,9 @@ nav {
   a:first-child .icon {
     margin-left: 0;
   }
+  .icon-mobile {
+    font-size: 1.35rem;
+  }
 	// 480
 	@media (min-width: $break-sm-phone) {
 		display: flex;

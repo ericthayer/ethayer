@@ -11,12 +11,17 @@
   z-index: 2;
   // 640
   @media (max-width: $break-ml-phone) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: 30vh;
+    min-height: 12.5em;
+    .site-title {
+      padding-top: 0;
+      padding-bottom: 1rem;
+    }
   }
   // 768 (tall)
   @media (min-height: $break-lg-phone) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: 30vh;
   }
 }
@@ -112,7 +117,7 @@
     flex-grow: 0;
     padding-top: 1em;
     padding-bottom: 1em;
-    width: 30%;
+    width: 33%;
   }
   .main-nav {
     align-items: center;

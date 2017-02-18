@@ -142,6 +142,10 @@
   } 
 }
 
+.flex-1 {
+  flex-grow: 1;
+}
+
 .flex-2 {
   flex-grow: 2;
 }
@@ -161,6 +165,11 @@
     width: auto;
   } 
 }
+
+.flex-s-1 {
+  flex-shrink: 1;
+}
+
 // Flex Direction
 
 .flex-d-col {

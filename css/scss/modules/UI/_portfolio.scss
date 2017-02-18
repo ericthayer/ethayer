@@ -1,8 +1,50 @@
 // portfolio
 
+
+.portfolio {
+  background: linear-gradient(to left, #e96443 , #904e95);
+  .banner-headline {
+    color: #FFF;
+    .sub-header {
+      color: #FFF;
+    }    
+  }
+  .site-header {
+		background: transparent;
+    background: linear-gradient(to left, #e96443 , #904e95);
+    height: auto;
+    min-height: 0;
+		margin-bottom: 0;
+	}
+  section:not(.banner),
+  footer {
+    @include bg-light-grey;
+  }
+  // < 640
+  @media (max-width: $break-ml-phone) {
+    .site-title {
+      display: none;
+    }
+  }
+  // > 640
+  @media (min-width: $break-ml-phone) {
+    .home-link {
+      display: none;
+    }
+  }
+}
+
+.home-link {
+  .icon {
+    font-size: 1.5rem;
+  }
+}
+
+// Projects Section
+
 .projects {
-  .container {
-    max-width: 100%;
+  .media-caption {
+    display: none;
   }
   .l-media-grid {
     // 900

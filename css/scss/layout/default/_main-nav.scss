@@ -49,6 +49,7 @@
     }
     &:before {
       background:rgba(#1e6c67, .95);
+      background: rgba(black, .2);
       //background: linear-gradient(135deg, rgba(178,167,214,1) 0%,rgba(80,75,96,1) 100%);
       //background: #BBB;
       border-radius: 100%;
@@ -78,6 +79,7 @@
     }
     &.active {
       background:rgba(#1e6c67, .95);
+      background: rgba(black, .2);
     }
   }
   // < 180

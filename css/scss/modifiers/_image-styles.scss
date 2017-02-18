@@ -93,7 +93,7 @@
   margin-bottom: 0;
   //will-change: transform scale;
 	transition: all .4s ease;
-	a {
+	> a {
 		display: inline-block;
 		overflow: hidden;
 		position: relative;
@@ -200,6 +200,19 @@
 	.project-desc {
 		display: block;
 		opacity: 1;
+	}
+}
+
+// media details
+
+.media-details {
+	p {
+		font-size: 1rem;
+		line-height: 1.5;
+	}
+	a {
+		color: $link;
+		@include link-shadow;
 	}
 }
 
