@@ -1,0 +1,360 @@
+@import "../../scss/base/normalize.5.0";
+
+@font-face {
+  font-family: "MontserratAlt ExtraBold";
+  src: url("css/fonts/montserrat-alt-extrabold.woff2") format("woff2"),
+       url("css/fonts/montserrat-alt-extrabold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("css/fonts/notosans-regular.woff2") format("woff2"),
+       url("css/fonts/notosans-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// @font-face {
+//   font-family: "NotoSans Bold";
+//   src: url("../../css/fonts/notosans-bold.woff2") format("woff2"),
+//        url("../../css/fonts/notosans-bold.woff") format("woff");
+//   font-weight: 700;
+//   font-style: normal;
+// }
+
+
+$sans-serif: "Helvetica Neue", Helvetica, sans-serif;
+$NotoSans: "NotoSans", $sans-serif;
+$NotoSansBold: "NotoSans Bold", $sans-serif;
+$MontserratAlt: "MontserratAlt ExtraBold", $sans-serif;
+
+@mixin NotoSans {
+  font-family: $sans-serif;
+  .fonts-loaded & {
+    font-family: $NotoSans;
+    font-weight: 400;
+    // -moz-osx-font-smoothing: greyscale;
+    // -webkit-font-smoothing: antialiased;
+  }
+}
+
+@mixin NotoSansBold {
+  font-family: $sans-serif;
+  .fonts-loaded & {
+    font-family: $NotoSansBold;
+    font-weight: 700;
+    // -moz-osx-font-smoothing: greyscale;
+    // -webkit-font-smoothing: antialiased;
+  }
+}
+
+@mixin MontserratAlt {
+  font-family: $sans-serif;
+  .fonts-loaded & {
+    font-family: $MontserratAlt;
+    font-weight: 800;
+    // -moz-osx-font-smoothing: greyscale;
+    // -webkit-font-smoothing: antialiased;
+  }
+}
+
+
+@mixin link-shadow {
+  text-shadow: .05em 0 0 #F9F9F9, -0.05em 0 0 #F9F9F9, 0 .05em 0 #F9F9F9, 0 -0.05em 0 #F9F9F9, .1em 0 0 #F9F9F9, -0.1em 0 0 #F9F9F9, 0 .1em 0 #F9F9F9, 0 -0.1em 0 #F9F9F9;
+  background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
+  background-repeat: repeat-x;
+  background-position: bottom .05em center;
+  background-size: 100% .08em;
+}
+
+// SR Text
+
+@mixin sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@mixin sr-only-focusable {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  &:active,
+  &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+}
+
+// Content Fade In
+
+@mixin content-fade-in {
+  
+  @keyframes content-fade-in {
+    from { opacity: 0 }
+  }
+  
+  #main { animation: 1.5s content-fade-in }
+
+}
+
+.sr-only {
+  @include sr-only;
+}
+
+:root {
+  font-size: calc( 1rem + (40 - 18) * ( (100vw - 400px) / ( 2000 - 400)));
+}
+
+body {
+  background-color: #F9F9F9;
+  background: linear-gradient(-45deg, #e96443 , #904e95);
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  @include NotoSans;
+  letter-spacing: .02em;
+  align-items: center;
+  line-height: 1.45;
+  position: relative;
+  @include content-fade-in;
+  @media (max-height: 344px) { 
+    height: auto;
+  }
+}
+
+@supports(mix-blend-mode: screen) {
+  .no-touchevents {
+    body {
+      color: initial;
+      z-index: 1;
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        transition: opacity .4s ease,
+                    background .4s ease;
+      }
+      &:before {
+        background: #F9F9F9;
+        display: block;
+      }
+      &:after {
+        background: linear-gradient(-45deg, #e96443 , #904e95);
+        mix-blend-mode: screen;
+        display: block;
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+      }
+      #main {
+        z-index: 0;
+      }
+      &:hover,
+      &:focus {
+        color: #FFF;
+        &:before {
+          opacity: 0;
+          z-index: 0;
+        }
+        #main {
+          z-index: 1;
+        }
+        p a {
+          text-shadow: none;
+        }
+      }
+    }
+    p a {
+      @include link-shadow;
+      text-decoration: none;
+      transition: text-shadow .4s ease;
+      &:hover,
+      &:focus {
+        background-size: 0;
+        //color: #904e95;
+      }
+    }
+    .contact-icons {
+      > * {
+        &:hover,
+        &:focus {
+          //flex-basis: 25%;
+          //margin-left: -2em;
+        }
+        &:not(:hover):not(:focus) {
+          span {
+            //opacity: 0;
+            //left: -1em;
+          }
+        }
+      }
+      span {
+        //top: 1rem;
+      }
+    }
+  }  
+}
+
+.icon {
+  display: inline-block;
+  fill: currentColor;
+  height: 1em;
+  width: 1em;
+  vertical-align: middle;
+  position: relative;
+  top: -.0625em;
+  margin-right: .25rem;
+  margin-left: .25rem;
+  text-align: center;
+  stroke-width: 0;
+}
+
+#main {
+  flex-grow: 1;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  max-width: 31em;
+  padding: 2em;
+  position: relative;
+  z-index: 1;
+  @media (min-width: 60em) {
+    margin-bottom: 0;
+    margin-right: 0;   
+  }
+  @media (max-height: 30em) {
+    margin-bottom: auto;
+  }
+}
+
+h1 {
+  @include MontserratAlt;
+  letter-spacing: .02em;
+  line-height: 1.2;
+  //margin-bottom: 0;  
+}
+
+p {
+  line-height: 1.8555;
+  font-size: .75rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  a:focus {
+    outline: none;
+  }
+}
+
+a {
+  color: currentColor;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+// simple grid
+
+.grid {  
+  display: flex;
+  flex-wrap: wrap;
+  > * {
+    flex-grow: 1;
+    padding: 0;
+  }
+
+}
+
+.contact-icons {
+  align-items: center;
+  justify-content: space-between;
+  //padding-top: .5em;
+  line-height: 0;
+  > * {
+    display: flex;
+    //flex-basis: 20%;
+    flex-grow: 0;
+    text-decoration: none;
+    text-align: left;
+    //max-width: 2em;
+    position: relative;
+    transition: width .4s ease;
+    width: 1.5em;
+    &:hover,
+    &:focus {     
+      outline: none;
+      width: 2em;
+      svg {
+        max-height: 2em;
+        max-width: 2em;
+      }
+    }
+  }
+  svg {
+    //fill: #fff;
+    height: 100%;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    max-height: 1.5em;
+    max-width: 1.5em;
+    transition: max-height .4s ease,
+                max-width .4s ease;
+  }
+  span {
+    @include sr-only;
+    // font-size: .75rem;
+    // position: relative;
+    // top: 1em;
+    // left: 1em;
+    // transition: .3s ease;
+    .touchevents & {
+      @include sr-only;
+    }
+  }
+}
+
+.site-footer {
+  padding-top: 1em;
+}
+
+.copyrights {
+  @include NotoSans;
+  font-size: .6em;
+  line-height: 1.2;
+  margin-bottom: 0;
+  @media (min-width: 15em) {
+    display: flex;
+    align-items: center;
+    font-size: .45rem;
+    span {
+      margin-left: auto;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+// * UTILITIES................................Components, Variables, Mixins 	
+// * .....Variables.........................Declarations of Sass variables
+// * ..........Breakpoints
+// * ..........Grid
+// * ..........Colors
+// * ..........Font Stacks
+// * ..........Global Helpers (text-shadow, transform, modifiers, etc.)
+// * .....Mixins.................................Sass mixins
+// * ..........Link States
+// * ..........Opacity
+// * ..........Text Modifications (reg mark, text-overflow, etc.)
+// * ..........Form & Table Resets
+// * ..........Content Blocks 
+// * ..........Image Styles 
+// * ..........Clearfix
+// * ..........Lazyload 
+
+// * BASE................................Set reset defaults
+// * .....Normalize
+// * .....Typography
+// * .....Font Icons (place all font files in base/fonts/font-resources/ )
+// * .....Text-related elements (p, blockquote, lists)
+// * .....Critical CSS (this option is not setiup by default)
+// * PLUGINS................................All things not hand-coded
+// * .....Owl Carousel(slider) http://owlgraphic.com/owlcarousel/#how-to
+
+// * LAYOUT................................Page & Template layout
+// * .....Global (body, containers)
+// * .....Main Content
+// * .....Main Nav
+// * .....Site Header
+// * .....Site Footer
+
+// * MODULES................................Scalable Web Parts
+// * .....Buttons
+// * .....Forms
+// * .....NavAuth login
+
+// * PAGES................................Page specific styles (directory not created by default)
+
+// * OVERRIDES................................Last resort to get a handle on the css (directory not created by default)
+
+
+// Utilities
+@import "utilities/variables";
+@import "utilities/mixins";
+
+// Global
+@import "base/normalize";
+@import "base/typography";
+@import "base/global";
+
+// Layout
+@import "layout/grids/flex-grid";
+
+// Section Layout
+@import "layout/default/site-header";
+@import "layout/default/main-nav";
+@import "layout/default/main-content";
+@import "layout/default/site-footer";
+
+// Modules
+@import "modules/UI/icons";
+@import "modules/UI/cards";
+@import "modules/UI/navigation";
+@import "modules/UI/media-wrap";
+@import "modules/UI/forms";
+@import "modules/UI/contact-form";
+@import "modules/UI/features";
+@import "modules/UI/process-steps";
+
+// Modifiers
+@import "modifiers/layout/layout-modifiers";
+@import "modifiers/utility/margin";
+@import "modifiers/utility/padding";
+@import "modifiers/media/image-styles";
+@import "modifiers/utility/enhancements";
+
+// Page Specific
+@import "modules/UI/portfolio"; 

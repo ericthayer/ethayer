@@ -1,0 +1,133 @@
+// BASE FORM STYLES
+
+input::-webkit-input-placeholder {
+  transition: all .3s ease;
+}
+
+::-moz-placeholder {
+  transition: all .3s ease;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+ 
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.form-wrap {
+  div {
+    width: 100%; 
+  }    
+}
+
+input[type="text"],
+input[type="number"],
+input[type="search"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {  
+	//margin-bottom: 0.5em;		
+}
+
+input[type="text"],
+input[type="number"],
+input[type="search"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	border: 1px solid #EEE;
+	border-radius: 4px;
+	font-size: 16px;
+	line-height: 1.2;
+	padding: .5em .313em;
+	width: 100%;
+	&:focus,
+	&:active {
+  	
+	}
+}
+
+textarea {
+  min-height: 150px;  
+}
+
+// Bootstrap overrides 
+
+input[type="submit"] {
+  line-height: 1.2;
+	margin: 0;
+}
+
+.form-group,
+.input-row {
+  margin-bottom: .875em;  
+}
+
+label {
+  display: inline-block;  
+  font-size: 0.875em;
+  font-size: 0.875rem; 
+  font-weight: 700;
+  margin-bottom: 0; 
+  padding-bottom: 5px;  
+  width: 100%;    
+}
+
+
+.disabled:hover {
+  cursor: not-allowed;
+}
+
+.disabled {
+	a,
+	button,
+	label,
+	input[type="text"],
+	input[type="checkbox"],
+	input[type="radio"] {
+  	cursor: not-allowed;
+  	pointer-events: none;
+  }
+}
+
+.disabled {  
+  position: relative;
+  .post-wrap {
+    // opacity: 0.7;
+    position: relative;
+    //&:before {
+      //background: rgba(black, 0.15);
+      //content: "";
+      //position: absolute;
+      //left: 0;  
+      //height: 100%;
+      //width: 100%;
+      //z-index: 1;
+    //}    
+  }
+}
+
+.form-group-submit {
+  [class^="btn-"] {
+    max-width: 15em;        
+  }
+}
+
+.form-control-error {
+  display: inline-block; 
+  background: rgba(#801414, .25);
+  border: 1px solid rgba(#801414, .4);
+  color: #801414;
+  font: {
+    size: .875em;
+    weight: bold;
+  }
+  letter-spacing: -.01em;
+  margin: 0 auto 1em;  
+  padding: .5em 1em;
+  text-shadow: none;
+  width: 100%;   
+}

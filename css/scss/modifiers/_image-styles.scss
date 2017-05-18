@@ -213,6 +213,10 @@
 	a {
 		color: $link;
 		@include link-shadow;
+		&:hover,
+		&:focus {
+			@include pi
+		}
 	}
 }
 
