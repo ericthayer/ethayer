@@ -1,24 +1,22 @@
 // Site Title
 
 .site-header {
-  @include bg-green-checkers;
-  //background: linear-gradient(135deg, #62d4cd 0%,#1e6c67 100%);
   display: flex;
-  margin-bottom: 3rem;
+  flex-direction: column;
+  //margin-bottom: 3rem;
   position: relative;
   transition: height .4s ease;
+  //height: 100vh;
   width: 100%;
   z-index: 2;
-  // 640
-  @media (max-width: $break-ml-phone) {
-    flex-direction: column;
-    height: 30vh;
-    min-height: 12.5em;
+  @media (min-width: $break-ml-phone - .01em) {
+    //height: 30vh;
   }
-  // 768 (tall)
-  @media (min-height: $break-lg-phone) {
-    flex-direction: column;
-    height: 30vh;
+  @media (min-height: 45em) {
+    //height: 30vh;
+  }
+  @media (min-width: $break-ml-phone) {
+    //height: auto;
   }
 }
 
@@ -35,10 +33,10 @@
   //margin-bottom: auto;
   min-width: 0;
   min-height: 0;
-  padding-top: 2rem;
-  padding-right: 2rem; 
-  //padding-bottom: 1rem;
-  padding-left: 2rem;
+  padding-top: 3em;
+  padding-right: 2em; 
+  padding-bottom: 1em;
+  padding-left: 2em;
   width: 100%;
   &:focus a {
     outline: -moz-focus-ring-color auto 5px;
@@ -104,10 +102,11 @@
 
 // > 667
 @media (min-width: $break-ml-phone) {
-  .site-header {
+  .main-menu {
+    display: flex;
     flex-direction: row;
-    margin-bottom: 4rem;
-    height: auto;
+    min-height: 0;
+    margin-bottom: 0;
   }
   .site-title {
     flex-grow: 0;

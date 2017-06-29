@@ -1,0 +1,11 @@
+.bg-light {
+  @include bg-light-grey;
+}
+
+.bg-green {
+  @include bg-green;
+}
+
+.bg-red-pink {
+  @include bg-red-pink;
+}

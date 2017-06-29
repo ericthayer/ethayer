@@ -1,225 +1,205 @@
 // Circle Mask
-
 .circle-mask {
-	@include circle-mask;
-	img {
-  	border-radius: 100%;
-	}
-	figcaption {
-		@include circle-mask;
-		height: 40%;  
-		width: 100%;				
-		padding: 0;			
-		bottom: 0;				
-		//padding: 1em 2em;
-		text-align: center;
-		//display: flex;
-		//justify-content: center;
-		a {
-			//display: flex;
-		}
-	}
-	
-	// Figcaption Animations 
-	 
-	.slide-down {
-  	height: 100%; 
-	}
-	.slide-down,
-	.slide-left,
-	.slide-right {
-  
-	}
-	
-	// Image Caption		
-	.image-caption {
-		float: none;		
-		text-align: center;	
-	}
+  @include circle-mask;
+  img {
+    border-radius: 100%;
+  }
+  figcaption {
+    @include circle-mask;
+    height: 40%;
+    width: 100%;
+    padding: 0;
+    bottom: 0; //padding: 1em 2em;
+    text-align: center; //display: flex;
+    //justify-content: center;
+    a {
+      //display: flex;
+    }
+  } // Figcaption Animations 
+  .slide-down {
+    height: 100%;
+  }
+  .slide-down,
+  .slide-left,
+  .slide-right {}
+  // Image Caption		
+  .image-caption {
+    float: none;
+    text-align: center;
+  }
 }
 
 // Rounded Thumbnail
-
 .rounded-mask {
-	@include rounded-mask;
-	image {
-  	border-radius: 15px;
-	}
-	figcaption {
-		//border-radius: 0 0 15px 15px;
-	}
+  @include rounded-mask;
+  image {
+    border-radius: 15px;
+  }
+  figcaption {
+    //border-radius: 0 0 15px 15px;
+  }
 }
 
 // Media Item (image or iframe only)
-
 @keyframes filter-animation {
-	0% {
-		filter: invert(0) saturate(1);
-	}  
-	100% {
-		filter: invert(1) saturate(.7);
-	}
+  0% {
+    filter: invert(0) saturate(1);
+  }
+  100% {
+    filter: invert(1) saturate(.7);
+  }
 }
+
 @keyframes filter-animation-rev {
-	0% {
-		filter: invert(1) saturate(.7);
-	}  
-	100% {
-		filter: invert(0) saturate(1);
-	}
+  0% {
+    filter: invert(1) saturate(.7);
+  }
+  100% {
+    filter: invert(0) saturate(1);
+  }
 }
 
 @keyframes filter-hue-animation {
-	0% {
-		filter: hue-rotate(0deg) saturate(.7);
-	}  
-	100% {
-		filter: hue-rotate(20deg) saturate(2.5);
-	}
+  0% {
+    filter: hue-rotate(0deg) saturate(.7);
+  }
+  100% {
+    filter: hue-rotate(20deg) saturate(2.5);
+  }
 }
+
 @keyframes filter-hue-animation-rev {
-	0% {
-		filter: hue-rotate(20deg) saturate(2.5);
-	}  
-	100% {
-		filter: hue-rotate(0deg) saturate(.7);
-	}
-} 
+  0% {
+    filter: hue-rotate(20deg) saturate(2.5);
+  }
+  100% {
+    filter: hue-rotate(0deg) saturate(.7);
+  }
+}
 
 .media-item {
   line-height: 0;
   margin-right: 0;
   margin-left: 0;
-  margin-bottom: 0;
-  //will-change: transform scale;
-	transition: all .4s ease;
-	> a {
-		display: inline-block;
-		overflow: hidden;
-		position: relative;
-		.lazyloaded & {
-			overflow: visible;
-		}
-	}
-	img {
-		animation: filter-hue-animation-rev .5s ease forwards;
-		transition: all .4s ease;
-	}
-	.icon {
-		height: 100%;
-		width: 100%;
-		margin-right: auto;
-		margin-left: auto;
-	}
+  margin-bottom: 0; //will-change: transform scale;
+  transition: all .4s ease;
+  >a {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    .lazyloaded & {
+      overflow: visible;
+    }
+  }
+  img {
+    animation: filter-hue-animation-rev .5s ease forwards;
+    transition: all .4s ease;
+  }
+  .icon {
+    height: 100%;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 // adds border for lighter examples
-
 .media-light {
-	.media-caption {
-		right: 1px;
-		bottom: 1px;
-	}
-  img, iframe {
+  .media-caption {
+    right: 1px;
+    bottom: 1px;
+  }
+  img,
+  iframe {
     border: 1px solid #E5E5E5;
   }
-	&:hover,
-	&:focus {
-		img, iframe {
-			border: 1px solid transparent;
-		}
-	}
+  &:hover,
+  &:focus {
+    img,
+    iframe {
+      border: 1px solid transparent;
+    }
+  }
 }
 
 // time stamp & figcaption
-
 .time-stamp,
 .media-caption {
-	background-color: rgba(black, .75);
-	//border-radius: 15px 0 0 0;
-	color: #FFF;
-	@include fonts-loaded-KO29;
-	font-size: 1rem;
-	//min-height: 10%;
-	//min-width: 1%;
-	line-height: 1.25;
-	padding: .35em .75em;
-	position: absolute;
-	right: 0;
-	transition: all .4s ease;
+  background-color: rgba(black, .75); //border-radius: 15px 0 0 0;
+  color: #FFF;
+  @include fonts-loaded-KO29;
+  font-size: 1rem; //min-height: 10%;
+  //min-width: 1%;
+  line-height: 1.25;
+  padding: .35em .75em;
+  position: absolute;
+  right: 0;
+  transition: all .4s ease;
 }
 
 .time-stamp {
-	@include sr-only;
-	//background-color: rgba(darkRed, .85);
-	padding: 0;
-	//top: calc(100% - 4.25em);
-	//transform: translateX(-101%);
+  @include sr-only; //background-color: rgba(darkRed, .85);
+  padding: 0; //top: calc(100% - 4.25em);
+  //transform: translateX(-101%);
 }
 
 .media-caption {
-	bottom: 0;
-	opacity: 0;
-	.fonts-loaded & {
-		font-size: 1.25rem;
-	}
-	transform-origin: top center;
-	transform: translateX(0%) translateY(0%);
-	.lazyloaded & {
-		opacity: 1;
-	}
+  bottom: 0;
+  opacity: 0;
+  .fonts-loaded & {
+    font-size: 1.25rem;
+  }
+  transform-origin: top center;
+  transform: translateX(0%) translateY(0%);
+  .lazyloaded & {
+    opacity: 1;
+  }
 }
 
 .project-desc {
-	display: none;
-	opacity: 0;
-	transition: .3s ease;
+  display: none;
+  opacity: 0;
+  transition: .3s ease;
 }
 
 // Media Hover/Focus styles
-
 .media-item a:hover,
 .media-item a:focus {
-	img {
-		animation: filter-hue-animation .5s ease forwards;
-	}
-	.time-stamp,
-	.media-caption {
-		transform: none;
-	}
-	.media-caption {
-		.fonts-loaded & {
-			font-size: 1.875rem;
-		}
-		//min-height: 50%;
-		//min-width: 100%;
-		//top: 0;
-		//bottom: auto;
-		transform: translateY(-100%);
-	}
-	.project-desc {
-		display: block;
-		opacity: 1;
-	}
+  img {
+    animation: filter-hue-animation .5s ease forwards;
+  }
+  .time-stamp,
+  .media-caption {
+    transform: none;
+  }
+  .media-caption {
+    .fonts-loaded & {
+      font-size: 1.875rem;
+    } //min-height: 50%;
+    //min-width: 100%;
+    //top: 0;
+    //bottom: auto;
+    transform: translateY(-100%);
+  }
+  .project-desc {
+    display: block;
+    opacity: 1;
+  }
 }
 
 // media details
-
 .media-details {
-	p {
-		font-size: 1rem;
-		line-height: 1.5;
-	}
-	a {
-		color: $link;
-		@include link-shadow;
-		&:hover,
-		&:focus {
-
-		}
-	}
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  a {
+    color: $link;
+    @include link-shadow;
+    &:hover,
+    &:focus {}
+  }
 }
-
 
 // headshot
 .mug {
@@ -227,25 +207,15 @@
   margin-bottom: 2em;
   margin-right: auto;
   margin-left: auto;
-  max-width: 12em;
-  // > 400
+  max-width: 12em; // > 400
   @media (min-width: 25em) {
     //display: block;
     float: right;
     margin-top: 1em;
     margin-left: 2em;
     margin-bottom: 1em;
-  }
-  // < 480
+  } // < 480
   @media (max-width: $break-sm-phone) {
     max-width: 10em;
   }
-  // @supports (-webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%)) {
-  //   border-radius: 0;
-	// 	img {
-	// 		border-radius: 0;
-	// 	}
-  //   clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-	// 	shape-outside: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-  // }
 }

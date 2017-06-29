@@ -1,13 +1,14 @@
 // Site Title
 
 .site-header {
-  @include bg-green-checkers;
+  @include bg-green;
   //background: linear-gradient(135deg, #62d4cd 0%,#1e6c67 100%);
   display: flex;
+  height: auto;
+  width: 100%;
   margin-bottom: 3rem;
   position: relative;
-  transition: height .4s ease;
-  width: 100%;
+  transition: height .4s ease;  
   z-index: 2;
   // 640
   @media (max-width: $break-ml-phone) {
@@ -106,8 +107,8 @@
 @media (min-width: $break-ml-phone) {
   .site-header {
     flex-direction: row;
-    margin-bottom: 4rem;
-    height: auto;
+    min-height: 0;
+    margin-bottom: 0;
   }
   .site-title {
     flex-grow: 0;
@@ -134,5 +135,10 @@
     max-width: 15em;
     width: 100%;
   }
+}
+
+section:not(.banner),
+footer {
+  @include bg-light-grey;
 }
 

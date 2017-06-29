@@ -1,0 +1,23 @@
+// .home {
+//   @include bg-green;
+//   .site-header, .banner {
+//     @include bg-white;
+//   }
+// }
+
+// .portfolio {
+//   @include bg-red-pink;
+//   .site-header, .banner {
+//     @include bg-white;
+//   }
+// }
+
+.banner-headline {
+  .sub-header {
+    a {
+      background-color: rgba(black, .35);
+      padding-right: .25em;
+      padding-left: .25em;
+    }
+  }
+}

@@ -1,101 +1,62 @@
 // Flex Layout
-
 .flex-layout {
   @include clearfix;
   > * {
-    padding-bottom: 1rem;  
+    padding-bottom: 1.5em;
   }
   .media-item {
     margin-bottom: 0;
   }
-	// > 540
-	@media (min-width: $break-md-phone) {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-
-		> * {
-  		float: left;   
-  		//flex: 1 1 auto;
-  		flex-grow: 1;
-  		padding-right: 1.5rem;
-  		padding-left: 1.5rem;
-  		min-height: 0;
-  		min-width: 0;   
-  		width: 50%; 
-		}	
-	}
-	// > 667
-	@media (min-width: $break-ml-phone) {
-  	.flex-lead {
-  		flex-basis: 100%;
-		}
-	}
+  // > 540
+  @media (min-width: $break-md-phone) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    > * {
+      float: left; 
+      //flex: 1 1 auto;
+      flex-grow: 1;
+      padding-right: 1.5em;
+      padding-left: 1.5em;
+      min-height: 0;
+      min-width: 0;
+      width: 50%;
+    }
+  }
+  // > 667
+  @media (min-width: $break-ml-phone) {
+    .flex-lead {
+      flex-basis: 100%;
+    }
+  }
 }
 
 // Media Layout
-
 .l-media-grid {
   // < 320
   @media (max-width: 300px) {
     figcaption {
       @include sr-only;
     }
-  }
-	// > 480
-	@media (min-width: $break-sm-phone) {
-		> * {		
+  } // > 480
+  @media (min-width: $break-sm-phone) {
+    >* {
       &:first-child {
-        width: 100%;
-      } 
-		}	
-	}
-  // 540
+        //width: 100%;
+      }
+    }
+  }
+  // > 540
   @media (min-width: $break-md-phone) {
     > * {
-      padding: .5rem;
+      flex-basis: 20em;
+      padding: .5em;
+      width: auto;
     }
   }
-	// 667 ~ 900
-	@media (min-width: $break-ml-phone) and (max-width: $break-900) {
-  	> * {
-    	//width: 25%;
-    	&:first-child,
-    	&:nth-child(2),
-    	&:nth-child(3) {
-      	//width: 33%;
-    	}
-  	}
-	}
-  // > 900
-	@media (min-width: $break-900) {
-  	> * {
-    	//width: 33%;
-      &:first-child {
-        //width: 33%;
-      }
-    }
-  }
-	// > 1200
-	@media (min-width: $break-lg-screen) {
-  	> * {
-      //width: 33%;
-    	&:nth-child(1),
-      &:nth-child(2),
-      &:nth-child(6),
-      &:nth-child(7) {
-        //width: 50%;
-      }
-    	&:first-child,
-    	&:first-child + * {
-      	//width: 33%;
-    	}
-  	}
-	}
 }
 
 // ** Flex modifiers ** //
-
 .flex {
   display: flex;
 }
@@ -106,7 +67,7 @@
 
 .flex-auto {
   flex: 1 1 auto;
-  min-width: 0; 
+  min-width: 0;
   min-height: 0;
 }
 
@@ -116,10 +77,10 @@
     > *:nth-child(odd) {
       width: 25%;
     }
-    > *:nth-child(even) {
+    >*:nth-child(even) {
       //width: 50%;   
     }
-  } 
+  }
 }
 
 .flex-33 {
@@ -129,7 +90,7 @@
       padding: .3em;
       width: 33%;
     }
-  } 
+  }
 }
 
 .flex-25 {
@@ -139,7 +100,7 @@
       padding: .3em;
       width: 25%;
     }
-  } 
+  }
 }
 
 .flex-1 {
@@ -161,9 +122,9 @@
 .flex-sm {
   // > 540
   @media (min-width: $break-md-phone) {
-		flex-grow: 0;
+    flex-grow: 0;
     width: auto;
-  } 
+  }
 }
 
 .flex-s-1 {
@@ -171,7 +132,6 @@
 }
 
 // Flex Direction
-
 .flex-d-col {
   flex-direction: column;
 }
@@ -189,7 +149,6 @@
 }
 
 // Flex Alignment Items
-
 .ai-start {
   align-items: flex-start;
 }
@@ -207,7 +166,6 @@
 }
 
 // Flex Align Content
-
 .ac-start {
   align-content: flex-start;
 }
@@ -233,7 +191,6 @@
 }
 
 // Flex Justify Content
-
 .jc-start {
   justify-content: flex-start;
 }
@@ -259,10 +216,9 @@
 }
 
 // Flex Order
-
 .flex-lead {
   flex: 1 0 100%;
-  width: 100%;  
+  width: 100%;
 }
 
 .flex-sm {
