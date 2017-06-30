@@ -33,22 +33,24 @@
     display: none;
   }
   .l-media-grid {
+    > * {
+      //flex-basis: auto;
+    }
     // 900
-    @media (min-width: $break-900) {
+    @media (min-width: $break-md-phone) {
       > * {
-        &:first-child {
-          width: 50%;
-        }
+        //width: 50%;
       }
-    } // 1200
+    } 
+    // 1200
     @media (min-width: $break-lg-screen) {
-      justify-content: flex-start;
-      >* {
-        flex-grow: 0;
-        flex-shrink: 1;
-        width: 33%;
+      //justify-content: flex-start;
+      > * {
+        //flex-grow: 0;
+        //flex-shrink: 1;
+        //width: 33%;
         &:first-child {
-          width: 33%;
+          //width: 33%;
         }
       }
     }
