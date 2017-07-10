@@ -18,6 +18,11 @@
 	}
 	iframe {
 		@include card-media;
+    figcaption {
+      position: relative;
+      bottom: -2.2em;
+      text-align: center;
+    }
 	}
 }
 

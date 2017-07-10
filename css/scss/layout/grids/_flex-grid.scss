@@ -50,8 +50,16 @@
   @media (min-width: $break-md-phone) {
     > * {
       flex-basis: 20em;
-      padding: .5em;
+      padding: 1em;
       width: auto;
+    }
+  }
+  // > 800
+  @media (min-width: 50em) {
+    > * {
+      .portfolio & {
+        flex-basis: 50%;
+      }
     }
   }
 }
