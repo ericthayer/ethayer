@@ -11,6 +11,10 @@
   }
 }
 
+@mixin bg-purple {
+  background: linear-gradient(145deg, #ED165D, #071828);
+  @include bg-dark;
+}
 
 @mixin bg-light-grey {
   background-color: #FCFCFC;
@@ -24,9 +28,70 @@
   @include bg-dark;
 }
 
-@mixin bg-red-pink {
-  background: linear-gradient(to left, #e96443 , #904e95);
+@mixin bg-aquamarine {
+  background: linear-gradient(-112deg, rgb(17, 60, 162), rgb(79, 199, 169));
   @include bg-dark;
+}
+
+@mixin bg-red {
+  background: linear-gradient(-16deg, rgb(0, 0, 0), rgb(255, 107, 130));
+  @include bg-dark;
+}
+
+@mixin bg-red-pink {
+  //background: linear-gradient(-135deg, rgb(22, 198, 237), rgb(179, 59, 41));
+  background: linear-gradient(to left, #e96443 , #904e95);
+  position: relative;
+  &::before,
+  &::after {
+    display: none;
+    content: "";
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 3s ease;
+  }
+  // &::before {
+  //   background: linear-gradient(145deg, #e96443 , #904e95);   
+  // }
+  // &::after {
+  //   opacity: 0;
+  // }
+  @include bg-dark;
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+  transition: 3s ease;
+
+  // @media (min-width: $break-ml-phone) {
+  //   &::before {
+  //     opacity: 0;
+  //   }
+  //   &::after {
+  //     background: linear-gradient(54deg, #ED165D, #071828);
+  //     opacity: 1;
+  //   }
+  // }
+  // @media (min-width: $break-900) {
+  //   background: linear-gradient(-37deg, rgb(148, 160, 186), rgb(52, 127, 92));
+
+  //   &::before {      
+  //     background: linear-gradient(-16deg, rgb(0, 0, 0), rgb(255, 107, 130));
+  //   }
+  //   &::after {
+  //     opacity: 0;
+  //   }
+  // }
+  // @media (min-width: $break-lg-screen) {
+  //   &::before {
+  //     opacity: 1;
+  //   }
+  // }
+
 }
 
 @mixin bg-peach {

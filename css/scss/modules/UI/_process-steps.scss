@@ -18,6 +18,8 @@
   @media (min-width: $break-tiny-phone) {
     display: flex;
 	  flex-wrap: wrap;
+    margin-right: -1em;
+    margin-left: -1em;
     .step {
       width: 50%;
     }

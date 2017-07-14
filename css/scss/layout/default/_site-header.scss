@@ -41,7 +41,11 @@
   &:focus a {
     outline: -moz-focus-ring-color auto 5px;
     outline: -webkit-focus-ring-color auto 5px;
-  }   
+  }
+  // < 640
+  @media (max-width: $break-ml-phone) {
+    display: none;
+  }    
 }
 
 // Logo

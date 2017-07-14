@@ -13,9 +13,14 @@
 // }
 
 .banner-headline {
+  h1 {
+    font-size: 4em;
+  }
   .sub-header {
+    line-height: 2.85rem;
+    max-width: 35em;
     a {
-      background-color: rgba(black, .35);
+      background-color: rgba(black, .25);
       padding-right: .25em;
       padding-left: .25em;
     }

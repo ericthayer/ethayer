@@ -6,6 +6,18 @@
   @include bg-green;
 }
 
+.bg-aquamarine {
+  @include bg-aquamarine;
+}
+
+.bg-red {
+  @include bg-red;
+}
+
 .bg-red-pink {
   @include bg-red-pink;
+}
+
+.bg-purple {
+  @include bg-purple;
 }

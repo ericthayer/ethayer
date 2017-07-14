@@ -1,13 +1,8 @@
 // portfolio
 .portfolio {
-  // < 640
-  @media (max-width: $break-ml-phone) {
-    .site-title {
-      display: none;
-    }
-  } // > 640
+  // > 640
   @media (min-width: $break-ml-phone) {
-    .home-link {
+    .main-nav ul > li:first-child {
       display: none;
     }
   } 
