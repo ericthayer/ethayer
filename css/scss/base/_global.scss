@@ -75,8 +75,8 @@ footer {
 .container-flex-media {
   // > 540
   @media (min-width: $break-md-phone) {
-    padding-right: 0;
-    padding-left: 0;
+    //padding-right: 0;
+    //padding-left: 0;
   }
   // 1400
   @media (min-width: 87.5em) {
