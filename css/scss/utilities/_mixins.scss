@@ -830,7 +830,7 @@
     transition: opacity 3s ease;
   }
   &::before {
-    background: linear-gradient(145deg, #e96443 , #904e95);   
+    background: linear-gradient(to left, #e96443 , #904e95);   
   }
   &::after {
     opacity: 0;
