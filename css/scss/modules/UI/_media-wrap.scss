@@ -4,9 +4,7 @@
   height: 0; // padding-bottom: 70% !important; // 4:3
   padding-bottom: 56.25%; // 16:9
   width: 100%;
-  &>figure,
-  &>div,
-  &>iframe {
+  & > * {
     display: inline-block;
     position: absolute !important;
     margin: 0;

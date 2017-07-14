@@ -1,6 +1,7 @@
 // Site Title
 
 .site-header {
+  @include banner;
   display: flex;
   flex-direction: column;
   //margin-bottom: 3rem;
@@ -43,7 +44,7 @@
     outline: -webkit-focus-ring-color auto 5px;
   }
   // < 640
-  @media (max-width: $break-ml-phone) {
+  @media (max-width: $break-ml-phone - .01em) {
     display: none;
   }    
 }
