@@ -17,6 +17,7 @@
 }
 
 .banner-headline {
+  @include fade-in;
   .container {
     max-width: 100%;
   }

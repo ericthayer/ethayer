@@ -2,15 +2,6 @@
 
 // fade animation
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }  
-}
-
 @keyframes fade-out {
   0% {
     opacity: 1;
@@ -21,8 +12,11 @@
 }
 
 @mixin fade-in {
-  animation: fade-in .4s linear forwards;
-  transition: opacity .4s ease;  
+  @keyframes fade-in {
+    from { opacity: 0 }
+  }
+  animation: fade-in 1.5s;
+  transition: opacity .6s ease;  
 }
 
 @mixin fade-out {
