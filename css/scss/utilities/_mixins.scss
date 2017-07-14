@@ -870,8 +870,11 @@
 
 
 @mixin full-screen {
-  justify-content: space-between;
   .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
     padding-top: 0;
     padding-bottom: 0;
   }
