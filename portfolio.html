@@ -21,6 +21,22 @@
 		<![endif]-->
   <!-- skip to Main link -->
   <a class="skip-link" href="#main">skip to main content</a>
+    <div class="wip-disclaimer">
+    <p class="flex mb-0"><span class="flex-2 pt-pb-sm pr-pl-1">Open redesign in progress.<br />I'm sorry for any broken links or bugs.</span>
+      <button
+        class="cancel-button">
+        <svg class="icon ml-mr-0">
+          <use xlink:href="#icon-plus" />
+        </svg><span class="sr-only">Close this box</span></button>
+        <script>
+          var toggleClose = document.querySelector(".cancel-button");
+
+          toggleClose.addEventListener("click", function () {
+
+            document.querySelector(".wip-disclaimer").classList.add("hidden");
+          });
+        </script>
+  </div>
   <!-- Header -->
   <header data-scroll-header id="site-header" class="site-header" role="banner">
     <!-- Main Menu -->
