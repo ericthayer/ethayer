@@ -265,7 +265,7 @@
 
 .align-center {
   // > 540
-    @media (min-width: $break-md-phone) {
+    @media (min-width: $break-ml-phone) {
     text-align: center;  
   }
 }

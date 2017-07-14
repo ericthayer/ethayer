@@ -52,7 +52,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    transition: 3s ease;
+    transition: opacity 3s ease;
   }
   // &::before {
   //   background: linear-gradient(145deg, #e96443 , #904e95);   
@@ -65,7 +65,7 @@
     position: relative;
     z-index: 1;
   }
-  transition: 3s ease;
+  //transition: 3s ease;
 
   // @media (min-width: $break-ml-phone) {
   //   &::before {
