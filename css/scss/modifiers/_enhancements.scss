@@ -51,7 +51,7 @@ figure.lazyload {
 // Corner Ribbon
 
 .wip {
-  display: none;
+  //display: none;
   opacity: .8;
   @include corner-ribbon;
   background: rgba(darkred, 1);
