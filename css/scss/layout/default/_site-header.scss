@@ -9,7 +9,7 @@
   transition: height .4s ease;
   //height: 100vh;
   width: 100%;
-  z-index: 2;
+  z-index: 100;
   @media (min-width: $break-ml-phone - .01em) {
     //height: 30vh;
   }

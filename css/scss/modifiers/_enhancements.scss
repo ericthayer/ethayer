@@ -191,27 +191,45 @@ figure.lazyload {
 @media (min-width: $break-ml-phone) {
 
   .headroom {
-    .site-header {
-      margin-bottom: 0;
-    }
+    // .site-header {
+    //   margin-bottom: 0;
+    // }
     .main-content {
       padding-top: 5rem;
     }  
-    header {
+    .main-menu {
+      //background: transparent;
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;  
       z-index: 1000;
       will-change: transform;
-      transition: transform .3s ease;
+      transform: none;
+      transition: .3s ease;
     }
   }
-  .headroom--pinned header {     
-    transform: translateY(0%);
+  
+  .headroom--pinned {
+    .main-menu {
+      background: linear-gradient(270deg, #903f96, #77a2b7);
+      opacity: 1;
+    }
+    &.headroom--not-top {
+      .main-menu {
+       background: linear-gradient(270deg, #903f96, #77a2b7); 
+      }
+    }
+    &.headroom--top {
+      .main-menu {
+        background: rgba(black, 0);
+      }
+    }
   }
-  .headroom--unpinned header {
+  .headroom--unpinned .main-menu {
+    //background: linear-gradient(270deg, #903f96, #77a2b7);
     transform: translateY(-100%);
+    opacity: 0;
   }
   
 }

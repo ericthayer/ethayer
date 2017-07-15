@@ -22,9 +22,9 @@
     max-width: 100%;
   }
   h1 {
-    font-size: 12vmin;
-    @media (min-width: $break-lg-screen) {
-      max-width: 45rem;
+    font-size: calc(1vw + 4em);
+    @media (min-width: $break-800) {
+      max-width: 42rem;
     }
   }
   .sub-header {

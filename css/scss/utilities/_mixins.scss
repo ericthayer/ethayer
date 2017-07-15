@@ -878,7 +878,7 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-  @media (min-height: 43em) {
+  @media (min-height: 50em) and (min-width: 40em) {
     height: 100vh;
   }
 }
