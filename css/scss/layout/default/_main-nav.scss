@@ -52,7 +52,7 @@
       z-index: 1;
       //width: 100%;
       -moz-osx-font-smoothing: greyscale;  
-      -webkit-font-smoothing: antialiased;
+      -webkit-font-smoothing: none;
       @media (min-width: 15.313em) and (max-width: 17em) {
         flex-basis: 50%;
       }

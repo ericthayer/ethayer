@@ -1,6 +1,7 @@
 
 @mixin bg-dark {
   color: white;
+  text-shadow: .125rem .125rem .05rem rgba(black, .25);
   * {
     color: white;
     fill: white;
