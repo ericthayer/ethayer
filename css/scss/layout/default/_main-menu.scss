@@ -18,51 +18,52 @@
 }
 
 .main-nav {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0; 
+  @include flex;
+  @include ai-center;
+  margin-bottom: 0;
   ul {
     //background-color: #EBEBEB;
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    margin-bottom: 0; 
+    @include flex;
+    @include flex-grow-1;
+    margin-bottom: 0;
     text-align: center;
+    @media (max-width: 20em) {
+      @include flex-wrap;
+    }
     > li {
       //background-color: #EBEBEB;
       color: #fff;
-      display: flex;
-      align-items: center;
+      @include flex;
+      @include ai-center;
       align-self: stretch;
-      justify-content: center;
-      flex-grow: 1;
-      @include fonts-loaded-KO29;
-      font-weight: 500;
-      font-size: 1.35rem;
-      .fonts-loaded & {
-        font-size: 1.45rem;
-      } 
+      @include jc-center;
+      @include flex-grow-1;
       margin-right: 0;  
       margin-left: 0;
       padding: 0;
       overflow: hidden;
       position: relative;
-      transition: background .5s ease,
+      transition: background-color .5s ease,
                   color .5s ease;
       z-index: 1;
       //width: 100%;
       -moz-osx-font-smoothing: greyscale;  
       -webkit-font-smoothing: none;
-      @media (min-width: 15.313em) and (max-width: 17em) {
-        flex-basis: 50%;
+      @media (max-width: 20em) {
+        flex-basis: 40%;
       }
       a {
-        flex-grow: 1;
+        @include fonts-loaded-KO29;
+        font-size: 1.35rem;
+        .fonts-loaded & {
+          font-size: 1.45rem;
+        }
+        @include flex-grow-1;
         margin-right: 0;
         padding: 1.25rem 1rem;
         &::after {
-          background:rgba(#1e6c67, .95);
-          background: rgba(black, .2);
+          background-color:rgba(#1e6c67, .95);
+          background-color: rgba(black, .2);
           //background: linear-gradient(135deg, rgba(178,167,214,1) 0%,rgba(80,75,96,1) 100%);
           //background: #BBB;
           border-radius: 100%;

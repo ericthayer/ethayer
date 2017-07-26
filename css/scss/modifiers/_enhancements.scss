@@ -210,19 +210,20 @@ figure.lazyload {
     }
   }
   
-  .headroom--pinned {
+  .headroom--pinned, .headroom--not-top {
     .main-menu {
-      background: linear-gradient(270deg, #903f96, #77a2b7);
+      background: linear-gradient(to left, #e96443 , #904e95);
+      
       opacity: 1;
-    }
-    &.headroom--not-top {
-      .main-menu {
-       background: linear-gradient(270deg, #903f96, #77a2b7); 
+      @media (min-width: $break-ml-phone) {
+        background: linear-gradient(270deg, #903f96, #77a2b7);
+        background: linear-gradient(54deg, #ED165D, #071828);
       }
+
     }
     &.headroom--top {
       .main-menu {
-        background: rgba(black, 0);
+        background: transparent;
       }
     }
   }
@@ -238,7 +239,7 @@ figure.lazyload {
 @media (min-width: $break-900) {
   .headroom {
     .main-content {
-      padding-top: 7rem;
+      //padding-top: 7rem;
     }
   } 
 }
