@@ -32,7 +32,6 @@
     }
     > li {
       //background-color: #EBEBEB;
-      color: #fff;
       @include flex;
       @include ai-center;
       align-self: stretch;
@@ -53,6 +52,7 @@
         flex-basis: 40%;
       }
       a {
+        color: #FFF;
         @include fonts-loaded-KO29;
         font-size: 1.35rem;
         .fonts-loaded & {
@@ -61,6 +61,7 @@
         @include flex-grow-1;
         margin-right: 0;
         padding: 1.25rem 1rem;
+        text-shadow: .05rem .05rem .03rem rgba(black, .2);
         &::after {
           background-color:rgba(#1e6c67, .95);
           background-color: rgba(black, .2);
@@ -157,7 +158,7 @@
   // > 992
   @media (min-width: $break-md-screen) {
     ul > li a {
-      padding: .5rem 1rem;
+      padding: .5rem 1.5rem;
     }
   }
 }

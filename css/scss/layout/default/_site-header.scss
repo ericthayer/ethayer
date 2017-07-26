@@ -30,6 +30,7 @@
   display: flex;
   align-items: center;  
   flex-grow: 1;
+  filter: drop-shadow(.15rem .15rem 0 rgba(0,0,0,.2));
   //margin-top: auto; 
   //margin-bottom: auto;
   min-width: 0;
