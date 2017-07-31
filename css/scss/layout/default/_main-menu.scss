@@ -47,7 +47,7 @@
       z-index: 1;
       //width: 100%;
       -moz-osx-font-smoothing: greyscale;  
-      -webkit-font-smoothing: none;
+      -webkit-font-smoothing: auto;
       @media (max-width: 20em) {
         flex-basis: 40%;
       }
