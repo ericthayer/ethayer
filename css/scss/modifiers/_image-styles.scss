@@ -207,7 +207,7 @@
 // headshot
 .mug {
   display: none;
-  margin-bottom: 2em;
+  margin-bottom: 1rem;
   margin-right: auto;
   margin-left: auto;
   max-width: 15em; // > 400
@@ -216,7 +216,6 @@
     float: right;
     margin-top: -1em;
     margin-left: 3em;
-    margin-bottom: 1em;
   } // < 480
   @media (max-width: $break-sm-phone) {
     max-width: 10em;
