@@ -16,16 +16,17 @@
   //@include banner;
 }
 
-.banner-headline {
+.headline-banner {
   @include fade-in;
   text-shadow: .125rem .125rem .05rem rgba(black, .25);
   .container {
     max-width: 100%;
   }
   h1 {
-    font-size: calc(1vw + 4em);
+    font-size: calc(1vw + 5em);
     @media (min-width: $break-800) {
-      max-width: 42rem;
+      max-width: 52rem;
+      max-width: calc(1vw + 9em);
     }
   }
   .sub-header {

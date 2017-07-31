@@ -61,7 +61,7 @@
   }  
 /*
   // 667
-  @media (min-width: $break-ml-phone) {
+  @media (min-width: $break-640) {
     padding-top: 2%;
     padding-bottom: 2%; 
   }
@@ -134,7 +134,7 @@
     }
   }
   // 667
-  @media (min-width: $break-ml-phone) {
+  @media (min-width: $break-640) {
     //font-size: 2.125em; 
   }
   // 700
@@ -159,7 +159,7 @@
   padding-top: 0.5em;
   padding-bottom: 0.5em;     
   // 667
-  @media (min-width: $break-ml-phone) {
+  @media (min-width: $break-640) {
     font-size: 1.25em; 
     margin: 0 auto;   
     width: 80%;  
@@ -177,7 +177,7 @@
     margin: 0 0 1em;  
   }
   // 667
-  @media (min-width: $break-ml-phone) {
+  @media (min-width: $break-640) {
      .btn-hero {
      margin: 0;  
     }
@@ -258,7 +258,7 @@
       }
     }
     // 667
-    @media (min-width: $break-ml-phone) {
+    @media (min-width: $break-640) {
       background: {
         image: url("images/hero-banner/hero-bg-Workspace-1200.jpg");
       }

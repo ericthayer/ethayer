@@ -40,7 +40,7 @@
 	  color: white;
   }
   // 667
-  @media (min-width: $break-ml-phone) {
+  @media (min-width: $break-640) {
 	  //font-size: 1.7em;	
   }
 }
@@ -122,7 +122,7 @@
 	  //width: 20%;	
   }
   // 667
-  @media (min-width: $break-ml-phone) {
+  @media (min-width: $break-640) {
 	  padding: 0.438em 2.2em 0.438em 0.7em;
   }  
 }

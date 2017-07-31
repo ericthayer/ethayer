@@ -4,7 +4,7 @@
     display: block;
   }
   // > 667
-  @media (min-width: $break-ml-phone) {
+  @media (min-width: $break-640) {
     .form-wrap {
       display: flex;    
       align-items: stretch;

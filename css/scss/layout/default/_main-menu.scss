@@ -141,7 +141,7 @@
     }
   }
   // > 667
-  @media (min-width: $break-ml-phone) {
+  @media (min-width: $break-640) {
     align-items: stretch;
     justify-content: flex-end;  
     ul {

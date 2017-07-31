@@ -10,13 +10,13 @@
   //height: 100vh;
   width: 100%;
   z-index: 100;
-  @media (min-width: $break-ml-phone - .01em) {
+  @media (min-width: $break-640 - .01em) {
     //height: 30vh;
   }
   @media (min-height: 45em) {
     //height: 30vh;
   }
-  @media (min-width: $break-ml-phone) {
+  @media (min-width: $break-640) {
     //height: auto;
   }
 }
@@ -45,7 +45,7 @@
     outline: -webkit-focus-ring-color auto 5px;
   }
   // < 640
-  @media (max-width: $break-ml-phone - .01em) {
+  @media (max-width: $break-640 - .01em) {
     display: none;
   }    
 }
@@ -67,10 +67,10 @@
   display: none; 
   fill: white;  
   // > 240 ~ < 667
-  @media (min-width: $break-240) and (max-width: $break-ml-phone - .01em) {
+  @media (min-width: $break-240) and (max-width: $break-640 - .01em) {
     display: none;  
   } 
-  @media (min-width: $break-ml-phone) {
+  @media (min-width: $break-640) {
     display: block;
   } 
 }
@@ -90,10 +90,10 @@
 .main-logo {
   display: block;
   // > 240 ~ < 667
-  @media (min-width: $break-240) and (max-width: $break-ml-phone - .01em) {
+  @media (min-width: $break-240) and (max-width: $break-640 - .01em) {
     //display: block;  
   }
-  @media (min-width: $break-ml-phone) {
+  @media (min-width: $break-640) {
     display: none;
   }
 }
@@ -107,7 +107,7 @@
 // layout styles
 
 // > 667
-@media (min-width: $break-ml-phone) {
+@media (min-width: $break-640) {
   .main-menu {
     display: flex;
     flex-direction: row;

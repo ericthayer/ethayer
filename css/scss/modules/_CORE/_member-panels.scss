@@ -4,7 +4,7 @@
 	padding-right: 1em;
 	padding-left: 1em;	
 	// 667
-	@media (min-width: $break-ml-phone) {
+	@media (min-width: $break-640) {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: center;
@@ -32,7 +32,7 @@
 		width: 100%;			
 	}
 	// 667
-	@media (min-width: $break-ml-phone) {
+	@media (min-width: $break-640) {
 		.module-title {
 			font-size: 1.875em;	
 			margin-bottom: 2.5em;	

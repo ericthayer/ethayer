@@ -38,7 +38,7 @@
 		}
 	}
 	// 667
-	@media (min-width: $break-ml-phone) {
+	@media (min-width: $break-640) {
 		flex-flow: row nowrap;
 		justify-content: space-between;
 		padding: 0.5em 1em;

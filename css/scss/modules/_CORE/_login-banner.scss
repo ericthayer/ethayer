@@ -52,7 +52,7 @@
 	*/
 	}
 	// 667
-	@media (min-width: $break-ml-phone) {
+	@media (min-width: $break-640) {
 		flex-flow: row nowrap;
 		& > * {
 			flex: 1;
@@ -137,7 +137,7 @@
 		}
 	}
 	// 667
-	@media (min-width: $break-ml-phone) {
+	@media (min-width: $break-640) {
 		& input:nth-child(3) {
 			margin-right: 0.313em;
 			margin-left: 0;		

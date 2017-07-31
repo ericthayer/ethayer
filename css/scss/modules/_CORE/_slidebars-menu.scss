@@ -70,7 +70,7 @@ body {
     width: 100%;  
   }
   // 480 - 667
-  @media (min-width: $break-sm-phone) and (max-width: $break-ml-phone) {
+  @media (min-width: $break-sm-phone) and (max-width: $break-640) {
     width: 50%; 
   }  
   // 768
@@ -197,7 +197,7 @@ body {
     } 
   }
   // 667
-  @media (min-width: $break-ml-phone) {
+  @media (min-width: $break-640) {
     ul {
       li {
         a {

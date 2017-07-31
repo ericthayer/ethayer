@@ -5,7 +5,7 @@
 	padding: 2em 1em;
 	width: 100%;  	
 	// 667
-	@media (min-width: $break-ml-phone) {
+	@media (min-width: $break-640) {
 	.post-wrap {
 		display: flex;
 		flex-flow: row wrap;
@@ -63,7 +63,7 @@
 		}
 	}
 	// 667
-	@media (min-width: $break-ml-phone) {
+	@media (min-width: $break-640) {
 		width: 45%;
 		figure {
 			width: 65%;

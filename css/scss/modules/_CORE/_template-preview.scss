@@ -34,7 +34,7 @@
     }
 	}
 	// 667
-	@media (min-width: $break-ml-phone) {			
+	@media (min-width: $break-640) {			
 		.content-post {
       padding: 0.25em 0.5em;
 		  width: 50%;
@@ -102,7 +102,7 @@
     }
   }
   // 667
-  @media (min-width: $break-ml-phone) {
+  @media (min-width: $break-640) {
     font-size: 3vmin;
     .btn-hero {
       font-size: 0.5em; 
@@ -136,7 +136,7 @@
     font-size: 1.35em;
   }
   // 667
-  @media (min-width: $break-ml-phone) {
+  @media (min-width: $break-640) {
     font-size: 1em; 
   }
 }
@@ -207,7 +207,7 @@
     }
   }
   // 667
-  @media (min-width: $break-ml-phone) {
+  @media (min-width: $break-640) {
     .template-title {
       font-size: 1em; 
     }

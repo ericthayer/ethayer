@@ -27,7 +27,7 @@
 
   }
   // 667
-  @media (min-width: $break-ml-phone) {
+  @media (min-width: $break-640) {
     .content-post {
       flex-flow: row wrap;
       [class*="btn-"] {

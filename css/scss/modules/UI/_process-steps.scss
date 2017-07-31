@@ -25,7 +25,7 @@
     }
   }
   // > 640
-	@media (min-width: $break-ml-phone) {
+	@media (min-width: $break-640) {
   	.step {
     	width: 33%;
     }

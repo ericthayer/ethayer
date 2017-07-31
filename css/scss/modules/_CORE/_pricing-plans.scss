@@ -8,7 +8,7 @@
   	padding-left: 2em;  
 	}
 	// 667
-	@media (min-width: $break-ml-phone) {
+	@media (min-width: $break-640) {
   	.module-title {
     	margin-bottom: 1em;  
   	}
@@ -20,7 +20,7 @@
 .pricing-tables {
   padding-top: 1em; 
 	// 768
-	@media (min-width: $break-ml-phone) {
+	@media (min-width: $break-640) {
 		display: flex;
 		flex-flow: wrap;
 	}
@@ -48,7 +48,7 @@
   	background-color: #EEE;
 	}
 	// 768
-	@media (min-width: $break-ml-phone) {
+	@media (min-width: $break-640) {
 		flex: 1 0 50%;
 		margin: 0; 
 	}
@@ -73,7 +73,7 @@
 	padding: 0.75em 1em 1.25em;
   text-transform: uppercase;
   // 700
-  @media (min-width: $break-ml-phone) {
+  @media (min-width: $break-640) {
     font-size: 0.875em;
   }	
 }

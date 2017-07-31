@@ -1,13 +1,13 @@
 // portfolio
 .portfolio {
   // > 640
-  @media (min-width: $break-ml-phone) {
+  @media (min-width: $break-640) {
     .main-nav ul > li:first-child {
       display: none;
     }
   } 
   // 640
-  @media (max-width: $break-ml-phone) {
+  @media (max-width: $break-640) {
     flex-direction: column-reverse;
   }
   // 768 (tall)

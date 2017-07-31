@@ -210,12 +210,12 @@
   margin-bottom: 2em;
   margin-right: auto;
   margin-left: auto;
-  max-width: 12em; // > 400
+  max-width: 15em; // > 400
   @media (min-width: 25em) {
     display: block;
     float: right;
-    margin-top: 1em;
-    margin-left: 2em;
+    margin-top: -1em;
+    margin-left: 3em;
     margin-bottom: 1em;
   } // < 480
   @media (max-width: $break-sm-phone) {

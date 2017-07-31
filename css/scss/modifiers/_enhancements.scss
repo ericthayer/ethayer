@@ -33,7 +33,7 @@ figure.lazyload {
   }
   
   // 667
-  @media (min-width: $break-ml-phone) {
+  @media (min-width: $break-640) {
   
     // .lazyload {
     //   will-change: transform scale;
@@ -136,7 +136,7 @@ figure.lazyload {
     }
   }
   // 640
-  @media (min-width: $break-ml-phone) {
+  @media (min-width: $break-640) {
     //display: none;
     .headroom & {
       position: absolute;
@@ -188,7 +188,7 @@ figure.lazyload {
 // Headroom.js
 
 // > 640
-@media (min-width: $break-ml-phone) {
+@media (min-width: $break-640) {
 
   .headroom {
     // .site-header {
@@ -215,7 +215,7 @@ figure.lazyload {
       background: linear-gradient(to left, #e96443 , #904e95);
       
       opacity: 1;
-      @media (min-width: $break-ml-phone) {
+      @media (min-width: $break-640) {
         background: linear-gradient(270deg, #903f96, #77a2b7);
         background: linear-gradient(54deg, #ED165D, #071828);
       }
@@ -262,7 +262,7 @@ figure.lazyload {
   transition: .3s ease;
   width: 100%;
   z-index: 1001;
-  @media (min-width: $break-ml-phone) {
+  @media (min-width: $break-640) {
     position: absolute;
   }
 }

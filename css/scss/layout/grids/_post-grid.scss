@@ -71,7 +71,7 @@
   	}
   }
   // > 667
-  @media (min-width: $break-ml-phone) {
+  @media (min-width: $break-640) {
     .container {
       .content-post:nth-last-child(n+4), 
       .content-post:nth-last-child(n+4) ~ * {
