@@ -31,7 +31,7 @@
 }
 
 a.top-anchor {
-  background-color: $link;
+  background-color: mix(black, $link, 25%);
   color: #fff;
   font-size: .7em;
   letter-spacing: .04em;
