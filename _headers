@@ -4,6 +4,6 @@
   Link: </images/content-img/1x1/img-1x1-avatar-2.jpg>; rel=preload; as=image
 
 /css/*
-  Cache-Control: public, max-age=360000
+  Cache-Control: g-zip, max-age=360000
 /js/*
-  Cache-Control: public, max-age=360000
+  Cache-Control: g-zip, max-age=360000
