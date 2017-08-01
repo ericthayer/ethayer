@@ -17,17 +17,3 @@
 .icon-wide {
   width: 1.3125em;
 }
-
-// Icon directions. Used mostly for arrows
-
-%dir-right {
-  transform: rotate(180deg);
-}
-
-%dir-up {
-  transform: rotate(90deg);
-}
-
-%dir-down {
-  transform: rotate(-90deg);
-}

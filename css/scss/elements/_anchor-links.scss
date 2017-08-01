@@ -1,0 +1,15 @@
+a.anchor-top-page {
+  background-color: mix(black, $link, 25%);
+  color: #FFF;
+  font-size: .875em;
+  letter-spacing: .04em;
+  //margin-left: .5rem;
+  padding: .1rem .25rem;
+  //text-transform: uppercase;
+  text-shadow: none;
+  &:hover,
+  &:focus {
+    background-color: hotpink;
+    color: #FFF;
+  }
+}

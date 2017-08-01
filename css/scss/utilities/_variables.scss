@@ -57,23 +57,3 @@ $wht-text-shadow: 0 1px 0 rgba(white, 0.35);
 $blk-text-shadow: 1px 1px 0 rgba(black, 0.15);
 
 $blk-text-shadow-neg: 0 -1px 1px rgba(black, 0.25);
-
-// Theme Colors  
-$dark: #3B3322; // hsl 41, 42%, 23%
-$medium: #595942; // hsl 60, 26%, 35%
-$primary: #5F6747; // hsl 75, 31%, 40%
-$secondary: #A1A278; // hsl 61, 26%, 64%
-$light: #FEFFDA; // hsl 62, 15%, 100%
-$accent: #61140E; // hsl 4, 86%, 38%
-  
-// Primary Color
-$primary-light: lighten($primary, 15%);
-$primary-medium: lighten($primary, 10%);
-$primary-heavy: darken($primary, 15%);
-$primary-dark: darken($primary, 25%);
-
-// Secondary Color
-$secondary-light: lighten($secondary, 15%);
-$secondary-medium: lighten($secondary, 10%);
-$secondary-heavy: darken($secondary, 10%);
-$secondary-dark: darken($secondary, 20%);

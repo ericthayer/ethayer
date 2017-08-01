@@ -44,32 +44,37 @@
 // Utilities
 @import "utilities/variables";
 @import "utilities/mixins";
-@import "utilities/theme";
 
-// Global
+// Theme
+@import "theme/theme-bg";
+
+// Base
 @import "base/normalize";
 @import "base/typography";
 @import "base/global";
 
 // Layout
-@import "layout/grids/flex-grid";
+@import "grids/flex-grid";
 
-// Section Layout
-@import "layout/default/site-header";
-@import "layout/default/main-menu";
-@import "layout/default/header-banners";
-@import "layout/default/main-content";
-@import "layout/default/site-footer";
+// Elements
+@import "elements/icons";
+@import "elements/media-wrap";
+@import "elements/copyrights";
+@import "elements/anchor-links";
+
+// Components
+@import "components/navigation";
+@import "components/main-menu";
+@import "components/header-banners";
+@import "components/forms";
+@import "components/cards";
+@import "components/contact-form";
+@import "components/process-steps";
 
 // Modules
-@import "modules/UI/icons";
-@import "modules/UI/cards";
-@import "modules/UI/navigation";
-@import "modules/UI/media-wrap";
-@import "modules/UI/forms";
-@import "modules/UI/contact-form";
-@import "modules/UI/features";
-@import "modules/UI/process-steps";
+@import "modules/site-header";
+@import "modules/main-content";
+@import "modules/site-footer";
 
 // Modifiers
 @import "modifiers/modifiers";
@@ -77,7 +82,6 @@
 @import "modifiers/padding";
 @import "modifiers/image-styles";
 @import "modifiers/enhancements";
-@import "modifiers/theme";
 
-// Pages
-@import "modules/UI/portfolio"; 
+// Templates
+@import "templates/portfolio"; 
