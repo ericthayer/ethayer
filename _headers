@@ -5,7 +5,7 @@
 
 /css/*
   Cache-Control: public, max-age=360000
-  Content-Encoding: gzip
+  Content-Encoding: g-zip
 /js/*
   Cache-Control: public, max-age=360000
-  Content-Encoding: gzip
+  Content-Encoding: g-zip
