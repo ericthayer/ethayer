@@ -17,7 +17,7 @@
 }
 
 .headline-banner {
-  @include fade-in;
+  //@include fade-in;
   text-shadow: .125rem .125rem .05rem rgba(black, .25);
   .container {
     max-width: 100%;
