@@ -571,6 +571,9 @@
           <!-- About Me -->
           <div class="info-block info-block-about flex-2 flex-lead pt-pb-1 md-pt-0">
             <figure class="mug circle-mask lazyload"><img class="lazyload" data-src="images/content-img/1x1/img-1x1-avatar-2.jpg" alt="Eric Thayer"></figure>
+            <noscript>
+              <figure class="mug circle-mask"><img src="images/content-img/1x1/img-1x1-avatar-2.jpg" alt="Eric Thayer"></figure>
+            </noscript>
             <h2 id="about-me">About Me</h2>
             <p class="mw-30em">I started out in San Diego as a <a href="">post-production artist</a> but since moving to Denver I have worked with <a href="https://www.linkedin.com/in/commonmovement/" title="view my LinkedIn profile">small and large companies</a> with a focus on web design and front-end development.</p>
           </div>
@@ -793,7 +796,7 @@
 
   <!-- Dependencies -->
   <script src="js/min/script.min.js" async></script>
-  <script async>
+  <script>
     var html = document.documentElement;
 
     if (sessionStorage.fontsLoaded) {
