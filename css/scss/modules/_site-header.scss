@@ -104,40 +104,4 @@
   fill: white;
 }
 
-// layout styles
-
-// > 667
-@media (min-width: $break-640) {
-  .main-menu {
-    display: flex;
-    flex-direction: row;
-    min-height: 0;
-    margin-bottom: 0;
-  }
-  .site-title {
-    flex-grow: 0;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    width: 33%;
-  }
-  .main-nav {
-    align-items: center;
-    flex-grow: 1;
-  }
-  
-}
- // > 768
- @media (min-width: $break-768) {
-  .main-nav {
-    justify-content: flex-end;
-  }
-}
-
-// > 900
-@media (min-width: $break-900) {
-  .site-title {
-    max-width: 15em;
-    width: 100%;
-  }
-}
 

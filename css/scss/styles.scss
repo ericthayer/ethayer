@@ -63,6 +63,7 @@
 @import "elements/anchor-links";
 
 // Components
+@import "modules/site-header";
 @import "components/navigation";
 @import "components/main-menu";
 @import "components/header-banners";
@@ -72,7 +73,7 @@
 @import "components/process-steps";
 
 // Modules
-@import "modules/site-header";
+
 @import "modules/main-content";
 @import "modules/site-footer";
 

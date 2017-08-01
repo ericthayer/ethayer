@@ -124,6 +124,7 @@
   // > 667
   @media (min-width: $break-640) {
     align-items: stretch;
+    flex-grow: 1;
     justify-content: flex-end;  
     ul {
       flex-grow: 0;
@@ -132,6 +133,7 @@
  
   // > 768
   @media (min-width: $break-768) {
+    justify-content: flex-end;
     ul > li {
       flex-grow: 0;
     }
@@ -141,5 +143,30 @@
     ul > li a {
       padding: .5rem 1.5rem;
     }
+  }
+}
+
+// > 667
+@media (min-width: $break-640) {
+  .main-menu {
+    display: flex;
+    flex-direction: row;
+    min-height: 0;
+    margin-bottom: 0;
+  }
+  .site-title {
+    flex-grow: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 33%;
+  }
+  
+}
+
+// > 900
+@media (min-width: $break-900) {
+  .site-title {
+    max-width: 15em;
+    width: 100%;
   }
 }
