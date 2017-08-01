@@ -1,0 +1,9 @@
+/*
+  Link: </styles.css>; rel=preload; as=style
+  Link: </script.min.js>; rel=preload; as=script
+  Link: </img-1x1-avatar-2.jpg>; rel=preload; as=image
+
+/css/*
+  Cache-Control: public, max-age=360000
+/js/*
+  Cache-Control: public, max-age=360000
