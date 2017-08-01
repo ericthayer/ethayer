@@ -7,7 +7,6 @@ var cacheName = 'v1';
 
 // Assets to cache
 var assetsToCache = [
-  //'/css/styles.css',
   '/js/min/script.min.js',
   '/images/content-img/1x1/img-1x1-avatar-2.jpg',
   '/css/fonts/Knockout-HTF29-JuniorLiteweight-subset.woff',
