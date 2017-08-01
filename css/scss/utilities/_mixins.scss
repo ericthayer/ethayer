@@ -167,7 +167,7 @@
 @mixin txt-center-fix {
 	text-align: center;
 	// 768 
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
 		text-align: left;
 	}
 }
@@ -232,7 +232,7 @@
 @mixin mobile-table-reset {
 	display: table;
 	margin: 0 auto;
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
 		display: block;
 		margin: 0;
 		max-width: 100%;
@@ -268,7 +268,7 @@
 	padding-top: 2em;
 	padding-bottom: 2em;
 	// 768
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
   	//padding-bottom: 2em;   
 	}  	
 }
@@ -284,7 +284,7 @@
 	text-shadow: $blk-text-shadow-neg;
 	text-transform: uppercase;
 	border-radius: 0;
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
 		display: inline-block;
 	}
 }
@@ -363,7 +363,7 @@
 // Blog Image Styles
 
 @mixin blog-img-full {
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
 		float: none;
 		margin: 0 auto 15px;
 		width: 100%;
@@ -373,7 +373,7 @@
 @mixin blog-img-sm {
 	margin: 15px auto;
 	//figcaption {display: none;}
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
 		margin: 5px 15px 10px 0;
 		width: 30%;
 	}
@@ -398,7 +398,7 @@
   	overflow: hidden;
 	}
 	// 1200
-	@media (min-width: $break-lg-screen) {
+	@media (min-width: $break-1200) {
   	//max-height: 400px;
   	//max-width: 400px; 
 	}
@@ -592,7 +592,7 @@
   padding-left: 1em;   	
 	width: 100%;
 	// > 540
-	@media (min-width: $break-md-phone) {
+	@media (min-width: $break-540) {
   	padding-right: 1.5em;
   	padding-left: 1.5em;   
 	}
@@ -782,13 +782,13 @@
     padding-right: 2.5em;
     padding-left: 2.5em;
   }
-  @media (min-width: $break-md-phone) and (max-width: $break-800) {
+  @media (min-width: $break-540) and (max-width: $break-800) {
     .container {
       padding-right: 8em;
       padding-left: 8em;
     }
   }
-  @media (min-width: $break-md-phone) {
+  @media (min-width: $break-540) {
     border-radius: 50% 50% 0 0;
     width: calc(100% + 10rem);
     margin-left: -5rem;
@@ -800,7 +800,7 @@
 @mixin bot-rounded-bg {
   @include rounded-bg;
   padding-top: 2em;
-  @media (min-width: $break-md-phone) {
+  @media (min-width: $break-540) {
     border-radius: 0 0 50% 50%;
     padding-top: 4em;
     padding-bottom: 5em;
@@ -861,7 +861,7 @@
       opacity: 0;
     }
   }
-  @media (min-width: $break-lg-screen) {
+  @media (min-width: $break-1200) {
     &::before {
       opacity: 1;
     }

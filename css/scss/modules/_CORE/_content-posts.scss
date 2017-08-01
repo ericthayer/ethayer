@@ -116,7 +116,7 @@
 }
 
 // 320
-@media (min-width: $break-tiny-phone) {
+@media (min-width: $break-240) {
   .content-post {
     .button-group [class*="btn-"],
       [class*="btn-"] { 
@@ -125,14 +125,14 @@
   }
 }
 // 480
-@media (min-width: $break-sm-phone) {
+@media (min-width: $break-480) {
   .post-list {
     text-align: center; 
   }
 }
    
 // 540
-@media (min-width: $break-md-phone) {
+@media (min-width: $break-540) {
   .content-post {
     padding: 1.5em 0;
     [class*="btn-"] {
@@ -154,7 +154,7 @@
 }
 
 // 768
-@media (min-width: $break-lg-phone) {
+@media (min-width: $break-768) {
   .post-wrap {
     flex-flow: row-reverse;
   }

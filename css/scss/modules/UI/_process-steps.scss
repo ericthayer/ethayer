@@ -15,7 +15,7 @@
   //color: mix(black, $link, 40%);
   text-align: center;
   // > 320
-  @media (min-width: $break-tiny-phone) {
+  @media (min-width: $break-240) {
     display: flex;
 	  flex-wrap: wrap;
     margin-right: -1em;

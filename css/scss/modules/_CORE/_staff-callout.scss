@@ -7,14 +7,14 @@
 .staff-callout-post {	
 	margin: 0 auto;
 	// 568
-	@media (min-width: $break-md-phone) {
+	@media (min-width: $break-540) {
 		align-items: flex-start;
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-between;
 	}
 	// 768
-	@media (min-width: $break-lg-phone) {				
+	@media (min-width: $break-768) {				
 		max-width: 800px;
 		padding-right: 2em;
 		padding-left: 2em;		
@@ -32,7 +32,7 @@
 		width: 40%;	
 	}
 	// 568
-	@media (min-width: $break-md-phone) {
+	@media (min-width: $break-540) {
 		flex: 1 0 40%;
 		flex-flow: row wrap;
 		padding-right: 1em;		
@@ -52,7 +52,7 @@
 		}
 	}
 	// 768
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
 		flex: 1 0 35%;
 		padding-right: 2em;	
 		figure {
@@ -76,7 +76,7 @@
 			transform: matrix(1, 0, 0, 1, 0, -05);
 		}
 		// 568
-		@media (min-width: $break-md-phone) {
+		@media (min-width: $break-540) {
 			margin-right: 0.25em;
 			margin-left: 0.25em;
 		}	

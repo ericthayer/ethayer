@@ -8,7 +8,7 @@
 	font-size: 1em;
 	text-align: center;
 	// 768
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
 		font-size: 1.25em;	
 	}		
 }
@@ -18,7 +18,7 @@
 	flex-flow: row wrap;
 	justify-content: space-between;
 	// 768
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
 		flex-flow: row nowrap;
 	}
 }
@@ -28,7 +28,7 @@
 	border-radius: 10px;
 	margin-bottom: 2em;
 	// 768
-	@media (min-width: $break-lg-phone) {			
+	@media (min-width: $break-768) {			
 		margin-right: 1em;
 		margin-bottom: 0;
 		margin-left: 1em;

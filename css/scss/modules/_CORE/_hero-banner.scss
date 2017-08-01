@@ -10,19 +10,19 @@
     //padding: 0; 
   }
   // 480
-  @media (min-width: $break-sm-phone) {
+  @media (min-width: $break-480) {
     .btn-hero {
       max-width: 300px; 
     }
   }
   // 540
-  @media (min-width: $break-md-phone) {
+  @media (min-width: $break-540) {
     &.media-banner + section {
       padding-top: 9.5em;  
     }
   }
   // 768
-  @media (min-width: $break-lg-phone) {
+  @media (min-width: $break-768) {
     &.media-banner + section {
       padding-top: 10em;  
     }
@@ -56,7 +56,7 @@
     margin-bottom: 0; 
   }
   // 480
-  @media (min-width: $break-sm-phone) {
+  @media (min-width: $break-480) {
     //font-size: 1.5em; 
   }  
 /*
@@ -66,11 +66,11 @@
     padding-bottom: 2%; 
   }
   // 768
-  @media (min-width: $break-lg-phone) {
+  @media (min-width: $break-768) {
       
   }
   // 2000
-  @media (min-width: $break-xxl-screen) {
+  @media (min-width: $break-2000) {
     padding-top: 3%;
     padding-bottom: 3%;
   } 
@@ -123,11 +123,11 @@
     //display: none;  
   }  
   // 480
-  @media (min-width: $break-sm-phone) {
+  @media (min-width: $break-480) {
      
   } 
   // 540
-  @media (min-width: $break-md-phone) {
+  @media (min-width: $break-540) {
     font-size: 1.875em;
      br {
       display: block; 
@@ -146,11 +146,11 @@
     //font-size: 4vmax; 
   }
   // 1200
-  @media (min-width: $break-lg-screen) {
+  @media (min-width: $break-1200) {
     //font-size: 3vmax;
   }
   // 2000
-  @media (min-width: $break-xxl-screen) {
+  @media (min-width: $break-2000) {
      //font-size: 3.25em; 
   }  
 }
@@ -165,7 +165,7 @@
     width: 80%;  
   }
   // 1200
-  @media (min-width: $break-lg-screen) {
+  @media (min-width: $break-1200) {
     font-size: 1.45em;  
   }   
 }
@@ -183,7 +183,7 @@
     }
   }
   // 768
-  @media (min-width: $break-lg-phone) {
+  @media (min-width: $break-768) {
     
   }
 }
@@ -210,11 +210,11 @@
 .hero-img {
 
   // 480
-  @media (min-width: $break-sm-phone) {
+  @media (min-width: $break-480) {
 
   }
   // 1600
-  @media (min-width: $break-xl-screen) {
+  @media (min-width: $break-1600) {
   
   } 
 }
@@ -240,7 +240,7 @@
       display: none; 
     }
     // 480
-    @media (min-width: $break-sm-phone) {
+    @media (min-width: $break-480) {
       .hero-headline {
         font-size: 1.65em;  
       }
@@ -250,7 +250,7 @@
       }
     }
     // 568
-    @media (min-width: $break-md-phone) {
+    @media (min-width: $break-540) {
       .hero-headline {
         font-size: 2.25em;
         margin-top: 0;
@@ -288,7 +288,7 @@
       }
     }
     // 768
-    @media (min-width: $break-lg-phone) {
+    @media (min-width: $break-768) {
       background: {
         image: url("images/hero-banner/hero-bg-Workspace-1200.jpg");
       }
@@ -307,7 +307,7 @@
       }
     }
     // 1200
-    @media (min-width: $break-lg-screen) {
+    @media (min-width: $break-1200) {
       background: {
         image: url("images/hero-banner/hero-bg-Workspace-1600.jpg");
       }
@@ -316,7 +316,7 @@
       }
     }
     // 1600
-    @media (min-width: $break-xl-screen) {
+    @media (min-width: $break-1600) {
       background: {
         image: url("images/hero-banner/hero-bg-Workspace-1920.jpg");
         //size: 100% 370px;
@@ -329,11 +329,11 @@
       }
     }
     // 2000
-    @media (min-width: $break-xl-screen) {
+    @media (min-width: $break-1600) {
       background-image: url("images/hero-banner/hero-bg-Workspace-2200.jpg");
     }
     // 2400
-    @media (min-width: $break-widescreen) {
+    @media (min-width: $break-2400) {
       background-image: url("images/hero-banner/hero-bg-Workspace-2600.jpg");
     }
     .hero-headline {

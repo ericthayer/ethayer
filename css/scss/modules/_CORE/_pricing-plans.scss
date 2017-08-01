@@ -3,7 +3,7 @@
 .pricing-plans {
 	padding: 2em 0;
 	// 320
-	@media (min-width: $break-tiny-phone) {
+	@media (min-width: $break-240) {
   	padding-right: 2em;
   	padding-left: 2em;  
 	}
@@ -29,7 +29,7 @@
   	padding-top: 3em;
 	}
 	// 1600
-	@media (min-width: $break-xl-screen) {
+	@media (min-width: $break-1600) {
   	margin: 0 auto;  
   	max-width: 1400px;  
 	}
@@ -113,7 +113,7 @@
     }	
 	}
 	// 992
-	@media (min-width: $break-lg-screen) {
+	@media (min-width: $break-1200) {
   	font-size: 1em; 
 	}	
 }
@@ -140,7 +140,7 @@
 	padding: 0.3em 0.4em 0.25em;
 	width: auto;
 	// 768
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
   	font-size: 0.7em; 
   	margin: 0.5em 0 0 1em;
   	padding-bottom: 0.2em;  
@@ -183,13 +183,13 @@
 		}		
 	}
 	// 568
-	@media (min-width: $break-md-phone) {
+	@media (min-width: $break-540) {
   	h3 {
     	font-size: 0.875em; 
   	}
 	}
 	// 768
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
 	}
 }
 
@@ -199,10 +199,10 @@
 	font-size: 0.875em;	
 	max-width: 150px;
 	// 480
-	@media (min-width: $break-sm-phone) {	
+	@media (min-width: $break-480) {	
 	}
 	// 768
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
   	font-size: 0.7em; 
 	}
 	// 992
@@ -238,7 +238,7 @@
 .featured-ribbon {
 	@include corner-ribbon;
 	// 768
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
   	font-size: 0.65em; 
 	}
 	// 992

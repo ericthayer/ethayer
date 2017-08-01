@@ -72,12 +72,12 @@
     background-color: darken($btn-primary, 30%);
   }
   // > 320
-  @media (min-width: $break-tiny-phone) {
+  @media (min-width: $break-240) {
     padding-right: 4em;
     padding-left: 2em;     
   }
   // > 480
-  @media (min-width: $break-sm-phone) {
+  @media (min-width: $break-480) {
     padding-right: 5em;   
   }   
 }
@@ -159,7 +159,7 @@ button,
 		}
 	}
   // 768
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
   	.no-js &, {		
   		flex-flow: row wrap;
     	.btn,

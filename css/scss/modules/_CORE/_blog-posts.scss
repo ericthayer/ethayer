@@ -16,7 +16,7 @@
 		}	
 	}
 	// 568
-	@media (min-width: $break-md-phone) {
+	@media (min-width: $break-540) {
 		.post-text {
 			padding: 0;	
 		}
@@ -54,7 +54,7 @@
 		}		
 	}
 	// 1200
-	@media (min-width: $break-lg-screen) {
+	@media (min-width: $break-1200) {
 		&.post-grid {
 			.content-post {
 				width: 22%;	

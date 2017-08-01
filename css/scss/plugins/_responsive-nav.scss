@@ -75,7 +75,7 @@
 }
 
 // 768
-  @media (min-width: $break-lg-phone) {
+  @media (min-width: $break-768) {
   .js-nav .nav-collapse {
     position: relative !important;
     overflow: visible;
@@ -178,13 +178,13 @@
 	  }	
 	}
 	// 480
-	@media (min-width: $break-sm-phone) {
+	@media (min-width: $break-480) {
   	.submenu {
     	margin-left: 3.25em;
   	}
 	}
 	// 768
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
 		flex: 1;
 		ul {
 			float: right;	
@@ -291,7 +291,7 @@
 		  padding-left: 1.5em;		
 	  }
 	  // 1200
-	  @media (min-width: $break-lg-screen) {
+	  @media (min-width: $break-1200) {
 		  ul {	
 			  li {
 				  a {	
@@ -327,7 +327,7 @@
   height: 50px;
   flex: 1 0 100%; 		
   // 320
-  @media (min-width: $break-tiny-phone) {
+  @media (min-width: $break-240) {
 	  flex: none;
 	  width: 50px;	
   }	
@@ -356,7 +356,7 @@
   transition: color 400ms ease, background 300ms ease;
   -webkit-font-smoothing: subpixel-antialiased;
   // 320
-  @media (min-width: $break-tiny-phone) {
+  @media (min-width: $break-240) {
     background: transparent;
     box-shadow: none;
     color: #BBB;

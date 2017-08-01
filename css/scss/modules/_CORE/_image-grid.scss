@@ -12,7 +12,7 @@
 		width: 100%;	
 	}
 	// 480
-	@media (min-width: $break-sm-phone) {
+	@media (min-width: $break-480) {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: center;
@@ -32,7 +32,7 @@
 		}
 	}
 	// 768
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
 		.grid-item {
 			flex: 1 0 24%;	
 		}	

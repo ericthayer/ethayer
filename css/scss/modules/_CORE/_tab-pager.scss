@@ -57,7 +57,7 @@
 		text-shadow: $blk-text-shadow-neg;
 	}
 	// 568
-	@media (min-width: $break-md-phone) {
+	@media (min-width: $break-540) {
 		display: inline-block;
 		padding: 1em 0;
 		width: 33.333333333%;
@@ -111,7 +111,7 @@
 		transform: scale(1);
 	}
 	// 768
-	@media (min-width: $break-lg-phone) {			
+	@media (min-width: $break-768) {			
 		&.show {
 			left: 50%;
 			margin-left: -320px;	
@@ -126,7 +126,7 @@
 		}			
 	}
 	// 1200
-	@media (min-width: $break-lg-screen) {
+	@media (min-width: $break-1200) {
 		&.show {
 			margin-left: -500px;	
 			width: 1000px;
@@ -139,7 +139,7 @@
 		display: block;	
 	}
 	// 768
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
 		a {
 			display: inline-block;
 			padding:0 0.5em 2em;	

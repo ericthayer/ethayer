@@ -28,7 +28,7 @@
     width: 100%; 
   }
   // 480
-	@media (min-width: $break-sm-phone) {
+	@media (min-width: $break-480) {
 		.content-post {
   		padding: 0.125em 0.25em;
     }
@@ -56,7 +56,7 @@
 	  }
   }
   // 1400
-  @media (min-width: $break-lg-screen + 200px) {
+  @media (min-width: $break-1200 + 200px) {
     .content-post-wrap {
        .content-post:nth-last-child(n+4), 
        .content-post:nth-last-child(n+4) ~ * {
@@ -95,7 +95,7 @@
     } 
   }
   // 540
-  @media (min-width: $break-md-phone) {
+  @media (min-width: $break-540) {
       font-size: 1.35em;
     .btn-hero {
       font-size: 0.5em; 
@@ -128,11 +128,11 @@
   margin-bottom: 10px;
   text-transform: uppercase;
   // 320
-  @media (min-width: $break-tiny-phone + 1px) {
+  @media (min-width: $break-240 + 1px) {
     display: block;
   }
   // 540
-  @media (min-width: $break-md-phone) {
+  @media (min-width: $break-540) {
     font-size: 1.35em;
   }
   // 667
@@ -175,7 +175,7 @@
     text-align: center;  
   }
   // 540
-  @media (min-width: $break-md-phone) {
+  @media (min-width: $break-540) {
     justify-content: space-around;
     padding: 0.35em 0 1em;  
     width: auto;
@@ -197,7 +197,7 @@
     }
   }
   // 768
-  @media (min-width: $break-lg-phone) {
+  @media (min-width: $break-768) {
    .btn-info,
    .btn-demo {
      span {
@@ -213,7 +213,7 @@
     }
   }
   // 1600
-  @media (min-width: $break-xl-screen) {
+  @media (min-width: $break-1600) {
     .template-title {
       font-size: 1.35em;  
     }
@@ -233,7 +233,7 @@
     margin: 0;  
   }  
   // 768
-  @media (min-width: $break-lg-phone) {
+  @media (min-width: $break-768) {
     justify-content: space-between;
     padding: 1em 0;   
   }

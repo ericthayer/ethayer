@@ -254,7 +254,7 @@
 
 .align-right {
   // > 540
-  @media (min-width: $break-md-phone) {
+  @media (min-width: $break-540) {
       
     text-align: right;
       
@@ -269,7 +269,7 @@
 
 .align-center {
   // > 640
-    @media (min-width: $break-lg-phone) {
+    @media (min-width: $break-768) {
     text-align: center;  
   }
 }

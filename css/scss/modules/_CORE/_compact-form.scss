@@ -37,7 +37,7 @@
   		}
   	}
   	// 568
-  	@media (min-width: $break-md-phone) {
+  	@media (min-width: $break-540) {
   		padding: 1em 1.75em;	
   		input {
   			flex: 1 0 48%;
@@ -71,7 +71,7 @@
   	}
   }
 	// 568
-	@media (min-width: $break-md-phone) {
+	@media (min-width: $break-540) {
 		.form-header {
 			font-size: 1.7em;	
 			padding: 0.5em 0.875em;	

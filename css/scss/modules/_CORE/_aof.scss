@@ -16,12 +16,12 @@
 		padding-left: 1em;		
 	}
 	// 1200
-	@media (min-width: $break-lg-screen) {
+	@media (min-width: $break-1200) {
 		padding-right: 3em;
 		padding-left: 3em;		
 	}
 	// 1600
-	@media (min-width: $break-xl-screen) {
+	@media (min-width: $break-1600) {
 		padding-right: 6em;
 		padding-left: 6em;	
 	}		
@@ -41,7 +41,7 @@
 		padding-left: 3.5em;
 	}	
 	// 480
-	@media (min-width: $break-sm-phone) {
+	@media (min-width: $break-480) {
 		padding-right: 0.5em;	
 		padding-left: 0.5em;
 	}			
@@ -107,18 +107,18 @@
 		}
 	}
 	// tweener
-	@media (min-width: $break-sm-phone) and (max-width: $break-md-phone) {
+	@media (min-width: $break-480) and (max-width: $break-540) {
 		&.red {	
 			width: 57%;	
 		}	
 	}
 	// 480
-	@media (min-width: $break-sm-phone) {
+	@media (min-width: $break-480) {
 		margin: 0.25em;	
 		width: 40%;
 	}
 	// 568
-	@media (min-width: $break-md-phone) {
+	@media (min-width: $break-540) {
 		width: 31%;	
 	}
 	// 992
@@ -152,7 +152,7 @@
 		}	
 	}
 	// 1200
-	@media (min-width: $break-lg-screen) {
+	@media (min-width: $break-1200) {
 		h3 {
 			font-size: 1.125em;	
 		}

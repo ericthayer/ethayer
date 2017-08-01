@@ -127,7 +127,7 @@
   
 }
  // > 768
- @media (min-width: $break-lg-phone) {
+ @media (min-width: $break-768) {
   .main-nav {
     justify-content: flex-end;
   }

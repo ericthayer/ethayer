@@ -373,7 +373,7 @@
 
 
 // > 480
-@media (min-width: $break-sm-phone) {
+@media (min-width: $break-480) {
   // Margins
 
   .sm-m-0 {
@@ -536,7 +536,7 @@
 }
 
 // > 768
-@media (min-width: $break-lg-phone) {
+@media (min-width: $break-768) {
   // Margins
 
   .md-m-0 {
@@ -861,7 +861,7 @@
 }
 
 // > 1200
-@media (min-width: $break-lg-screen) {
+@media (min-width: $break-1200) {
   // Margins
 
   .xl-m-0 {

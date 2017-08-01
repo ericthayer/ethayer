@@ -2,8 +2,6 @@
 
 .copyrights {
   p {
-    //font-weight: 600;    
-    font-family: $sans-serif;
     margin-bottom: 0;
     a {
       background: none;
@@ -21,7 +19,7 @@
     color: #999;
   }
   // 480 
-  @media (min-width: $break-tiny-phone) {
+  @media (min-width: $break-240) {
     display: flex;
     align-items: center;
     .source-link {
@@ -32,17 +30,17 @@
 
 a.top-anchor {
   background-color: mix(black, $link, 25%);
-  color: #fff;
+  color: #FFF;
   font-size: .7em;
   letter-spacing: .04em;
+  line-height: 1.2;
   margin-left: .5rem;
-  padding: 0 .25rem;
+  padding: 0 .25em;
   text-transform: uppercase;
   text-shadow: none;
   &:hover,
   &:focus {
     background-color: hotpink;
-    color: #fff;
-    //opacity: .7;
+    color: #FFF;
   }
 }

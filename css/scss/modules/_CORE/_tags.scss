@@ -8,7 +8,7 @@
     text-align: left; 
   }
   // 480
-  @media (min-width: $break-sm-phone) {
+  @media (min-width: $break-480) {
     a {
       display: inline-block;  
     }

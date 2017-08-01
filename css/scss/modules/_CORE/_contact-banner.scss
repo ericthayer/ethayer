@@ -18,7 +18,7 @@
 		color: white;
 	}
 	// 768
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
 		.wrap {
 			display: flex;
 			justify-content: center;
@@ -50,7 +50,7 @@
 		margin-bottom: 0;	
 	}
 	// 480
-	@media (min-width: $break-sm-phone) {
+	@media (min-width: $break-480) {
 		padding-right: 0.875em;
 		padding-left: 0.875em;
 	}

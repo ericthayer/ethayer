@@ -11,7 +11,7 @@
     flex-direction: column-reverse;
   }
   // 768 (tall)
-  @media (min-height: $break-lg-phone) {
+  @media (min-height: $break-768) {
     flex-direction: column-reverse;
   }
 }
@@ -32,13 +32,13 @@
       //flex-basis: auto;
     }
     // 900
-    @media (min-width: $break-md-phone) {
+    @media (min-width: $break-540) {
       > * {
         //width: 50%;
       }
     } 
     // 1200
-    @media (min-width: $break-lg-screen) {
+    @media (min-width: $break-1200) {
       //justify-content: flex-start;
       > * {
         //flex-grow: 0;

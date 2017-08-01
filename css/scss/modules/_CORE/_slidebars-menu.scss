@@ -46,15 +46,15 @@ body {
 		opacity: 1;		
 	}
 	// 569
-	@media (min-height: $break-lg-phone + 1px) {
+	@media (min-height: $break-768 + 1px) {
   	//max-height: 350px;  
 	}
 	// 768
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
   	max-height: 400px;  
 	}
 	// 1200
-	@media (min-width: $break-lg-screen) {
+	@media (min-width: $break-1200) {
   	max-height: 450px;  
 	}
 }
@@ -66,15 +66,15 @@ body {
   background-color: $blue-med;
   color: white;
   // 480
-  @media (max-width: $break-sm-phone) {
+  @media (max-width: $break-480) {
     width: 100%;  
   }
   // 480 - 667
-  @media (min-width: $break-sm-phone) and (max-width: $break-640) {
+  @media (min-width: $break-480) and (max-width: $break-640) {
     width: 50%; 
   }  
   // 768
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
   	.slidebar-close [class^="sb-toggle-"] {
       font-size: 1.5em;        
     }
@@ -128,7 +128,7 @@ body {
     }
   }
   // 480
-  @media (min-width: $break-sm-phone) {
+  @media (min-width: $break-480) {
     [class^="sb-toggle-"] {
       font-size: 1em;        
     }
@@ -176,7 +176,7 @@ body {
     } 
   }
   // 481px
-  @media (max-height: $break-sm-phone + 1px) {
+  @media (max-height: $break-480 + 1px) {
     ul {
       li {
         a {
@@ -187,7 +187,7 @@ body {
     }  
   }
   // 540
-  @media (min-width: $break-md-phone) {
+  @media (min-width: $break-540) {
    ul {
       li {
         a {
@@ -207,7 +207,7 @@ body {
     }
   }
   // 768
-  @media (min-width: $break-lg-phone) {
+  @media (min-width: $break-768) {
     ul {
       li {
         a {
@@ -217,7 +217,7 @@ body {
     }
   }
   // 1200
-  @media (min-width: $break-lg-screen) {
+  @media (min-width: $break-1200) {
     ul {
       li {
         a {

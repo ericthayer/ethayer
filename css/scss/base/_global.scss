@@ -66,7 +66,7 @@ footer {
 
 .container-flex {
   // > 540
-  @media (min-width: $break-md-phone) {
+  @media (min-width: $break-540) {
     padding-right: 0;
     padding-left: 0;
   }
@@ -74,7 +74,7 @@ footer {
 
 .container-flex-media {
   // > 540
-  @media (min-width: $break-md-phone) {
+  @media (min-width: $break-540) {
     //padding-right: 0;
     //padding-left: 0;
   }
@@ -87,7 +87,7 @@ footer {
 .container-fluid {
   max-width: 100%;
   // 1600
-  @media (min-width: $break-xl-screen) {
+  @media (min-width: $break-1600) {
     max-width: 80%;
   }
 }
@@ -99,25 +99,4 @@ section:focus {
 
 main {
   overflow-x: hidden; 
-  // section + *:not(:last-child) {
-  // 	padding-top: 2rem;
-  // 	padding-bottom: 2rem;
-  // }
-}
-
-// bg styles
-.bg-light-grey {
-  @include bg-light-grey;
-}
-
-.bg-green {
-  @include bg-green;
-}
-
-.bg-peach {
-  @include bg-peach;
-}
-
-.bg-purple {
-  @include bg-purple-grid;
 }

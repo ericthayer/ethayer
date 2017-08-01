@@ -24,7 +24,7 @@
 		width: 100%;		
 	}
 	// 480
-	@media (min-width: $break-sm-phone) {
+	@media (min-width: $break-480) {
 		& > * {
 			flex: auto;
 		}
@@ -86,7 +86,7 @@
 		}
 	}
 	// 768
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
 		& > * {
 			margin-right: 0.875em;
 		}
@@ -110,7 +110,7 @@
 	@extend .login-banner;
 	background-color: white;
 	// 480
-	@media (min-width: $break-sm-phone) {
+	@media (min-width: $break-480) {
 		& input:nth-child(2) {
 			margin-left: 0;	
 			margin-right: 0;	
@@ -152,7 +152,7 @@
 		}
 	}
 	// 768
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
 		& > * {
 			margin-right: 0.313em;
 		}

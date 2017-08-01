@@ -54,11 +54,11 @@
   text-transform: uppercase;
 	text-align: center;
 	// 568
-	@media (min-width: $break-md-phone) {
+	@media (min-width: $break-540) {
 		text-align: left;
 	}	
 	// 768
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
 		font-size: 1.8em;
 	}	
 }
@@ -118,7 +118,7 @@
 	  text-shadow: 0 -1px 0 rgba(white, 0.25);
   }
   // 480
-  @media (min-width: $break-sm-phone) {
+  @media (min-width: $break-480) {
 	  //width: 20%;	
   }
   // 667
@@ -151,7 +151,7 @@
 		display: none;	
 	}
 	// 768
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
 		left: 50%;
 		padding: 0;	
 		margin-left: -370px;
@@ -163,7 +163,7 @@
 		max-width: 900px;
 	}
 	// 1200
-	@media (min-width: $break-lg-screen) {
+	@media (min-width: $break-1200) {
 		margin-left: -512px;
 		max-width: 1024px;
 	}	
@@ -204,7 +204,7 @@
 			text-shadow: none;
 			width: 100%;
 			// 568
-			@media (min-width: $break-md-phone) {
+			@media (min-width: $break-540) {
 			  text-align: left;
 			}  	
 		}
@@ -252,7 +252,7 @@
 				margin: 0 auto 0.15em;	
 			}
 			// 480
-			@media (min-width: $break-sm-phone) {
+			@media (min-width: $break-480) {
   			display: flex;
   			flex-flow: row wrap;
   			justify-content: space-around;
@@ -261,7 +261,7 @@
   		  } 
 			}
 			// 768
-			@media (min-width: $break-lg-phone) {
+			@media (min-width: $break-768) {
 				i {
   				padding: 1.25em 0.75em;
   				width: 25%; 
@@ -276,7 +276,7 @@
   			}
 			}
 			// 1200
-			@media (min-width: $break-lg-screen) {
+			@media (min-width: $break-1200) {
 				i {
   				padding: 2em;
   				width: auto; 
@@ -308,7 +308,7 @@
 		z-index: 3;
 	}
 	// 768
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
 		.demo-icons {
 			.icon-wrap {			
 				//width: auto;

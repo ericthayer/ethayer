@@ -76,7 +76,7 @@
 		}
 	}
 	// 568
-	@media (min-width: $break-md-phone) {
+	@media (min-width: $break-540) {
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: center;
@@ -105,7 +105,7 @@
 
 .give-option {
 	// 568
-	@media (min-width: $break-md-phone) {
+	@media (min-width: $break-540) {
 		
 	}	
 }

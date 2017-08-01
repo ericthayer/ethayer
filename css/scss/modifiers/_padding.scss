@@ -255,7 +255,7 @@
 } 
 
 // > 480
-@media (min-width: $break-sm-phone) {
+@media (min-width: $break-480) {
   // Padding
 
   .sm-p-0 {
@@ -508,7 +508,7 @@
 } 
 
 // > 768
-@media (min-width: $break-lg-phone) {
+@media (min-width: $break-768) {
   // Padding
 
   .md-p-0 {
@@ -760,7 +760,7 @@
 } 
 
 // > 1200
-@media (min-width: $break-lg-screen) {
+@media (min-width: $break-1200) {
   // Padding
 
   .lg-p-0 {
@@ -1012,7 +1012,7 @@
 }
 
 // > 1200
-@media (min-width: $break-lg-screen) {
+@media (min-width: $break-1200) {
   // Padding
 
   .xl-p-0 {

@@ -13,14 +13,14 @@
 		}		
 	}
 	// 480
-	@media (min-width: $break-sm-phone) {
+	@media (min-width: $break-480) {
 		a[class*="icon"] {
 			font-size: 1.45em;
 			margin-right: 0.125em;			
 		}
 	}
 	// 768
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
 		a[class*="icon"] {
 			font-size: 1.5em;		
 		}	

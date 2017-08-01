@@ -36,7 +36,7 @@
     }
   }
   // > 768
-  @media (min-width: $break-lg-phone) {
+  @media (min-width: $break-768) {
     .form-group {
       &:nth-child(odd) {
         width: 40%; 

@@ -49,17 +49,17 @@
 	h2 {
 		color: white;
 		font-size: 0.9em;
-		@media (min-width: $break-sm-phone) {font-size: 1.1em;}
-		@media (min-width: $break-lg-phone) {font-size: 0.85em;}
+		@media (min-width: $break-480) {font-size: 1.1em;}
+		@media (min-width: $break-768) {font-size: 0.85em;}
 		@media (min-width: $break-900) {font-size: 0.68em;}
-		@media (min-width: $break-lg-screen) {font-size: 0.625em;}		
+		@media (min-width: $break-1200) {font-size: 0.625em;}		
 	}
 	p {
 		margin: 1.1em 0 0;
 		padding: 0;
 	}
 	.btn {margin-top: 10px;}
-	@media (min-width: $break-sm-phone) {text-align: left;}
+	@media (min-width: $break-480) {text-align: left;}
 }
 
 .feature-block:last-child {margin-bottom: 0;}
@@ -85,17 +85,17 @@
 		background-color: #377094;
 		margin-left: 15px;
 	}
-	@media (max-width: $break-tiny-phone) {
+	@media (max-width: $break-240) {
 		h2 {
 			font-size: 0.75em;
 		}
 	}
-	@media (min-width: $break-tiny-phone) {
+	@media (min-width: $break-240) {
 		h2 {
 			padding-left: 15px;
 		}	
 	}	
-	@media (min-width: $break-sm-phone) {		
+	@media (min-width: $break-480) {		
 		h2 {
 			margin-bottom: 5px;
 			padding: 8px 5px 8px 15px;
@@ -106,7 +106,7 @@
 			margin-bottom: 0;
 		}
 	}
-	@media (min-width: $break-lg-phone) {		
+	@media (min-width: $break-768) {		
 		figure {
 			height: 200px;
 			overflow: hidden;
@@ -120,7 +120,7 @@
 		height: 291px;
 		figure {height: 110px;}
 	}
-	@media (min-width: $break-lg-screen) {
+	@media (min-width: $break-1200) {
 		height: 343px;
 		figure {height: 150px;}
 	}	
@@ -140,7 +140,7 @@
 		display: block;
 		margin: 10px auto;
 		width: 30%;
-		@media (min-width: $break-sm-phone) {
+		@media (min-width: $break-480) {
 			float: left;
 			margin: 10px 5px 0 0;
 			width: auto;
@@ -148,12 +148,12 @@
 	}
 	.btn {
 		background-color: #648a8f;
-		@media (min-width: $break-sm-phone) {
+		@media (min-width: $break-480) {
 			clear: both;
 			float: left;
 		}
 	}
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
 		margin-bottom: 0;
 		max-height: 280px;
 		min-height: 280px;
@@ -170,7 +170,7 @@
 			.btn {margin-top: 8px;}
 		}	
 	}
-	@media (min-width: $break-lg-screen) {
+	@media (min-width: $break-1200) {
 		h2 {font-size: 0.7em;}
 	}
 }
@@ -198,14 +198,14 @@
 		margin-top: 10px;
 		text-shadow: none;
 	}
-	@media (min-width: $break-tiny-phone) {
+	@media (min-width: $break-240) {
 		padding: 20px 5px;
 		h2 {
 			line-height: 1.2em;
 			margin: 15px 0 0;
 		}
 	}
-	@media (min-width: $break-sm-phone) {
+	@media (min-width: $break-480) {
 		padding: 20px 3% 15px;
 			h2 {
 				font-size: 20px;
@@ -213,7 +213,7 @@
 				margin: 15px 0 0;
 			}
 	}
-	@media (min-width: $break-lg-phone) {						
+	@media (min-width: $break-768) {						
 		h2 {
 			font-size: 23px;
 			line-height: 40px;
@@ -238,7 +238,7 @@
 			margin: 10px auto 0;
 		}	
 	}
-	@media (min-width: $break-lg-screen) {
+	@media (min-width: $break-1200) {
 		padding: 20px 2%;
 		h2 {
 			font-size: 38px;
@@ -259,7 +259,7 @@
 	@extend %clearfix;
 	text-align: left;
 	header {background-color: #828383;}
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
 		max-height: 280px;
 		min-height: 280px;
 		padding-left: 15px;
@@ -287,7 +287,7 @@
 		background-color: #676868;
 		margin-left: 15px;
 	}
-	@media (min-width: $break-sm-phone) {
+	@media (min-width: $break-480) {
 		li {
 			line-height: 22px;		
 			a {
@@ -296,7 +296,7 @@
 			}
 		}
 	}
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
 			li {
 				line-height: 28px;
 				a {
@@ -313,7 +313,7 @@
 		}		
 		.btn {margin-left: 25px;}
 	}
-	@media (min-width: $break-lg-screen) {
+	@media (min-width: $break-1200) {
 		ul {padding-top: 20px;}
 		li {
 			line-height: 35px;
@@ -328,7 +328,7 @@
 /* --- Feature Block Responsive Helpers --- */
 
 .promo-box, .featured-resource-list {
-	@media (min-width: $break-sm-phone) {
+	@media (min-width: $break-480) {
 		margin-bottom: 0;
 		max-height: 172px;
 		min-height: 172px;
@@ -343,14 +343,14 @@
 	}
 }
 
-.promo-box { @media (min-width: $break-lg-phone) {
+.promo-box { @media (min-width: $break-768) {
 		max-height: 80px;
 		min-height: 80px;
 	}
 }
 
 /*
-.featured-resource-list { @media (min-width: $break-lg-phone) {
+.featured-resource-list { @media (min-width: $break-768) {
 		max-height: 220px;
 		min-height: 220px;
 	}	
@@ -384,7 +384,7 @@
 	}
 	a {display: block;}
 	img {max-width: 60%;}
-	@media (min-width: $break-sm-phone) {
+	@media (min-width: $break-480) {
 		text-align: left;
 		h2 {
 			font-size: 1.2em;
@@ -396,7 +396,7 @@
 		}
 		img {max-width: 100%;}
 	}
-	@media (min-width: $break-lg-phone) {
+	@media (min-width: $break-768) {
 		h2 {font-size: 1em;}
 		.feature-img {max-width:100%; padding-top: 0;}
 	}

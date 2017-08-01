@@ -217,7 +217,7 @@
     margin-top: -1em;
     margin-left: 3em;
   } // < 480
-  @media (max-width: $break-sm-phone) {
+  @media (max-width: $break-480) {
     max-width: 10em;
   } // @supports (-webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%)) {
   //   border-radius: 0;

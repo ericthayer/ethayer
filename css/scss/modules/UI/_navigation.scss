@@ -83,7 +83,7 @@ nav {
     font-size: 1.35rem;
   }
 	// 480
-	@media (min-width: $break-sm-phone) {
+	@media (min-width: $break-480) {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;

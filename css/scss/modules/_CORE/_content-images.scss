@@ -152,7 +152,7 @@ figure {
 			}
 		}
 		// 768
-		@media (min-width: $break-lg-phone) {
+		@media (min-width: $break-768) {
 			figcaption {
 				padding: 3em 3em 4em;
 				.image-caption {
