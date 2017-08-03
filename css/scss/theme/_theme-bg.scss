@@ -79,3 +79,7 @@
 .bg-purple {
   @include bg-purple;
 }
+
+body {
+  @include bg-light-grey;
+}
