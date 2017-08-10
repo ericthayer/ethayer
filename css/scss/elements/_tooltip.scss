@@ -1,0 +1,43 @@
+.has-tooltip {
+  position: relative;
+  &:hover .tooltip,
+  &:focus .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+.tooltip {
+  background-color: hotpink;
+  color: #FFF;
+  display: block;
+  font-size: 1.25rem;
+  @include fonts-loaded-KO29;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  opacity: 0;
+  padding: .5rem 1rem .65rem;
+  position: absolute;
+  bottom: 100%;
+  left: -100%;
+  left: -50%;
+  right: -50%;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all .25s ease-out;
+  border-radius: .2rem;
+  z-index: 50;
+  &:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border: 8px solid transparent;
+    border-top-color: hotpink;
+    bottom: -16px;
+    left: calc(50% - 8px);
+    .offline-btn & {
+      left: calc(50% - 6px);
+    }
+  }
+}
