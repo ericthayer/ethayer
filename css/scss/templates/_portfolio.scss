@@ -3,7 +3,7 @@
   // > 640
   @media (min-width: $break-640) {
     .main-nav ul > li:first-child {
-      display: none;
+      //display: none;
     }
   } 
   // 640
@@ -13,12 +13,6 @@
   // 768 (tall)
   @media (min-height: $break-768) {
     flex-direction: column-reverse;
-  }
-}
-
-.home-link {
-  .icon {
-    font-size: 1.5rem;
   }
 }
 

@@ -112,6 +112,8 @@
   img,
   iframe {
     border: 1px solid #E5E5E5;
+    // position: relative;
+    // z-index: 1;
   }
   &:hover,
   &:focus {

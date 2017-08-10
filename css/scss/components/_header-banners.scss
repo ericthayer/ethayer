@@ -25,9 +25,11 @@
   h1 {
     font-size: calc(1vw + 3.875em);
     @media (min-width: $break-800) {
-      font-size: calc(1vw + 4.875em);
-      max-width: 52rem;
-      max-width: calc(1vw + 9em);
+      .full-screen & {
+        font-size: calc(1vw + 4.875em);
+        max-width: 52rem;
+        max-width: calc(1vw + 9em);
+      }
     }
   }
   .sub-header {

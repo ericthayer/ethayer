@@ -3,10 +3,11 @@
 <head>
   <script>
     // Set "enhanced" class for JS detection
-    document.documentElement.className += " enhanced";
+    document.documentElement.className += "enhanced";
   </script>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="theme-color" content="#FCFCFC">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Eric Thayer | Web Designer and Front-end Developer from Denver Colorado</title>
   <meta name="description" content="Web Designer and Front-end Developer from Denver Colorado">
@@ -16,36 +17,241 @@
   <!--[if IEMobile]><meta http-equiv="cleartype" content="on" /><![endif]-->
   <link rel="apple-touch-icon" href="images/icons/icon-180.png">
   <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="preload" href="css/styles.css" as="style">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body id="body" class="portfolio">
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+    <symbol id="icon-arrow-right" viewBox="0 0 32 32" aria-labelledby="icon-arrow-right-title icon-arrow-right-desc">
+    <title id="icon-arrow-right-title"></title>
+    <desc id="icon-arrow-right-desc"></desc>
+    <path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path>
+    </symbol>
+  
+    <!-- icon caret -->
+    <symbol id="icon-caret" viewBox="0 0 366 1024" aria-labelledby="caret-title caret-desc">
+      <title id="caret-title">Caret</title>
+      <desc id="caret-desc">a small triangle symbol</desc>
+      <path d="M365.568 256v512q0 14.336-10.24 25.6t-26.624 11.264-25.6-11.264l-256-256q-10.24-11.264-10.24-25.6t10.24-25.6l256-256q11.264-11.264 25.6-11.264t26.624 11.264 10.24 25.6z"></path>
+    </symbol>
+
+    <!-- icon map -->
+    <symbol id="icon-map" viewBox="0 0 32 32" aria-labelledby="map-title map-desc">
+      <title id="map-title">map</title>
+      <desc id="map-desc">a small triangle symbol</desc>
+      <path d="M0 6l10-4v24l-10 4z"></path>
+      <path d="M12 1l10 6v23l-10-5z"></path>
+      <path d="M24 7l8-6v24l-8 6z"></path>
+    </symbol>
+
+    <!-- icon plus -->
+    <symbol id="icon-plus" viewBox="0 0 950 1024" aria-labelledby="plus-title plus-desc">
+      <title id="plus-title">Plus</title>
+      <desc id="plus-desc">an addition symbol</desc>
+      <path d="M695.296 548.864v-73.728q0-14.336-11.264-25.6t-25.6-10.24h-146.432v-146.432q0-15.36-11.264-25.6t-25.6-11.264h-72.704q-15.36 0-25.6 11.264t-11.264 25.6v146.432h-146.432q-14.336 0-25.6 10.24t-10.24 25.6v73.728q0 14.336 10.24 25.6t25.6 11.264h146.432v145.408q0 15.36 11.264 25.6t25.6 11.264h72.704q15.36 0 25.6-11.264t11.264-25.6v-145.408h146.432q14.336 0 25.6-11.264t11.264-25.6zM877.568 512q0 119.808-58.368 220.16t-159.744 159.744-220.16 59.392-221.184-59.392-158.72-159.744-59.392-220.16 59.392-220.16 158.72-159.744 221.184-59.392 220.16 59.392 159.744 159.744 58.368 220.16z"></path>
+    </symbol>
+    
+    <!-- icon minus -->
+    <symbol id="icon-minus" viewBox="0 0 950 1024" aria-labelledby="minus-title minus-desc">
+      <title id="minus-title">Minus</title>
+      <desc id="minus-desc">a subtraction symbol</desc>
+      <path d="M476.16 54.272q188.416 0 322.56 134.144t134.144 323.584-134.144 322.56-322.56 135.168-323.584-135.168-134.144-322.56 134.144-323.584 323.584-134.144zM704.512 568.32v-114.688h-457.728v114.688h457.728z"></path>
+    </symbol>
+
+    <!-- icon Twitter -->
+    <symbol id="icon-twitter" viewBox="0 0 942 1024" aria-labelledby="twitter-title twitter-desc">
+      <title id="twitter-title">Twitter</title>
+      <desc id="twitter-desc">twitter social media icon</desc>
+      <path d="M942.080 219.136q-36.864 55.296-96.256 100.352v24.576q0 133.12-61.44 256t-190.464 207.872-296.96 84.992q-163.84 0-296.96-86.016 14.336 2.048 47.104 2.048 135.168 0 239.616-81.92-63.488-2.048-112.64-38.912t-67.584-96.256q10.24 4.096 34.816 4.096 26.624 0 51.2-6.144-67.584-14.336-110.592-67.584t-43.008-122.88v-2.048q36.864 20.48 86.016 24.576-86.016-59.392-86.016-161.792 0-49.152 26.624-96.256 157.696 192.512 399.36 200.704-6.144-18.432-6.144-43.008 0-79.872 56.32-136.192t138.24-56.32q83.968 0 139.264 59.392 61.44-12.288 122.88-45.056-20.48 67.584-83.968 106.496 57.344-8.192 110.592-30.72z"></path>
+    </symbol>
+
+    <!-- icon Dribble -->
+    <symbol id="icon-dribble" viewBox="1249 2808.676 93.828 93.828" aria-labelledby="dribble-title dribble-desc">
+      <title id="dribble-title">dribble</title>
+      <desc id="dribble-desc">dribble social media icon</desc>
+      <path d="M1007.88,4687.733a196.511,196.511,0,0,0-15-22.98,40.29,40.29,0,0,0-22.021,28.085C971.817,4692.519,988.732,4692.838,1007.88,4687.733Zm5.106,13.4c.638-.32.957-.32,1.6-.639-.957-2.234-2.234-4.467-3.191-6.7a154.282,154.282,0,0,1-41.169,5.744v1.275a39.945,39.945,0,0,0,10.213,26.808h0c-.319,0,10.851-19.466,32.553-26.487Zm-27.446,31.276h0c-.319-.319-.638-.319-.957-.639A4.589,4.589,0,0,0,985.54,4732.413Zm15-70.532Zm36.063,8.939a40.456,40.456,0,0,0-26.489-9.895,32.991,32.991,0,0,0-9.574,1.275,200.539,200.539,0,0,1,15,23.3c15.319-5.744,21.063-14.678,21.063-14.678Zm-26.489,76.911a46.914,46.914,0,1,1,46.914-46.915A46.99,46.99,0,0,1,1010.114,4747.73Zm6.7-40.21c-23.617,8.3-31.276,24.575-31.6,24.893a39,39,0,0,0,24.574,8.617,42.751,42.751,0,0,0,15.638-3.191c-.319-3.512-2.553-15.958-8.617-30.318C1017.135,4707.2,1017.135,4707.521,1016.816,4707.521Zm1.915-16.276a45.263,45.263,0,0,1,2.553,5.743l.957,1.916c13.723-1.6,27.446,1.275,28.084,1.275a39.5,39.5,0,0,0-9.255-25.212c0,.638-6.7,9.895-22.34,16.277Zm6.064,14.361a167.582,167.582,0,0,1,7.659,28.722,40.678,40.678,0,0,0,17.234-26.807c-.958-.639-12.128-4.151-24.893-1.916Z" transform="translate(285.8 -1845.226)"></path>
+    </symbol>
+    
+    <!-- icon codepen -->
+    <symbol id="icon-codepen" viewBox="0 0 32 32">
+      <title id="codepen-title">CodePen</title>
+      <desc id="codepen-desc">the brand icon</desc>
+      <path d="M3.872 20.864l10.752 7.2v-6.432l-5.952-3.968zM2.752 18.304l3.456-2.304-3.456-2.304v4.608zM17.376 28.064l10.752-7.2-4.8-3.2-5.952 3.968v6.432zM16 19.264l4.864-3.264-4.864-3.264-4.864 3.264zM8.672 14.336l5.952-3.968v-6.432l-10.752 7.2zM25.792 16l3.456 2.304v-4.608zM23.328 14.336l4.8-3.2-10.752-7.2v6.432zM32 11.136v9.728q0 0.736-0.608 1.152l-14.624 9.76q-0.384 0.224-0.768 0.224t-0.768-0.224l-14.624-9.76q-0.608-0.416-0.608-1.152v-9.728q0-0.736 0.608-1.152l14.624-9.76q0.384-0.224 0.768-0.224t0.768 0.224l14.624 9.76q0.608 0.416 0.608 1.152z"></path>
+    </symbol>
+    
+    <!-- icon chat -->
+    <symbol id="icon-chat" viewBox="0 0 795 1024" aria-labelledby="chat-title chat-desc">
+      <title id="chat-title">Chat</title>
+      <desc id="chat-desc">a chat bubble</desc>
+      <path d="M87.040 103.424h622.592c58.368 0 84.992 26.624 84.992 87.040v396.288c0 56.32-26.624 83.968-84.992 83.968h-280.576l-310.272 249.856 64.512-249.856h-96.256c-58.368 0-87.040-27.648-87.040-86.016v-394.24c0-60.416 28.672-88.064 87.040-87.040zM163.84 264.192v84.992h466.944v-84.992h-466.944zM630.784 508.928v-83.968h-466.944v83.968h466.944z"></path>
+    </symbol>
+    
+    <!-- icon book -->
+    <symbol id="icon-book" viewBox="0 0 650 1024" aria-labelledby="book-title book-desc">
+      <title id="book-title">Book</title>
+      <desc id="book-desc">a book icon</desc>
+      <path class="path1" d="M614.4 225.28h35.84v688.128h-514.048c-75.776 0-136.192-53.248-136.192-131.072v-594.944c0-41.984 34.816-76.8 76.8-76.8h476.16v589.824h-416.768c-53.248 0-90.112 28.672-90.112 79.872v2.048c0 51.2 36.864 84.992 90.112 84.992h478.208v-642.048zM552.96 800.768h-411.648c-12.288 0-22.528-7.168-22.528-19.456 0-10.24 10.24-16.384 22.528-16.384h411.648v35.84z"></path>
+    </symbol>
+    
+    <!-- icon info -->
+    <symbol id="icon-info" viewBox="0 0 471 1024" aria-labelledby="info-title info-desc">
+      <title id="info-title">Info</title>
+      <desc id="info-desc">an information symbol</desc>
+      <path d="M360.448 0q49.152 0 75.776 27.648t26.624 70.656q0 51.2-39.936 90.112t-97.28 38.912q-49.152 0-75.776-26.624t-24.576-73.728q0-47.104 35.84-87.040t99.328-39.936zM149.504 1024q-102.4 0-55.296-182.272l61.44-260.096q14.336-57.344 0-57.344-12.288 0-55.296 18.432t-73.728 38.912l-26.624-45.056q92.16-79.872 193.536-129.024t154.624-49.152q79.872 0 36.864 165.888l-71.68 272.384q-16.384 65.536 6.144 65.536 45.056 0 120.832-61.44l30.72 40.96q-86.016 88.064-179.2 135.168t-142.336 47.104z"></path>
+    </symbol>
+    
+    <!-- icon GitHub -->
+    <symbol id="icon-github" viewBox="0 0 32 32" aria-labelledby="github-title github-desc">
+      <title id="github-title">GitHub</title>
+      <desc id="github-desc">a GitHub icon</desc>
+      <path d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path>
+    </symbol>
+
+    <!-- icon mobile -->
+    <symbol id="icon-mobile" viewBox="0 0 32 32" aria-labelledby="mobile-title mobile-desc">
+      <title id="mobile-title">Mobile</title>
+      <desc id="mobile-desc">a mobile phone</desc>
+      <path d="M26 0h-20c-1.104 0-2 0.894-2 2v28c0 1.105 0.896 2 2 2h20c1.105 0 2-0.895 2-2v-28c0-1.105-0.895-2-2-2zM24 24h-16v-20h16v20z"></path>
+    </symbol>    
+    
+    <!-- icon tablet -->
+    <symbol id="icon-tablet" viewBox="0 0 32 32" aria-labelledby="tablet-title tablet-desc">
+      <title id="tablet-title">Tablet</title>
+      <desc id="tablet-desc">a tablet symbol</desc>
+      <path d="M24 0h-18c-1.1 0-2 0.9-2 2v28c0 1.1 0.9 2 2 2h18c1.1 0 2-0.9 2-2v-28c0-1.1-0.9-2-2-2zM15 30.556c-0.859 0-1.556-0.697-1.556-1.556s0.697-1.556 1.556-1.556 1.556 0.697 1.556 1.556-0.697 1.556-1.556 1.556zM24 26h-18v-22h18v22z"></path>
+    </symbol>
+    
+    <!-- icon laptop -->
+    <symbol id="icon-laptop" viewBox="0 0 1024 1024" aria-labelledby="laptop-title laptop-desc">
+      <title id="laptop-title">Laptop</title>
+      <desc id="laptop-desc">a laptop computer symbol</desc>
+      <path d="M0 822.272v-90.112h1024v90.112l-52.224 53.248h-919.552zM102.4 684.032v-536.576h819.2v536.576h-819.2zM203.776 585.728h616.448v-342.016h-616.448v342.016zM417.792 843.776h188.416v-81.92h-188.416v81.92z"></path>
+    </symbol>
+    
+    <!-- icon desktop -->
+    <symbol id="icon-desktop" viewBox="0 0 32 32" aria-labelledby="desktop-title desktop-desc">
+      <title id="desktop-title">Desktop</title>
+      <desc id="desktop-desc">a desktop computer display</desc>
+      <path d="M0 2v20h32v-20h-32zM30 20h-28v-16h28v16zM21 24h-10l-1 4-2 2h16l-2-2z"></path>
+    </symbol>
+
+    <!-- icon external link -->
+    <symbol id="icon-link-ext" viewBox="0 0 32 32" aria-labelledby="link-ext-title link-ext-desc">
+      <title id="link-ext-title">external link</title>
+      <desc id="link-ext-desc">an external link arrow</desc>
+      <path d="M20 24h-16v-15.94l4-0.060v-4h-8v24h24v-10h-4v6zM12 4l4 4-6 6 4 4 6-6 4 4v-12h-12z"></path>
+    </symbol>
+
+    <!-- icon file code -->
+    <symbol id="icon-file-code" viewBox="0 0 32 32" aria-labelledby="file-code-title file-code-desc">
+      <title id="file-code-title">external link</title>
+      <desc id="file-code-desc">an external link arrow</desc>
+      <path d="M9 12l-5 5 5 5 2-2-3-3 3-3-2-2zM13 14l3 3-3 3 2 2 5-5-5-5-2 2zM18 2h-18v28h24v-22l-6-6zM22 28h-20v-24h14l6 6v18z"></path>
+    </symbol>
+
+    <!-- icon envelope -->
+    <symbol id="icon-envelope" viewBox="0 0 1024 1024" aria-labelledby="envelope-title envelope-desc">
+      <title id="envelope-title">Envelope</title>
+      <desc id="envelope-desc">an envelope symbol</desc>
+      <path d="M1024 405.504v453.632q0 37.888-26.624 64.512t-64.512 27.648h-841.728q-36.864 0-64.512-27.648t-26.624-64.512v-453.632q25.6 28.672 57.344 50.176 206.848 140.288 284.672 196.608 32.768 24.576 52.224 37.888t54.272 27.648 62.464 13.312h2.048q28.672 0 62.464-13.312t54.272-27.648 52.224-37.888q97.28-69.632 284.672-196.608 32.768-22.528 57.344-50.176zM1024 237.568q0 45.056-27.648 86.016t-69.632 70.656q-215.040 149.504-268.288 185.344-5.12 4.096-23.552 17.408t-30.72 22.528-29.696 18.432-33.792 15.36-27.648 5.12h-2.048q-12.288 0-27.648-5.12t-33.792-15.36-29.696-18.432-30.72-22.528-23.552-17.408q-52.224-35.84-150.528-103.424t-116.736-81.92q-35.84-23.552-66.56-65.536t-31.744-78.848q0-44.032 23.552-73.728t67.584-29.696h841.728q36.864 0 63.488 26.624t27.648 64.512z"></path>
+    </symbol>
+    
+    <!-- icon search -->
+    <symbol id="icon-search" viewBox="0 0 808 1024" aria-labelledby="search-title search-desc">
+      <title id="search-title">Search</title>
+      <desc id="search-desc">a magnifying glass symbol</desc>
+      <path d="M790.528 790.528q30.72 34.816 6.144 63.488l-47.104 47.104q-36.864 32.768-69.632 0l-194.56-194.56q-75.776 43.008-159.744 43.008-131.072 0-228.352-97.28t-97.28-228.352 92.16-224.256 223.232-93.184 229.376 97.28 98.304 228.352q0 90.112-47.104 165.888zM96.256 423.936q0 90.112 69.632 159.744t159.744 69.632 154.624-64.512 64.512-156.672q0-90.112-69.632-158.72t-159.744-68.608-154.624 64.512-64.512 154.624z"></path>
+    </symbol>
+
+    <!-- icon devices (line) -->
+    <symbol id="icon-devices" viewBox="0 0 32 32" aria-labelledby="devices-title devices-desc">
+      <title id="devices-title">mobile devices</title>
+      <desc id="devices-desc">a mobile phone and tablet</desc>
+      <path d="M1.5 32h14c0.276 0 0.5-0.224 0.5-0.5s-0.224-0.5-0.5-0.5h-14c-0.276 0-0.5-0.224-0.5-0.5v-29c0-0.276 0.224-0.5 0.5-0.5h21c0.276 0 0.5 0.224 0.5 0.5v5c0 0.276 0.224 0.5 0.5 0.5s0.5-0.224 0.5-0.5v-5c0-0.827-0.673-1.5-1.5-1.5h-21c-0.827 0-1.5 0.673-1.5 1.5v29c0 0.827 0.673 1.5 1.5 1.5zM18 10.5v20c0 0.827 0.673 1.5 1.5 1.5h11c0.827 0 1.5-0.673 1.5-1.5v-20c0-0.827-0.673-1.5-1.5-1.5h-11c-0.827 0-1.5 0.673-1.5 1.5zM31 10.5v20c0 0.276-0.224 0.5-0.5 0.5h-11c-0.276 0-0.5-0.224-0.5-0.5v-20c0-0.276 0.224-0.5 0.5-0.5h11c0.276 0 0.5 0.224 0.5 0.5zM11 28c0 0.552 0.448 1 1 1s1-0.448 1-1c0-0.552-0.448-1-1-1s-1 0.448-1 1zM24 28c0 0.552 0.448 1 1 1s1-0.448 1-1c0-0.552-0.448-1-1-1s-1 0.448-1 1z"></path>
+    </symbol>
+
+    <!-- icon browser (line) -->
+    <symbol id="icon-browser" viewBox="0 0 42 32" aria-labelledby="browser-title browser-desc">
+      <title id="browser-title">web browser</title>
+      <desc id="browser-desc">a web browser window</desc>
+      <path d="M41.5 10c-0.276 0-0.5 0.224-0.5 0.5v20c0 0.276-0.224 0.5-0.5 0.5h-39c-0.276 0-0.5-0.224-0.5-0.5v-20c0-0.276-0.224-0.5-0.5-0.5s-0.5 0.224-0.5 0.5v20c0 0.827 0.673 1.5 1.5 1.5h39c0.827 0 1.5-0.673 1.5-1.5v-20c0-0.276-0.224-0.5-0.5-0.5zM40.5 0h-39c-0.827 0-1.5 0.673-1.5 1.5v6c0 0.276 0.224 0.5 0.5 0.5h41c0.276 0 0.5-0.224 0.5-0.5v-6c0-0.827-0.673-1.5-1.5-1.5zM41 7h-40v-5.5c0-0.276 0.224-0.5 0.5-0.5h39c0.276 0 0.5 0.224 0.5 0.5v5.5zM17.5 28c0.276 0 0.5-0.224 0.5-0.5v-16c0-0.276-0.224-0.5-0.5-0.5h-13c-0.276 0-0.5 0.224-0.5 0.5v16c0 0.276 0.224 0.5 0.5 0.5h13zM5 12h12v15h-12v-15zM22.5 15h15c0.276 0 0.5-0.224 0.5-0.5s-0.224-0.5-0.5-0.5h-15c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5zM22.5 20h15c0.276 0 0.5-0.224 0.5-0.5s-0.224-0.5-0.5-0.5h-15c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5zM22.5 25h15c0.276 0 0.5-0.224 0.5-0.5s-0.224-0.5-0.5-0.5h-15c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5zM3 4c0 0.552 0.448 1 1 1s1-0.448 1-1c0-0.552-0.448-1-1-1s-1 0.448-1 1zM7 4c0 0.552 0.448 1 1 1s1-0.448 1-1c0-0.552-0.448-1-1-1s-1 0.448-1 1zM11 4c0 0.552 0.448 1 1 1s1-0.448 1-1c0-0.552-0.448-1-1-1s-1 0.448-1 1z"></path>
+    </symbol>
+
+    <!-- icon adjust (line) -->
+    <symbol id="icon-adjust" viewBox="0 0 33 32" aria-labelledby="adjust-title adjust-desc">
+      <title id="adjust-title">settings panel</title>
+      <desc id="adjust-desc">a slider settings panel</desc>
+      <path class="path1" d="M31 0h-29c-0.822 0-2 1.178-2 2v28c0 0.822 1.178 2 2 2h29c0.822 0 2-1.178 2-2v-28c0-0.822-1.178-2-2-2zM32 30c-0.006 0.284-0.716 0.994-1 1h-29c-0.284-0.006-0.994-0.716-1-1v-28c0.006-0.284 0.716-0.994 1-1h29c0.284 0.006 0.994 0.716 1 1v28zM16.5 5.5c-1.103 0-2 0.897-2 2s0.897 2 2 2 2-0.897 2-2-0.897-2-2-2zM16.5 8.5c-0.551 0-1-0.449-1-1s0.449-1 1-1 1 0.449 1 1-0.449 1-1 1zM24.5 21.5c-1.103 0-2 0.897-2 2s0.897 2 2 2 2-0.897 2-2-0.897-2-2-2zM24.5 24.5c-0.551 0-1-0.449-1-1s0.449-1 1-1 1 0.449 1 1-0.449 1-1 1zM8.5 16.5c-1.103 0-2 0.897-2 2s0.897 2 2 2 2-0.897 2-2-0.897-2-2-2zM8.5 19.5c-0.551 0-1-0.449-1-1s0.449-1 1-1 1 0.449 1 1-0.449 1-1 1zM8.5 15c0.276 0 0.5-0.224 0.5-0.5v-9c0-0.276-0.224-0.5-0.5-0.5s-0.5 0.224-0.5 0.5v9c0 0.276 0.224 0.5 0.5 0.5zM8.5 22c-0.276 0-0.5 0.224-0.5 0.5v3c0 0.276 0.224 0.5 0.5 0.5s0.5-0.224 0.5-0.5v-3c0-0.276-0.224-0.5-0.5-0.5zM16.5 11c-0.276 0-0.5 0.224-0.5 0.5v14c0 0.276 0.224 0.5 0.5 0.5s0.5-0.224 0.5-0.5v-14c0-0.276-0.224-0.5-0.5-0.5zM24.5 20c0.276 0 0.5-0.224 0.5-0.5v-14c0-0.276-0.224-0.5-0.5-0.5s-0.5 0.224-0.5 0.5v14c0 0.276 0.224 0.5 0.5 0.5z"></path>
+    </symbol>
+
+    <!-- icon pencil (line) -->
+    <symbol id="icon-pencil" viewBox="0 0 32 32" aria-labelledby="pencil-title pencil-desc">
+      <title id="pencil-title">pencil</title>
+      <desc id="pencil-desc">a pencil</desc>
+      <path d="M0 31.479c0 0.276 0.224 0.5 0.5 0.5h31.111c0.067 0 0.132-0.013 0.193-0.039s0.116-0.063 0.162-0.109c0.001-0.001 0.002-0.001 0.003-0.002 0.003-0.003 0.003-0.009 0.007-0.012 0.051-0.055 0.084-0.122 0.107-0.195 0.007-0.023 0.010-0.045 0.014-0.069 0.004-0.025 0.015-0.047 0.015-0.073 0-0.040-0.014-0.075-0.023-0.112-0.003-0.014 0.003-0.028-0.002-0.042l-3.16-9.715c-0.024-0.075-0.066-0.144-0.122-0.199l-17.117-17.118c-0.018-0.028-0.031-0.058-0.055-0.083l-3.739-3.739c-0.607-0.607-1.595-0.607-2.203 0l-5.235 5.235c-0.294 0.294-0.456 0.685-0.456 1.101s0.162 0.808 0.456 1.102l3.656 3.656c0.018 0.027 0.030 0.058 0.054 0.082l17.090 17.205c0.059 0.060 0.131 0.103 0.212 0.127l6.713 2h-27.681c-0.276-0.001-0.5 0.223-0.5 0.499zM6.362 10.161l15.687 15.486-0.577 2.002-16.245-16.353 1.135-1.135zM22.816 25l-15.748-15.545 2.437-2.437 15.607 15.648v2.334h-2.296zM25.735 21.875l-15.523-15.564 1.039-1.039 16.211 16.211-1.727 0.392zM22.988 26h2.624c0.276 0 0.5-0.224 0.5-0.5v-2.685l2.007-0.456 2.723 8.37-8.488-2.529 0.634-2.2zM1 6.808c0-0.149 0.058-0.288 0.163-0.394l5.235-5.235c0.217-0.217 0.57-0.218 0.789 0l3.372 3.372-6.023 6.023-3.372-3.372c-0.106-0.105-0.164-0.245-0.164-0.394z"></path>
+    </symbol>
+
+    <!-- icon lightbulb (line) -->
+    <symbol id="icon-lightbulb" viewBox="0 0 22 32" aria-labelledby="lightbulb-title lightbulb-desc">
+      <title id="lightbulb-title">lightbulb</title>
+      <desc id="lightbulb-desc">a lightbulb</desc>
+      <path d="M11 0c-5.29 0-11 4.206-11 11 0 3.353 1.334 6.174 3.896 8.312 0.027 0.034 0.058 0.063 0.092 0.088 1.901 2.062 1.997 2.454 2.010 3.361 0.006 0.359 0.003 0.465 0 0.523l-0.004 0.209c-0.015 0.452-0.038 1.209 0.899 1.495l8.094 1.781c0.036 0.008 0.072 0.012 0.107 0.012 0.23 0 0.437-0.159 0.488-0.393 0.060-0.27-0.111-0.537-0.381-0.596l-8.055-1.771c-0.155-0.047-0.168-0.051-0.154-0.498l0.003-0.191c0 0 0.010-0.078 0.002-0.586-0.019-1.269-0.295-1.882-2.309-4.059-0.039-0.048-0.086-0.088-0.138-0.118-2.356-2.003-3.55-4.549-3.55-7.569 0-6.177 5.19-10 10-10 4.916 0 10 3.741 10 10 0 3.978-1.928 6.171-3.518 7.551-0.055 0.026-0.104 0.063-0.147 0.109-2.037 2.204-2.313 2.817-2.332 4.086 0 0.030-0.001 0.065 0 0.103l-0.001 0.035c-0.003 0.076-0.014 0.118-0.013 0.134-0.034-0.005-0.117-0.018-0.117-0.018l-4.195-0.987c-0.272-0.062-0.538 0.104-0.601 0.372s0.103 0.538 0.372 0.602l4.144 0.972c0.055 0.020 0.553 0.182 0.973-0.113 0.183-0.129 0.396-0.382 0.434-0.866l0.003-0.047c0.001-0.032 0.002-0.065 0.002-0.099 0-0.009 0-0.018-0.001-0.026l0.001-0.046c0.013-0.902 0.107-1.294 2.005-3.356 0.009-0.007 0.019-0.014 0.027-0.022 2.667-2.241 3.964-4.984 3.964-8.384 0-6.885-5.593-11-11-11zM15 29.5c0.229 0 0.435-0.157 0.487-0.39 0.062-0.269-0.107-0.537-0.377-0.598l-8-1.814c-0.271-0.060-0.537 0.108-0.598 0.377-0.062 0.269 0.107 0.537 0.377 0.598l8 1.814c0.038 0.009 0.075 0.013 0.111 0.013zM7.609 29.554c-0.271-0.060-0.536 0.109-0.598 0.378-0.060 0.27 0.109 0.537 0.379 0.597l6.5 1.458c0.038 0.009 0.074 0.013 0.11 0.013 0.229 0 0.436-0.158 0.488-0.391 0.060-0.27-0.109-0.537-0.379-0.597l-6.5-1.458z"></path>
+    </symbol>
+
+    <!-- icon globe (line) -->
+    <symbol id="icon-globe" viewBox="0 0 32 32" aria-labelledby="globe-title globe-desc">
+      <title id="globe-title">globe</title>
+      <desc id="globe-desc">a globe</desc>
+      <path d="M0.034 16.668c0.354 8.511 7.369 15.332 15.966 15.332s15.612-6.821 15.966-15.332c0.019-0.053 0.034-0.108 0.034-0.168 0-0.036-0.013-0.067-0.020-0.1 0.003-0.134 0.020-0.265 0.020-0.4 0-8.822-7.178-16-16-16s-16 7.178-16 16c0 0.135 0.017 0.266 0.020 0.4-0.007 0.033-0.020 0.064-0.020 0.1 0 0.060 0.015 0.115 0.034 0.168zM24.921 22.742c-1.319-0.552-2.735-0.979-4.215-1.271 0.158-1.453 0.251-2.962 0.28-4.47h4.98c-0.091 2.054-0.456 3.993-1.045 5.741zM26.965 17h3.984c-0.186 2.806-1.138 5.403-2.663 7.579-0.759-0.533-1.577-1.019-2.457-1.44 0.645-1.869 1.042-3.943 1.136-6.139zM12.389 22.286c1.178-0.184 2.387-0.286 3.611-0.286s2.433 0.102 3.61 0.286c-0.694 5.335-2.21 8.714-3.61 8.714s-2.916-3.379-3.611-8.714zM13.908 30.664c-2.751-0.882-5.078-3.471-6.482-6.984 1.246-0.525 2.586-0.935 3.99-1.217 0.459 3.496 1.298 6.542 2.492 8.201zM12.274 10.709c1.217 0.188 2.465 0.291 3.726 0.291s2.509-0.103 3.726-0.291c0.172 1.62 0.274 3.388 0.274 5.291h-8c0-1.903 0.102-3.671 0.274-5.291zM19.985 17c-0.028 1.525-0.118 2.961-0.26 4.291-1.216-0.188-2.463-0.291-3.725-0.291s-2.509 0.103-3.726 0.291c-0.173-1.626-0.237-3.057-0.26-4.291h7.971zM20.585 22.463c1.404 0.282 2.743 0.692 3.99 1.217-1.404 3.513-3.731 6.102-6.482 6.984 1.193-1.659 2.032-4.705 2.492-8.201zM21 16c0-1.836-0.102-3.696-0.294-5.47 1.48-0.292 2.896-0.72 4.215-1.271 0.684 2.029 1.079 4.315 1.079 6.741h-5zM20.585 9.537c-0.46-3.496-1.298-6.543-2.493-8.201 2.751 0.882 5.078 3.471 6.482 6.984-1.246 0.525-2.585 0.936-3.989 1.217zM19.611 9.714c-1.178 0.184-2.387 0.286-3.611 0.286s-2.433-0.102-3.611-0.286c0.695-5.335 2.211-8.714 3.611-8.714s2.916 3.379 3.611 8.714zM11.415 9.537c-1.404-0.282-2.743-0.692-3.99-1.217 1.404-3.513 3.731-6.102 6.482-6.984-1.193 1.659-2.032 4.705-2.492 8.201zM11.294 10.53c-0.192 1.774-0.294 3.634-0.294 5.47h-5c0-2.426 0.395-4.712 1.079-6.742 1.319 0.552 2.735 0.979 4.215 1.272zM11.014 17c0.029 1.508 0.122 3.017 0.28 4.471-1.48 0.292-2.896 0.72-4.215 1.271-0.589-1.748-0.954-3.687-1.045-5.742h4.98zM6.17 23.139c-0.88 0.422-1.697 0.907-2.456 1.44-1.525-2.176-2.477-4.772-2.663-7.579h3.984c0.094 2.196 0.491 4.27 1.135 6.139zM4.313 25.38c0.685-0.479 1.417-0.922 2.207-1.305 1.004 2.485 2.449 4.548 4.186 5.943-2.526-0.958-4.729-2.568-6.393-4.638zM21.294 30.017c1.738-1.394 3.182-3.458 4.186-5.943 0.79 0.384 1.522 0.826 2.207 1.305-1.664 2.071-3.867 3.681-6.393 4.638zM27 16c0-2.567-0.428-4.987-1.17-7.139 0.88-0.422 1.698-0.907 2.457-1.44 1.704 2.434 2.713 5.389 2.713 8.579h-4zM27.688 6.62c-0.685 0.479-1.417 0.921-2.207 1.305-1.004-2.485-2.449-4.549-4.186-5.943 2.525 0.958 4.728 2.568 6.393 4.638zM10.706 1.983c-1.738 1.394-3.182 3.458-4.186 5.943-0.791-0.384-1.522-0.827-2.207-1.306 1.664-2.070 3.867-3.68 6.393-4.637zM3.714 7.421c0.758 0.533 1.576 1.018 2.456 1.44-0.742 2.152-1.17 4.572-1.17 7.139h-4c0-3.19 1.009-6.145 2.714-8.579z"></path>
+    </symbol>
+
+    <!-- icon face (line) -->
+    <symbol id="icon-face" viewBox="0 0 32 32" aria-labelledby="face-title face-desc">
+      <title id="face-title">face</title>
+      <desc id="face-desc">a face</desc>
+      <path d="M16-0.034c-8.841 0-16.035 7.192-16.035 16.034s7.194 16.034 16.035 16.034 16.035-7.192 16.035-16.034-7.194-16.034-16.035-16.034zM16 30.966c-8.252 0-14.965-6.714-14.965-14.966s6.713-14.966 14.965-14.966 14.965 6.714 14.965 14.966-6.713 14.966-14.965 14.966zM10.5 16.5c1.103 0 2-0.897 2-2s-0.897-2-2-2-2 0.897-2 2 0.897 2 2 2zM10.5 13.5c0.551 0 1 0.448 1 1s-0.449 1-1 1-1-0.448-1-1 0.449-1 1-1zM21.5 16.5c1.103 0 2-0.897 2-2s-0.897-2-2-2-2 0.897-2 2 0.897 2 2 2zM21.5 13.5c0.551 0 1 0.448 1 1s-0.449 1-1 1-1-0.448-1-1 0.449-1 1-1zM22.823 22.075c-1.696 1.837-4.097 2.891-6.588 2.891-2.53 0-4.956-1.081-6.656-2.967-0.198-0.218-0.537-0.237-0.755-0.038-0.219 0.197-0.237 0.535-0.039 0.755 1.903 2.109 4.618 3.318 7.45 3.318 2.788 0 5.476-1.179 7.373-3.234 0.2-0.217 0.187-0.555-0.030-0.755s-0.555-0.188-0.755 0.030z"></path>
+    </symbol>
+
+    <!-- icon tools (line) -->
+    <symbol id="icon-tools" viewBox="0 0 32 32" aria-labelledby="tools-title tools-desc">
+      <title id="tools-title">art tools</title>
+      <desc id="tools-desc">a pencil and ruler</desc>
+      <path d="M28.354 1.354c0.115-0.115 0.167-0.279 0.139-0.439s-0.132-0.297-0.28-0.366c-2.291-1.080-5.010-0.606-6.798 1.191-1.698 1.709-2.291 4.393-1.499 6.637l-11.539 11.539c-0.627-0.224-1.297-0.336-1.996-0.336-1.714 0-3.376 0.682-4.559 1.872-1.782 1.792-2.284 4.44-1.281 6.747 0.066 0.152 0.203 0.262 0.366 0.292 0.164 0.031 0.331-0.021 0.447-0.139l3.491-3.509c0.23-0.232 0.601-0.263 0.793-0.068l1.507 1.577c0.219 0.221 0.209 0.562-0.022 0.795l-3.478 3.5c-0.115 0.115-0.166 0.279-0.138 0.439s0.132 0.296 0.279 0.365c0.829 0.391 1.701 0.588 2.591 0.588 1.572 0 3.065-0.632 4.207-1.78 1.698-1.708 2.291-4.392 1.498-6.636l11.539-11.54c0.628 0.224 1.298 0.336 1.997 0.336 1.714 0 3.376-0.682 4.559-1.872 1.782-1.792 2.284-4.44 1.281-6.747-0.066-0.152-0.203-0.262-0.366-0.292-0.161-0.028-0.33 0.021-0.447 0.139l-3.491 3.509c-0.215 0.216-0.58 0.214-0.801-0.010l-1.499-1.499c-0.226-0.227-0.225-0.568-0.001-0.794l3.501-3.499zM24.146 6.354l1.499 1.499c0.599 0.602 1.625 0.605 2.218 0.009l2.93-2.944c0.469 1.741-0.016 3.609-1.324 4.926-0.997 1.003-2.399 1.577-3.85 1.577-0.683 0-1.33-0.128-1.923-0.38-0.188-0.081-0.405-0.037-0.549 0.106l-12 12c-0.144 0.144-0.186 0.36-0.107 0.547 0.803 1.91 0.314 4.375-1.163 5.861-1.321 1.328-3.244 1.801-4.985 1.258l2.941-2.96c0.621-0.625 0.631-1.594 0.029-2.198l-1.506-1.577c-0.581-0.585-1.614-0.549-2.218 0.062l-2.93 2.944c-0.469-1.741 0.016-3.609 1.324-4.926 0.997-1.003 2.399-1.577 3.85-1.577 0.683 0 1.33 0.128 1.923 0.38 0.187 0.082 0.405 0.037 0.549-0.106l12-12c0.144-0.144 0.186-0.36 0.107-0.547-0.803-1.91-0.314-4.376 1.163-5.862 1.32-1.328 3.242-1.798 4.982-1.258l-2.96 2.961c-0.616 0.617-0.616 1.585 0 2.205zM29.21 30.647c-0.221 0.222-0.604 0.222-0.827-0.002l-10.030-10c-0.195-0.193-0.512-0.194-0.707 0.002s-0.194 0.512 0.001 0.707l10.029 9.998c0.3 0.301 0.698 0.467 1.122 0.467 0 0 0 0 0 0 0.424 0 0.822-0.166 1.128-0.474l1.429-1.493c0.615-0.618 0.615-1.587-0.001-2.206l-10-10c-0.195-0.195-0.512-0.195-0.707 0s-0.195 0.512 0 0.707l9.999 9.999c0.229 0.23 0.229 0.564-0.007 0.802l-1.429 1.493zM5.854 3.146l-3-3c-0.195-0.195-0.512-0.195-0.707 0l-2 2c-0.195 0.195-0.195 0.512 0 0.707l3 3c0.097 0.098 0.225 0.147 0.353 0.147s0.256-0.049 0.354-0.146l0.646-0.647 7.646 7.646c0.098 0.098 0.226 0.147 0.354 0.147s0.256-0.049 0.354-0.146c0.195-0.195 0.195-0.512 0-0.707l-7.647-7.647 0.646-0.646c0.196-0.196 0.196-0.512 0.001-0.708zM3.5 4.793l-2.293-2.293 1.293-1.293 2.293 2.293-1.293 1.293z"></path>
+    </symbol>
+
+    <!-- icon PDF -->
+    <symbol id="icon-pdf" viewBox="0 0 32 32" aria-labelledby="pdf-title pdf-desc">
+      <title id="pdf-title">open PDF</title>
+      <desc id="pdf-desc">a PDF document icon</desc>
+      <path d="M18.688 15.313v-4h1.313v4h-1.313zM5.313 8v18.688h18.688v2.625h-18.688c-1.438 0-2.625-1.188-2.625-2.625v-18.688h2.625zM12 12.688v-1.375h1.313v1.375h-1.313zM27.313 11.313v-2h-4v8h2v-2.625h2v-2h-2v-1.375h2zM22 15.313v-4c0-1.125-0.875-2-2-2h-3.313v8h3.313c1.125 0 2-0.875 2-2zM15.313 12.688v-1.375c0-1.125-0.875-2-2-2h-3.313v8h2v-2.625h1.313c1.125 0 2-0.875 2-2zM26.688 2.688c1.438 0 2.625 1.188 2.625 2.625v16c0 1.438-1.188 2.688-2.625 2.688h-16c-1.438 0-2.688-1.25-2.688-2.688v-16c0-1.438 1.25-2.625 2.688-2.625h16z"></path>
+    </symbol>
+
+    <!-- icon linkedin -->
+    <symbol id="icon-linkedin" viewBox="0 0 32 32" aria-labelledby="linkedin-title linkedin-desc">
+      <title id="linkedin-title">open linkedin</title>
+      <desc id="linkedin-desc">a linkedin document icon</desc>
+      <path d="M16 0.64c-8.483 0-15.36 6.877-15.36 15.36s6.877 15.36 15.36 15.36 15.36-6.877 15.36-15.36-6.877-15.36-15.36-15.36zM12.24 22.366h-3.11v-10.010h3.11v10.010zM10.666 11.128c-0.982 0-1.618-0.696-1.618-1.557 0-0.878 0.654-1.554 1.658-1.554s1.618 0.675 1.637 1.554c0 0.861-0.634 1.557-1.677 1.557zM23.6 22.366h-3.11v-5.547c0-1.291-0.451-2.168-1.576-2.168-0.859 0-1.37 0.594-1.595 1.165-0.083 0.203-0.104 0.491-0.104 0.778v5.771h-3.112v-6.816c0-1.25-0.040-2.294-0.082-3.194h2.702l0.142 1.39h0.062c0.41-0.653 1.413-1.616 3.091-1.616 2.046 0 3.581 1.371 3.581 4.318v5.918z"></path>
+    </symbol>
+
+    <!-- icon home -->
+    <symbol id="icon-home" viewBox="0 0 32 32" aria-labelledby="home-title home-desc">
+      <title id="home-title">home page</title>
+      <desc id="home-desc">back to home page</desc>
+      <path d="M32 19l-6-6v-9h-4v5l-6-6-16 16v1h4v10h10v-6h4v6h10v-10h4z"></path>
+    </symbol>
+
+  </svg>
   <!--[if lt IE 10]>
       <p class="update-browser">This browser version is not recommended. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
   <!-- skip to Main link -->
   <a class="skip-link" href="#main">skip to main content</a>
-    <div class="wip-disclaimer hidden">
-    <p class="flex mb-0"><span class="flex-2 pt-pb-sm pr-pl-1">Open redesign in progress.<br />I'm sorry for any broken links or bugs.</span>
-      <button
-        class="cancel-button">
-        <svg class="icon ml-mr-0">
-          <use xlink:href="#icon-plus" />
-        </svg><span class="sr-only">Close this box</span></button>
-        <script>
-          var toggleClose = document.querySelector(".cancel-button");
-
-          toggleClose.addEventListener("click", function () {
-
-            document.querySelector(".wip-disclaimer").classList.add("hidden");
-          });
-        </script>
-  </div>
   <!-- Header -->
   <header data-scroll-header id="site-header" class="site-header" role="banner">
-    <!-- Main Menu -->
     <div class="main-menu">
-      <a class="site-title" href="/">
+      <a class="site-title" href="#main">
         <svg class="alt-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496.95 42.7">
           <title id="eric-thayer-alt">Eric Thayer's personal web site. </title>
           <desc id="designer-developer-alt">This is my creative space to share and document my journey as a designer and web developer.</desc>
@@ -53,25 +259,22 @@
             d="M0,41.2V1.49H42.93v12.7H19.58V18H34.21V24H19.58v3.4H42.93V41.2H0Zm79.07,0c-2.25,0-4.5-2.62-4.5-6.14V31.43c0-2.8-.56-4.23-3.43-4.23H67.87v14H48.34V1.49H78.47c10.17,0,16.3,4.71,16.3,11.09v0.54c0,3.82-3.43,7.75-8.95,8.89,6.53,0.66,8.33,4.71,8.33,9.3v3.28a8.44,8.44,0,0,0,2,6v0.6H79.07ZM75,16.34c0-2.09-1.07-2.86-4-2.86H67.87V19.8H71c2.93,0,4-1.31,4-3.28V16.34h0Zm26.12,24.87V1.49h19.58V41.2H101.08Zm51.77,1.49c-16.43,0-27.12-8.71-27.12-21.11V21.11C125.73,8.71,136.42,0,152.85,0c8.61,0,16.94,2.86,21.38,6.8l-7.32,9.84a20.44,20.44,0,0,0-11.2-3.52c-5.68,0-10,3.22-10,8.11v0.24c0,4.89,4.33,8.11,10,8.11a20.28,20.28,0,0,0,11.2-3.52l6.7,9.84C168.78,40.19,161.47,42.7,152.85,42.7ZM225.9,15.33V41.2H206.32V15.32H192.47V1.49h47.27V15.32H225.9Zm48.34,25.88V27.43h-9.9V41.2H244.76V1.49h19.58V16.4h9.9V1.49h19.64V41.2H274.24Zm56.79,0-2.19-6.92H317.42l-2.53,6.92H297.78L314.32,1.49h20.15L351.35,41.2H331ZM323.6,17.77l-2.76,7.45H326Zm55.35,10V41.2H359.37V27.73L341.76,1.49h21.71l7.2,11.57,6.88-11.57H397Zm21.84,13.48V1.49h42.94v12.7H420.38V18H435V24H420.38v3.4h23.35V41.2H400.79v0Zm79.07,0c-2.25,0-4.5-2.62-4.5-6.14V31.43c0-2.8-.56-4.23-3.43-4.23h-3.26v14H449.14V1.49h30.11c10.19,0,16.32,4.71,16.32,11.09v0.54c0,3.82-3.43,7.75-9,8.89,6.53,0.66,8.33,4.71,8.33,9.3v3.28a8.44,8.44,0,0,0,2,6v0.6H479.86v0.06Zm-4.11-24.87c0-2.09-1.07-2.86-4-2.86h-3.08v6.32h3.09c2.93,0,4-1.31,4-3.28V16.38Z"
           />
         </svg>
-        <span class="sr-only">Eric Thayer</span>
       </a>
       <nav class="main-nav scroll-nav" role="navigation">
         <ul>
-          <li><a class="home-link" data-scroll href="/"><span>Home</span></a></li>          
-          <li class="active"><a data-scroll href="#0"><span>Work</span></a></li>
-          <li><a data-scroll href="#main"><span>About</span></a></li>
+          <li class="active"><a data-scroll href="#portfolio-home"><span>Work</span></a><span class="sr-only">current page</span></li>
+          <li><a data-scroll href="#about-home"><span>About</span></a></li>
           <li><a data-scroll href="#process-home"><span>Process</span></a></li>
           <li><a href="mailto:eric@ethayer.co?subject=Hi%20Eric.%20Let's%20talk%20about...%20&amp;body=(answering%20these%20items%20will%20help%20me%20better%20understand%20your%20goals)%0A%0AContact%20information%20(company%2C%20name%2C%20role%2C%20phone%20number%2C%20etc)%3A%0A%0AWhat%20can%20I%20help%20you%20with?%20(project%20type%2C%20concept %2C%20outline%2C%20etc)%3A%0A%0ATimeline%20(start%20date%2C%20end%20date)%3A%0A%0AProject%20budget%20(greater%20than%20%2450%2C000%20range%20%7C%20%2430%2C000%E2%80%93%2420%2C000%20range%20%7C%20%2420%2C000%E2%80%93%2410%2C000%20range%20%7C%20less%20than%20%245%2C000)%3A%0A%0ASincerely%2C&#10;"><span>Contact</span></a></li>
         </ul>
       </nav>
     </div>
     <!-- Headline Banner -->
-    <section class="banner banner-headline pt-pb-2 lg-pt-pb-4">
+    <section class="banner headline-banner pt-pb-4">
       <!-- Section Title -->
-      <div class="container align-center pt-4 pb-2 md-pt-pb-4">
-        <h1 id="portfolio">Design Portfolio</h1>
-        <p class="sub-header mb-0 md-pr-pl-2">Below are some examples of my recent work. I work on all types of design projects so please let me know if I can
-          help or if you have any questions.</p>
+      <div class="container align-center pt-pb-4">
+        <h1 class="mr-ml-a">Design Portfolio</h1>
+        <p class="sub-header mb-0">Below are some examples of my recent work. I work on all types of design projects so please let me know if I can help or if you have any questions.</p>
       </div>
     </section>
   </header>
@@ -240,6 +443,12 @@
                   </a>
               </figure>
             </noscript>
+            <div class="media-details pt-2 pb-2 pr-pl-tiny">
+              <h3 class="mb-sm">Concordus Applications</h3>
+              <p class="mb-2">This is where the details would go. I could put anything I want here and should add to the experience of my
+                site.</p>
+              <a href="#0">See Details</a>
+            </div>
           </figure>
           <!-- The 104 Initiative RWD -->
           <figure class="media-item lazyload">
@@ -261,6 +470,12 @@
                   </a>
               </figure>
             </noscript>
+            <div class="media-details pt-2 pb-2 pr-pl-tiny">
+              <h3 class="mb-sm">Concordus Applications</h3>
+              <p class="mb-2">This is where the details would go. I could put anything I want here and should add to the experience of my
+                site.</p>
+              <a href="#0">See Details</a>
+            </div>
           </figure>
           <!-- HPG -->
           <figure class="media-item lazyload">
@@ -282,6 +497,12 @@
                   </a>
               </figure>
             </noscript>
+            <div class="media-details pt-2 pb-2 pr-pl-tiny">
+              <h3 class="mb-sm">Concordus Applications</h3>
+              <p class="mb-2">This is where the details would go. I could put anything I want here and should add to the experience of my
+                site.</p>
+              <a href="#0">See Details</a>
+            </div>
           </figure>
           <!-- XD Wireframe ex:1 -->
           <figure class="media-item lazyload">
@@ -303,6 +524,12 @@
                   </a>
               </figure>
             </noscript>
+            <div class="media-details pt-2 pb-2 pr-pl-tiny">
+              <h3 class="mb-sm">Concordus Applications</h3>
+              <p class="mb-2">This is where the details would go. I could put anything I want here and should add to the experience of my
+                site.</p>
+              <a href="#0">See Details</a>
+            </div>
           </figure>
           <!-- in2M Logo -->
           <figure class="media-item media-light lazyload">
@@ -324,27 +551,12 @@
                   </a>
               </figure>
             </noscript>
-          </figure>
-          <!-- in2M-mobile -->
-          <figure class="media-item lazyload">
-            <a href="#0">
-                <img class="lazyload" data-src="images/content-img/16x9/img-16x9-in2M-mobile-MD.jpg" data-srcset="images/content-img/16x9/img-16x9-in2M-mobile-XL.jpg 2500w, images/content-img/16x9/img-16x9-in2M-mobile-LG.jpg 1875w, images/content-img/16x9/img-16x9-in2M-mobile-MD.jpg 1250w, images/content-img/16x9/img-16x9-in2M-mobile-SM.jpg 625w" alt="in2Marketplace HTML mobile samples">
-                <time class="time-stamp" datetime="2016"><span class="sr-only">Successfully delivered</span>2016</time>
-                <figcaption class="media-caption" aria-hidden="true">
-                  <span class="project-title">in2Marketplace</span>
-                </figcaption>
-              </a>
-            <noscript>
-              <figure class="media-item">
-                <a href="#0">
-                    <img src="images/content-img/16x9/img-16x9-in2M-mobile-MD.jpg" srcset="images/content-img/16x9/img-16x9-in2M-mobile-XL.jpg 2500w, images/content-img/16x9/img-16x9-in2M-mobile-LG.jpg 1875w, images/content-img/16x9/img-16x9-in2M-mobile-MD.jpg 1250w, images/content-img/16x9/img-16x9-in2M-mobile-SM.jpg 625w" alt="in2Marketplace HTML mobile samples">
-                    <time class="time-stamp" datetime="2016"><span class="sr-only">Successfully delivered</span>2016</time>
-                    <figcaption class="media-caption" aria-hidden="true">
-                      <span class="project-title">in2Marketplace</span>
-                    </figcaption>
-                  </a>
-              </figure>
-            </noscript>
+            <div class="media-details pt-2 pb-2 pr-pl-tiny">
+              <h3 class="mb-sm">Concordus Applications</h3>
+              <p class="mb-2">This is where the details would go. I could put anything I want here and should add to the experience of my
+                site.</p>
+              <a href="#0">See Details</a>
+            </div>
           </figure>
         </div>
         <!-- View More Link -->
@@ -352,9 +564,13 @@
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="pt-1 pb-tiny">
-      <div class="container container-fluid">
+  </main>
+
+  <!-- Footer -->
+  <footer id="site-footer" class="pt-sm pb-2" role="contentinfo">
+    <div class="container container-fluid">
+      <!-- Contact -->
+      <section id="contact-home" class="pb-1">      
         <!-- Contact Nav -->
         <div class="contact-nav">
           <h2 id="get-in-touch">Contact Me</h2>
@@ -375,7 +591,7 @@
               <svg class="icon mr-0">
                 <use xlink:href="#icon-dribble" />
               </svg><span class="sr-only">Dribble</span></a>
-            <a class="icon-link" href="http://codepen.io/ericthayer/" title="visit my CodePen page">
+            <a class="icon-link" href="https://codepen.io/ericthayer/" title="visit my CodePen page">
               <svg class="icon mr-0">
                 <use xlink:href="#icon-codepen" />
               </svg><span class="sr-only">CodePen</span></a>
@@ -385,65 +601,16 @@
               </svg><span class="sr-only">GitHub</span></a>
           </nav>
         </div>
-        <!-- Contact Form -->
-        <form class="contact-form pt-pb-2" action="/gdform.php" method="post" name="ContactForm">
-          <input type="hidden" name="subject" value="Contact Form">
-          <input type="hidden" name="redirect" value="thanks.html">
-          <!-- Form Build -->
-          <div class="form-wrap flex flex-wrap">
-            <!-- Form Group (left) -->
-            <div class="form-group flex flex-wrap">
-              <!-- Name -->
-              <div class="input-row">
-                <label for="Name">Name</label>
-                <input id="Name" name="Name" type="text" class="required" title="This is a required field" required>
-              </div>
-              <!-- Email Address -->
-              <div class="input-row">
-                <label for="Email">Email</label>
-                <input id="Email" name="Email" type="email" class="required" title="This is a required field" required>
-              </div>
-              <!-- Phone Number -->
-              <div class="input-row">
-                <label for="Phone">Phone</label>
-                <input id="Phone" name="Phone" type="tel" title="your best contact phone number">
-              </div>
-            </div>
-            <!-- Form Group (right) -->
-            <div class="form-group flex flex-wrap">
-              <!-- Message Detail -->
-              <div class="input-row">
-                <label for="Message">Message</label>
-                <textarea id="Message" name="Message" title="leave me a message if you want"></textarea>
-              </div>
-            </div>
-            <!-- Submit -->
-            <div class="submit-input">
-              <input class="submit-button" type="submit" value="Send">
-            </div>
-          </div>
-        </form>
-      </div>
     </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer id="site-footer" class="pt-sm pb-2" role="contentinfo">
-    <div class="container container-fluid">
-      <p class="copyrights">&copy; 2017 Eric Thayer. 619-952-5081<span class="dot">.</span> <a class="source-link" href="https://github.com/ericthayer/ethayer.co/">View Source</a>        <a class="anchor-top-page" data-scroll href="#body">top</a></p>
+      <div class="copyrights">
+        <p>&copy; 2017 Eric Thayer - <a href="https://github.com/ericthayer/ethayer/">v3.0.1</a> - Hosted by <a href="https://app.netlify.com/">Netlify</a> </p>
+        <span class="source-link">
+          <a class="anchor-top-page" data-scroll href="#body">top</a>
+        </span>
+      </div>
     </div>
   </footer>
 
-  <!-- W.I.P ribbon -->
-  <div class="corner-ribbon bottom-right wip">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 75">
-      <title>construction icon</title>
-      <desc>icon by Yu Luck via https://thenounproject.com/yuluck/</desc>
-      <path d="M57.38,7.33a7,7,0,1,1-7-7A7,7,0,0,1,57.38,7.33Zm-57,68h37l-3-12h-15l-7-12-9,5ZM49.8,48.76l-6.42,9.57,3,17h10l-2-14,8-5,5,12,13,6,4-7.68-9-6.32L71.85,41.54l12.24-4,1.29-.2-3-13-17-10-20,7L34.51,49.57l-5.76,1.89-1.37-3.12-10,4,4,7H32.2l-1.84-4.2Zm0.58-14.43L51.62,44l-7.2,2.36Zm20.73,3.24-1.73-9.24,6.93,3L77,35.66Z"
-        transform="translate(-0.38 -0.33)" />
-    </svg><span>work in progress</span>
-  </div>
   <!-- Dependencies -->
   <script src="js/min/script.min.js" async></script>
   <script>
@@ -470,25 +637,6 @@
       };
       document.head.appendChild(script);
     }
-  </script>
-  <script>
-    var ajax = new XMLHttpRequest();
-    ajax.open("GET", "images/UI/ui-icons/ethayer-icons.svg", true);
-    ajax.send();
-    ajax.onload = function (e) {
-      var div = document.createElement("div");
-      div.innerHTML = ajax.responseText;
-      document.body.insertBefore(div, document.body.childNodes[0]);
-    }
-  </script>
-  <script src="js/libs/smooth-scroll.min.js"></script>
-  <script>
-    smoothScroll.init({
-      selector: "[data-scroll]",
-      speed: 1000,
-      easing: "easeInOutCubic",
-      offset: 0,
-    });
   </script>
 </body>
 
