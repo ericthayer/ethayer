@@ -23,8 +23,9 @@
     max-width: 100%;
   }
   h1 {
-    font-size: calc(1vw + 4.875em);
+    font-size: calc(1vw + 3.875em);
     @media (min-width: $break-800) {
+      font-size: calc(1vw + 4.875em);
       max-width: 52rem;
       max-width: calc(1vw + 9em);
     }
