@@ -49,7 +49,7 @@
       -moz-osx-font-smoothing: auto;  
       -webkit-font-smoothing: auto;
       @media (max-width: 20em) {
-        flex-basis: 40%;
+        //flex-basis: 40%;
       }
       a {
         color: #FFF;
@@ -60,7 +60,7 @@
         }
         @include flex-grow-1;
         margin-right: 0;
-        padding: 1.25rem 1rem;
+        padding: 1.25rem .25rem;
         text-shadow: .05rem .05rem .03rem rgba(black, .2);
         &::after {
           background-color: rgba(black, .2);
@@ -121,13 +121,16 @@
       } 
     }
   }
-  // > 667
+  // > 640
   @media (min-width: $break-640) {
     align-items: stretch;
     flex-grow: 1;
     justify-content: flex-end;  
     ul {
       flex-grow: 0;
+    }
+    ul > li a {
+      padding: .5rem 1.5rem;
     }
   }
  
@@ -136,12 +139,6 @@
     justify-content: flex-end;
     ul > li {
       flex-grow: 0;
-    }
-  }
-  // > 992
-  @media (min-width: $break-992) {
-    ul > li a {
-      padding: .5rem 1.5rem;
     }
   }
 }
