@@ -50,61 +50,61 @@ figure.lazyload {
 
 // Corner Ribbon
 
-// .wip {
-//   //display: none;
-//   opacity: .8;
-//   @include corner-ribbon;
-//   background: rgba(darkred, 1);
-//   font-size: .9em;
-//   font-family: $sans-serif;
-//   line-height: 2;
-//   position: fixed;  
-//   width: 400px;
-//   z-index: 5000; 
-//   svg {
-//     fill: white;
-//     height: 45px; 
-//     right: -1px;
-//     margin-bottom: 1em;
-//     position: relative;
-//     top: 6px;
-//   }
-//   span {
-//     display: block;
-//     font-size: .8em;
-//     opacity: 0;
-//     transition: .3s ease;   
-//   }
-//   .art-credit {
-//     position: absolute;
-//     top: 0;
-//     left: 0;   
-//   }
-//   &.bottom-right {
-//     height: 90px;
-//     bottom: -20px;
-//     right: -175px;
-//     transition: .3s ease;    
-//     svg, span {
-//       transform: rotate(45deg);
-//     }
-//     &:hover {
-//       height: 180px;      
-//       bottom: -60px;
-//       right: -140px;
-//       padding-right: 4em;
-//       svg {
-//       } 
-//       span {
-//         opacity: 1;
-//       }
-//     }
-//   }
-//   // 768
-//   @media (min-width: $break-768) {
-//     // display: block;
-//   }     
-// }
+.wip {
+  //display: none;
+  opacity: .8;
+  @include corner-ribbon;
+  background: rgba(darkred, 1);
+  font-size: .9em;
+  font-family: $sans-serif;
+  line-height: 2;
+  position: fixed;  
+  width: 400px;
+  z-index: 5000; 
+  svg {
+    fill: white;
+    height: 45px; 
+    right: -1px;
+    margin-bottom: 1em;
+    position: relative;
+    top: 6px;
+  }
+  span {
+    display: block;
+    font-size: .8em;
+    opacity: 0;
+    transition: .3s ease;   
+  }
+  .art-credit {
+    position: absolute;
+    top: 0;
+    left: 0;   
+  }
+  &.bottom-right {
+    height: 90px;
+    bottom: -20px;
+    right: -175px;
+    transition: .3s ease;    
+    svg, span {
+      transform: rotate(45deg);
+    }
+    &:hover {
+      height: 200px;      
+      bottom: -50px;
+      right: -140px;
+      padding-right: 4em;
+      svg {
+      } 
+      span {
+        opacity: 1;
+      }
+    }
+  }
+  // 768
+  @media (min-width: $break-768) {
+    // display: block;
+  }     
+}
 
 // wip disclaimer
 

@@ -13,6 +13,7 @@
 
 @mixin bg-purple {
   background: linear-gradient(-112deg, rgb(74, 190, 223), rgb(102, 51, 153));
+  @include bg-dark;
 }
 
 @mixin bg-light-grey {
@@ -21,6 +22,7 @@
 }
 
 @mixin bg-green {
+  // checkered pattern
   //background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23FFFFFF' fill-opacity='0.05'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(-35deg, #40a59f 0%,mix(black, #1e6c67, 20%) 100%);
   //background: linear-gradient(-35deg, #40a59f 0%,mix(black, #1e6c67, 20%) 100%);
   background: linear-gradient(135deg, #62d4cd 0%,mix(black, #1e6c67, 20%) 100%);
@@ -40,10 +42,10 @@
 @mixin bg-red-pink {
   //background: linear-gradient(-135deg, rgb(22, 198, 237), rgb(179, 59, 41));
   background: linear-gradient(to left, #e96443 , #904e95);
-  //@include bg-dark;
+  @include bg-dark;
 }
 
-@mixin bg-peach {
+@mixin bg-peach-grid {
   //@include bot-rounded-bg;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23EEEEEE' fill-opacity='0.08'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), linear-gradient(5deg, #efaf9e 0%, mix(black, #efaf9e, 50%) 100%);
   background-blend-mode: overlay;
@@ -54,6 +56,67 @@
   //@include rounded-bg;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23EEEEEE' fill-opacity='0.08'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), linear-gradient(125deg, mix(white, #9a86cc, 40%) 0%, mix(black, #9a86cc, 60%) 100%);
   @include bg-dark;
+}
+
+@mixin gradient-change {
+  background: linear-gradient(145deg, #e96443 , #904e95);
+  background: linear-gradient(54deg, #ED165D, #071828);
+  position: relative;
+  &::before,
+  &::after {
+    //display: none;
+    content: "";
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 3s ease;
+  }
+  &::before {
+    background: linear-gradient(to left, #e96443 , #904e95);   
+  }
+  &::after {
+    opacity: 0;
+  }
+
+  @include bg-dark;
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+  //transition: 3s ease;
+
+  @media (min-width: $break-640) {
+    //background: linear-gradient(54deg, #ED165D, #071828);
+    //background: linear-gradient(-37deg, rgb(148, 160, 186), rgb(52, 127, 92));
+    background: linear-gradient(270deg, #903f96, #77a2b7);
+    &::before {
+      opacity: 0;
+    }
+    &::after {
+      background: linear-gradient(54deg, #ED165D, #071828);
+      opacity: 1;
+    }
+  }
+  @media (min-width: $break-900) {
+    //background: linear-gradient(-37deg, rgb(148, 160, 186), rgb(52, 127, 92));
+    background: linear-gradient(270deg, #903f96, #77a2b7);
+    &::before {      
+      background: linear-gradient(-16deg, rgb(0, 0, 0), rgb(255, 107, 130));
+      background: linear-gradient(-112deg, rgb(74, 190, 223), rgb(102, 51, 153));
+    }
+    &::after {
+      opacity: 0;
+    }
+  }
+  @media (min-width: $break-1200) {
+    &::before {
+      opacity: 1;
+    }
+  }
 }
 
 .bg-light {
@@ -78,6 +141,18 @@
 
 .bg-purple {
   @include bg-purple;
+}
+
+.bg-peach-grid {
+  @include bg-peach-grid;
+}
+
+.bg-purple-grid {
+  @include bg-purple-grid;
+}
+
+.gradient-change {
+  @include gradient-change;
 }
 
 body {
