@@ -24,6 +24,9 @@
   }
   h1 {
     font-size: calc(1vw + 3.875em);
+    abbr[title] {
+      text-decoration: none;
+    }
     @media (min-width: $break-800) {
       .full-screen & {
         font-size: calc(1vw + 4.875em);
