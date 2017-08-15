@@ -1,32 +1,32 @@
 // ******* Mixins ******* //
-
 // fade animation
-
 @keyframes fade-out {
   0% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-  }  
+  }
 }
 
 @mixin fade-in {
   @keyframes fade-in {
-    from { opacity: 0 }
+    from {
+      opacity: 0
+    }
   }
   animation: fade-in 1.5s;
-  transition: opacity .6s ease;  
+  transition: opacity .6s ease;
 }
 
 @mixin fade-out {
   animation: fade-out .4s linear forwards;
-  transition: opacity .4s ease;  
+  transition: opacity .4s ease;
 }
 
 @mixin fade-out-delay {
   animation: fade-out .4s 4s linear forwards;
-  transition: opacity .4s ease; 
+  transition: opacity .4s ease;
 }
 
 /// Slightly lighten a color
@@ -55,24 +55,18 @@
 }
 
 // Grid Layout
-
 @mixin grid-flex($grid-item: 'n+4') {
-  
-  @if $grid-item == 'n+4' {
-
-      flex-grow: 0;
-      width: 25% !important; 
-
-  } @else {
-
-      flex-grow: 1;
-      width: 33.3333333% !important;
-
-  }    
+  @if $grid-item=='n+4' {
+    flex-grow: 0;
+    width: 25% !important;
+  }
+  @else {
+    flex-grow: 1;
+    width: 33.3333333% !important;
+  }
 }
 
 // Panel Background Defaults
-
 @mixin panel-bg-scale {
   background-repeat: no-repeat;
   background-position: center center;
@@ -87,27 +81,24 @@
 
 @mixin panel-bg-contain {
   background-repeat: no-repeat;
-  background-size: cover;
-  // > 667
+  background-size: cover; // > 667
   @media (min-width: $break-640) {
     background-size: contain;
   }
 }
 
 // Opacity helpers
-
 @mixin opacity-50 {
-	filter:alpha(opacity=50);
-	opacity: 0.5;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
 }
 
 @mixin opacity-80 {
-	filter:alpha(opacity=80);
-	opacity: 0.8;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
 }
 
 // Text
-
 @mixin post-list {
   list-style-type: none;
   margin: {
@@ -115,29 +106,27 @@
     right: auto;
     bottom: 0;
     left: auto;
-  }           
+  }
   padding: {
     left: 0;
     top: .65em;
     bottom: .65em;
-  }
-  // Post Item
-  & > li {
+  } // Post Item
+  &>li {
     //display: flex;
     margin-bottom: .5em;
-    width: 100%;  
+    width: 100%;
     &:last-child {
-      margin-bottom: 0; 
-    } 
+      margin-bottom: 0;
+    }
   }
-  & > li > a {
-    text-decoration: none;   
+  &>li>a {
+    text-decoration: none;
     &:hover,
     &:focus {
       text-decoration: underline;
     }
-  }
-  // 400
+  } // 400
   @media (min-width: 25em) {
     padding-left: .25em;
   }
@@ -151,186 +140,172 @@
   margin: {
     bottom: 0.875em;
     bottom: 1.125rem;
-  } 
+  }
   a {
-		text-decoration: underline;	
-	}
-	// 400
+    text-decoration: underline;
+  } // 400
   @media (min-width: 25em) {
     font: {
       size: 1.125em;
     }
-    line-height: 1.45;  
+    line-height: 1.45;
   }
 }
 
 @mixin txt-center-fix {
-	text-align: center;
-	// 768 
-	@media (min-width: $break-768) {
-		text-align: left;
-	}
+  text-align: center; // 768 
+  @media (min-width: $break-768) {
+    text-align: left;
+  }
 }
 
 // Reg Mark adjustments for copy
-
 @mixin reg-mark {
-	font-size: 9px; 
-	vertical-align: text-top;
+  font-size: 9px;
+  vertical-align: text-top;
 }
 
 // Caret UI element
-
 @mixin caret {
   display: inline-block;
   width: 0;
   height: 0;
   margin-left: 2px;
-  padding: 0; 
+  padding: 0;
   vertical-align: middle;
   border-top: 4px dashed;
   border-top: 4px solid \9;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
   &:before {
-    display: none;  
+    display: none;
   }
 }
 
 // P overflow fix to hide text at smaller screens
-
 @mixin text-overflow {
-	overflow: hidden;	
-	text-overflow: ellipsis; 
-	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 @mixin text-overflow-off {
-	overflow: visible; 
-	white-space: normal;
+  overflow: visible;
+  white-space: normal;
 }
 
 // Form Input 
-
 @mixin form-control {
-	display: block;
-	width: 100%;
-	height: 34px;
-	padding: 6px 12px;
-	font-size: 14px;
-	line-height: 1.42857143;
-	color: #555;
-	background-color: #fff;
-	background-image: none;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
 // Reset
-
 @mixin mobile-table-reset {
-	display: table;
-	margin: 0 auto;
-	@media (min-width: $break-768) {
-		display: block;
-		margin: 0;
-		max-width: 100%;
-	}
+  display: table;
+  margin: 0 auto;
+  @media (min-width: $break-768) {
+    display: block;
+    margin: 0;
+    max-width: 100%;
+  }
 }
 
 @mixin btn-reset {
-	text-shadow: none;
+  text-shadow: none;
 }
 
 @mixin btn-hover-reset {
-	&:hover,
-	&:focus {
-  	border: none;
+  &:hover,
+  &:focus {
+    border: none;
     box-shadow: none;
     font-size: 0.875em;
   }
 }
 
 // Form TD reset
-
 @mixin form-td-reset {
-	display: block;
-	line-height: 14px; 
-	padding: 0 0 4px; 
-	vertical-align: middle;
-	width: 100%;
+  display: block;
+  line-height: 14px;
+  padding: 0 0 4px;
+  vertical-align: middle;
+  width: 100%;
 }
 
 // Module block
-
 @mixin mod-block {
-	padding-top: 2em;
-	padding-bottom: 2em;
-	// 768
-	@media (min-width: $break-768) {
-  	//padding-bottom: 2em;   
-	}  	
+  padding-top: 2em;
+  padding-bottom: 2em; // 768
+  @media (min-width: $break-768) {
+    //padding-bottom: 2em;   
+  }
 }
 
 // Header Label
-
 @mixin header-label {
-	display: table;
-	font-size: 13px;
-	letter-spacing: 1px;
-	margin: 0 auto 5px;
-	padding: 5px 15px;
-	text-shadow: $blk-text-shadow-neg;
-	text-transform: uppercase;
-	border-radius: 0;
-	@media (min-width: $break-768) {
-		display: inline-block;
-	}
+  display: table;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 0 auto 5px;
+  padding: 5px 15px;
+  text-shadow: $blk-text-shadow-neg;
+  text-transform: uppercase;
+  border-radius: 0;
+  @media (min-width: $break-768) {
+    display: inline-block;
+  }
 }
 
 // Date Label
-
 @mixin date-label {
-	background-color: $red-label-bg;
-	color: #FFF;
-	font-size: 11px;
-	font-style: normal;
-	letter-spacing: 0;
-	line-height: 14px;
-	margin: 0;
-	padding: 2px 10px 3px 10px;
-	text-shadow: $blk-text-shadow-neg;
+  background-color: $red-label-bg;
+  color: #FFF;
+  font-size: 11px;
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: 14px;
+  margin: 0;
+  padding: 2px 10px 3px 10px;
+  text-shadow: $blk-text-shadow-neg;
 }
 
 // Box Styles
-
 @mixin card-white {
-	background: white;
-	border: 1px solid #DDD;
+  background: white;
+  border: 1px solid #DDD;
 }
 
 @mixin card-media {
-	background: #EEE;
-	padding: 0.5em;
-	.sidebar-main &,
-	.media-viewer & {
-  	background: white;
-	}	
+  background: #EEE;
+  padding: 0.5em;
+  .sidebar-main &,
+  .media-viewer & {
+    background: white;
+  }
 }
 
 @mixin card-grey {
-	background: #EEE;
-	border: 1px solid #DDD;
+  background: #EEE;
+  border: 1px solid #DDD;
 }
 
 @mixin card-reset {
-	background: none;
-	border:none;
+  background: none;
+  border: none;
 }
 
 // counter item
-
 @mixin counter-item {
   counter-increment: sequential;
   &:before {
@@ -350,9 +325,8 @@
     height: 100%;
     width: 100%;
     max-height: 2em;
-    max-width: 2em;  
-  }
-  // > 640
+    max-width: 2em;
+  } // > 640
   @media (min-width: $break-640) {
     .title {
       margin-bottom: .9rem;
@@ -361,74 +335,67 @@
 }
 
 // Blog Image Styles
-
 @mixin blog-img-full {
-	@media (min-width: $break-768) {
-		float: none;
-		margin: 0 auto 15px;
-		width: 100%;
-	}
+  @media (min-width: $break-768) {
+    float: none;
+    margin: 0 auto 15px;
+    width: 100%;
+  }
 }
 
 @mixin blog-img-sm {
-	margin: 15px auto;
-	//figcaption {display: none;}
-	@media (min-width: $break-768) {
-		margin: 5px 15px 10px 0;
-		width: 30%;
-	}
-	@media (min-width: $break-900) {
-		margin: 5px 20px 15px 0;
-		width: 40%;
-	}	
+  margin: 15px auto; //figcaption {display: none;}
+  @media (min-width: $break-768) {
+    margin: 5px 15px 10px 0;
+    width: 30%;
+  }
+  @media (min-width: $break-900) {
+    margin: 5px 20px 15px 0;
+    width: 40%;
+  }
 }
 
 // Images
-
 @mixin circle-mask {
-	border-radius: 100%;
-	//height: 100%;
-	width: 100%;
-	overflow: hidden;
-  //max-height: 300px;
-	//max-width: 300px;
+  border-radius: 100%; //height: 100%;
+  width: 100%;
+  overflow: hidden; //max-height: 300px;
+  //max-width: 300px;
   shape-outside: circle();
-	img {
-  	border-radius: 100%;
-  	overflow: hidden;
-	}
-	// 1200
-	@media (min-width: $break-1200) {
-  	//max-height: 400px;
-  	//max-width: 400px; 
-	}
+  img {
+    border-radius: 100%;
+    overflow: hidden;
+  } // 1200
+  @media (min-width: $break-1200) {
+    //max-height: 400px;
+    //max-width: 400px; 
+  }
 }
 
 @mixin circle-mask-md {
-	@include circle-mask;
-	max-height: 300px;
-	max-width: 300px;
+  @include circle-mask;
+  max-height: 300px;
+  max-width: 300px;
 }
 
 @mixin circle-mask-sm {
-	@include circle-mask;
-	max-height: 150px;
-	max-width: 150px;
+  @include circle-mask;
+  max-height: 150px;
+  max-width: 150px;
 }
 
 @mixin rounded-mask {
-	border-radius: 15px;
-	width: 100%;
-	overflow: hidden;	
+  border-radius: 15px;
+  width: 100%;
+  overflow: hidden;
 }
 
 // Image Replacement "hack"
-
 @mixin hide-button-text {
   background-color: transparent;
-  border:0;
-  color: transparent;  
-  font: 0/0; 
+  border: 0;
+  color: transparent;
+  font: 0/0;
   text-shadow: none;
 }
 
@@ -437,7 +404,7 @@
   font: 0/0;
   &:hover,
   &:focus {
-	  color: transparent;
+    color: transparent;
     font: 0/0;
   }
 }
@@ -447,36 +414,33 @@
 }
 
 // Centered Text Border
-
 @mixin text-border-ctr {
-	&:before {
-	  content: '';
+  &:before {
+    content: '';
     position: absolute;
     left: 30px;
     right: 30px;
     height: 1px;
-    background: rgba(207,207,207,0.3);
+    background: rgba(207, 207, 207, 0.3);
     top: 50%;
-    z-index: -2;	
-	}
-	&:after {
-	  content: '';
+    z-index: -2;
+  }
+  &:after {
+    content: '';
     position: absolute;
     left: 50%;
     height: 50px;
     margin: -25px 0 0 -600px;
-    width: 1200px;    
-    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,1) 50%,rgba(255,255,255,0.6) 70%,rgba(255,255,255,0) 100%);
+    width: 1200px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.6) 70%, rgba(255, 255, 255, 0) 100%);
     top: 50%;
-    z-index: -1;	
-	}
+    z-index: -1;
+  }
 }
 
 // Corner Ribbon
-
 // via http://codepen.io/eode9/
 // http://codepen.io/eode9/pen/twkKm?editors=110
-
 @mixin corner-ribbon {
   width: 200px;
   background: #CCC;
@@ -486,121 +450,104 @@
   text-align: center;
   line-height: 35px;
   letter-spacing: 0.01em;
-  font: {	
-  	size: 0.65em;
-  	weight: 700;
+  font: {
+    size: 0.65em;
+    weight: 700;
   }
   color: #FFF;
   text-transform: uppercase;
   transform: rotate(-45deg);
-	/* Custom styles */
-	
-	&.sticky {
-	  position: fixed;
-	}
-	
-	&.shadow {
-	  box-shadow: 0 0 3px rgba(0,0,0,.3);
-	}
-	
-	// Different positions
-	
-	&.top-left {
-	  top: 25px;
-	  left: -50px;
-	  transform: rotate(-45deg);
-	}
-	
-	&.top-right {
-	  top: 25px;
-	  right: -50px;
-	  left: auto;
-	  transform: rotate(45deg);
-	}
-	
-	&.bottom-left {
-	  top: auto;
-	  bottom: 25px;
-	  left: -50px;
-	  transform: rotate(45deg);
-	}
-	
-	&.bottom-right {
-	  top: auto;
-	  right: -50px;
-	  bottom: 25px;
-	  left: auto;
-	  transform: rotate(-45deg);
-	}
+  /* Custom styles */
+  &.sticky {
+    position: fixed;
+  }
+  &.shadow {
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+  } // Different positions
+  &.top-left {
+    top: 25px;
+    left: -50px;
+    transform: rotate(-45deg);
+  }
+  &.top-right {
+    top: 25px;
+    right: -50px;
+    left: auto;
+    transform: rotate(45deg);
+  }
+  &.bottom-left {
+    top: auto;
+    bottom: 25px;
+    left: -50px;
+    transform: rotate(45deg);
+  }
+  &.bottom-right {
+    top: auto;
+    right: -50px;
+    bottom: 25px;
+    left: auto;
+    transform: rotate(-45deg);
+  }
 }
 
-
 // Clearfix
-
 @mixin clearfix {
   &:before,
   &:after {
-  	content: ""; 
-  	display: block;
-  	clear: both;
+    content: "";
+    display: block;
+    clear: both;
   }
 }
 
 // .btn:after reset
- 
 %btn-after-reset {
-	content: "" !important;
-	padding: 0 !important;
+  content: "" !important;
+  padding: 0 !important;
 }
 
 // flexbox fallback
-
 // use this for simple layouts -  i.e. two col layout
-
 @mixin no-flexbox {
   .no-flexbox & {
     display: table;
-    width: 100%;  
-    > * {
+    width: 100%;
+    >* {
       display: table-cell;
-      vertical-align: middle;     
-    }  
+      vertical-align: middle;
+    }
   }
 }
 
 // use this for grid fallbacks
-
 @mixin no-flexbox-grid {
   .no-flexbox & {
     display: block;
     @include clearfix;
-    > * {
+    >* {
       display: inline-block;
-      vertical-align: top;       
-    }  
+      vertical-align: top;
+    }
   }
 }
 
 // Layout 
-
 @mixin container {
-	margin: 0 auto;
-	max-width: 75em;
-	padding-top: 2em;
-	padding-bottom: 2em;   
-	padding-right: 1em;
-  padding-left: 1em;   	
-	width: 100%;
-	// > 540
-	@media (min-width: $break-540) {
-  	padding-right: 1.5em;
-  	padding-left: 1.5em;   
-	}
-	@include no-flexbox-container;		
+  margin: 0 auto;
+  max-width: 75em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-right: 1em;
+  padding-left: 1em;
+  width: 100%; // > 540
+  @media (min-width: $break-540) {
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+  }
+  @include no-flexbox-container;
 }
 
 // SR Text
-
 @mixin sr-only {
   position: absolute;
   width: 1px;
@@ -645,10 +592,13 @@
     transition: opacity .4s ease;
     top: 0;
     line-height: .9;
+    height: 100%;
   }
   &:before {
     content: "‣ ";
     left: -.65em;
+    height: 100px;
+    width: 100px;
   }
   &:after {
     top: -1px;
@@ -665,10 +615,7 @@
 }
 
 @mixin link-shadow {
-  text-shadow: .05em 0 0 #F9F9F9, -0.05em 0 0 #F9F9F9,
-      0 .05em 0 #F9F9F9, 0 -0.05em 0 #F9F9F9,
-      .1em 0 0 #F9F9F9, -0.1em 0 0 #F9F9F9,
-      0 .1em 0 #F9F9F9, 0 -0.1em 0 #F9F9F9;
+  text-shadow: .05em 0 0 #F9F9F9, -0.05em 0 0 #F9F9F9, 0 .05em 0 #F9F9F9, 0 -0.05em 0 #F9F9F9, .1em 0 0 #F9F9F9, -0.1em 0 0 #F9F9F9, 0 .1em 0 #F9F9F9, 0 -0.1em 0 #F9F9F9;
   background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
   background-repeat: repeat-x;
   background-position: bottom .05em center;
@@ -697,84 +644,79 @@
 
 @mixin fonts-loaded-KO29 {
   font-family: $sans-serif-narrow;
-	.fonts-loaded & {
-  	font-family: $KO29;
-  	font-weight: normal;
+  .fonts-loaded & {
+    font-family: $KO29;
+    font-weight: normal;
     -moz-osx-font-smoothing: greyscale;
-    -webkit-font-smoothing: antialiased;  
-	}
+    -webkit-font-smoothing: antialiased;
+  }
 }
 
 @mixin fonts-loaded-Roboto {
   font-family: $sans-serif-narrow;
-	.fonts-loaded & {
-  	font-family: $Roboto;
-  	font-weight: normal;  
-	}
+  .fonts-loaded & {
+    font-family: $Roboto;
+    font-weight: normal;
+  }
 }
 
 // displays media right
-
 @mixin CTA-media-right {
   .post-wrap {
     flex-flow: row wrap;
   }
   .post-content {
-    padding-left: 0;  
-    padding-right: 5%; 
+    padding-left: 0;
+    padding-right: 5%;
   }
 }
 
 // displays media left
-
 @mixin CTA-media-left {
   .post-wrap {
     flex-flow: row-reverse wrap;
   }
   .post-content {
     padding-right: 0;
-    padding-left: 5%;   
+    padding-left: 5%;
   }
 }
 
 // This displays every even row's media flipped to the right
-
 @mixin CTA-row-flip-right {
-  @include CTA-media-left;  
-  &:nth-of-type(even) {         
-    .post-wrap{
+  @include CTA-media-left;
+  &:nth-of-type(even) {
+    .post-wrap {
       flex-flow: row wrap;
     }
     .post-media {
-      align-self: flex-end; 
+      align-self: flex-end;
     }
-    .post-content {  
-      padding-right: 5%; 
-      padding-left: 0;  
+    .post-content {
+      padding-right: 5%;
+      padding-left: 0;
     }
   }
 }
 
 // This displays every even row's media flipped to the left
-
 @mixin CTA-row-flip-left {
-  @include CTA-media-right; 
-  &:nth-of-type(even) {         
-    .post-wrap{
+  @include CTA-media-right;
+  &:nth-of-type(even) {
+    .post-wrap {
       flex-flow: row-reverse wrap;
     }
     .post-media {
       align-self: flex-end;
     }
-    .post-content {  
-      padding-right: 0; 
-      padding-left: 5%;  
+    .post-content {
+      padding-right: 0;
+      padding-left: 5%;
     }
   }
 }
 
 // special backgrounds
-
 @mixin rounded-bg {
   padding-top: 3em;
   padding-bottom: 2em;

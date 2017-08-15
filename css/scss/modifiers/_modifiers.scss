@@ -305,6 +305,11 @@
   font-size: 1.875em; 
 }
 
+.font-smooth {
+  -moz-osx-font-smoothing: greyscale;  
+  -webkit-font-smoothing: antialiased;
+}
+
 
 //** FONT STYLES **//
 

@@ -46,7 +46,20 @@
   // < 640
   @media (max-width: $break-640 - .01em) {
     display: none;
-  }    
+  }
+  // > 667
+  @media (min-width: $break-640) {
+    flex-grow: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 33%;  
+  }
+
+  // > 900
+  @media (min-width: $break-900) {
+    max-width: 15em;
+    width: 100%;
+  }
 }
 
 // Logo

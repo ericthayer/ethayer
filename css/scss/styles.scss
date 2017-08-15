@@ -65,8 +65,8 @@
 @import "elements/anchor-links";
 
 // Components
-@import "modules/site-header";
 @import "components/navigation";
+@import "components/icon-nav";
 @import "components/main-menu";
 @import "components/header-banners";
 @import "components/forms";
@@ -75,7 +75,7 @@
 @import "components/process-steps";
 
 // Modules
-
+@import "modules/site-header";
 @import "modules/main-content";
 @import "modules/site-footer";
 
