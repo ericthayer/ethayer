@@ -6,7 +6,6 @@
     font-family: $sans-serif;
     font-size: .75em;    
     color: #999;
-    margin-bottom: 0;
   }
   a {
     background: none;
@@ -22,13 +21,21 @@
       @include no-link-shadow;
     }
   }
-  // 480 
-  @media (min-width: $break-240) {
+  // 375
+  @media (min-width: $break-375) {
     display: flex;
     align-items: center;
-    .source-link {
-      display: flex;
-      margin-left: auto;
+    padding-top: .25em;
+    p {
+      margin-bottom: 0;
     }
   } 
+}
+
+.source-link {
+  // 375 
+  @media (min-width: $break-375) {
+    display: flex;
+    margin-left: auto;
+  }
 }

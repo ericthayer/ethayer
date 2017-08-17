@@ -7,6 +7,18 @@
   }
   @include flex;
   @include jc-center;
-  min-width: 3rem;
   padding: 0;
+  // 480
+  @media (max-width: $break-480) {
+    .tooltip {
+      min-width: 7em;
+      &::before {
+        display: none;
+      }
+    }
+  }
+  // 480
+  @media (min-width: $break-480) {
+    min-width: 3rem;
+  }
 }

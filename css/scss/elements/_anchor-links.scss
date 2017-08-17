@@ -3,7 +3,7 @@ a.anchor-top-page {
   color: #FFF;
   font-size: .75em;
   letter-spacing: .04em;
-  //margin-left: .5rem;
+  margin-left: 1rem;
   padding: .1rem .25rem;
   text-transform: uppercase;
   text-shadow: none;
@@ -11,5 +11,9 @@ a.anchor-top-page {
   &:focus {
     background-color: hotpink;
     color: #FFF;
+  }
+  // 480
+  @media (min-width: $break-480) {
+    margin-left: 0;
   }
 }
