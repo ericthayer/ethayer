@@ -1,7 +1,7 @@
 // icon nav
 .icon-nav {
   nav {
-    margin-bottom: 0;
+    margin-bottom: .75rem;
   }
   h2 {
     margin-bottom: .75rem;
@@ -13,6 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 0;
   }
   li {
     margin-right: 1rem;
@@ -47,6 +48,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    nav {
+      margin-bottom: 0;
+    }
     h2 {
       margin-bottom: 0;
     }
