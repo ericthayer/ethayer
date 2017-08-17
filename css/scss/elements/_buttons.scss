@@ -8,8 +8,8 @@
   @include flex;
   @include jc-center;
   padding: 0;
-  // 480
-  @media (max-width: $break-480) {
+  // 375
+  @media (max-width: $break-375) {
     .tooltip {
       min-width: 7em;
       &::before {
@@ -17,8 +17,8 @@
       }
     }
   }
-  // 480
-  @media (min-width: $break-480) {
+  // 375
+  @media (min-width: $break-375) {
     min-width: 3rem;
   }
 }

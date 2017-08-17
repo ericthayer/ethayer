@@ -11,13 +11,16 @@
   }
   ul {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 0;
+    justify-content: space-between;
   }
   li {
-    padding-right: .75em;
-    padding-bottom: .5em;
+    margin-right: 1rem;
+    //margin-bottom: 0;
+    //margin-left: .5rem;
+    &:last-child {
+      margin-right: 0;
+    }
   }
   .icon {
     margin-left: 0;
@@ -48,9 +51,7 @@
       margin-bottom: 0;
     }
     li {
-      padding-right: 0;
-      padding-bottom: 0;
-      padding-left: 1em;
+      margin-bottom: 0;
     }
   }
 }
