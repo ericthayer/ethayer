@@ -30,89 +30,86 @@
     @media (max-width: 20em) {
       @include flex-wrap;
     }
-    > li {
-      //background-color: #EBEBEB;
-      @include flex;
-      @include ai-center;
-      align-self: stretch;
-      @include jc-center;
-      @include flex-grow-1;
-      margin-right: 0;  
-      margin-left: 0;
-      padding: 0;
-      overflow: hidden;
+  }
+  li {
+    //background-color: #EBEBEB;
+    @include flex;
+    @include ai-center;
+    align-self: stretch;
+    @include jc-center;
+    @include flex-grow-1;
+    margin-right: 0;  
+    margin-left: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    transition: background-color .5s ease,
+                color .5s ease;
+    z-index: 1;
+    //width: 100%;
+    -moz-osx-font-smoothing: auto;  
+    -webkit-font-smoothing: auto;      
+  }
+  a {
+    color: #FFF;
+    @include fonts-loaded-KO29;
+    font-size: 1.35rem;
+    .fonts-loaded & {
+      font-size: 1.45rem;
+    }
+    @include flex-grow-1;
+    margin-right: 0;
+    padding: 1.25rem .25rem;
+    text-shadow: .05rem .05rem .03rem rgba(black, .2);
+    &::after {
+      background-color: rgba(black, .2);
+      //background: linear-gradient(135deg, rgba(178,167,214,1) 0%,rgba(80,75,96,1) 100%);
+      //background: #BBB;
+      border-radius: 100%;
+      content: "";
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      //will-change: transform;
+      animation: nav-hover-rev .5s ease forwards;
+      transition: border-radius .5s ease,
+                  opacity .8s ease,
+                  transform .3s ease;
+      z-index: 0;
+    }
+    &:hover,
+    &:focus {
+      box-shadow: none;
+      color: #FFF;
+      &::after {        
+        animation: nav-hover .5s ease forwards;
+        border-radius: 0;
+        opacity: 1;
+        transform: none;
+      }
+    }
+    &.active a {
+      box-shadow: none;
+      color: #FFF;
+      &::after {        
+        animation: nav-hover .5s ease forwards;
+        border-radius: 0;
+        opacity: 1;
+        transform: none;
+      }
+    }
+    span {
       position: relative;
-      transition: background-color .5s ease,
-                  color .5s ease;
       z-index: 1;
-      //width: 100%;
-      -moz-osx-font-smoothing: auto;  
-      -webkit-font-smoothing: auto;
-      @media (max-width: 20em) {
-        //flex-basis: 40%;
-      }
-      a {
-        color: #FFF;
-        @include fonts-loaded-KO29;
-        font-size: 1.35rem;
-        .fonts-loaded & {
-          font-size: 1.45rem;
-        }
-        @include flex-grow-1;
-        margin-right: 0;
-        padding: 1.25rem .25rem;
-        text-shadow: .05rem .05rem .03rem rgba(black, .2);
-        &::after {
-          background-color: rgba(black, .2);
-          //background: linear-gradient(135deg, rgba(178,167,214,1) 0%,rgba(80,75,96,1) 100%);
-          //background: #BBB;
-          border-radius: 100%;
-          content: "";
-          opacity: 0;
-          position: absolute;
-          top: 0;
-          left: 0;
-          height: 100%;
-          width: 100%;
-          //will-change: transform;
-          animation: nav-hover-rev .5s ease forwards;
-          transition: border-radius .5s ease,
-                      opacity .8s ease,
-                      transform .3s ease;
-          z-index: 0;
-        }
-        &:hover,
-        &:focus {
-          box-shadow: none;
-          color: #FFF;
-          &::after {        
-            animation: nav-hover .5s ease forwards;
-            border-radius: 0;
-            opacity: 1;
-            transform: none;
-          }
-        }
-        span {
-          position: relative;
-          z-index: 1;
-        }
-      }
-       &.active a {
-        box-shadow: none;
-        color: #FFF;
-        &::after {        
-          animation: nav-hover .5s ease forwards;
-          border-radius: 0;
-          opacity: 1;
-          transform: none;
-        }
-      }
     }
   }
   // > 375
   @media (min-width: $break-240) {
     flex-wrap: nowrap;
-    ul > li {
+    li {
       //border-right: 1px solid #CCC;
       //border-bottom: 1px solid #CCC; 
       //width: 25%;
@@ -129,7 +126,7 @@
     ul {
       flex-grow: 0;
     }
-    ul > li a {
+    a {
       padding: .5rem 1.5rem;
     }
   }
@@ -137,7 +134,7 @@
   // > 768
   @media (min-width: $break-768) {
     justify-content: flex-end;
-    ul > li {
+    li {
       flex-grow: 0;
     }
   }
