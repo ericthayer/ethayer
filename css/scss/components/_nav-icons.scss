@@ -43,6 +43,16 @@
     white-space: pre;
     width: 120px;
   }
+  li:last-child a {
+    .tooltip {
+      left: auto;
+      right: 0;
+      &::before {
+        left: auto;
+        right: 10px;
+      }
+    }
+  }
   // 480
   @media (min-width: $break-480) {
     display: flex;
