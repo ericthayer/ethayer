@@ -27,7 +27,8 @@
   text-align: center;
 }
 
-//** FONT SIZE (1em by default) **//
+//** FONT SIZE (em) **//
+
 @mixin text-tiny {
   font-size: 80%;
 }
@@ -41,15 +42,73 @@
 }
 
 @mixin text-md {
-  font-size: 1.45em;
+  font-size: 1.25em;
 }
 
 @mixin text-lg {
+  font-size: 1.45em;
+}
+
+@mixin text-xl {
   font-size: 2em;
 }
 
 @mixin text-xl {
-  font-size: 3.125em;
+  font-size: 2.75em;
+}
+
+@mixin display-sm {
+  font-size: calc(1vw + 3.875em);
+}
+
+@mixin display-md {
+  font-size: calc(1vw + 5em);
+}
+
+@mixin display-lg {
+  font-size: calc(1vw + 7.75em);
+}
+
+//** FONT SIZE (rem) **//
+
+@mixin text-tiny-r {
+  font-size: .5rem;
+}
+
+@mixin text-sm-r {
+  font-size: .875rem;
+}
+
+@mixin text-base-r {
+  font-size: 1rem;
+}
+
+@mixin text-md-r {
+  font-size: 1.25rem;
+}
+
+@mixin text-lg-r {
+  font-size: 1.45rem;
+}
+
+@mixin text-xl-r {
+  font-size: 2rem;
+}
+
+@mixin text-xl-r {
+  font-size: 2.75rem;
+}
+
+@mixin display-sm-r {
+  font-size: calc(1vw + 3.875rem);
+}
+
+@mixin display-md-r {
+  font-size: calc(1vw + 5rem);
+}
+
+@mixin display-lg-r {
+  font-size: calc(1vw + 7.75em);
 }
 
 //** FONT STYLES **//

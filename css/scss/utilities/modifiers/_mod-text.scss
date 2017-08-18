@@ -13,7 +13,7 @@
   @include text-center;
 }
 
-//** FONT SIZE (1em by default) **//
+//** FONT SIZE (em) **//
 .text-tiny {
   @include text-tiny;
 }
@@ -36,6 +36,55 @@
 
 .text-xl {
   @include text-xl;
+}
+
+.display-sm {
+  @include display-sm;
+}
+
+.display-md {
+  @include display-md;
+}
+
+.display-lg {
+  @include display-lg;
+}
+
+//** FONT SIZE (rem) **//
+.text-tiny-r {
+  @include text-tiny-r;
+}
+
+.text-sm-r {
+  @include text-sm-r;
+}
+
+.text-base-r {
+  @include text-base-r;
+}
+
+.text-md-r {
+  @include text-md-r;
+}
+
+.text-lg-r {
+  @include text-lg-r;
+}
+
+.text-xl-r {
+  @include text-xl-r;
+}
+
+.display-sm-r {
+  @include display-sm-r;
+}
+
+.display-md-r {
+  @include display-md-r;
+}
+
+.display-lg-r {
+  @include display-lg-r;
 }
 
 //** FONT STYLES **//

@@ -31,6 +31,10 @@
   display: none !important;
 }
 
+@mixin overflow-hidden {
+  overflow: hidden;
+}
+
 // Postion
 @mixin fixed {
   position: fixed;
