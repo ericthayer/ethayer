@@ -1,0 +1,65 @@
+// gradients
+
+@mixin gradient-blue-green {
+  background: linear-gradient(to right, $blue 10%, $green 100%);
+}
+
+@mixin gradient-blue-green-45 {
+  background: linear-gradient(45deg, $blue 10%, $green 100%);
+}
+
+@mixin gradient-blue-green-90 {
+  background: linear-gradient(90deg, $blue 10%, $green 100%);
+}
+
+@mixin gradient-blue-green-270 {
+  background: linear-gradient(270deg, $blue 10%, $green 100%);
+}
+
+@mixin gradient-blue-purple {
+  background: linear-gradient(to right, $blue 10%, $purple 100%);
+}
+
+@mixin gradient-blue-purple-45 {
+  background: linear-gradient(45deg, $blue 10%, $purple 100%);
+}
+
+@mixin gradient-blue-purple-270 {
+  background: linear-gradient(270deg, $blue 10%, $purple 100%);
+}
+
+@mixin gradient-purple-blue {
+  background: linear-gradient(to right, $purple 10%, $blue 100%);
+}
+
+@mixin gradient-purple-blue-45 {
+  background: linear-gradient(45deg, $purple 10%, $blue 100%);
+}
+
+@mixin gradient-purple-blue-270 {
+  background: linear-gradient(270deg, $purple 10%, $blue 100%);
+}
+
+@mixin gradient-orange {
+  background: linear-gradient(to right, $orange-light 10%, $orange-dark 100%);
+}
+
+@mixin gradient-orange-45 {
+  background: linear-gradient(45deg, $orange-light 10%, $orange-dark 100%);
+}
+
+@mixin gradient-orange-270 {
+  background: linear-gradient(270deg, $orange-light 10%, $orange-dark 100%);
+}
+
+@mixin gradient-orange-purple {
+  background: linear-gradient(to right, $orange 10%, $purple 100%);
+}
+
+@mixin gradient-orange-purple-45 {
+  background: linear-gradient(45deg, $orange 10%, $purple 100%);
+}
+
+@mixin gradient-orange-purple-270 {
+  background: linear-gradient(270deg, $orange 10%, $purple 100%);
+}

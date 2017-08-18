@@ -1,0 +1,95 @@
+//** ALIGNMENT (align-left by default) **//
+// align right
+.align-right {
+  @include align-right;
+}
+
+// align center
+.align-center {
+  @include align-center;
+}
+
+.text-center {
+  @include text-center;
+}
+
+//** FONT SIZE (1em by default) **//
+.text-tiny {
+  @include text-tiny;
+}
+
+.text-sm {
+  @include text-sm;
+}
+
+.text-base {
+  @include text-base;
+}
+
+.text-md {
+  @include text-md;
+}
+
+.text-lg {
+  @include text-lg;
+}
+
+.text-xl {
+  @include text-xl;
+}
+
+//** FONT STYLES **//
+.all-caps {
+  @include all-caps;
+}
+
+.italic {
+  @include italic;
+}
+
+.bold {
+  @include bold;
+}
+
+//** LIST STYLES **//
+
+.list-title {
+  @include mb-1;
+ // margin-left: -1rem;
+}
+
+ul, ol {
+  padding-left: 1.5em;
+
+  &.no-bullet {
+    @include list-clean;
+  }
+
+  &.arrow-list-lg {
+    @include arrow-list-lg;
+  }
+
+  &.list-styled {
+    @include arrow-list-lg;
+  }
+
+  &.list-unstyled {
+    @include list-unstyled;
+  }
+
+  ul.list-nested {
+    @include list-nested;
+  }
+
+}
+
+li {
+  @include mb-sm;
+  &:last-child {
+    @include mb-0;
+  }
+}
+
+.list-parent {
+  @include list-parent;
+}

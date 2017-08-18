@@ -1,32 +1,41 @@
 // ******* Mixins ******* //
+
 // fade animation
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }  
+}
 @keyframes fade-out {
   0% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-  }
+  }  
 }
-
 @mixin fade-in {
-  @keyframes fade-in {
-    from {
-      opacity: 0
-    }
-  }
-  animation: fade-in 1.5s;
-  transition: opacity .6s ease;
+  animation: fade-in .4s linear forwards;
+  opacity: 0;
+  transition: opacity .4s;
 }
 
 @mixin fade-out {
   animation: fade-out .4s linear forwards;
-  transition: opacity .4s ease;
+  opacity: 1;
+  transition: opacity .4s;
 }
 
 @mixin fade-out-delay {
   animation: fade-out .4s 4s linear forwards;
   transition: opacity .4s ease;
+}
+
+.fade-in {
+  @include fade-in;
 }
 
 /// Slightly lighten a color
@@ -765,3 +774,12 @@
 .full-screen {
   @include full-screen;
 }
+
+@import "mixins/margin";
+@import "mixins/padding";
+@import "mixins/text";
+@import "mixins/layout";
+@import "mixins/backgrounds";
+@import "mixins/flexbox";
+@import "mixins/css-grid";
+@import "mixins/media";

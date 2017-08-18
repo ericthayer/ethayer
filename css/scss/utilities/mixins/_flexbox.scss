@@ -1,3 +1,5 @@
+//**  Flex Modifiers  **//
+
 @mixin flex {
   display: flex;
 }
@@ -148,8 +150,7 @@
 }
 
 // Flex Layout
-.flex-layout {
-  @include clearfix;
+@mixin flex-layout {
   > * {
     padding-bottom: 1.5em;
   }
@@ -165,8 +166,10 @@
       float: left; 
       //flex: 1 1 auto;
       flex-grow: 1;
-      padding-right: 2em;
-      padding-left: 2em;
+      padding-top: 1.5em;
+      padding-right: 1.5em;
+      padding-bottom: 1.5em;
+      padding-left: 1.5em;
       min-height: 0;
       min-width: 0;
       width: 50%;
@@ -181,7 +184,7 @@
 }
 
 // Media Layout
-.l-media-grid {
+@mixin l-media-grid {
   margin-right: -1em;
   margin-left: -1em;
   // < 320
@@ -222,124 +225,19 @@
   }
 }
 
-// ** Flex modifiers ** //
-.flex {
-  display: flex;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.flex-auto {
-  flex: 1 1 auto;
-  min-width: 0;
-  min-height: 0;
-}
-
-
-
-.flex-g-1 {
-  flex-grow: 1;
-}
-
-.flex-g-2 {
-  flex-grow: 2;
-}
-
-.flex-sm {
-  // > 540
-  @media (min-width: $break-540) {
-    flex-grow: 0;
-    width: auto;
+@mixin flex-layout-grid {
+  @include flex-layout;
+  > * {
+    flex-grow: 1;
+    flex-shrink: 0;
   }
 }
 
-.flex-s-1 {
-  flex-shrink: 1;
+@mixin flex-3-col {
+  @media (min-width: $break-900) {
+    @include flex-layout-grid;
+    > * {
+      flex-basis: 11em;
+    }
+  }
 }
-
-// Flex Direction
-.flex-d-col {
-  flex-direction: column;
-}
-
-.flex-d-col-rev {
-  flex-direction: column-reverse;
-}
-
-.flex-d-row {
-  flex-direction: row;
-}
-
-.flex-d-row-rev {
-  flex-direction: row-reverse
-}
-
-// Flex Alignment Items
-.ai-start {
-  align-items: flex-start;
-}
-
-.ai-end {
-  align-items: flex-end;
-}
-
-.ai-center {
-  align-items: center;
-}
-
-.ai-stretch {
-  align-items: stretch;
-}
-
-// Flex Align Content
-.ac-start {
-  align-content: flex-start;
-}
-
-.ac-end {
-  align-content: flex-end;
-}
-
-.ac-center {
-  align-content: center;
-}
-
-.ac-stretch {
-  align-content: stretch;
-}
-
-.ac-space-around {
-  align-content: space-around;
-}
-
-.ac-space-between {
-  align-content: space-between;
-}
-
-// Flex Justify Content
-.jc-start {
-  justify-content: flex-start;
-}
-
-.jc-end {
-  justify-content: flex-end;
-}
-
-.jc-center {
-  justify-content: center;
-}
-
-.jc-stretch {
-  justify-content: stretch;
-}
-
-.jc-around {
-  justify-content: space-around;
-}
-
-.jc-between {
-  justify-content: space-between;
-}
-

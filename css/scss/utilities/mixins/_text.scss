@@ -1,0 +1,113 @@
+@mixin font-scale {
+  font-size: calc( 1rem + (40 - 28) * ( (100vw - 400px) / ( 2000 - 400)));
+}
+
+//** ALIGNMENT (align-left by default) **//
+
+// align right
+@mixin align-right {
+  // > 540
+  @media (min-width: $break-540) {
+    text-align: right;
+    *+*:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// align center
+@mixin align-center {
+  // > 540
+  @media (min-width: $break-540) {
+    text-align: center;
+  }
+}
+
+@mixin text-center {
+  text-align: center;
+}
+
+//** FONT SIZE (1em by default) **//
+@mixin text-tiny {
+  font-size: 80%;
+}
+
+@mixin text-sm {
+  font-size: .875em;
+}
+
+@mixin text-base {
+  font-size: 1em;
+}
+
+@mixin text-md {
+  font-size: 1.45em;
+}
+
+@mixin text-lg {
+  font-size: 2em;
+}
+
+@mixin text-xl {
+  font-size: 3.125em;
+}
+
+//** FONT STYLES **//
+@mixin all-caps {
+  text-transform: uppercase;
+}
+
+@mixin italic {
+  font-style: italic;
+}
+
+@mixin bold {
+  font-weight: 700;
+}
+
+//** LIST STYLES **//
+
+@mixin list-unstyled {
+  font-family: $sans-serif;
+  ul {
+    font-family: $sans-serif;
+    @include mb-0;
+    @include pt-pb-1;
+    li:last-child {
+      @include mb-0;
+    }
+  }
+}
+
+@mixin list-clean {
+  li {
+    list-style-type: none;
+  }
+}
+
+@mixin list-nested {
+  @include pt-pb-1;
+  @include pl-3;
+  @include w-100;
+  > li {
+    list-style-type: circle;
+  }
+}
+
+@mixin arrow-list-lg {
+  @include p-0;
+  > li {
+    @include flex;
+    //@include flex-wrap;
+    @include list-clean;
+    &:before {
+      color: $orange;
+      content: "→ ";
+      @include pr-sm;
+    }
+  }
+}
+
+@mixin list-parent {
+  @include flex-wrap;
+}

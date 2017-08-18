@@ -1,5 +1,8 @@
 // navigation styles
 nav {
+  li {
+    @include mb-0;
+  }
   a {
     display: inline-block;
     line-height: 1;

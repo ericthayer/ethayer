@@ -1,0 +1,59 @@
+.testimonials {
+  .card-block {
+    @include w-100;
+  }
+  .card-text {
+    @include text-base;
+    //@include mw-25em;
+    @include mb-0;
+    //@include pl-tiny;
+  }
+  .card-title {
+    font-size: 2.5em;
+  }
+  .quotee {
+    @include flex;
+    @include ai-center;
+    @include text-base;
+    //@include jc-end;
+    //@include italic;
+    font-size: 1.2em;
+    @include mb-0;
+    @include pt-1;
+    .text-wrap {
+      //line-height: 2rem;
+    }
+    .title {
+      @include block;
+      @include italic;
+      font-size: .75rem;
+      letter-spacing: .03rem;
+      //@include all-caps;
+    }
+  }
+  .avatar {
+    @include mb-sm;
+    @media (min-width: $break-540) {
+      @include float-l;
+      @include mr-1;
+      @include mb-0;     
+    }
+  }
+  @media (max-width: $break-540) {      
+    .quotee {
+      @include flex-d-col;
+      @include jc-center;
+      @include text-center;
+    }
+  }
+  @media (min-width: $break-768) {
+    .card-block {
+      @include flex;
+      @include flex-d-col;
+    }
+    .quotee {
+      //@include jc-end;
+      margin-top: auto;
+    }
+  }
+}
