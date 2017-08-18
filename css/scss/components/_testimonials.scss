@@ -1,23 +1,66 @@
 .testimonials {
   .card-block {
+    @include overflow-hidden;
+    @include relative;
+    @include text-center;
     @include w-100;
+    &::before,
+    &::after {
+      @include psuedo-bg;
+      background: url("../images/UI/ui-icons/icon-quote-white.svg") no-repeat;
+      
+      // top: calc(50% - 12rem);
+      // left: calc(50% - 12rem);  
+      opacity: .1;
+      z-index: 0;
+    }
+    &::before {
+      top: 0;
+      left: -1rem;
+    }
+    &::after {
+      right: -1rem;
+      bottom: 0;
+      transform: rotate(180deg);
+    }
+    &:nth-child(1) {
+      &::before {
+        width: 20rem;
+        height: 20rem;
+      }
+      &::after {
+        width: 8rem;
+        height: 8rem;
+      }
+    }
+    &:nth-child(2) {
+      &::before {
+        width: 8rem;
+        height: 8rem;
+      }
+      &::after {
+        width: 20rem;
+        height: 20rem;
+      }
+    }
   }
   .card-text {
-    @include text-base;
+    @include text-md;
+    position: relative;
+    z-index: 1;
     //@include mw-25em;
-    @include mb-0;
+    //@include mb-0;
     //@include pl-tiny;
   }
   .card-title {
-    font-size: 2.5em;
+    //font-size: 3em;
   }
   .quotee {
     @include flex;
     @include ai-center;
-    @include text-base;
+    @include text-lg;
     //@include jc-end;
     //@include italic;
-    font-size: 1.2em;
     @include mb-0;
     @include pt-1;
     .text-wrap {
@@ -26,24 +69,29 @@
     .title {
       @include block;
       @include italic;
-      font-size: .75rem;
+      @include text-tiny;
       letter-spacing: .03rem;
       //@include all-caps;
     }
   }
   .avatar {
     @include mb-sm;
-    @media (min-width: $break-540) {
-      @include float-l;
-      @include mr-1;
-      @include mb-0;     
-    }
   }
-  @media (max-width: $break-540) {      
+  @media (max-width: $break-540) {
     .quotee {
       @include flex-d-col;
       @include jc-center;
       @include text-center;
+    }
+  }
+  @media (min-width: $break-540) {
+    .card-block {
+      text-align: left;
+    }
+    .avatar {
+      @include float-l;
+      @include mr-1;
+      @include mb-0;
     }
   }
   @media (min-width: $break-768) {
