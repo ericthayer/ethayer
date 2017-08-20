@@ -1,11 +1,8 @@
 // Lazy Load Styles
 
 .lazyload {
-  opacity: 1;  
-}
-
-img.lazyload {
- display: none;    
+  opacity: 0;
+  transition: opacity .3s;
 }
 
 figure.lazyload {
@@ -17,7 +14,7 @@ figure.lazyload {
 
 .enhanced {
   .lazyload {
-  	opacity: 0;
+    opacity: 0;
   }
    figure.lazyload a:first-child,
    img.lazyload {
@@ -28,8 +25,8 @@ figure.lazyload {
   }
   
   .lazyloaded {
-  	opacity: 1;
-  	transition: opacity .3s;
+    opacity: 1;
+    transition: .3s ease;
   }
   
   // 667

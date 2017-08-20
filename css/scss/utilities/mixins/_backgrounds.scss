@@ -82,3 +82,18 @@
   }
 
 }
+
+@mixin slug-img-bg {
+  background: url("../images/UI/ui-icons/icon-photo.svg") center no-repeat #DDD;
+  background-size: 20%;
+}
+
+@mixin slug-video-bg {
+  background: url("../images/UI/ui-icons/icon-video.svg") center no-repeat #DDD;
+  background-size: 20%;
+}
+
+@mixin slug-code-bg {
+  background: url("../images/UI/ui-icons/icon-codepen-grey.svg") center no-repeat #DDD;
+  background-size: 20%;
+}

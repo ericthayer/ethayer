@@ -194,12 +194,24 @@
     }
   } // > 480
   @media (min-width: $break-480) {
-    >* {
-      width: auto;
-      &:first-child {
-        //width: 100%;
-      }
-    }
+    // .media-item {
+    //   width: 100%;
+    //   > a {
+    //     background: url("../images/UI/ui-icons/icon-photo.svg") center no-repeat #DDD;
+    //     background-size: 20%;
+    //     padding-bottom: 56.25%; // 16:9
+    //     width: 100%;
+    //   }
+    //   img {
+    //     display: inline-block;
+    //     position: absolute;
+    //     margin: 0;
+    //     height: 100%;
+    //     width: 100%;
+    //     top: 0;
+    //     left: 0;
+    //   }
+    // }
   }
   // > 540
   @media (min-width: $break-640) {

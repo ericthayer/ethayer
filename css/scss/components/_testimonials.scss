@@ -70,6 +70,7 @@
       @include block;
       @include italic;
       @include text-tiny;
+      line-height: 1.4;
       letter-spacing: .03rem;
       //@include all-caps;
     }

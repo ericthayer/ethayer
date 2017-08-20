@@ -83,17 +83,17 @@
   margin-left: 0;
   margin-bottom: 0; //will-change: transform scale;
   transition: all .4s ease;
-  >a {
+  width: 100%;
+  > a {
     display: inline-block;
     overflow: hidden;
-    position: relative;
     .lazyloaded & {
       overflow: visible;
     }
   }
   img {
     animation: filter-hue-animation-rev .5s ease forwards;
-    transition: all .4s ease;
+    transition: .4s ease;
   }
   .icon {
     height: 100%;
@@ -206,10 +206,12 @@
 
 // headshot
 .mug {
+  @include slug-img-bg;
   display: none;
   margin-bottom: 1rem;
   margin-right: auto;
   margin-left: auto;
+  max-height: 15em;
   max-width: 15em; // > 400
   @media (min-width: 25em) {
     display: block;
@@ -227,9 +229,4 @@
   //   clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
   // 	shape-outside: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
   // }
-}
-
-.cp_embed_wrapper {
-  display: flex;
-  min-height: 20rem;
 }
