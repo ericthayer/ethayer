@@ -16,6 +16,10 @@
   margin-top: 0;
 }
 
+.mt-a {
+  @include mt-a;
+}
+
 //  Margin Bottom
 
 .mb-0 {

@@ -3,6 +3,10 @@
   [data-scroll-id="contact"] & {
     display: block;
   }
+  input,
+  textarea {
+    font-family: $sans-serif;
+  }
   // > 667
   @media (min-width: $break-640) {
     .form-wrap {
@@ -46,9 +50,8 @@
       }
     }
     .submit-input {
-      margin-right: 0;
-      margin-left: auto;
-      width: 20%; 
+      @include flex;
+      //@include jc-end;
     }
   }
 }

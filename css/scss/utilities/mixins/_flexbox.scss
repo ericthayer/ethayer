@@ -39,11 +39,8 @@
 }
 
 @mixin flex-sm {
-  // > 540
-  @media (min-width: $break-540) {
-		flex-grow: 0;
-    width: auto;
-  } 
+  flex-grow: 0;
+  flex-basis: auto;
 }
 
 // Flex Direction
@@ -152,7 +149,9 @@
 // Flex Layout
 @mixin flex-layout {
   > * {
+    flex-basis: 100%;
     padding-bottom: 1.5em;
+    width: auto;
   }
   .media-item {
     margin-bottom: 0;
@@ -165,6 +164,7 @@
     > * {
       float: left; 
       //flex: 1 1 auto;
+      flex-basis: 50%;
       flex-grow: 1;
       padding-top: 1.5em;
       padding-right: 1.5em;
@@ -172,7 +172,9 @@
       padding-left: 1.5em;
       min-height: 0;
       min-width: 0;
-      width: 50%;
+      &.flex-sm {
+        flex-basis: auto;
+      }
     }
   }
   // > 667
@@ -187,38 +189,19 @@
 @mixin l-media-grid {
   margin-right: -1em;
   margin-left: -1em;
+  > * {
+    padding: 1em;
+  }
   // < 320
   @media (max-width: 300px) {
     figcaption {
       @include sr-only;
     }
-  } // > 480
-  @media (min-width: $break-480) {
-    // .media-item {
-    //   width: 100%;
-    //   > a {
-    //     background: url("../images/UI/ui-icons/icon-photo.svg") center no-repeat #DDD;
-    //     background-size: 20%;
-    //     padding-bottom: 56.25%; // 16:9
-    //     width: 100%;
-    //   }
-    //   img {
-    //     display: inline-block;
-    //     position: absolute;
-    //     margin: 0;
-    //     height: 100%;
-    //     width: 100%;
-    //     top: 0;
-    //     left: 0;
-    //   }
-    // }
   }
-  // > 540
-  @media (min-width: $break-640) {
+  // < 640
+  @media (max-width: $break-640) {
     > * {
-      flex-basis: 50%;
-      padding: 1em;
-      width: auto;
+      flex-basis: 100%;
     }
   }
   // > 800

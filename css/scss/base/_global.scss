@@ -69,6 +69,10 @@ footer {
   //   padding-right: 2em;
   //   padding-left: 2em;   
   // }
+  // 1600
+  @media (min-width: $break-1600) {
+    max-width: 80%;
+  }
 }
 
 .container-flex {
@@ -95,7 +99,7 @@ footer {
   max-width: 100%;
   // 1600
   @media (min-width: $break-1600) {
-    max-width: 80%;
+    //max-width: 80%;
   }
 }
 

@@ -1,3 +1,12 @@
+button {
+  background-color: #DDD;
+  border-radius: .25rem;
+  @include pt-sm;
+  @include pr-1;
+  @include pb-sm;
+  @include pl-1;
+}
+
 .offline-btn {
   background-color: transparent;
   color: $link;

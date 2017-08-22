@@ -161,7 +161,7 @@
   @media (min-width: $break-768) {
     > * {
       padding: .3em;
-      width: 33%;
+      flex-basis: 33%;
     }
   }
 }
@@ -171,7 +171,7 @@
   @media (min-width: $break-540) {
     > * {
       padding: .3em;
-      width: 25%;
+      flex-basis: 25%;
     }
   }
 }

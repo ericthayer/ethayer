@@ -560,6 +560,7 @@
 }
 
 @mixin full-screen {
+  min-height: 100vh;
   .banner {
     display: flex;
     flex-direction: column;
@@ -568,10 +569,7 @@
     padding-bottom: 0;
   }
   @media (min-height: 42em) and (min-width: 40em) {
-    height: 100vh;
-  }
-  @media (max-height: 46em) {
-    height: 100vh;
+    //min-height: 100vh;
   }
 }
 

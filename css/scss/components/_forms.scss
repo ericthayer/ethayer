@@ -38,11 +38,14 @@ input[type="password"],
 input[type="email"],
 input[type="tel"],
 textarea {
-	border: 1px solid #EEE;
-	border-radius: 4px;
-	font-size: 16px;
+  border: .125rem solid #DDD;
+  //border: none;
+  border-radius: .25rem;
+  //box-shadow: 0 0 0 .125rem #DDD;
+  font-size: 16px;
+  font-size: 1rem;
 	line-height: 1.2;
-	padding: .5em .313em;
+	padding: .75em .5em;
 	width: 100%;
 	&:focus,
 	&:active {
@@ -67,12 +70,9 @@ input[type="submit"] {
 }
 
 label {
-  display: inline-block;  
-  font-size: 0.875em;
-  font-size: 0.875rem; 
-  font-weight: 700;
-  margin-bottom: 0; 
-  padding-bottom: 5px;  
+  display: inline-block; 
+  //font-weight: 700;
+  margin-bottom: .25rem;  
   width: 100%;    
 }
 

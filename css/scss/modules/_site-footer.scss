@@ -1,3 +1,6 @@
 .site-footer {
   margin-top: auto;
+  .container {
+    @include mw-100p;
+  }
 }
