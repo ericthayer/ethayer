@@ -292,9 +292,6 @@
           <form class="contact-form" name="contact" netlify-honeypot="bot-field" action="thank-you" netlify>
             <!-- Form Build -->
             <div class="form-wrap flex flex-wrap">
-              <p class="hidden">
-                <label>Don’t fill this out: <input name="bot-field"></label>
-              </p>
               <!-- Form Group (left) -->
               <div class="form-group flex flex-wrap">
                 <!-- Name -->
@@ -321,6 +318,9 @@
                   <textarea id="Message" name="Message" title="leave me a message if you want"></textarea>
                 </div>
               </div>
+              <p class="hidden">
+                <label>Don’t fill this out: <input name="bot-field"></label>
+              </p>
               <!-- Submit -->
               <div class="submit-input text-md">
                 <button class="submit-button" type="submit">Send</button>

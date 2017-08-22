@@ -17,7 +17,7 @@
       display: flex;
       flex-grow: 1;
       width: 50%; 
-      &:nth-child(2n) {
+      &:nth-child(1n) {
         padding-right: 1rem;
         .input-row {
           display: flex;
@@ -34,7 +34,7 @@
           //height: calc(100% - 1.5rem);
         } 
       }
-      &:nth-child(3n) {
+      &:nth-child(2n) {
         padding-left: 1rem;  
       }
     }
@@ -42,10 +42,10 @@
   // > 768
   @media (min-width: $break-768) {
     .form-group {
-      &:nth-child(2n) {
+      &:nth-child(1n) {
         width: 60%;
       }
-      &:nth-child(3n) {
+      &:nth-child(2n) {
         width: 40%; 
       }
     }
