@@ -52,7 +52,7 @@
     }
   }
   .card-text {
-    @include text-md;
+    //@include text-md;
     //@include mw-25em;
     //@include mb-0;
     //@include pl-tiny;
@@ -63,7 +63,7 @@
   .quotee {
     @include flex;
     @include ai-center;
-    @include text-lg;
+    @include text-md-r;
     //@include jc-end;
     //@include italic;
     @include mb-0;

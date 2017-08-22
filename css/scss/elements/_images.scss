@@ -211,8 +211,11 @@
   margin-bottom: 1rem;
   margin-right: auto;
   margin-left: auto;
-  max-height: 15em;
-  max-width: 15em; // > 400
+  height: 15em;
+  width: 15em;
+  max-height: 100%;
+  max-width: 100%;
+  // > 400
   @media (min-width: 25em) {
     display: block;
     float: right;
@@ -220,7 +223,8 @@
     margin-left: 3em;
   } // < 480
   @media (max-width: $break-480) {
-    max-width: 10em;
+    height: 10em;
+    width: 10em;
   } // @supports (-webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%)) {
   //   border-radius: 0;
   // 	img {

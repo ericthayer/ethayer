@@ -19,6 +19,7 @@
 @mixin align-center {
   // > 540
   @media (min-width: $break-540) {
+    justify-content: center;
     text-align: center;
   }
 }
@@ -42,18 +43,18 @@
 }
 
 @mixin text-md {
-  font-size: 1.25em;
+  font-size: 1.35em;
 }
 
 @mixin text-lg {
-  font-size: 1.45em;
+  font-size: 1.75em;
 }
 
 @mixin text-xl {
-  font-size: 2em;
+  font-size: 2.25em;
 }
 
-@mixin text-xl {
+@mixin text-xxl {
   font-size: 2.75em;
 }
 

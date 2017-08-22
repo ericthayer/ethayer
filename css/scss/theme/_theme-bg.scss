@@ -35,7 +35,7 @@
 }
 
 @mixin bg-red {
-  background: linear-gradient(-16deg, rgb(0, 0, 0), rgb(255, 107, 130));
+  background: linear-gradient(54deg, #ED165D, #071828);
   @include bg-dark;
 }
 

@@ -34,20 +34,20 @@
   //margin-bottom: auto;
   min-width: 0;
   min-height: 0;
-  padding-top: 3em;
+  padding-top: 1.5em;
   padding-right: 2em; 
-  padding-bottom: 1em;
+  padding-bottom: 1.5em;
   padding-left: 2em;
   width: 100%;
   &:focus a {
     outline: -moz-focus-ring-color auto 5px;
     outline: -webkit-focus-ring-color auto 5px;
   }
-  // < 640
-  @media (max-width: $break-640 - .01em) {
+  // < 540
+  @media (max-width: $break-480) {
     display: none;
   }
-  // > 667
+  // > 540
   @media (min-width: $break-640) {
     flex-grow: 0;
     padding-top: 1em;
@@ -70,20 +70,20 @@
   margin-right: auto;
   margin-left: auto;
   max-height: 3.125em;
-  min-height: 2em;  
+  //min-height: 2em;  
   max-width: 15rem;      
   width: 100%;
 }
 
 .alt-logo {
-  display: none; 
+  //display: none; 
   fill: white;  
-  // > 240 ~ < 667
-  @media (min-width: $break-240) and (max-width: $break-640 - .01em) {
-    display: none;  
+  // > 240 ~ < 540
+  @media (min-width: $break-240) and (max-width: $break-540 - .01em) {
+    //display: none;  
   } 
-  @media (min-width: $break-640) {
-    display: block;
+  @media (min-width: $break-540) {
+    //display: block;
   } 
 }
 
