@@ -8,17 +8,24 @@
   @include flex;
   @include jc-center;
   padding: 0;
-  // 375
-  @media (max-width: $break-375) {
+  // 480
+  @media (max-width: $break-480) {
     .tooltip {
       min-width: 7em;
       &::before {
-        display: none;
+        //display: none;
+        right: auto;
+        left: 16px;
       }
     }
   }
-  // 375
-  @media (min-width: $break-375) {
+  // 480
+  @media (min-width: $break-480) {
     min-width: 3rem;
+    .tooltip {
+      &::before {
+        left: calc(50% - 6px);
+      }
+    }
   }
 }

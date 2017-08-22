@@ -48,7 +48,17 @@
     z-index: 1;
     //width: 100%;
     -moz-osx-font-smoothing: auto;  
-    -webkit-font-smoothing: auto;      
+    -webkit-font-smoothing: auto;
+    &.active a {
+      box-shadow: none;
+      color: #FFF;
+      &::after {        
+        animation: nav-hover .5s ease forwards;
+        border-radius: 0;
+        opacity: 1;
+        transform: none;
+      }
+    }
   }
   a {
     color: #FFF;
@@ -82,16 +92,6 @@
     }
     &:hover,
     &:focus {
-      box-shadow: none;
-      color: #FFF;
-      &::after {        
-        animation: nav-hover .5s ease forwards;
-        border-radius: 0;
-        opacity: 1;
-        transform: none;
-      }
-    }
-    &.active a {
       box-shadow: none;
       color: #FFF;
       &::after {        

@@ -21,8 +21,8 @@
       @include no-link-shadow;
     }
   }
-  // 375
-  @media (min-width: $break-375) {
+  // 480
+  @media (min-width: $break-480) {
     display: flex;
     align-items: center;
     p {

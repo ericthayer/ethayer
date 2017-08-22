@@ -29,7 +29,7 @@
   transition: all .25s ease-out;
   border-radius: .2rem;
   z-index: 50;
-  &:before {
+  &::before {
     content: "";
     display: inline-block;
     position: absolute;
@@ -37,8 +37,5 @@
     border-top-color: hotpink;
     bottom: -16px;
     left: calc(50% - 8px);
-    .offline-btn & {
-      left: calc(50% - 6px);
-    }
   }
 }

@@ -4,6 +4,10 @@
     @include relative;
     @include text-center;
     @include w-100;
+    > * {
+      position: relative;
+      z-index: 1;
+    }
     &::before,
     &::after {
       @include psuedo-bg;
@@ -19,35 +23,36 @@
       left: -1rem;
     }
     &::after {
-      right: -1rem;
-      bottom: 0;
+      right: 1rem;
+      bottom: 2rem;
       transform: rotate(180deg);
     }
     &:nth-child(1) {
       &::before {
-        width: 20rem;
         height: 20rem;
+        width: 20rem;        
       }
       &::after {
-        width: 8rem;
         height: 8rem;
+        width: 8rem;        
       }
     }
     &:nth-child(2) {
       &::before {
-        width: 8rem;
+        top: 1rem;
+        left: 1rem;
         height: 8rem;
+        width: 8rem;
       }
       &::after {
-        width: 20rem;
+        bottom: 1rem;
         height: 20rem;
+        width: 20rem;        
       }
     }
   }
   .card-text {
     @include text-md;
-    position: relative;
-    z-index: 1;
     //@include mw-25em;
     //@include mb-0;
     //@include pl-tiny;
