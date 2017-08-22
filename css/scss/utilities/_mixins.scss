@@ -567,7 +567,10 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-  @media (min-height: 45em) and (min-width: 40em) {
+  @media (min-height: 42em) and (min-width: 40em) {
+    height: 100vh;
+  }
+  @media (max-height: 46em) {
     height: 100vh;
   }
 }

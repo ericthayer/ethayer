@@ -150,3 +150,16 @@
     margin-bottom: 0;
   }
 }
+
+.home-link {
+  @include fonts-loaded-KO29;
+  @include flex;
+  @include ai-center;
+  @include text-lg;
+  @include absolute;
+  right: 2rem;
+  bottom: 2rem;
+  @media (min-width: $break-640) {
+    display: none;
+  }
+}
