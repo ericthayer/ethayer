@@ -6,3 +6,12 @@
 #portfolio-home {
   //@include bg-peach;
 }
+
+.info-block-status {
+  // > 540
+  @media (min-width: $break-540) {
+    .flex-layout & {
+      @include pr-4;
+    }
+  }
+}

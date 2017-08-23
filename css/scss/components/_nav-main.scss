@@ -22,7 +22,6 @@
   @include ai-center;
   margin-bottom: 0;
   ul {
-    //background-color: #EBEBEB;
     @include flex;
     @include flex-grow-1;
     margin-bottom: 0;
@@ -32,7 +31,6 @@
     }
   }
   li {
-    //background-color: #EBEBEB;
     @include flex;
     @include ai-center;
     align-self: stretch;
@@ -46,7 +44,6 @@
     transition: background-color .5s ease,
                 color .5s ease;
     z-index: 1;
-    //width: 100%;
     -moz-osx-font-smoothing: auto;  
     -webkit-font-smoothing: auto;
     &.active a {
@@ -110,14 +107,6 @@
   // > 375
   @media (min-width: $break-240) {
     flex-wrap: nowrap;
-    li {
-      //border-right: 1px solid #CCC;
-      //border-bottom: 1px solid #CCC; 
-      //width: 25%;
-      &:last-child {
-        //border-right: none;
-      } 
-    }
   }
   // > 640
   @media (min-width: $break-640) {

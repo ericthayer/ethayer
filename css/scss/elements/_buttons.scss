@@ -1,9 +1,10 @@
 button {
   border-radius: .35rem;
   border: none;
-  @include pt-sm;
+  line-height: normal;
+  padding-top: .5em;
   @include pr-1;
-  @include pb-sm;
+  padding-bottom: .45em;
   @include pl-1;
   &:hover {
 
@@ -12,8 +13,9 @@ button {
 
 .submit-button {
   //@include bg-trans;
-  background: linear-gradient(to bottom, #EEE 10%, #BBB 100%);
+  //background: linear-gradient(to bottom, #EEE 10%, #BBB 100%);
   background: linear-gradient(to bottom, #EEE 0%, #DDD 100%);
+  color: #555;
   overflow: hidden;
   @include relative;
   text-shadow: .05rem .05rem 0 #E3E3E3;
@@ -33,14 +35,14 @@ button {
     z-index: 0;
   }
   &::after {
-    background: linear-gradient(to bottom, #EEE 0%, #DDD 100%);
+    //background: linear-gradient(to bottom, #EEE 0%, #DDD 100%);
     background: linear-gradient(to bottom, #EEE 10%, #BBB 100%);
     opacity: 0;
   }
   &:hover,
   &:focus {
     box-shadow: 0 .1rem .2rem 0 #EEE;
-    color: #555;
+    color: #333;
     &::after {
       opacity: 1;
     }

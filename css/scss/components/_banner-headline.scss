@@ -24,10 +24,16 @@
     
   }
   h1 {
-    font-size: calc(1vw + 3.875em);
+    font-size: calc(1vw + 3.45em);
     line-height: 1;
     abbr[title] {
       text-decoration: none;
+    }
+    @media (min-width: $break-540) {
+      font-size: calc(1vw + 3.875em);
+    }
+    .full-screen & {
+      
     }
     @media (min-width: $break-800) {
       .full-screen & {

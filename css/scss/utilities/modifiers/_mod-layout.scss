@@ -91,6 +91,10 @@
   @include h-100vh;
 }
 
+.mh-100vh {
+  @include mh-100vh;
+}
+
 // Width Sizes
 .w-a {
   @include w-a;

@@ -157,10 +157,17 @@
 }
 
 .flex-33 {
-  // 768
-  @media (min-width: $break-768) {
+  // 480
+  @media (min-width: $break-375) {
     > * {
-      padding: .3em;
+      //padding: .3em;
+      flex-basis: 50%;
+    }
+  }
+  // 640
+  @media (min-width: $break-640) {
+    > * {
+      //padding: .3em;
       flex-basis: 33%;
     }
   }

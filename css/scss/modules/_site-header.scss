@@ -36,10 +36,13 @@
   padding-right: 2em; 
   padding-bottom: 1.5em;
   padding-left: 2em;
+  transition: background-color .4s ease;
   width: 100%;
-  &:focus a {
-    outline: -moz-focus-ring-color auto 5px;
-    outline: -webkit-focus-ring-color auto 5px;
+  &:hover,
+  &:focus {
+    background-color: rgba(black, .2);
+    // outline: -moz-focus-ring-color auto 5px;
+    // outline: -webkit-focus-ring-color auto 5px;
   }
   // < 540
   @media (max-width: $break-640) {

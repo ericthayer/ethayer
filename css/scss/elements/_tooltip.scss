@@ -1,7 +1,8 @@
 .has-tooltip {
   position: relative;
   &:hover .tooltip,
-  &:focus .tooltip {
+  &:focus .tooltip,
+  a:focus .tooltip {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
