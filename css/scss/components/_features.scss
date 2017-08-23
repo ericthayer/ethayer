@@ -8,8 +8,8 @@
 }
 
 .info-block-status {
-  // > 540
-  @media (min-width: $break-540) {
+  // > 768
+  @media (min-width: $break-768) {
     .flex-layout & {
       @include pr-4;
     }

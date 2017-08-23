@@ -27,61 +27,69 @@
       bottom: 2rem;
       transform: rotate(180deg);
     }
-    &:nth-child(1) {
+    &:nth-child(1n) {
       &::before {
-        height: 20rem;
-        width: 20rem;        
+        height: 15rem;
+        width: 15rem;        
       }
       &::after {
-        height: 8rem;
-        width: 8rem;        
+        height: 5rem;
+        width: 5rem;        
       }
     }
-    &:nth-child(2) {
+    &:nth-child(2n) {
       &::before {
         top: 1rem;
         left: 1rem;
-        height: 8rem;
-        width: 8rem;
+        height: 5rem;
+        width: 5rem;
       }
       &::after {
         bottom: 1rem;
-        height: 20rem;
-        width: 20rem;        
+        height: 15rem;
+        width: 15rem;        
       }
     }
   }
-  .card-text {
-    //@include text-md;
-    //@include mw-25em;
-    //@include mb-0;
-    //@include pl-tiny;
-  }
   .card-title {
-    //font-size: 3em;
+    font-size: calc(1vw + 3.125em);
+    line-height: 1;
+    display: none;
+  }
+  .text-wrap {
+    a {
+      @include text-sm-r;
+      transition: .4s ease;
+      &:hover,
+      &:focus {
+        background-color: rgba(black, .8);
+        @include pr-tiny;
+        @include pl-tiny;
+        text-decoration: none;
+      }
+    }
   }
   .quotee {
     @include flex;
     @include ai-center;
-    @include text-md-r;
+    @include text-base-r;
     //@include jc-end;
     //@include italic;
     @include mb-0;
     @include pt-1;
-    .text-wrap {
-      //line-height: 2rem;
-    }
-    .title {
-      @include block;
-      @include italic;
-      @include text-tiny;
-      line-height: 1.4;
-      letter-spacing: .03rem;
-      //@include all-caps;
-    }
+  }
+  .title {
+    @include block;
+    @include italic;
+    @include text-tiny;
+    line-height: 1.4;
+    letter-spacing: .03rem;
+    //@include all-caps;
   }
   .avatar {
     @include mb-sm;
+    height: 4rem;
+    width: 4rem;
   }
   @media (max-width: $break-540) {
     .quotee {
@@ -104,10 +112,12 @@
     .card-block {
       @include flex;
       @include flex-d-col;
+      @include jc-center;
     }
     .quotee {
       //@include jc-end;
-      margin-top: auto;
+      //margin-top: auto;
+      @include pt-0;
     }
   }
 }

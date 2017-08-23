@@ -53,7 +53,13 @@ nav {
 .example-links {
   a {
     color: $link;
-    margin-right: .35rem;
+    @include block;
+    text-align: center;
+    width: 2em;
+    &:hover,
+    &:focus {
+      color: hotpink;
+    }
   }
   strong {
     font-weight: normal;

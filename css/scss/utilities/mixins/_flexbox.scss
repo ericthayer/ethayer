@@ -139,8 +139,8 @@
 }
 
 @mixin flex-sm {
-  // > 540
-  @media (min-width: $break-540) {
+  // > 640
+  @media (min-width: $break-640) {
     flex-grow: 0;
     width: auto;
   }
@@ -156,8 +156,8 @@
   .media-item {
     margin-bottom: 0;
   }
-  // > 540
-  @media (min-width: $break-540) {
+  // > 640
+  @media (min-width: $break-640) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

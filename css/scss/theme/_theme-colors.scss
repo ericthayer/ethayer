@@ -1,3 +1,15 @@
+// base
+$black: #111;
+$charcoal: #222;
+$grey: #333;
+$grey-555: #555;
+$grey-777: #777;
+$grey-999: #999;
+$grey-CCC: #CCC;
+$grey-EEE: #EEE;
+$white: #FFFFFF;
+$off-white: #FAFAFA;
+
 // blue
 $blue: #29ABE2;
 $blue-bright: #159EFC;
@@ -14,11 +26,47 @@ $orange: #F15A24;
 $orange-light: mix(white, $orange, 35%);
 $orange-dark: mix(black, $orange, 25%);
 
-$rust: #d14c1f;
-$teal: #29c5bc;
-$blue-rich: #607ee8;
-
 // purple
 $purple: #93278F;
 $purple-light: mix(white, $purple, 35%);
 $purple-dark: mix(black, $purple, 25%);
+
+// accents
+$rust: #d14c1f;
+$teal: #29c5bc;
+$blue-rich: #607ee8;
+
+// modifiers
+
+.c-black {
+  color: $black;
+}
+
+.c-white {
+  color: $white;
+}
+
+.c-off-white {
+  color: $off-white;
+}
+
+.c-grey-222 {
+  color: $charcoal;
+}
+
+.c-grey-333 {
+  color: $grey;
+}
+
+.c-grey-555 {
+  color: $grey-555;
+}
+
+.c-grey-777 {
+  color: $grey-555;
+}
+
+.c-grey-999 {
+  color: $grey-999;
+}
+

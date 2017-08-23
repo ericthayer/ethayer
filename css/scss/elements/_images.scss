@@ -208,29 +208,21 @@
 .mug {
   @include slug-img-bg;
   display: none;
-  margin-bottom: 1rem;
-  margin-right: auto;
-  margin-left: auto;
-  height: 15em;
-  width: 15em;
+  @include mr-a;
+  @include mb-1;
+  @include ml-a;
   max-height: 100%;
   max-width: 100%;
+  height: 10em;
+  width: 10em;
+  shape-outside: circle();
   // > 400
-  @media (min-width: 25em) {
+  @media (min-width: $break-540) {
     display: block;
     float: right;
+    height: 15em;
+    width: 15em;
     margin-top: -1em;
-    margin-left: 3em;
-  } // < 480
-  @media (max-width: $break-480) {
-    height: 10em;
-    width: 10em;
-  } // @supports (-webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%)) {
-  //   border-radius: 0;
-  // 	img {
-  // 		border-radius: 0;
-  // 	}
-  //   clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-  // 	shape-outside: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-  // }
+    @include ml-4;
+  }
 }
