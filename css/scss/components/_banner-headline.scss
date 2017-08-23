@@ -24,20 +24,20 @@
     
   }
   h1 {
-    font-size: calc(1vw + 3.45em);
+    font-size: calc(1vw + 3.875em);
     line-height: 1;
     abbr[title] {
       text-decoration: none;
     }
     @media (min-width: $break-540) {
-      font-size: calc(1vw + 3.875em);
+      //font-size: calc(1vw + 3.875em);
     }
     .full-screen & {
       
     }
     @media (min-width: $break-800) {
       .full-screen & {
-        font-size: calc(1vw + 4.875em);
+        font-size: calc(1vw + 4.25em);
         max-width: 52rem;
         max-width: calc(1vw + 8em);
       }
