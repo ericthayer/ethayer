@@ -17,25 +17,34 @@
       display: flex;
       flex-grow: 1;
       width: 50%; 
-      &:nth-child(1n) {
+      .input-row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      &:nth-child(1) {
         padding-right: 1rem;
         .input-row {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
+          @include mb-2;
+          &:last-child {
+            @include mb-0;
+          }
           //height: 100%; 
         }
         label {
           //flex-grow: 0;
-        }
+        } 
+      }
+      &:nth-child(2) {
+        padding-left: 1rem;
         textarea {
           flex-grow: 1;
           //height: 87%;  
           //height: calc(100% - 1.5rem);
-        } 
-      }
-      &:nth-child(2n) {
-        padding-left: 1rem;  
+        }
+        .input-row {
+          @include mb-0;
+        }
       }
     }
   }
@@ -43,10 +52,10 @@
   @media (min-width: $break-768) {
     .form-group {
       &:nth-child(1n) {
-        width: 60%;
+        width: 45%;
       }
-      &:nth-child(2n) {
-        width: 40%; 
+      &:nth-child(2) {
+        width: 55%; 
       }
     }
     .submit-input {
@@ -54,4 +63,8 @@
       //@include jc-end;
     }
   }
+}
+
+.req-mark {
+  color: #999;
 }

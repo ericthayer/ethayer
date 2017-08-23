@@ -5,6 +5,11 @@
   @include bg-dark;
 }
 
+@mixin gradient-blue-green-top {
+  background: linear-gradient(to top, $blue 10%, $green 100%);
+  @include bg-dark;
+}
+
 @mixin gradient-blue-green-45 {
   background: linear-gradient(45deg, $blue 10%, $green 100%);
   @include bg-dark;

@@ -296,12 +296,12 @@
               <div class="form-group flex flex-wrap">
                 <!-- Name -->
                 <div class="input-row">
-                  <label for="Name">Name</label>
+                  <label class="flex" for="Name">Name <span class="req-mark ml-a text-sm-r">* required</span></label>
                   <input id="Name" name="Name" type="text" class="required" title="This is a required field" required>
                 </div>
                 <!-- Email Address -->
                 <div class="input-row">
-                  <label for="Email">Email</label>
+                  <label class="flex" for="Email">Email <span class="req-mark ml-a text-sm-r">* required</span></label>
                   <input id="Email" name="Email" type="email" class="required" title="This is a required field" required>
                 </div>
                 <!-- Phone Number -->
@@ -318,12 +318,12 @@
                   <textarea id="Message" name="Message" title="leave me a message if you want"></textarea>
                 </div>
               </div>
-              <p class="hidden">
+              <p class="sr-only">
                 <label>Don’t fill this out: <input name="bot-field"></label>
               </p>
               <!-- Submit -->
-              <div class="submit-input text-md">
-                <button class="submit-button" type="submit">Send</button>
+              <div class="submit-input text-md jc-end pt-sm">
+                <button class="submit-button" type="submit" tabindex="0"><span>Send</span></button>
               </div>
             </div>
           </form>
