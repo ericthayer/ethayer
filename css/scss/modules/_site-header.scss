@@ -10,8 +10,11 @@
   @media (min-width: $break-640 - .01em) {
     //height: 30vh;
   }
-  @media (min-height: 42em) {
-    //height: 100vh;
+  @media (max-height: 46em) and (max-width: $break-540) {
+    min-height: 100vh;
+    .banner {
+      @include mt-a;
+    }
   }
   @media (min-width: $break-640) {
     //height: auto;
@@ -27,7 +30,7 @@
   display: flex;
   align-items: center;  
   flex-grow: 1;
-  filter: drop-shadow(.15rem .15rem 0 rgba(0,0,0,.2));
+  filter: drop-shadow(.1rem .1rem 0 rgba(0,0,0,.2));
   //margin-top: auto; 
   //margin-bottom: auto;
   min-width: 0;

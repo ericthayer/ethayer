@@ -84,7 +84,7 @@
 @mixin gradient-change {
   //background: linear-gradient(145deg, #e96443 , #904e95);
   //background: linear-gradient(54deg, #ED165D, #071828);
-  background: linear-gradient(120deg, #ED165D, #4b177c);
+  background: linear-gradient(120deg, #ED165D, #10273f);
   position: relative;
   &::before,
   &::after {
@@ -121,7 +121,7 @@
       opacity: 0;
     }
     &::after {
-      background: linear-gradient(120deg, #ED165D, #4b177c);
+      background: linear-gradient(120deg, #ED165D, #10273f);
       opacity: 1;
     }
   }
