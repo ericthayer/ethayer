@@ -38,6 +38,10 @@
         @include mb-0;
       }
     }
+    .submit-input {
+      @include flex;
+      @include jc-end;
+    }
   }
   // > 768
   @media (min-width: $break-640) {
@@ -51,14 +55,8 @@
       width: 55%; 
     }
     .submit-input {
-      @include flex;
+      
       //@include jc-end;
-    }
-  }
-   // > 900
-   @media (min-width: $break-900) {
-    .submit-input {
-      @include jc-end;
     }
   }
 }
