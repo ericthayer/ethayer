@@ -11,7 +11,7 @@
     //height: 30vh;
   }
   @media (max-height: 46em) and (max-width: $break-540) {
-    min-height: 100vh;
+    //height: 100vh;
     .banner {
       @include mt-a;
     }
@@ -22,17 +22,10 @@
 }
 
 .site-title {
-  //background-color: #1e6c67;
-  // background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23FFFFFF' fill-opacity='0.05'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(135deg, #40a59f 0%,#1e6c67 100%);
-  //background: linear-gradient(135deg, #40a59f 0%,#1e6c67 100%);
-  //background-blend-mode: multiply;
-  //background: linear-gradient(45deg, #518c54 0%,#6bba70 100%);
   display: flex;
   align-items: center;  
   flex-grow: 1;
   filter: drop-shadow(.1rem .1rem 0 rgba(0,0,0,.2));
-  //margin-top: auto; 
-  //margin-bottom: auto;
   min-width: 0;
   min-height: 0;
   padding-top: 1.5em;
