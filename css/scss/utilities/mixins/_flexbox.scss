@@ -206,10 +206,8 @@
   }
   // > 800
   @media (min-width: 50em) {
-    > * {
-      .portfolio & {
-        flex-basis: 50%;
-      }
+    &.col-2 > * {
+      flex-basis: 50%;
     }
   }
   // > 1200

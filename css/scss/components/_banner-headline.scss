@@ -20,8 +20,7 @@
   @include fade-in;
   text-shadow: .125rem .125rem .05rem rgba(black, .25);
   .container {
-    max-width: 100%;
-    
+    max-width: 100%;    
   }
   h1 {
     font-size: calc(1vw + 3.875em);
@@ -45,6 +44,9 @@
   }
   .sub-header {
     line-height: 2.125rem;
+    &.header-lg {
+      line-height: 2.5rem;
+    }
     a {
       background-image: none;
       background-color: rgba(black, .25);

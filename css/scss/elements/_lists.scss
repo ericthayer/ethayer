@@ -10,7 +10,9 @@
   @include text-sm;
   li {
     @include flex;
-    @include mb-0;
+    flex-basis: 25em;
+    @include mb-2;
+    @include pr-pl-sm;
   }
   strong {
     @include block;
@@ -37,5 +39,11 @@
   @media (min-width: $break-640) {
     grid-gap: 4em 4em;
     @include text-tiny;
+  }
+  @supports (grid-gap: 0) {
+    li {
+      @include mb-0;
+      @include pr-pl-0;
+    }
   }
 }
