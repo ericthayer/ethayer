@@ -35,6 +35,9 @@ $purple-dark: mix(black, $purple, 25%);
 $rust: #d14c1f;
 $teal: #29c5bc;
 $blue-rich: #607ee8;
+$yellow: #EDD952;
+$pink: #D25494;
+
 
 // modifiers
 
@@ -70,3 +73,34 @@ $blue-rich: #607ee8;
   color: $grey-999;
 }
 
+.c-blue {
+  color: $blue;
+}
+
+.c-green {
+  color: $green;
+}
+
+.c-orange {
+  color: $orange;
+}
+
+.c-purple {
+  color: $purple;
+}
+
+.c-rust {
+  color: $rust;
+}
+
+.c-blue-rich {
+  color: $blue-rich;
+}
+
+.c-yellow {
+  color: $yellow;
+}
+
+.c-pink {
+  color: $pink;
+}

@@ -523,16 +523,3 @@ p {
   //box-shadow: 0 0 15px 0 rgb(0, 0, 0);
   box-shadow: none;
 }
-
-p a:hover,
-p:focus,
-a:focus { 
-  @include focus-pink;
-  text-shadow: none;
-}
-
-p a:focus {
-  //background: rgba($link, .25); 
-  //color: #fff !important;
-  font-size: 105%;
-}

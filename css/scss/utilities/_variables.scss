@@ -30,11 +30,11 @@ $break-2400: 150em; // 2400px
 
 // Default Font Stacks
 
-$sans-serif: "Helvetica Neue", Helvetica, sans-serif;
+$sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
 $sans-serif-narrow: "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, sans-serif;
 
-$serif: "Cambria", Georgia, serif;
+$serif: "Garamond", "Cambria", Georgia, serif;
 
 $KO29: "Knockout-29", $sans-serif-narrow;
 

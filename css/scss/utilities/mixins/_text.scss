@@ -31,7 +31,7 @@
 //** FONT SIZE (em) **//
 
 @mixin text-tiny {
-  font-size: 80%;
+  font-size: .7em;
 }
 
 @mixin text-sm {
@@ -73,7 +73,7 @@
 //** FONT SIZE (rem) **//
 
 @mixin text-tiny-r {
-  font-size: .5rem;
+  font-size: .7rem;
 }
 
 @mixin text-sm-r {
