@@ -1,7 +1,7 @@
 .question {
   background-color: $blue-rich;
   //border-right: .35rem solid mix(black, $blue-rich, 45%);
-  border-radius: .4rem .4rem 0 0;
+  //border-radius: .4rem .4rem 0 0;
   color: $white;
   @include flex;
   display: grid;
