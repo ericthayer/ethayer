@@ -4,8 +4,9 @@
   border-radius: .4rem .4rem 0 0;
   color: $white;
   @include flex;
-  display: grid;
-  grid-template-columns: 1fr;
+  @include jc-center;
+  //display: grid;
+  //grid-template-columns: 1fr;
   line-height: 1.2;
   @include text-md;
   @include bold;
