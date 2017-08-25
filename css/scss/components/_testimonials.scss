@@ -3,6 +3,7 @@
     @include overflow-hidden;
     @include relative;
     @include text-center;
+    text-shadow: .1rem .1rem 0 rgba(black, .125);
     @include w-100;
     > * {
       position: relative;
@@ -58,7 +59,7 @@
   }
   .text-wrap {
     a {
-      @include text-sm-r;
+      @include text-base-r;
       transition: .4s ease;
       &:hover,
       &:focus {
@@ -76,6 +77,9 @@
     //@include italic;
     @include mb-0;
     @include pt-1;
+    a {
+      text-shadow: .1rem .1rem 0 rgba(black, .125);
+    }
   }
   .title {
     @include block;
@@ -83,6 +87,7 @@
     @include text-tiny;
     line-height: 1.4;
     letter-spacing: .03rem;
+    @include mb-tiny;
     //@include all-caps;
   }
   .avatar {
@@ -106,8 +111,10 @@
       @include mr-1;
       @include mb-0;
     }
-    .quotee {
-      @include text-base-r;
+  }
+  @media (min-width: $break-540) and (max-width: $break-768) {
+    .card-text {
+      @include pr-2;
     }
   }
   @media (min-width: $break-768) {
@@ -119,7 +126,8 @@
     .quotee {
       //@include jc-end;
       //margin-top: auto;
-      @include pt-0;
+      //@include pt-0;
+      //@include text-base-r;
     }
   }
 }
