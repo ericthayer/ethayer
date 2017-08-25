@@ -256,6 +256,14 @@
   max-width: 40em;
 }
 
+@mixin mw-42em {
+  max-width: 42em;
+}
+
+@mixin mw-44em {
+  max-width: 44em;
+}
+
 @mixin mw-48em {
   max-width: 48em;
 }

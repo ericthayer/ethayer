@@ -3,6 +3,7 @@
   line-height: 1.765;
   list-style-type: none; 
   @include grid-2-col; 
+  @include mb-2;
   @include pt-2;
   @include pr-1;
   @include pb-2; 
@@ -39,6 +40,12 @@
   @media (min-width: $break-640) {
     grid-gap: 4em 4em;
     @include text-tiny;
+  }
+  // 800
+  @media (min-width: $break-800) {    
+    @include mw-56em;
+    @include mr-ml-a;
+    @include pr-pl-2;
   }
   @supports (grid-gap: 0) {
     li {
