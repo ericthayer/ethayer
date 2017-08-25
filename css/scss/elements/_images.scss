@@ -216,6 +216,9 @@
   height: 10em;
   width: 10em;
   shape-outside: circle();
+  img {
+    opacity: 0;
+  }
   // > 400
   @media (min-width: $break-540) {
     display: block;
