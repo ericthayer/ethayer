@@ -44,12 +44,13 @@
   }
   .sub-header {
     line-height: 2.125rem;
-    &.header-lg {
-      line-height: 2.5rem;
-    }
+    // &.header-lg {
+    //   line-height: 2.5rem;
+    // }
     a {
       background-image: none;
       background-color: rgba(black, .25);
+      line-height: 2.5rem;
       padding-right: .25em;
       padding-left: .25em;
       text-decoration: none;
