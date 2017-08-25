@@ -60,10 +60,7 @@
   a {
     color: #FFF;
     @include fonts-loaded-KO29;
-    font-size: 1.35rem;
-    .fonts-loaded & {
-      font-size: 1.45rem;
-    }
+    font-size: 1.45rem;
     @include flex-grow-1;
     margin-right: 0;
     padding: 1.25rem .25rem;
@@ -127,12 +124,15 @@
     li {
       flex-grow: 0;
     }
+    a {
+      font-size: 1.25rem;
+    }
   }
 }
 
-// > 667
-@media (min-width: $break-640) {
-  .main-menu {
+.main-menu {
+  // > 640
+  @media (min-width: $break-640) {
     display: flex;
     flex-direction: row;
     min-height: 0;

@@ -1,18 +1,11 @@
 // Site Title
 
 .site-header {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  //height: 100vh;
-  width: 100%;
-  z-index: 100;
-  @media (min-width: $break-640 - .01em) {
-    //height: 30vh;
-  }
+  @include flex;
+  @include flex-d-col;
+  @include w-100;
   @media (max-height: 46em) and (max-width: $break-540) {
-    //height: 100vh;
-    .banner {
+    &.full-screen .banner {
       @include mt-a;
     }
   }
