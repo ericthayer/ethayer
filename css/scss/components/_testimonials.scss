@@ -72,7 +72,6 @@
   .quotee {
     @include flex;
     @include ai-center;
-    @include text-base-r;
     //@include jc-end;
     //@include italic;
     @include mb-0;
@@ -106,6 +105,9 @@
       @include float-l;
       @include mr-1;
       @include mb-0;
+    }
+    .quotee {
+      @include text-base-r;
     }
   }
   @media (min-width: $break-768) {
