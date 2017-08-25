@@ -84,7 +84,7 @@
   .title {
     @include block;
     @include italic;
-    @include text-tiny;
+    @include text-sm;
     line-height: 1.4;
     letter-spacing: .03rem;
     @include mb-tiny;
@@ -122,6 +122,9 @@
       @include flex;
       @include flex-d-col;
       @include jc-center;
+    }
+    .title {
+      @include text-tiny;
     }
     .quotee {
       //@include jc-end;
