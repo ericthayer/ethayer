@@ -10,7 +10,7 @@
     }
     &::before,
     &::after {
-      @include psuedo-bg;
+      @include pseudo-bg;
       background: url("../images/UI/ui-icons/icon-quote-white.svg") no-repeat;
       
       // top: calc(50% - 12rem);
