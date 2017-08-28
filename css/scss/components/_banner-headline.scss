@@ -37,7 +37,6 @@
     @media (min-width: $break-800) {
       .full-screen & {
         font-size: calc(1vw + 4.25em);
-        max-width: 52rem;
         max-width: calc(1vw + 8em);
       }
     }
@@ -55,6 +54,9 @@
       padding-left: .25em;
       text-decoration: none;
       text-shadow: none;
+    }
+    .full-screen & {
+      max-width: 32em;
     }
   }
 }

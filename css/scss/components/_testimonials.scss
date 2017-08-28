@@ -81,6 +81,12 @@
       text-shadow: .1rem .1rem 0 rgba(black, .125);
     }
   }
+
+  .name {
+    @include fonts-loaded-KO29;
+    @include text-md;
+  }
+
   .title {
     @include block;
     @include italic;

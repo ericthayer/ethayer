@@ -14,9 +14,11 @@ nav {
 .cta-link {
   background: none;
   color: $link;
-  display: inline-block;
-  font-size: 1.875rem;
+  @include block;
   @include fonts-loaded-KO29;
+  @include text-lg;
+  @include pt-sm;
+  @include text-center;
   text-shadow: none;
   .icon {
     font-size: .875em;
