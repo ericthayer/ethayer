@@ -1,0 +1,69 @@
+// gradients
+
+.gradient-blue-green {
+  @include gradient-blue-green;
+}
+
+.gradient-blue-green-45 {
+  @include gradient-blue-green-45;
+}
+
+.gradient-blue-green-90 {
+  @include gradient-blue-green-90;
+}
+
+.gradient-blue-green-270 {
+  @include gradient-blue-green-270;
+}
+
+.gradient-blue-purple {
+  @include gradient-blue-purple;
+}
+
+.gradient-blue-purple-45 {
+  @include gradient-blue-purple-45;
+}
+
+.gradient-blue-purple-270 {
+  @include gradient-blue-purple-270;
+}
+
+.gradient-purple-blue {
+  @include gradient-purple-blue;
+}
+
+.gradient-purple-blue-45 {
+  @include gradient-purple-blue-45;
+}
+
+.gradient-purple-blue-270 {
+  @include gradient-purple-blue-270;
+}
+
+.gradient-orange {
+  @include gradient-orange;
+}
+
+.gradient-orange-45 {
+  @include gradient-orange-45;
+}
+
+.gradient-orange-270 {
+  @include gradient-orange-270;
+}
+
+.gradient-orange-purple {
+  @include gradient-orange-purple;
+}
+
+.gradient-orange-purple-45 {
+  @include gradient-orange-purple-45;
+}
+
+.gradient-orange-purple-270 {
+  @include gradient-orange-purple-270;
+}
+
+.gradient-change {
+  @include gradient-change;
+}

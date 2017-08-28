@@ -34,7 +34,7 @@
   }
 }
 
-@mixin bg-purple {
+@mixin bg-purple-blue {
   background: linear-gradient(-112deg, rgb(74, 190, 223), rgb(102, 51, 153));
   @include bg-dark;
 }
@@ -44,7 +44,7 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%23EEEEEE' fill-opacity='0.1'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-@mixin bg-green {
+@mixin bg-green-blue {
   // checkered pattern
   //background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23FFFFFF' fill-opacity='0.05'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(-35deg, #40a59f 0%,mix(black, #1e6c67, 20%) 100%);
   //background: linear-gradient(-35deg, #40a59f 0%,mix(black, #1e6c67, 20%) 100%);
@@ -57,7 +57,7 @@
   @include bg-dark;
 }
 
-@mixin bg-red {
+@mixin bg-red-purple {
   background: linear-gradient(-54deg, #ED165D, #071828);
   @include bg-dark;
 }
@@ -143,116 +143,41 @@
   }
 }
 
-.bg-dark {
-  @include bg-dark;
+@mixin bg-blue {
+  background-color: $blue;
 }
 
-.bg-light {
-  @include bg-light;
+@mixin bg-green {
+  background-color: $green;
 }
 
-.bg-light-grey {
-  @include bg-light-grey;
+@mixin bg-orange {
+  background-color: $orange;
 }
 
-.bg-green {
-  @include bg-green;
+@mixin bg-purple {
+  background-color: $purple;
 }
 
-.bg-aquamarine {
-  @include bg-aquamarine;
+@mixin bg-rust {
+  background-color: $rust;
 }
 
-.bg-red {
-  @include bg-red;
+@mixin bg-teal {
+  background-color: $teal;
 }
 
-.bg-red-pink {
-  @include bg-red-pink;
+@mixin bg-yellow {
+  background-color: $yellow;
 }
 
-.bg-purple {
-  @include bg-purple;
+@mixin bg-pink {
+  background-color: $pink;
 }
 
-.bg-peach-grid {
-  @include bg-peach-grid;
+@mixin bg-blue-rich {
+  background-color: $blue-rich;
 }
 
-.bg-purple-grid {
-  @include bg-purple-grid;
-}
 
-// gradients
 
-.gradient-blue-green {
-  @include gradient-blue-green;
-}
-
-.gradient-blue-green-45 {
-  @include gradient-blue-green-45;
-}
-
-.gradient-blue-green-90 {
-  @include gradient-blue-green-90;
-}
-
-.gradient-blue-green-270 {
-  @include gradient-blue-green-270;
-}
-
-.gradient-blue-purple {
-  @include gradient-blue-purple;
-}
-
-.gradient-blue-purple-45 {
-  @include gradient-blue-purple-45;
-}
-
-.gradient-blue-purple-270 {
-  @include gradient-blue-purple-270;
-}
-
-.gradient-purple-blue {
-  @include gradient-purple-blue;
-}
-
-.gradient-purple-blue-45 {
-  @include gradient-purple-blue-45;
-}
-
-.gradient-purple-blue-270 {
-  @include gradient-purple-blue-270;
-}
-
-.gradient-orange {
-  @include gradient-orange;
-}
-
-.gradient-orange-45 {
-  @include gradient-orange-45;
-}
-
-.gradient-orange-270 {
-  @include gradient-orange-270;
-}
-
-.gradient-orange-purple {
-  @include gradient-orange-purple;
-}
-
-.gradient-orange-purple-45 {
-  @include gradient-orange-purple-45;
-}
-
-.gradient-orange-purple-270 {
-  @include gradient-orange-purple-270;
-}
-
-.gradient-change {
-  @include gradient-change;
-}
-
-body {
-  @include bg-light-grey;
-}

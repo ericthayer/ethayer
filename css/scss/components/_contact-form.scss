@@ -7,6 +7,17 @@
   textarea {
     font-family: $sans-serif;
   }
+  .submit-input {
+    @include flex;
+  }
+  
+  // < 480 {
+  @media (max-width: $break-640) {
+    .submit-button {
+      flex-basis: 100%;
+      @include p-1;
+    }
+  }
   // > 667
   @media (min-width: $break-640) {
     .form-wrap {
@@ -39,8 +50,13 @@
       }
     }
     .submit-input {
-      @include flex;
-      @include jc-end;
+      @include jc-center;
+      @include pt-2;
+    }
+    .submit-button {
+      flex-basis: 8rem;
+      @include pt-sm;
+      @include pb-sm;
     }
   }
   // > 768
@@ -54,10 +70,10 @@
     .form-group-right {
       width: 55%; 
     }
-    .submit-input {
-      
-      //@include jc-end;
-    }
+  }
+  // 1200
+  @media (min-width: $break-1200) {
+    
   }
 }
 

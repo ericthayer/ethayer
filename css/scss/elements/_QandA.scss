@@ -14,7 +14,7 @@
   @include relative;
   @include overflow-hidden;
   @include text-center;
-  text-shadow: .1rem .1rem 0 mix(black, $blue-rich, 10%); 
+  text-shadow: .1rem .1rem 0 rgba(black, .2); 
   &::before {
     background-color: mix(black, $blue-rich, 25%);
     //border-left: .35rem solid mix(black, $blue-rich, 45%);
