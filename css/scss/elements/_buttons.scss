@@ -83,8 +83,10 @@ button {
     
     .tooltip {
       width: 6rem;
-      left: auto;
+      left: -6.5rem;
       right: 0;
+      margin-bottom: 0;
+      bottom: 0;
       &::before {
         
       }
