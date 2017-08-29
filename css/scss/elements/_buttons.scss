@@ -63,6 +63,10 @@ button {
   @include flex;
   @include jc-center;
   padding: 0;
+}
+
+.source-link.has-tooltip {
+  display: inline-block;
   // 480
   @media (max-width: $break-480) {
     .tooltip {
@@ -74,12 +78,15 @@ button {
       }
     }
   }
-  // 480
-  @media (min-width: $break-480) {
-    min-width: 3rem;
+  // 540
+  @media (min-width: $break-540) {
+    
     .tooltip {
+      width: 6rem;
+      left: auto;
+      right: 0;
       &::before {
-        left: calc(50% - 6px);
+        
       }
     }
   }

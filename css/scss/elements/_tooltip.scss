@@ -33,6 +33,7 @@
   &::before {
     content: "";
     display: inline-block;
+    display: none;
     position: absolute;
     border: 8px solid transparent;
     border-top-color: hotpink;

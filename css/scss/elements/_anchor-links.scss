@@ -1,19 +1,25 @@
 a.anchor-top-page {
-  background-color: mix(black, $link, 25%);
-  color: #FFF;
-  font-size: .75em;
+  //background-color: mix(black, $link, 25%);
+  //color: #FFF;
+  display: none;
+  font-size: .7em;
   letter-spacing: .04em;
   margin-left: 1rem;
-  padding: .1rem .25rem;
+  //
   text-transform: uppercase;
   text-shadow: none;
+  transition: .4s ease;
   &:hover,
   &:focus {
     background-color: hotpink;
     color: #FFF;
+    padding: .1rem .25rem;
   }
   // 480
   @media (min-width: $break-480) {
     margin-left: 0;
+  }
+  @media (min-width: $break-640) {
+    font-size: .6em;
   }
 }
