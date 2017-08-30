@@ -97,6 +97,7 @@
     //@include all-caps;
   }
   .avatar {
+    @include hidden;
     @include mb-sm;
     height: 4rem;
     width: 4rem;
