@@ -134,11 +134,13 @@
 }
 
 @mixin text-link {
+  background: none;
   @include block;
   @include pb-tiny;
   @include text-md; 
   @include text-u-none;
   line-height: 1.2;
+  text-shadow: none;
 }
 
 //** LIST STYLES **//
