@@ -108,6 +108,10 @@
   @include text-u-none;
 }
 
+.text-link {
+  @include text-link;
+}
+
 //** LIST STYLES **//
 
 .list-title {

@@ -133,6 +133,14 @@
   text-decoration: none;
 }
 
+@mixin text-link {
+  @include block;
+  @include pb-tiny;
+  @include text-md; 
+  @include text-u-none;
+  line-height: 1.2;
+}
+
 //** LIST STYLES **//
 
 @mixin list-unstyled {
