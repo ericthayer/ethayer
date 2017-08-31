@@ -239,6 +239,7 @@ figure.lazyload {
   background-color: $link;
   color: #FFF;
   display: flex;
+  @include ai-center;
   justify-content: center;
   @include fonts-loaded-KO29;
   font-size: 2.5rem;

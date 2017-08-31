@@ -125,6 +125,14 @@
   font-weight: 700;
 }
 
+@mixin text-u-none {
+  text-decoration: none;
+}
+
+@mixin text-u {
+  text-decoration: underline;
+}
+
 //** LIST STYLES **//
 
 @mixin list-unstyled {

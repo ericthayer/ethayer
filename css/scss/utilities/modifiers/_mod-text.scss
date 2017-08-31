@@ -100,6 +100,14 @@
   @include bold;
 }
 
+.text-u {
+  text-decoration: underline;
+}
+
+.text-u-none {
+  text-decoration: none;
+}
+
 //** LIST STYLES **//
 
 .list-title {
