@@ -126,6 +126,11 @@
       overflow: visible;
     }
   }
+  img, iframe {
+    @include text-sm;
+    line-height: 2.35;
+    text-align: center;
+  }
   img {
     animation: filter-hue-animation-rev .5s ease forwards;
     transition: .4s ease;
