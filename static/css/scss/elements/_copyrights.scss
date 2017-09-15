@@ -16,6 +16,11 @@ p.copyrights {
       @include no-link-shadow;
     }
   }
+  // < 645
+  @media (max-width: 40.313em) {
+    @include flex-grow-1;
+    @include text-center;
+  }
 }
 
 .source-link {

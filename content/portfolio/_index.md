@@ -1,7 +1,7 @@
 +++
 type = "page"
 page = "portfolio/portfolio.html"
-title = "Portfolio"
-description = "The design and development work of Eric Thayer"
+title = "Design Portfolio"
+description = "Eric Thayer is a Web Designer and Front-end Developer from Denver Colorado"
 +++
 

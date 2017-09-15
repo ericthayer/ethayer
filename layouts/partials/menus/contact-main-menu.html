@@ -1,0 +1,13 @@
+<div class="main-menu">
+
+  {{ partial "site-title.html" . }}
+
+  <nav class="nav-main" role="navigation">
+    <ul>
+      <li><a href="{{ .Site.BaseURL }}portfolio/"><span>Work</span></a></li>
+      <li><a href="{{ .Site.BaseURL }}about/"><span>About</span></a></li>
+      <li><a href="{{ .Site.BaseURL }}process/"><span>Process</span></a></li>
+      <li class="active"><a href="#main"><span>Contact</span></a><span class="sr-only">current page</span></li>
+    </ul>
+  </nav>
+</div>

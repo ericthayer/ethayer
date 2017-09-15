@@ -21,7 +21,7 @@ button {
   text-shadow: .05rem .05rem 0 #E3E3E3;
   box-shadow: 0 .1rem .2rem 0 transparent;
   box-shadow: 0 .1rem .2rem 0 #AAA;
-  transition: .4s ease;
+  transition: background .4s ease, color .4s ease, box-shadow .4s ease, text-shadow .4s ease;
   span {
     position: relative;
     z-index: 2;
@@ -29,7 +29,7 @@ button {
   &::after {
     border-radius: .35rem;
     @include pseudo-bg;
-    transition: .4s ease;
+    transition: background .4s ease, border-radius .4s ease, opacity .4s ease;
     top: 0;
     left: 0;
     z-index: 0;

@@ -1,8 +1,8 @@
 +++
 type = "page"
 page = "about/about.html"
-title = "About"
-description = "About Eric Thayer"
+title = "About Me"
+description = "Eric Thayer is a Web Designer and Front-end Developer from Denver Colorado"
 +++
 
 <!-- About -->
