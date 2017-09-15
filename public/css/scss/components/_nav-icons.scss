@@ -1,3 +1,7 @@
+.contact-nav {
+  @include flex-grow-1;
+}
+
 // icon nav
 .nav-icons {
   @include mb-0;
@@ -8,13 +12,14 @@
     margin: 0;
   }
   ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 0;
+    @include flex;
+    @include flex-grow-1;
+    @include ai-center;
+    @include jc-around;
+    @include mb-0;
   }
   li {
-    @include mr-1;
+    @include mr-1; 
     &:last-child {
       margin-right: 0;
     }
@@ -33,15 +38,40 @@
   }
   // 480
   @media (min-width: $break-480) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 0;
     h2 {
       margin-bottom: 0;
     }
     li {
       margin-bottom: 0;
+    }
+  }
+  // < 240
+  @media (max-width: 15em) {
+    ul {
+      @include flex-wrap;
+      @include jc-center;
+    }
+    li {
+      margin: .25rem .5rem;
+      &:last-child {
+        margin-right: .5rem;
+        margin-bottom: .5rem;
+      }
+    }
+  }
+  // > 645
+  @media (max-width: 40.313em) {
+    .flush-l {
+      left: calc(50% - 60px);
+      &::before {
+        left: calc(50% - 8px);       
+      }
+    }
+  }
+  // > 645
+  @media (min-width: 40.313em) {
+    ul {
+      justify-content: flex-start;
     }
   }
 }
