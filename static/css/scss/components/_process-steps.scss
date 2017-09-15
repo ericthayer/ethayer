@@ -1,7 +1,5 @@
 // Process Home
-
 // Process Steps
-
 #process-steps {
   .iframe {
     iframe {
@@ -13,25 +11,14 @@
 
 .process-steps {
   //color: mix(black, $link, 40%);
-  text-align: center;
-  // > 320
+  text-align: center; // > 320
   @media (min-width: $break-240) {
     display: flex;
-	  flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-right: -1em;
     margin-left: -1em;
-    .step {
-      width: 50%;
-    }
-  }
-  // > 640
-	@media (min-width: $break-640) {
-  	.step {
-    	width: 33%;
-    }
-  }
-  // > 900
-	@media (min-width: $break-900) {
+  } // > 900
+  @media (min-width: $break-900) {
     .step {
       padding: 2em 1.75em;
     }
