@@ -1,0 +1,62 @@
+// .home {
+//   @include bg-green;
+//   .site-header, .banner {
+//     @include bg-white;
+//   }
+// }
+
+// .portfolio {
+//   @include bg-red-pink;
+//   .site-header, .banner {
+//     @include bg-white;
+//   }
+// }
+
+.banner {
+  //@include banner;
+}
+
+.banner-headline {
+  @include fade-in;
+  text-shadow: .125rem .125rem .05rem rgba(black, .25);
+  .container {
+    max-width: 100%;    
+  }
+  h1 {
+    font-size: calc(1vw + 3.875em);
+    line-height: 1;
+    abbr[title] {
+      text-decoration: none;
+    }
+    @media (min-width: $break-540) {
+      //font-size: calc(1vw + 3.875em);
+    }
+    .full-screen & {
+      
+    }
+    @media (min-width: $break-800) {
+      .full-screen & {
+        font-size: calc(1vw + 4.25em);
+        max-width: calc(1vw + 8em);
+      }
+    }
+  }
+  .sub-header {
+    line-height: 2.125rem;
+    // &.header-lg {
+    //   line-height: 2.5rem;
+    // }
+    a {
+      background-image: none;
+      background-color: rgba(black, .25);
+      line-height: 2.5rem;
+      padding-right: .25em;
+      padding-left: .25em;
+      text-decoration: none;
+      text-shadow: none;
+    }
+    .full-screen & {
+      max-width: 32em;
+    }
+  }
+}

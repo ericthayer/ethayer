@@ -1,0 +1,28 @@
+// site copyright
+
+p.copyrights {
+  font-family: $sans-serif;
+  font-size: .75em;    
+  color: #999;
+  a {
+    background: none;
+    text-decoration: none;
+    font-size: 1em;
+    text-decoration: none;
+    @include link-shadow;
+    @supports (text-decoration-skip: ink) {
+      text-decoration: underline;
+      text-decoration-skip: ink;
+      @include no-link-shadow;
+    }
+  }
+}
+
+.source-link {
+  display: flex;
+  align-items: center;
+  // 375
+  @media (min-width: $break-375) {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,72 @@
+// navigation styles
+nav {
+  li {
+    @include mb-0;
+  }
+  a {
+    display: inline-block;
+    line-height: 1;
+    margin-right: 1rem;
+  }
+}
+
+// cta link
+.cta-link {
+  background: none;
+  color: $link;
+  @include block;
+  @include fonts-loaded-KO29;
+  @include text-lg;
+  @include pt-sm;
+  @include text-center;
+  text-shadow: none;
+  .icon {
+    font-size: .875em;
+  } //@include focus-arrows;
+  &:before,
+  &:after {
+    line-height: 1.3;
+  }
+  &:hover,
+  &:focus {
+    color: hotpink;
+    .icon {
+      transform: scale(1);
+    }
+    &:before {
+      //left: -.5em;
+    }
+    &:after {
+      //right: -.35em;
+    }
+  }
+}
+
+// icon link
+.icon-link {
+  //@include fonts-loaded-KO29;
+  .icon {
+    font-size: 1.5rem;
+    fill: $link;
+  }
+}
+
+// icon nav
+.example-links {
+  a {
+    color: $link;
+    @include block;
+    text-align: center;
+    width: 2em;
+    &:hover,
+    &:focus {
+      color: hotpink;
+    }
+  }
+  strong {
+    font-weight: normal;
+  }
+  .icon {
+    //display: none;  
+  }
+}

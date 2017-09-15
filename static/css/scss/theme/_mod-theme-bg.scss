@@ -1,0 +1,83 @@
+.bg-dark {
+  @include bg-dark;
+}
+
+.bg-light {
+  @include bg-light;
+}
+
+// base colors
+
+.bg-blue {
+  @include bg-blue;
+}
+
+.bg-green {
+  @include bg-green;
+}
+
+.bg-purple {
+  @include bg-purple;
+}
+
+.bg-orange {
+  @include bg-orange;
+}
+
+.bg-pink {
+  @include bg-pink;
+}
+
+.bg-yellow {
+  @include bg-yellow;
+}
+
+.bg-blue {
+  @include bg-blue-rich;
+}
+
+.bg-teal {
+  @include bg-teal;
+}
+
+.bg-rust {
+  @include bg-rust;
+}
+
+// custom bg
+
+.bg-light-grey {
+  @include bg-light-grey;
+}
+
+.bg-green-blue {
+  @include bg-green-blue;
+}
+
+.bg-aquamarine {
+  @include bg-aquamarine;
+}
+
+.bg-red-purple {
+  @include bg-red-purple;
+}
+
+.bg-red-pink {
+  @include bg-red-pink;
+}
+
+.bg-purple-blue {
+  @include bg-purple-blue;
+}
+
+.bg-peach-grid {
+  @include bg-peach-grid;
+}
+
+.bg-purple-grid {
+  @include bg-purple-grid;
+}
+
+body {
+  @include bg-light-grey;
+}

@@ -1,0 +1,102 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+/* --- Update Panels --- */
+
+.update-panels-header {
+	color: white;
+	font-size: 1em;
+	text-align: center;
+	// 768
+	@media (min-width: $break-768) {
+		font-size: 1.25em;	
+	}		
+}
+
+.update-panel-group {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	// 768
+	@media (min-width: $break-768) {
+		flex-flow: row nowrap;
+	}
+}
+
+.update-panel {
+	background-color: #F5F5F5;
+	border-radius: 10px;
+	margin-bottom: 2em;
+	// 768
+	@media (min-width: $break-768) {			
+		margin-right: 1em;
+		margin-bottom: 0;
+		margin-left: 1em;
+		width: 33.3333333%;			
+	}		
+}
+
+.update-panel-title {
+	background-color: #E8E8E8;
+	border-radius: 10px 10px 0 0;
+	border-bottom: 1px solid #CCC;
+	font-size: 1em;
+	margin-bottom: 0;		
+	padding: 0.75em;	
+	text-align: center;	
+	
+}
+
+.panel-item {
+	@extend %clearfix;
+	border-bottom: 1px solid #CCC;
+	padding: 1.125em 1.125em;
+	&:last-child {
+		border: none;
+	}	
+	.title {
+		font-size: 1em;
+		margin-bottom: 0.25em;
+		a {
+			color: $green-med;
+		}		
+	}
+	p {
+		font-size: 0.8em;	
+	}
+	.btn {
+		margin-bottom: 0;	
+	}
+	a {
+		color: $green-med;
+	}
+	[class*="icon"] {
+		color: #CCC;
+		text-shadow: 1px 1px 0 rgba(white, 0.75), -1px -1px 0 rgba(black, 0.25);
+		font-size: 1.15em;	
+	}
+	// 992
+	@media (min-width: $break-900) {
+		align-items: center;
+		display: flex;		
+	}
+}
+
+
+.panel-txt {	
+	// 992
+	@media (min-width: $break-900) {		
+		float: left;
+		padding-right: 2em;
+		width: 90%;			
+	}
+}
+.panel-icon-btn {
+	padding-top: 0.25em;	
+	// 992
+	@media (min-width: $break-900) {
+		float: right;
+		padding-top: 0;	
+		width: 10%;		
+	}
+}

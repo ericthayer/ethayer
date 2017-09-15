@@ -1,0 +1,247 @@
+// Image Caption Animation Styles
+.fade-in,
+.scale-up,
+.scale-down,
+.slide-up,
+.slide-down,
+.slide-left,
+.slide-right {
+  opacity: 0;
+}
+
+// Fade In
+.fade-in {}
+
+// Scale Up
+.scale-up {
+  transform: scale(0);
+  transition: all .4s cubic-bezier(.55, .26, .5, .81);
+}
+
+// Scale Down
+.scale-down {
+  transform: scale(2);
+  transition: all .4s cubic-bezier(.55, .26, .5, .81);
+}
+
+// Slide Up
+.slide-up {
+  height: 100%;
+  top: 100%;
+  animation: slide-up-rev 1s cubic-bezier(.59, .01, .52, 1) 1;
+  animation-fill-mode: backwards; // Keyframes
+  @keyframes slide-up-rev {
+    0% {
+      height: 30%;
+      top: 70%;
+    }
+    50% {
+      height: 50%;
+      top: 50%;
+    }
+    100% {
+      height: 0;
+      top: 0;
+    }
+  }
+}
+
+// Slide Down
+.slide-down {
+  top: 0;
+  height: 100%;
+  .image-caption {
+    flex: 1;
+  }
+}
+
+// Slide Right
+.slide-right {
+  // top: 0; // use if caption desired overlay height is 100.
+  left: -101%;
+}
+
+// Slide Left
+.slide-left {
+  // top: 0; // use if caption desired overlay height is 100.
+  right: -101%;
+}
+
+// Figure Hover 
+figure:hover {
+  cursor: pointer;
+  figcaption {
+    left: 0;
+    opacity: 1;
+    will-change: transform opacity;
+  } // show caption
+  .fade-in,
+  .scale-up,
+  .scale-down,
+  .slide-up,
+  .slide-down,
+  .slide-left,
+  .slide-right {
+    //opacity: 1;  	
+  }
+  .fade-out {
+    opacity: 0;
+  } // Scale Up
+  .scale-up {
+    transform: scale(1);
+    .image-caption {
+      animation: scale-up 1s cubic-bezier(.59, .01, .52, 1) 1;
+      animation-fill-mode: both;
+      animation-delay: .2s; // Keyframes
+      @keyframes scale-up {
+        0% {
+          font-size: 0;
+          opacity: 0;
+        }
+        50% {
+          font-size: 2em;
+        }
+        70% {
+          opacity: 1;
+        }
+        100% {
+          font-size: 1.25em;
+        }
+      }
+    }
+  } // Scale Up
+  .scale-down {
+    transform: scale(1);
+    .image-caption {
+      animation: scale-down 1s cubic-bezier(.59, .01, .52, 1) 1;
+      animation-fill-mode: both;
+      animation-delay: .1s; // Keyframes
+      @keyframes scale-down {
+        0% {
+          font-size: 2em;
+          opacity: 0;
+        }
+        50% {
+          font-size: .75em;
+        }
+        70% {
+          opacity: 1;
+        }
+        100% {
+          font-size: 1.25em;
+        }
+      }
+    }
+  } // Slide Up
+  .slide-up {
+    top: 70%; // difference of default height of 40.
+    height: 30%; // set back to default
+    // use top: 0; w/ height: 100%; for full-height overlay
+    //height: 100%;
+    bottom: 0;
+    /*
+	  animation: slide-up-bg 1s cubic-bezier(.59,.01,.52,1) 1;
+    animation-fill-mode: both;
+    // Keyframes
+    @keyframes slide-up-bg {
+      0% { height: 100%; top: 100%;}
+      50% { height: 50%; top: 50%; }
+      100% { height: 30%; top: 70%; }
+    }
+*/
+    .image-caption {
+      animation: slide-up 1s cubic-bezier(.59, .01, .52, 1) 1;
+      animation-fill-mode: none; //animation-delay: .6s;
+      // Keyframes
+      @keyframes slide-up {
+        0% {
+          margin-top: 1em;
+          opacity: 0;
+        }
+        50% {
+          margin-top: -2em;
+        }
+        70% {
+          opacity: 1;
+        }
+        100% {
+          margin-top: 0;
+        }
+      }
+    }
+  } // Slide Down
+  .slide-down {
+    top: 70%;
+    height: 30%;
+    .image-caption {
+      animation: slide-down 1s cubic-bezier(.59, .01, .52, 1) 1;
+      animation-fill-mode: none; // Keyframes
+      @keyframes slide-down {
+        0% {
+          margin-top: -1em;
+          opacity: 0;
+        }
+        50% {
+          margin-bottom: -2em;
+        }
+        70% {
+          opacity: 1;
+        }
+        100% {
+          margin-bottom: 0;
+        }
+      }
+    }
+  } // Slide Left
+  .slide-left {
+    left: auto;
+    right: 0;
+    .image-caption {
+      animation: slide-left 1s cubic-bezier(.59, .01, .52, 1) 1;
+      animation-fill-mode: none; // Keyframes
+      @keyframes slide-left {
+        0% {
+          margin-left: -7em;
+          opacity: 0;
+        }
+        70% {
+          opacity: 1;
+        }
+        100% {
+          margin-left: 0;
+        }
+      }
+    }
+  } // Slide Right
+  .slide-right {
+    .image-caption {
+      animation: slide-right 1s cubic-bezier(.59, .01, .52, 1) 1;
+      animation-fill-mode: none; // Keyframes
+      @keyframes slide-right {
+        0% {
+          margin-right: -7em;
+          opacity: 0;
+        }
+        70% {
+          opacity: 1;
+        }
+        100% {
+          margin-right: 0;
+        }
+      }
+    }
+  } // Circle Mask	
+  &.circle-mask {
+    // use top: 0; w/ height: 100%; for full-height overlay
+    .slide-down,
+    .slide-up {
+      height: 50%;
+      top: 50%;
+    }
+  }
+  &.rounded-mask {
+    figcaption {
+      border-radius: 0 0 15px 15px;
+    }
+  }
+}

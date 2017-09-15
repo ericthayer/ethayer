@@ -1,0 +1,43 @@
+// Process Home
+
+// Process Steps
+
+#process-steps {
+  .iframe {
+    iframe {
+      box-shadow: 0 0 2em 0 rgba(black, .35);
+      padding: 0;
+    }
+  }
+}
+
+.process-steps {
+  //color: mix(black, $link, 40%);
+  text-align: center;
+  // > 320
+  @media (min-width: $break-240) {
+    display: flex;
+	  flex-wrap: wrap;
+    margin-right: -1em;
+    margin-left: -1em;
+    .step {
+      width: 50%;
+    }
+  }
+  // > 640
+	@media (min-width: $break-640) {
+  	.step {
+    	width: 33%;
+    }
+  }
+  // > 900
+	@media (min-width: $break-900) {
+    .step {
+      padding: 2em 1.75em;
+    }
+  }
+}
+
+.step {
+  @include counter-item;
+}

@@ -1,0 +1,28 @@
+// Social Media Icons
+
+.soc-media-icons {
+	align-self: center;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	a[class*="icon"] {
+		font-size: 1.125em;	
+		margin-right: 0.25em;	
+		&:before {
+			margin: 0;	
+		}		
+	}
+	// 480
+	@media (min-width: $break-480) {
+		a[class*="icon"] {
+			font-size: 1.45em;
+			margin-right: 0.125em;			
+		}
+	}
+	// 768
+	@media (min-width: $break-768) {
+		a[class*="icon"] {
+			font-size: 1.5em;		
+		}	
+	}
+}

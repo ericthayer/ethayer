@@ -1,0 +1,17 @@
+
+#process-home {
+  //@include bg-purple-grid;
+}
+
+#portfolio-home {
+  //@include bg-peach;
+}
+
+.info-block-status {
+  // > 768
+  @media (min-width: $break-768) {
+    .flex-layout & {
+      @include pr-4;
+    }
+  }
+}

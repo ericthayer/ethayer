@@ -1,0 +1,142 @@
+/* --- Member Benefits --- */
+
+.member-benefits {
+	padding-bottom: 2em;	
+}
+
+.benefit-row {
+	&:last-child {
+		[class^="benefit-item-right"] {
+			border-bottom: none;
+		}
+	}
+	// 568
+	@media (min-width: $break-540) {
+		display: flex;
+		width: 100%;
+		&:last-child {
+			[class^="benefit-item-"] {
+				border-bottom: none;
+			}
+		}
+	}		
+}
+
+.benefit-list {
+	margin: 0 auto;	
+	max-width: 1200px;
+	padding-right: 1em;
+	padding-left: 1em;		
+}
+
+[class^="benefit-item-"] {
+	border-bottom: 2px dashed #CCC;
+	padding-top: 1.5em;	
+	padding-bottom: 1.5em; 	
+	// 568
+	@media (min-width: $break-540) {
+		align-self: center;
+		display: flex;
+		padding-right: 1.5em;
+		padding-left: 1.5em;	
+		width: 100%;
+	}			
+}
+
+.benefit-txt {
+	text-align: center;	
+	font-family: $Montserrat;
+	// 568
+	@media (min-width: $break-540) {
+		margin-bottom: 0;
+		text-align: left;
+	}	
+}
+
+// Left Item
+.benefit-item-left {
+	// 568
+	@media (min-width: $break-540) {
+		border-right: 2px dashed #CCC;
+		.benefit-txt {
+			padding-right: 1.5em;	
+		}
+	}	
+}
+
+// Right Item
+.benefit-item-right {
+	// 568
+	@media (min-width: $break-540) {
+		flex-flow: row-reverse;
+		padding-right: 0;	
+		.benefit-txt {
+			padding-left: 2em;	
+		}
+	}	
+}
+
+
+
+.circle-marker {
+	@include circle-thumb;
+	align-self: center;
+	margin: 0 auto;	
+	height: 80px;
+	width: 80px;
+	&.red-light {	
+		background-color: $red-light;
+	}
+	&.red-med {	
+		background-color: $red-med;
+	}
+	&.red-dark {	
+		background-color: $red-dark;
+	}
+	&.orange-light {	
+		background-color: $orange-light;
+	}
+	&.orange-med {	
+		background-color: $orange-med;
+	}
+	&.orange-dark {	
+		background-color: $orange-dark;
+	}
+	&.green-light {	
+		background-color: $green-light;
+	}
+	&.green-med {	
+		background-color: $green-med;
+	}
+	&.green-dark {	
+		background-color: $green-dark;
+	}
+	&.blue-light {	
+		background-color: $blue-light;
+	}
+	&.blue-med {	
+		background-color: $blue-med;
+	}
+	&.blue-dark {	
+		background-color: $blue-dark;
+	}
+	&.purple-light {	
+		background-color: $purple-light;
+	}
+	&.purple-med {	
+		background-color: $purple-med;
+	}
+	&.purple-dark {	
+		background-color: $purple-dark;
+	}
+	&.gray {	
+		background-color: $brand-gray;
+	}
+	&.black {	
+		background-color: $brand-black;
+	}
+	// 568
+	@media (min-width: $break-540) {
+		flex: 1 0 80px;
+	}	
+}

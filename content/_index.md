@@ -1,0 +1,276 @@
++++
+type = "page"
+title = "Home"
+description = "Eric Thayer is a Web Designer and Front-end Developer from Denver Colorado"
++++
+
+<!-- Portfolio Home -->
+<section id="portfolio-home" class="pt-3">
+  <!-- Section Title -->
+  <div class="container align-center">
+    <h2 id="work-samples">Work Samples</h2>
+    <p class="sub-header mb-1 mw-35em md-pr-pl-3">Below are some examples of my recent work. I work on all types of design projects so please let me know if I can help or if you have any questions.</p>
+  </div>
+</section>
+
+<!-- Project Samples -->
+<section id="project-samples" class="pt-pb-2">
+  <div class="container container-fluid">
+    <!-- Work Examples -->
+    <div class="flex-layout l-media-grid">
+      <!-- Concordus -->
+      <figure class="media-item">
+        <a class="media-wrap img" href="#0">
+            <img class="lazyload" data-src="images/content-img/16x9/img-16x9-Concordus-RWD-MD.jpg" data-srcset="images/content-img/16x9/img-16x9-Concordus-RWD-LG.jpg 2000w, images/content-img/16x9/img-16x9-Concordus-RWD-MD.jpg 1900w" alt="Concordus landing page design and development for Kentico CMS.">
+            <time class="time-stamp" datetime="2017"><span class="sr-only">Successfully delivered</span>2017</time>
+            <figcaption class="media-caption" aria-hidden="true">
+              <span class="project-title">Concordus Applications</span>                  
+            </figcaption>
+          </a>
+        <noscript>
+          <figure class="media-item">
+            <a href="#0">
+              <img src="images/content-img/16x9/img-16x9-Concordus-RWD-MD.jpg" srcset="images/content-img/16x9/img-16x9-Concordus-RWD-LG.jpg 2000w, images/content-img/16x9/img-16x9-Concordus-RWD-MD.jpg 1900w" alt="Concordus landing page design and development for Kentico CMS.">
+              <time class="time-stamp" datetime="2017"><span class="sr-only">Successfully delivered</span>2017</time>
+              <figcaption class="media-caption" aria-hidden="true">
+                <span class="project-title">Concordus Applications</span>                  
+              </figcaption>
+            </a>
+          </figure>
+        </noscript>
+      </figure>
+      <!-- MaxCentive -->
+      <figure class="media-item media-light">
+        <a class="media-wrap img" href="#0">
+            <img class="lazyload" data-src="images/content-img/16x9/img-16x9-MaxCentive-2-MD.jpg" data-srcset="images/content-img/16x9/img-16x9-MaxCentive-2-LG.jpg 2000w, images/content-img/16x9/img-16x9-MaxCentive-2-MD.jpg 1900w" alt="Samples of my CSS Grid collection on CodePen.">
+            <time class="time-stamp" datetime="2017"><span class="sr-only">Currently working on this project since February</span>2017</time>
+            <figcaption class="media-caption" aria-hidden="true">
+              <span class="project-title">MaxCentive</span>
+            </figcaption>
+          </a>
+        <noscript>
+          <figure class="media-item media-light"> 
+            <a href="#0">
+                <img src="images/content-img/16x9/img-16x9-MaxCentive-2-MD.jpg" srcset="images/content-img/16x9/img-16x9-MaxCentive-2-LG.jpg 2000w, images/content-img/16x9/img-16x9-MaxCentive-2-MD.jpg 1900w" alt="Samples of my CSS Grid collection on CodePen.">
+                <time class="time-stamp" datetime="2017"><span class="sr-only">Currently working on this project since February</span>2017</time>
+            <figcaption class="media-caption" aria-hidden="true">
+              <span class="project-title">MaxCentive</span>
+            </figcaption>
+              </a>
+          </figure>
+        </noscript>
+      </figure>
+      <!-- Swiss Ritual -->
+      <figure class="media-item">
+        <a class="media-wrap img" href="//codepen.io/collection/DRGMBP/">
+            <img class="lazyload" data-src="images/content-img/16x9/img-16x9-SR-Future-Islands-MD.jpg" data-srcset="images/content-img/16x9/img-16x9-SR-Future-Islands-LG.jpg 2000w, images/content-img/16x9/img-16x9-SR-Future-Islands-MD.jpg 1900w" alt="Samples of some coded art done in CodePen.">
+            <time class="time-stamp" datetime="2017"><span class="sr-only">Successfully delivered</span>2017</time>
+            <figcaption class="media-caption" aria-hidden="true">
+              <span class="project-title">Swiss Ritual</span>                  
+            </figcaption>
+          </a>
+        <noscript>
+          <figure class="media-item">
+            <a href="//codepen.io/collection/DRGMBP/">
+              <img class="lazyload" src="images/content-img/16x9/img-16x9-SR-Future-Islands-MD.jpg" srcset="images/content-img/16x9/img-16x9-SR-Future-Islands-LG.jpg 2000w, images/content-img/16x9/img-16x9-SR-Future-Islands-MD.jpg 1900w" alt="Samples of some coded art done in CodePen.">
+              <time class="time-stamp" datetime="2017"><span class="sr-only">Successfully delivered</span>2017</time>
+              <figcaption class="media-caption" aria-hidden="true">
+                <span class="project-title">Swiss Ritual</span>                  
+              </figcaption>
+            </a>
+          </figure>
+        </noscript>
+      </figure>
+      <!-- CSS Grid Samples -->
+      <figure class="media-item">
+        <a class="media-wrap img" href="//codepen.io/collection/XWovqe/">
+            <img class="lazyload" data-src="images/content-img/16x9/img-16x9-CSS-Grid-samples-MD.jpg" data-srcset="images/content-img/16x9/img-16x9-CSS-Grid-samples-LG.jpg 2000w, images/content-img/16x9/img-16x9-CSS-Grid-samples-MD.jpg 1900w" alt="Samples of my CSS Grid collection on CodePen.">
+            <time class="time-stamp" datetime="2017"><span class="sr-only">Collection built in</span>2017</time>
+            <figcaption class="media-caption" aria-hidden="true">
+              <span class="project-title">CSS Grid Collection</span>
+            </figcaption>
+          </a>
+        <noscript>
+          <figure class="media-item">
+            <a href="//codepen.io/collection/XWovqe/">
+                <img src="images/content-img/16x9/img-16x9-CSS-Grid-samples-MD.jpg" srcset="images/content-img/16x9/img-16x9-CSS-Grid-samples-LG.jpg 2000w, images/content-img/16x9/img-16x9-CSS-Grid-samples-MD.jpg 1900w" alt="Samples of my CSS Grid collection on CodePen.">
+                <time class="time-stamp" datetime="2017"><span class="sr-only">Collection built in</span>2017</time>
+                <figcaption class="media-caption" aria-hidden="true">
+                  <span class="project-title">CSS Grid Collection</span>
+                </figcaption>
+              </a>
+          </figure>
+        </noscript>
+      </figure>
+      <!-- in2M Logo -->
+      <figure class="media-item media-light">
+        <a class="media-wrap img" href="#0">
+            <img class="lazyload" data-src="images/content-img/16x9/img-16x9-in2M-logo-MD.jpg" data-srcset="images/content-img/16x9/img-16x9-in2M-logo-LG.jpg 2000w, images/content-img/16x9/img-16x9-in2M-logo-MD.jpg 1900w" alt="in2Marketplace logo design">
+            <time class="time-stamp" datetime="2016"><span class="sr-only">Successfully delivered</span>2016</time>
+            <figcaption class="media-caption" aria-hidden="true">
+              <span class="project-title">in2Marketplace</span>
+            </figcaption>
+          </a>
+        <noscript>
+          <figure class="media-item media-light">
+            <a href="#0">
+                <img src="images/content-img/16x9/img-16x9-in2M-logo-MD.jpg" srcset="images/content-img/16x9/img-16x9-in2M-logo-LG.jpg 2000w, images/content-img/16x9/img-16x9-in2M-logo-MD.jpg 1900w" alt="in2Marketplace logo design">
+                <time class="time-stamp" datetime="2016"><span class="sr-only">Successfully delivered</span>2016</time>
+                <figcaption class="media-caption" aria-hidden="true">
+                  <span class="project-title">in2Marketplace</span>
+                </figcaption>
+              </a>
+          </figure>
+        </noscript>
+      </figure>
+      <!-- Adobe XD Contest -->
+      <figure class="media-item">
+        <a class="media-wrap img" href="#0">
+            <img class="lazyload" data-src="images/content-img/16x9/img-16x9-XD-profile-contest-MD.jpg" data-srcset="images/content-img/16x9/img-16x9-XD-profile-contest-LG.jpg 2000w, images/content-img/16x9/img-16x9-XD-profile-contest-MD.jpg 1900w" alt="Samples of some coded art done in CodePen.">
+            <time class="time-stamp" datetime="2017"><span class="sr-only">Built with Adobe XD</span>2017</time>
+            <figcaption class="media-caption" aria-hidden="true">
+              <span class="project-title">Adobe XD Contest</span>
+            </figcaption>
+          </a>
+        <noscript>
+          <figure class="media-item">
+            <a href="#0">
+              <img src="images/content-img/16x9/img-16x9-XD-profile-contest-MD.jpg" srcset="images/content-img/16x9/img-16x9-XD-profile-contest-LG.jpg 2000w, images/content-img/16x9/img-16x9-XD-profile-contest-MD.jpg 1900w" alt="Samples of some coded art done in CodePen.">
+              <time class="time-stamp" datetime="2017"><span class="sr-only">Built with Adobe XD</span>2017</time>
+              <figcaption class="media-caption" aria-hidden="true">
+                <span class="project-title">Adobe XD Contest</span>
+              </figcaption>
+            </a>
+          </figure>
+        </noscript>
+      </figure>
+      <!-- Nav20s -->
+      <figure class="media-item">
+        <a class="media-wrap img" href="#0">
+            <img class="lazyload" data-src="images/content-img/16x9/img-16x9-Nav20s-MD.jpg" data-srcset="images/content-img/16x9/img-16x9-Nav20s-MD.jpg 2000w, images/content-img/16x9/img-16x9-Nav20s-SM.jpg 1900w" alt="Nav20s.com home page website design concept.">
+            <time class="time-stamp" datetime="2016"><span class="sr-only">Successfully delivered</span>2016</time>
+            <figcaption class="media-caption" aria-hidden="true">
+              <span class="project-title">Nav20s</span>
+            </figcaption>
+          </a>
+        <noscript>
+          <figure class="media-item">
+            <a href="#0">
+              <img src="images/content-img/16x9/img-16x9-Nav20s-MD.jpg" srcset="images/content-img/16x9/img-16x9-Nav20s-MD.jpg 2000w, images/content-img/16x9/img-16x9-Nav20s-SM.jpg 1900w" alt="Nav20s home page website design concept.">
+              <time class="time-stamp" datetime="2016"><span class="sr-only">Successfully delivered</span>2016</time>
+              <figcaption class="media-caption" aria-hidden="true">
+                <span class="project-title">Nav20s</span>
+              </figcaption>
+            </a>
+          </figure>
+        </noscript>
+      </figure>          
+      <!-- Nav World Wide -->
+      <figure class="media-item">
+        <a class="media-wrap img" href="#0">
+            <img class="lazyload" data-src="images/content-img/16x9/img-16x9-NWW-MD.jpg" data-srcset="images/content-img/16x9/img-16x9-NWW-MD.jpg 2000w, images/content-img/16x9/img-16x9-NWW-SM.jpg 1900w" alt="Navigators World Wide home website design">
+            <time class="time-stamp" datetime="2015"><span class="sr-only">Successfully delivered</span>2015</time>
+            <figcaption class="media-caption" aria-hidden="true">
+              <span class="project-title">Nav World Wide</span>
+            </figcaption>
+          </a>
+        <noscript>
+          <figure class="media-item">
+            <a href="#0">
+              <img src="images/content-img/16x9/img-16x9-NWW-MD.jpg" srcset="images/content-img/16x9/img-16x9-NWW-MD.jpg 2000w, images/content-img/16x9/img-16x9-NWW-SM.jpg 1900w" alt="Navigators World Wide home website design">
+              <time class="time-stamp" datetime="2016"><span class="sr-only">Successfully delivered</span>2015</time>
+              <figcaption class="media-caption" aria-hidden="true">
+                <span class="project-title">Nav World Wide</span>
+              </figcaption>
+            </a>
+          </figure>
+        </noscript>
+      </figure>
+      <!-- DPI -->
+      <figure class="media-item media-light">
+        <a class="media-wrap img" href="#0">
+            <img class="lazyload" data-src="images/content-img/16x9/img-16x9-DPI-home-MD.jpg" data-srcset="images/content-img/16x9/img-16x9-DPI-home-MD.jpg 2000w, images/content-img/16x9/img-16x9-DPI-home-SM.jpg 1900w" alt="Disciple Portal web design.">
+            <time class="time-stamp" datetime="2016"><span class="sr-only">Successfully delivered</span>2016</time>
+            <figcaption class="media-caption" aria-hidden="true">
+              <span class="project-title">Disciple Portal</span>
+            </figcaption>                
+          </a>
+        <noscript>
+          <figure class="media-item media-light">
+            <a href="#0">
+              <img src="images/content-img/16x9/img-16x9-DPI-home-MD.jpg" srcset="images/content-img/16x9/img-16x9-DPI-home-MD.jpg 2000w, images/content-img/16x9/img-16x9-DPI-home-SM.jpg 1900w" alt="Disciple Portal web design.">
+              <time class="time-stamp" datetime="2016"><span class="sr-only">Successfully delivered</span>2016</time>
+              <figcaption class="media-caption" aria-hidden="true">
+                <span class="project-title">Disciple Portal</span>
+              </figcaption>
+            </a>
+          </figure>
+        </noscript>
+      </figure>          
+      <!-- HPG -->
+      <figure class="media-item">
+        <a class="media-wrap img" href="#0">
+            <img class="lazyload" data-src="images/content-img/16x9/img-16x9-HPG-MD.jpg" data-srcset="images/content-img/16x9/img-16x9-HPG-MD.jpg 2000w, images/content-img/16x9/img-16x9-HPG-SM.jpg 1900w" alt="HealthPlanG home page redesign">
+          <time class="time-stamp" datetime="2016"><span class="sr-only">Successfully delivered</span>2016</time>
+            <figcaption class="media-caption" aria-hidden="true">
+              <span class="project-title">HealthPlanG</span>
+            </figcaption>
+          </a>
+        <noscript>
+          <figure class="media-item">
+            <a href="#0">
+                <img src="images/content-img/16x9/img-16x9-HPG-MD.jpg" srcset="images/content-img/16x9/img-16x9-HPG-MD.jpg 2000w, images/content-img/16x9/img-16x9-HPG-SM.jpg 1900w" alt="HealthPlanG home page redesign">
+                <time class="time-stamp" datetime="2016"><span class="sr-only">Successfully delivered</span>2016</time>
+                <figcaption class="media-caption" aria-hidden="true">
+                  <span class="project-title">HealthPlanG</span>
+                </figcaption>
+              </a>
+          </figure>
+        </noscript>
+      </figure>          
+      <!-- Adobe XD Dashboard UI Kit -->
+      <figure class="media-item">
+        <a class="media-wrap img" href="#0">
+            <img class="lazyload" data-src="images/content-img/16x9/img-16x9-XD-dashboard-MD.jpg" data-srcset="images/content-img/16x9/img-16x9-XD-dashboard-LG.jpg 2000w, images/content-img/16x9/img-16x9-XD-dashboard-MD.jpg 1900w" alt="Samples of my CSS Grid collection on CodePen.">
+            <time class="time-stamp" datetime="2016"><span class="sr-only">Successfully delivered</span>2016</time>
+            <figcaption class="media-caption" aria-hidden="true">
+              <span class="project-title">Dashboard UI Kit</span>
+            </figcaption>
+          </a>
+        <noscript>
+          <figure class="media-item">
+            <a href="#0">
+                <img src="images/content-img/16x9/img-16x9-XD-dashboard-MD.jpg" srcset="images/content-img/16x9/img-16x9-XD-dashboard-LG.jpg 2000w, images/content-img/16x9/img-16x9-XD-dashboard-MD.jpg 1900w" alt="Samples of my CSS Grid collection on CodePen.">
+                <time class="time-stamp" datetime="2016"><span class="sr-only">Successfully delivered</span>2016</time>
+                <figcaption class="media-caption" aria-hidden="true">
+                  <span class="project-title">in2Marketplace</span>
+                </figcaption>
+              </a>
+          </figure>
+        </noscript>
+      </figure>
+      <!-- The 104 Initiative logo -->
+      <figure class="media-item">
+        <a class="media-wrap img" href="#0">
+            <img class="lazyload" data-src="images/content-img/16x9/img-16x9-104v2-logo-MD.jpg" data-srcset="images/content-img/16x9/img-16x9-104v2-logo-MD.jpg 2000w, images/content-img/16x9/img-16x9-104v2-logo-SM.jpg 1900w" alt="The 104 Initiative logo redesign">
+            <time class="time-stamp" datetime="2016"><span class="sr-only">Successfully delivered</span>2016</time>
+            <figcaption class="media-caption" aria-hidden="true">
+              <span class="project-title">The 104 Intiative</span>
+            </figcaption>
+          </a>
+        <noscript>
+          <figure class="media-item">
+            <a href="#0">
+                <img src="images/content-img/16x9/img-16x9-104v2-logo-MD.jpg" srcset="images/content-img/16x9/img-16x9-104v2-logo-MD.jpg 2000w, images/content-img/16x9/img-16x9-104v2-logo-SM.jpg 1900w" alt="The 104 Initiative logo redesign">
+                <time class="time-stamp" datetime="2016"><span class="sr-only">Successfully delivered</span>2016</time>
+                <figcaption class="media-caption" aria-hidden="true">
+                  <span class="project-title">The 104 Intiative</span>
+                </figcaption>
+              </a>
+          </figure>
+        </noscript>
+      </figure>
+    </div>
+    <a class="cta-link" href="portfolio/">View Portfolio</a>
+  </div>
+</section>

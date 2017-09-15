@@ -1,0 +1,594 @@
+// ******* Mixins ******* //
+
+// fade animation
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }  
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }  
+}
+@mixin fade-in {
+  animation: fade-in .4s linear forwards;
+  opacity: 0;
+  transition: opacity .4s;
+}
+
+@mixin fade-out {
+  animation: fade-out .4s linear forwards;
+  opacity: 1;
+  transition: opacity .4s;
+}
+
+@mixin fade-out-delay {
+  animation: fade-out .4s 4s linear forwards;
+  transition: opacity .4s ease;
+}
+
+@mixin antialiased {
+  -moz-osx-font-smoothing: greyscale;  
+  -webkit-font-smoothing: antialiased;
+}
+
+.fade-in {
+  @include fade-in;
+}
+
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage) {
+  @return mix($color, white, $percentage);
+}
+
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage) {
+  @return mix($color, black, $percentage);
+}
+
+@mixin color-reset {
+  *,
+  a {
+    color: inherit !important;
+  }
+}
+
+// Grid Layout
+@mixin grid-flex($grid-item: 'n+4') {
+  @if $grid-item=='n+4' {
+    flex-grow: 0;
+    width: 25% !important;
+  }
+  @else {
+    flex-grow: 1;
+    width: 33.3333333% !important;
+  }
+}
+
+// Opacity helpers
+@mixin opacity-50 {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+
+@mixin opacity-80 {
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+
+// Reg Mark adjustments for copy
+@mixin reg-mark {
+  font-size: 9px;
+  vertical-align: text-top;
+}
+
+// Caret UI element
+@mixin caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  padding: 0;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid \9;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  &:before {
+    display: none;
+  }
+}
+
+// P overflow fix to hide text at smaller screens
+@mixin text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin text-overflow-off {
+  overflow: visible;
+  white-space: normal;
+}
+
+// Header Label
+@mixin header-label {
+  display: table;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 0 auto 5px;
+  padding: 5px 15px;
+  text-shadow: $blk-text-shadow-neg;
+  text-transform: uppercase;
+  border-radius: 0;
+  @media (min-width: $break-768) {
+    display: inline-block;
+  }
+}
+
+// Date Label
+@mixin date-label {
+  display: inline-block;
+  background-color: darkred;
+  font-size: .875em;
+  color: #FFF;
+  margin: 0;
+  padding: .25em 1em;
+  text-shadow: $blk-text-shadow-neg;
+}
+
+.date-label {
+  @include date-label;
+}
+
+// Box Styles
+@mixin card-white {
+  background: white;
+  border: 1px solid #DDD;
+}
+
+@mixin card-media {
+  background: #EEE;
+  padding: 0.5em;
+  .sidebar-main &,
+  .media-viewer & {
+    background: white;
+  }
+}
+
+@mixin card-grey {
+  background: #EEE;
+  border: 1px solid #DDD;
+}
+
+@mixin card-reset {
+  background: none;
+  border: none;
+}
+
+// counter item
+@mixin counter-item {
+  counter-increment: sequential;
+  &:before {
+    background-color: $orange-red;
+    border-radius: 50%;
+    color: #FFF;
+    content: counter(sequential);
+    font-size: .875rem;
+    line-height: .5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto 1em;
+    padding: 1em;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    max-height: 2em;
+    max-width: 2em;
+  } // > 640
+  @media (min-width: $break-640) {
+    .title {
+      margin-bottom: .9rem;
+    }
+  }
+}
+
+// Images
+@mixin circle-mask {
+  border-radius: 100%; //height: 100%;
+  width: 100%;
+  overflow: hidden; //max-height: 300px;
+  //max-width: 300px;
+  shape-outside: circle();
+  img {
+    border-radius: 100%;
+    overflow: hidden;
+  } // 1200
+  @media (min-width: $break-1200) {
+    //max-height: 400px;
+    //max-width: 400px; 
+  }
+}
+
+@mixin circle-mask-md {
+  @include circle-mask;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+@mixin circle-mask-sm {
+  @include circle-mask;
+  max-height: 150px;
+  max-width: 150px;
+}
+
+@mixin rounded-mask {
+  border-radius: 15px;
+  width: 100%;
+  overflow: hidden;
+}
+
+// Image Replacement "hack"
+@mixin hide-button-text {
+  background-color: transparent;
+  border: 0;
+  color: transparent;
+  font: 0/0;
+  text-shadow: none;
+}
+
+@mixin hide-text {
+  color: transparent;
+  font: 0/0;
+  &:hover,
+  &:focus {
+    color: transparent;
+    font: 0/0;
+  }
+}
+
+.hide-text {
+  @include hide-text;
+}
+
+// Centered Text Border
+@mixin text-border-ctr {
+  &:before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    height: 1px;
+    background: rgba(207, 207, 207, 0.3);
+    top: 50%;
+    z-index: -2;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    height: 50px;
+    margin: -25px 0 0 -600px;
+    width: 1200px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.6) 70%, rgba(255, 255, 255, 0) 100%);
+    top: 50%;
+    z-index: -1;
+  }
+}
+
+// Corner Ribbon
+// via http://codepen.io/eode9/
+// http://codepen.io/eode9/pen/twkKm?editors=110
+@mixin corner-ribbon {
+  width: 200px;
+  background: #CCC;
+  position: absolute;
+  top: 15px;
+  left: -60px;
+  text-align: center;
+  line-height: 35px;
+  letter-spacing: 0.01em;
+  font: {
+    size: 0.65em;
+    weight: 700;
+  }
+  color: #FFF;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+  /* Custom styles */
+  &.sticky {
+    position: fixed;
+  }
+  &.shadow {
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+  } // Different positions
+  &.top-left {
+    top: 25px;
+    left: -50px;
+    transform: rotate(-45deg);
+  }
+  &.top-right {
+    top: 25px;
+    right: -50px;
+    left: auto;
+    transform: rotate(45deg);
+  }
+  &.bottom-left {
+    top: auto;
+    bottom: 25px;
+    left: -50px;
+    transform: rotate(45deg);
+  }
+  &.bottom-right {
+    top: auto;
+    right: -50px;
+    bottom: 25px;
+    left: auto;
+    transform: rotate(-45deg);
+  }
+}
+
+// Clearfix
+@mixin clearfix {
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+// Psuedo BG
+
+@mixin pseudo-bg {
+  position: absolute;
+  content: "";      
+  height: 100%;
+  width: 100%;
+}
+
+// SR Text
+@mixin sr-only {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0 !important;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@mixin sr-only-focusable {
+  &:active,
+  &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+}
+
+@mixin focus-pink {
+  &:hover,
+  &:focus {
+    color: hotpink;
+    .icon {
+      fill: hotpink;
+    }
+  }
+}
+
+@mixin focus-arrows {
+  position: relative;
+  &:before,
+  &:after {
+    content: "‣ ";
+    font-size: 1.5em;
+    opacity: 0;
+    position: absolute;
+    transition: opacity .4s ease;
+    top: 0;
+    line-height: .9;
+    height: 100%;
+  }
+  &:before {
+    content: "‣ ";
+    left: -.65em;
+    height: 100px;
+    width: 100px;
+  }
+  &:after {
+    top: -1px;
+    right: -.6em;
+    transform: rotateY(180deg);
+  }
+  &:hover,
+  &:focus {
+    &:before,
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+
+@mixin link-shadow {
+  text-shadow: .05em 0 0 #F9F9F9, -0.05em 0 0 #F9F9F9, 0 .05em 0 #F9F9F9, 0 -0.05em 0 #F9F9F9, .1em 0 0 #F9F9F9, -0.1em 0 0 #F9F9F9, 0 .1em 0 #F9F9F9, 0 -0.1em 0 #F9F9F9;
+  background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
+  background-repeat: repeat-x;
+  background-position: bottom .05em center;
+  background-size: 100% .07em;
+}
+
+@mixin no-link-shadow {
+  text-shadow: none;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.sr-only {
+  @include sr-only;
+}
+
+.sr-only-focusable {
+  @include sr-only-focusable;
+}
+
+%focus-pink {
+  @include focus-pink;
+}
+
+@mixin fonts-loaded-KO29 {
+  font-family: $sans-serif-narrow;
+  .fonts-loaded & {
+    font-family: $KO29;
+    font-weight: normal;
+    -moz-osx-font-smoothing: greyscale;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@mixin fonts-loaded-Roboto {
+  font-family: $sans-serif-narrow;
+  .fonts-loaded & {
+    font-family: $Roboto;
+    font-weight: normal;
+  }
+}
+
+// displays media right
+@mixin CTA-media-right {
+  .post-wrap {
+    flex-flow: row wrap;
+  }
+  .post-content {
+    padding-left: 0;
+    padding-right: 5%;
+  }
+}
+
+// displays media left
+@mixin CTA-media-left {
+  .post-wrap {
+    flex-flow: row-reverse wrap;
+  }
+  .post-content {
+    padding-right: 0;
+    padding-left: 5%;
+  }
+}
+
+// This displays every even row's media flipped to the right
+@mixin CTA-row-flip-right {
+  @include CTA-media-left;
+  &:nth-of-type(even) {
+    .post-wrap {
+      flex-flow: row wrap;
+    }
+    .post-media {
+      align-self: flex-end;
+    }
+    .post-content {
+      padding-right: 5%;
+      padding-left: 0;
+    }
+  }
+}
+
+// This displays every even row's media flipped to the left
+@mixin CTA-row-flip-left {
+  @include CTA-media-right;
+  &:nth-of-type(even) {
+    .post-wrap {
+      flex-flow: row-reverse wrap;
+    }
+    .post-media {
+      align-self: flex-end;
+    }
+    .post-content {
+      padding-right: 0;
+      padding-left: 5%;
+    }
+  }
+}
+
+// special backgrounds
+@mixin rounded-bg {
+  padding-top: 3em;
+  padding-bottom: 2em;
+  .container {
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+  }
+  @media (min-width: $break-540) and (max-width: $break-800) {
+    .container {
+      padding-right: 8em;
+      padding-left: 8em;
+    }
+  }
+  @media (min-width: $break-540) {
+    border-radius: 50% 50% 0 0;
+    width: calc(100% + 10rem);
+    margin-left: -5rem;
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+}
+
+@mixin bot-rounded-bg {
+  @include rounded-bg;
+  padding-top: 2em;
+  @media (min-width: $break-540) {
+    border-radius: 0 0 50% 50%;
+    padding-top: 4em;
+    padding-bottom: 5em;
+  }
+}
+
+@mixin full-screen {
+  min-height: 100vh;
+  .banner {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  @media (min-height: 42em) and (min-width: 40em) {
+    //min-height: 100vh;
+  }
+}
+
+.full-screen {
+  @include full-screen;
+}
+
+@import "mixins/margin";
+@import "mixins/padding";
+@import "mixins/text";
+@import "mixins/layout";
+@import "mixins/backgrounds";
+@import "mixins/flexbox";
+@import "mixins/css-grid";
+@import "mixins/media";

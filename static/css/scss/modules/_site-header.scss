@@ -1,0 +1,16 @@
+// Site Title
+
+.site-header {
+  @include flex;
+  @include flex-d-col;
+  @include relative;
+  @include w-100;
+  @media (max-height: 46em) and (max-width: $break-540) {
+    &.full-screen .banner {
+      @include mt-a;
+    }
+  }
+  @media (min-width: $break-640) {
+    //height: auto;
+  }
+}

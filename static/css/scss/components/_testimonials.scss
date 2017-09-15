@@ -1,0 +1,143 @@
+.testimonials {
+  .card-block {
+    @include overflow-hidden;
+    @include relative;
+    @include text-center;
+    text-shadow: .1rem .1rem 0 rgba(black, .125);
+    @include w-100;
+    > * {
+      position: relative;
+      z-index: 1;
+    }
+    &::before,
+    &::after {
+      @include pseudo-bg;
+      background: url("../images/UI/ui-icons/icon-quote-white.svg") no-repeat;
+      
+      // top: calc(50% - 12rem);
+      // left: calc(50% - 12rem);  
+      opacity: .1;
+      z-index: 0;
+    }
+    &::before {
+      top: 0;
+      left: -1rem;
+    }
+    &::after {
+      right: 1rem;
+      bottom: 2rem;
+      transform: rotate(180deg);
+    }
+    &:nth-child(1n) {
+      &::before {
+        height: 15rem;
+        width: 15rem;        
+      }
+      &::after {
+        height: 5rem;
+        width: 5rem;        
+      }
+    }
+    &:nth-child(2n) {
+      &::before {
+        top: 1rem;
+        left: 1rem;
+        height: 5rem;
+        width: 5rem;
+      }
+      &::after {
+        bottom: 1rem;
+        height: 15rem;
+        width: 15rem;        
+      }
+    }
+  }
+  .card-title {
+    font-size: calc(1vw + 3.125em);
+    line-height: 1;
+    display: none;
+  }
+  .text-wrap {
+    a {
+      @include text-base-r;
+      transition: .4s ease;
+      &:hover,
+      &:focus {
+        background-color: rgba(black, .8);
+        @include pr-tiny;
+        @include pl-tiny;
+        text-decoration: none;
+      }
+    }
+  }
+  .quotee {
+    @include flex;
+    @include ai-center;
+    //@include jc-end;
+    //@include italic;
+    @include mb-0;
+    @include pt-1;
+    a {
+      text-shadow: .1rem .1rem 0 rgba(black, .125);
+    }
+  }
+
+  .name {
+    @include fonts-loaded-KO29;
+    @include text-md;
+  }
+
+  .title {
+    @include block;
+    @include italic;
+    @include text-sm;
+    line-height: 1.4;
+    letter-spacing: .03rem;
+    @include mb-tiny;
+    //@include all-caps;
+  }
+  .avatar {
+    @include hidden;
+    @include mb-sm;
+    height: 4rem;
+    width: 4rem;
+  }
+  @media (max-width: $break-540) {
+    .quotee {
+      @include flex-d-col;
+      @include jc-center;
+      @include text-center;
+    }
+  }
+  @media (min-width: $break-540) {
+    .card-block {
+      text-align: left;
+    }
+    .avatar {
+      @include float-l;
+      @include mr-1;
+      @include mb-0;
+    }
+  }
+  @media (min-width: $break-540) and (max-width: $break-768) {
+    .card-text {
+      @include pr-2;
+    }
+  }
+  @media (min-width: $break-768) {
+    .card-block {
+      @include flex;
+      @include flex-d-col;
+      @include jc-center;
+    }
+    .title {
+      @include text-tiny;
+    }
+    .quotee {
+      //@include jc-end;
+      //margin-top: auto;
+      //@include pt-0;
+      //@include text-base-r;
+    }
+  }
+}

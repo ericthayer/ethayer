@@ -1,0 +1,93 @@
+/* --- Global & Base Layout Styles --- */
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  @include flex;
+  @include flex-d-col;
+  @include mh-100vh;
+  &.reel {
+    @media (min-height: $break-768) {
+      //min-height: 100vh;
+    }
+  }
+}
+
+#main>section:not(.banner),
+#site-footer {
+  //@include bg-light-grey;
+}
+
+.reel {
+  .site-header,
+  .site-footer {
+    @include relative;
+    z-index: 1;
+  }
+  footer {
+    @include bg-light-grey;
+  }
+}
+
+// main {
+//   position: relative;
+//   z-index: 1;
+// }
+
+.reel main {
+  // position: relative !important;
+  //z-index: 1 !important;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 60em;
+  @include pr-2;
+  @include pl-2;
+  @include w-100; 
+  // 1600
+  @media (min-width: $break-1600) {
+    //max-width: 95%;
+    //@include pr-4;
+    //@include pl-2;
+  }
+}
+
+.container-flex {
+  // > 540
+  @media (min-width: $break-540) {
+    //padding-right: 0;
+    //padding-left: 0;
+  }
+}
+
+.container-flex-media {
+  // > 540
+  @media (min-width: $break-540) {
+    //padding-right: 0;
+    //padding-left: 0;
+  }
+  // 1400
+  @media (min-width: 87.5em) {
+    max-width: 95%;
+  }
+}
+
+.container-fluid {
+  max-width: 100%;
+  // 1600
+  @media (min-width: $break-1600) {
+    //max-width: 80%;
+  }
+}
+
+main:focus,
+section:focus {
+  box-shadow: none;
+}
+
+main {
+  overflow-x: hidden; 
+}

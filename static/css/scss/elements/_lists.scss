@@ -1,0 +1,56 @@
+.grid-list {
+  font-family: $sans-serif;
+  line-height: 1.765;
+  list-style-type: none; 
+  @include grid-2-col; 
+  @include mb-2;
+  @include pt-2;
+  @include pr-1;
+  @include pb-2; 
+  @include pl-1;
+  @include text-sm;
+  li {
+    @include flex;
+    flex-basis: 25em;
+    @include mb-2;
+    @include pr-pl-sm;
+  }
+  strong {
+    @include block;
+    @include text-sm-r;
+    line-height: 1.45;
+    @include mb-tiny;
+  }
+  .icon {
+    @include flex-grow-1;
+    @include mr-a;
+    @include ml-a;
+    height: 5em;
+    width: 20%;
+    top: 0;
+  }
+  .icon-top-adjust {
+    top: -.5rem;
+  }
+  li > span {
+    padding-left: 1.5em;
+    width: 80%;
+  }
+  // 640
+  @media (min-width: $break-640) {
+    grid-gap: 4em 4em;
+    @include text-tiny;
+  }
+  // 800
+  @media (min-width: $break-800) {    
+    @include mw-56em;
+    @include mr-ml-a;
+    @include pr-pl-2;
+  }
+  @supports (grid-gap: 0) {
+    li {
+      @include mb-0;
+      @include pr-pl-0;
+    }
+  }
+}

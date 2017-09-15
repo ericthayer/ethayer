@@ -1,0 +1,82 @@
+// icon nav
+.nav-icons {
+  @include mb-0;
+  h2 {
+    margin-bottom: .75rem;
+  }
+  a {
+    margin: 0;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+  li {
+    margin-right: 1rem;
+    //margin-bottom: 0;
+    //margin-left: .5rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .icon {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .icon-mobile {
+    font-size: 1.35rem;
+  }
+  a:hover .icon,
+  a:focus .icon {
+    fill: hotpink;
+    transform: scale(1.3);
+  }
+  .tooltip {
+    left: calc(50% - 60px);
+    padding-right: .25rem;
+    padding-left: .25rem;
+    text-align: center;
+    white-space: pre;
+    width: 120px;
+    &::before {
+      //display: none;
+    }
+  }
+  li:last-child a {
+    .tooltip {
+      //border-radius: .2rem .2rem 0 .2rem;
+      right: -.5rem;
+      left: auto;
+      &::before {
+        right: .75rem;
+        left: auto;        
+      }
+    }
+  }
+  // 480
+  @media (max-width: $break-480) {
+    li:first-child a {
+      .tooltip {
+        left: -.5rem;
+        &::before {
+          left: .65rem;        
+        }
+      }
+    }
+  }
+  // 480
+  @media (min-width: $break-480) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+    h2 {
+      margin-bottom: 0;
+    }
+    li {
+      margin-bottom: 0;
+    }
+  }
+}

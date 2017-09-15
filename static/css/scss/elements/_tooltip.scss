@@ -1,0 +1,73 @@
+.has-tooltip {
+  position: relative;
+  &:hover .tooltip,
+  &:focus .tooltip,
+  a:focus .tooltip,
+  &:hover .icon-tooltip,
+  &:focus .icon-tooltip,
+  a:focus .icon-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+@mixin tooltip {
+  background-color: hotpink;
+  color: #FFF;
+  display: block;
+  font-size: 1.25rem;
+  @include fonts-loaded-KO29;
+  line-height: 1.2;
+  margin-bottom: .875rem;
+  opacity: 0;
+  padding: .5rem 1rem .65rem;
+  position: absolute;
+  bottom: 100%;
+  left: -100%;
+  left: -50%;
+  right: -50%;
+  visibility: hidden;
+  text-align: center;
+  transform: translateY(10px);
+  transition: all .25s ease-out;
+  border-radius: .2rem;
+  z-index: 50;
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border: 8px solid transparent;
+    border-top-color: hotpink;
+    bottom: -16px;
+    left: calc(50% - 8px);
+  }
+  &.flush-r {
+    right: -.5rem;
+    left: auto;
+    &::before {
+      right: .75rem;
+      left: auto;        
+    }
+  }
+  &.flush-l {
+    left: -.5rem;
+    &::before {
+      left: .65rem;        
+    }
+  }
+}
+
+.tooltip {
+  @include tooltip;
+}
+
+.icon-tooltip {
+  @include tooltip;
+  left: calc(50% - 60px);
+  padding-right: .25rem;
+  padding-left: .25rem;
+  text-align: center;
+  white-space: pre;
+  width: 120px;
+}

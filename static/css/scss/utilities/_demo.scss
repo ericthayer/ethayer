@@ -1,0 +1,394 @@
+@import "variables";
+@import "mixins";
+
+// Demo Wrap
+
+.demo-wrap {
+	background: white;
+	//border: 0.313em solid #C9C9C9;		
+	margin: 0 auto;	
+	//padding-bottom: 4em;
+	position: relative;
+	transition: all 500ms ease;
+/*
+	& > *:nth-child(2) {
+  	margin-right: -1em;
+  	margin-left: -1em;  
+	}	
+*/	
+}
+
+// Demo Title 
+
+.demo-title-bar {
+	background-color: #999;
+	//border-top: 1px solid white;
+	//border-bottom: 1px solid white;
+	//box-shadow: 0 0 0 2px #EEE;
+  text-align: center;
+  //margin-bottom: 4em;
+  padding: 0.75em 0 1em;
+}
+
+.demo-title {
+  font-size: 1.5em;
+  color: white;
+	font-family: $OpenSans;
+	text-shadow: none;
+  margin-bottom: 0.313em;
+  a {
+	  color: white;
+  }
+  // 667
+  @media (min-width: $break-640) {
+	  //font-size: 1.7em;	
+  }
+}
+
+.demo-subheader {
+	color: #444;
+	font-size: 1.2em;
+	font-family: $Montserrat;	
+	margin-top: 0.75em;	
+	margin-bottom: 0.5em;
+  text-transform: uppercase;
+	text-align: center;
+	// 568
+	@media (min-width: $break-540) {
+		text-align: left;
+	}	
+	// 768
+	@media (min-width: $break-768) {
+		font-size: 1.8em;
+	}	
+}
+
+.demo-helper-txt {
+  margin: 0 auto;
+  max-width: 600px;   
+  text-align: center;
+  pre {
+    text-align: center; 
+  } 
+}
+
+// Demo Label
+
+.demo-label-sm {
+	background: #E9E9E9;
+	color: #667;
+	display: inline-block;	
+	font: 1em $Montserrat;
+	margin-bottom: 0.5em;
+	padding: 0.313em 0.625em;	
+	text-transform: uppercase;
+	width: auto;		
+}
+
+.code-toggle-btn {
+	background: white;
+	box-shadow: 0 0 0 1px #DDD;
+  border-radius: 0.25em;
+  color: #555;
+  font-size: 0.6em;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bold;
+  max-width: 86px;
+  margin: 0 auto;	
+  padding: 0.438em 0.7em;
+  position: relative;
+  width: 100%;
+  z-index: 1;			
+  span[class*="icon-"] {
+	  border-radius: 0 0.25em 0.25em 0;
+	  font-size: 1em;
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	  background-color: #CCC;
+	  padding-top: 0.45em;
+	  padding-left: 0.1em;
+	  height: 100%;	
+  }
+  .icon-carret-up {
+	  background: #AAA;
+	  color: #333;
+	  padding-top: 0.35em;	
+	  text-shadow: 0 -1px 0 rgba(white, 0.25);
+  }
+  // 480
+  @media (min-width: $break-480) {
+	  //width: 20%;	
+  }
+  // 667
+  @media (min-width: $break-640) {
+	  padding: 0.438em 2.2em 0.438em 0.7em;
+  }  
+}
+
+.code-demo {
+	display: inline-block;	
+	margin: 0 auto;
+	padding: 0 0.5em;			
+	width: 100%;
+	position: absolute;
+	top: -100px;
+	left: 0;
+	z-index: 2;
+	transition: all 500ms ease;
+	opacity: 0;	
+	pre {
+		position: relative;	
+	}
+	.code-wrap {
+		height: 0;	
+		overflow: hidden;
+		opacity: 0;
+		transition: all 400ms ease;	
+	}
+	.close-btn {
+		display: none;	
+	}
+	// 768
+	@media (min-width: $break-768) {
+		left: 50%;
+		padding: 0;	
+		margin-left: -370px;
+		max-width: 740px;		
+	}
+	// 992
+	@media (min-width: $break-900) {
+		margin-left: -450px;
+		max-width: 900px;
+	}
+	// 1200
+	@media (min-width: $break-1200) {
+		margin-left: -512px;
+		max-width: 1024px;
+	}	
+}
+
+// Layout & Font-Icon Demo Styles
+
+.demo {
+	background: #F8F8F8;
+/*
+	.site-footer,
+  .site-wrap:after {
+  	height: 0;	
+  }
+*/
+	.main-content {
+		margin: 0 auto;
+		line-height: 0; 
+		padding: 0;
+		width: 100%;
+		.demo-wrap.vis:last-child {
+    	margin-bottom: 0; 
+  	}  
+	}
+	.demo-wrap {
+  	line-height: 1.5; 
+	}
+	// For Font Icons
+	.demo-icons {
+  	.demo-subheader {
+    	margin-top: 2em; 
+  	}
+  	.demo-label-sm {
+			//background: none;
+			border: none;
+			display: block;
+			margin: 0 auto 0.65em;
+			text-shadow: none;
+			width: 100%;
+			// 568
+			@media (min-width: $break-540) {
+			  text-align: left;
+			}  	
+		}
+		.icon-wrap {
+			background: #F5F5F5;
+			border: 1px solid rgba(black, 0.08);
+			box-shadow: 0.25em 0.25em 0 rgba(black, 0.15);
+			display: inline-block;
+			margin-bottom: 0.75em;		
+			padding: 1em 0.625em;
+			text-align: center; 
+			width: 100%;	
+			[class^="icon-"]:before, 
+			[class*=" icon-"]:before {
+  			color: $blue-med;
+				font-size: 2em;	
+			}			 
+			i {
+  			display: inline-block;
+  			font: {
+    			style: normal;
+          weight: bold;
+        }
+        letter-spacing: -0.03em;   
+  			padding: 1em 0; 
+  			text-align: center;
+  			width: 100%;  			    			    
+  			span {
+    			color: #888;
+          display: block;
+          font-size: 0.85em;
+          word-break: break-word;
+          transition: all 400ms ease;
+          -webkit-font-smoothing: antialiased;  
+  			}
+  			&:hover,
+  			&:focus {
+    			span {
+      			color: #444;
+    			}
+  			}
+			}
+			[class^="icon-"]:before, 
+			[class*=" icon-"]:before { 
+				margin: 0 auto 0.15em;	
+			}
+			// 480
+			@media (min-width: $break-480) {
+  			display: flex;
+  			flex-flow: row wrap;
+  			justify-content: space-around;
+				i { 
+  				width: 45%;
+  		  } 
+			}
+			// 768
+			@media (min-width: $break-768) {
+				i {
+  				padding: 1.25em 0.75em;
+  				width: 25%; 
+				}
+			}
+			// 992
+			@media (min-width: $break-900) {
+  			justify-content: center;
+  			i {
+    			padding: 1.25em 0.75em;  
+    			width: 16%; 
+  			}
+			}
+			// 1200
+			@media (min-width: $break-1200) {
+				i {
+  				padding: 2em;
+  				width: auto; 
+				}
+			}
+		}
+		&:last-child {
+			margin-bottom: 0;	
+		}
+	}
+	.md-size,
+	.sm-size {
+		float: none;
+		margin-top: 1em;		
+	}
+	// 600
+	@media (min-width: 600px) {
+		.demo-icons {
+/*
+			.icon-wrap {
+				margin-right: 0.25em;
+				margin-left: 0.25em;				
+				width: auto;
+			}
+*/
+		}		
+	}
+	a.ribbon {
+		z-index: 3;
+	}
+	// 768
+	@media (min-width: $break-768) {
+		.demo-icons {
+			.icon-wrap {			
+				//width: auto;
+				[class^="icon-"]:before, 
+				[class*=" icon-"]:before {
+					font-size: 2.125em;
+				}
+			}
+		}
+		.blog-posts {
+			padding-right: 2.5em;
+			padding-left: 2.5em;
+			&.post-grid {
+				padding-right: 0;
+				padding-left: 0;		
+			}		
+		}		
+	}
+}
+
+.view-code {
+	display: block;	
+}
+
+.hide-code {
+	display: none;	
+}
+
+.visible {
+	.code-demo {
+		top: 100px;
+		opacity: 1;
+		z-index: 4;	
+	}
+	.code-wrap {
+		display: block;
+		height: auto;
+		opacity: 1;		
+		overflow: visible;				
+	}
+	.demo-toggle-btn {
+		// max-width: 95px;	
+	}
+	.view-code {
+		display: none;	
+	}
+	.hide-code,
+	.close-btn {
+		display: block;	
+	}	
+}
+
+.hidden {
+	.code-demo {
+		top: -100px;
+		opacity: 0;
+	}
+	.code-wrap {
+		
+	}
+}
+
+.toggle-mobile {
+	display: none;
+	// 992
+	@media (min-width: $break-900) {
+		display: block;	
+	}	
+}	
+
+.mobile-demo {
+	width: 480px;
+}
+
+// For Dev Use. Makes page load faster helps me focus. Comment the next css bloack out to see all components and remove ".vis" from the demo markup.
+
+div[class^="demo-wrap"] {
+	display: none;	
+}
+
+div[class^="demo-wrap vis"] {
+	display: block;	
+}
