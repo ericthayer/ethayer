@@ -2,14 +2,17 @@
   position: relative;
   &:hover .tooltip,
   &:focus .tooltip,
-  a:focus .tooltip {
+  a:focus .tooltip,
+  &:hover .icon-tooltip,
+  &:focus .icon-tooltip,
+  a:focus .icon-tooltip {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
   }
 }
 
-.tooltip {
+@mixin tooltip {
   background-color: hotpink;
   color: #FFF;
   display: block;
@@ -33,11 +36,38 @@
   &::before {
     content: "";
     display: inline-block;
-    display: none;
     position: absolute;
     border: 8px solid transparent;
     border-top-color: hotpink;
     bottom: -16px;
     left: calc(50% - 8px);
   }
+  &.flush-r {
+    right: -.5rem;
+    left: auto;
+    &::before {
+      right: .75rem;
+      left: auto;        
+    }
+  }
+  &.flush-l {
+    left: -.5rem;
+    &::before {
+      left: .65rem;        
+    }
+  }
+}
+
+.tooltip {
+  @include tooltip;
+}
+
+.icon-tooltip {
+  @include tooltip;
+  left: calc(50% - 60px);
+  padding-right: .25rem;
+  padding-left: .25rem;
+  text-align: center;
+  white-space: pre;
+  width: 120px;
 }
