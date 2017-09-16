@@ -8,6 +8,11 @@
     transform: translateX(0) translateY(0);
   }
 }
+@keyframes nav-active {
+  0%, 100% {
+    transform: translateX(0%) translateY(0%);
+  }
+}
 @keyframes nav-hover-rev {
   0% {
     transform: translateX(0) translateY(0);
@@ -18,6 +23,7 @@
 }
 
 .nav-main {
+  @include fade-in;
   @include flex;
   @include ai-center;
   margin-bottom: 0;
@@ -52,7 +58,7 @@
         box-shadow: none;
         color: #FFF;
         &::after {        
-          animation: nav-hover .5s ease forwards;
+          animation: nav-active .5s ease forwards;
           border-radius: 0;
           opacity: 1;
         }
