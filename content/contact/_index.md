@@ -12,7 +12,7 @@ description = "Eric Thayer is a Web Designer and Front-end Developer from Denver
   </div>
   <div class="container container-fluid">
     <!-- Contact Form -->
-    <form class="contact-form" name="contact" netlify-honeypot="bot-field" action="thank-you" netlify>
+    <form class="contact-form" name="contact" netlify-honeypot="bot-field" action="../thank-you/" netlify>
       <!-- Form Build -->
       <div class="form-wrap flex flex-wrap">
         <!-- Form Group (left) -->

@@ -89,7 +89,7 @@ description = "Eric Thayer is a Web Designer and Front-end Developer from Denver
     </li>
     <li>
       <svg class="icon c-blue-rich">
-        <use xlink:href="#icon-tools" />
+        <use xlink:href="#icon-tools-alt" />
       </svg>
       <span><strong>Develop internal tooling and devops processes.</strong> Find ways to make everything we “build” better. We stress the importance to improve the code and the processes our interactive experiences are built on.</span>
     </li>
@@ -108,7 +108,7 @@ description = "Eric Thayer is a Web Designer and Front-end Developer from Denver
     </li>
     <li>
       <svg class="icon icon-top-adjust c-pink">
-        <use xlink:href="#icon-devices" />
+        <use xlink:href="#icon-devices-alt" />
       </svg>
       <span><strong>Build interactive prototypes.</strong> Create static or code based designs and send them out for development. We don’t really want to worry so much about fixing them bugs. Okay this one is a bit selfish but it is my dream 😜</span>
     </li>
