@@ -1,0 +1,20 @@
+{{ partial "head.html" . }}
+<body>
+  {{ partial "svg-icons.html" . }}
+  <!-- Header -->
+  <header id="site-header" class="site-header bg-green-blue" role="banner">
+    {{ partial "menus/main-menu.html" . }}
+    <!-- Headline Banner -->
+    <section class="banner banner-headline align-center pt-pb-4">
+      <!-- Section Title -->
+      <div class="container pt-pb-4 lg-pt-pb-2">
+          <h1 class="mr-ml-a">{{ .Title }}</h1>
+          <p class="sub-header mb-0 mw-40em md-mb-0 lg-pr-pl-3">I'm want to be part of a product design or development team that cares deeply about communication, accessibility and performance based UI/UX solutions.</p>
+          <a href="../" class="home-link">
+            <svg class="icon mr-ml-0">
+              <use xlink:href="#icon-home" />
+            </svg> <span class="sr-only">Home</span>
+          </a>
+        </div>
+    </section>
+  </header>

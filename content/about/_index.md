@@ -16,14 +16,14 @@ description = "Eric Thayer is a Web Designer and Front-end Developer from Denver
           <figure class="mug circle-mask"><img src="../images/content-img/1x1/img-1x1-avatar.jpg" alt="Eric Thayer"></figure>
         </noscript>
         <h2 id="my-background">Background</h2>
-        <p class="mw-35em mb-0 lg-pr-4">I started out in San Diego as a <a href="motion-reel.html">post-production artist</a> but since moving to Denver I have worked with <a href="https://www.linkedin.com/in/commonmovement/" title="view my LinkedIn profile">small and large companies</a> with a focus on web design and front-end development.</p>
+        <p class="mw-35em mb-0 lg-pr-4">I started out in San Diego as a <a href="motion-reel/">post-production artist</a> but since moving to Denver I have worked with <a href="//www.linkedin.com/in/commonmovement/" title="view my LinkedIn profile">small and large companies</a> with a focus on web design and front-end development.</p>
         <!-- example links -->
         <div class="example-links flex flex-wrap pt-sm text-md">
           <h3 class="small-header sr-only">current project: in2Marketplace.com</h3>
           <!-- Resume -->
           <div class="flex ai-center pt-pb-tiny pr-sm">
             <strong class="text-sm Roboto">View Resume</strong>
-            <a href="/Eric-Thayer-Resume-Web-Designer-and-Front-end-Developer.pdf" class="has-tooltip">
+            <a href="../Eric-Thayer-Resume-Web-Designer-and-Front-end-Developer.pdf" class="has-tooltip">
               <svg class="icon ml-mr-0 text-lg-r">
                 <use xlink:href="#icon-pdf" />
               </svg><span class="sr-only"></span>
@@ -35,7 +35,7 @@ description = "Eric Thayer is a Web Designer and Front-end Developer from Denver
       <!-- My Status -->
       <div class="info-block info-block-status flex-2 pt-pb-1">
         <h2 id="current-status" class="mb-sm">Current Status</h2>
-        <p class="mb-0"><a href="hire-me.html" class="text-link text-md">I'm looking for a team to call my own.</a> Although I enjoy the freedom of freelancing, I want to be part of a product design or development team that cares deeply about <a href="//blog.producthive.org/design-is-a-team-sport-with-jared-spool-a32d73786412/">communication</a>, <a href="http://www.standardista.com/standards/making-basic-web-pages-accessible/">accessibility</a> and <a href="//adactio.com/articles/9465/">performance</a> based solutions.</p>
+        <p class="mb-0"><a href="../hire-me/" class="text-link text-md">I'm looking for a team to call my own.</a> Although I enjoy the freedom of freelancing, I want to be part of a product design or development team that cares deeply about <a href="//blog.producthive.org/design-is-a-team-sport-with-jared-spool-a32d73786412/">communication</a>, <a href="http://www.standardista.com/standards/making-basic-web-pages-accessible/">accessibility</a> and <a href="//adactio.com/articles/9465/">performance</a> based solutions.</p>
       </div>
       <!-- My Focus -->
       <div class="info-block info-block-skills flex-sm pt-pb-1">
