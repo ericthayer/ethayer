@@ -10,7 +10,7 @@
 }
 @keyframes nav-active {  
   0%, 100% {
-    transform: translateX(0) translateY(0);
+    transform: translateX(0%) translateY(0%);
   }
 }
 @keyframes nav-hover-rev {
@@ -58,7 +58,7 @@
         animation: nav-active .5s ease forwards;
         border-radius: 0;
         opacity: 1;
-        transform: none;
+        //transform: translateX(101%) translateY(101%);
       }
     }
   }
