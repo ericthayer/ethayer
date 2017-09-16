@@ -36,7 +36,7 @@
     }
   }
   li {
-    background-color: transparent;
+    //background-color: transparent;
     @include flex;
     @include ai-center;
     align-self: stretch;
@@ -53,14 +53,15 @@
     -moz-osx-font-smoothing: auto;  
     -webkit-font-smoothing: auto;
     &.active {
-      background-color: rgba(black, .2);
+      //background-color: rgba(black, .2);
       a {
         box-shadow: none;
         color: #FFF;
         &::after {        
-          animation: nav-active .5s ease forwards;
+          animation: nav-hover .5s ease forwards;
           border-radius: 0;
           opacity: 1;
+          transform: none;
         }
       }
     }
