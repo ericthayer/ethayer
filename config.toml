@@ -1,3 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Eric Thayer is a Web Designer and Front-end Developer from Denver Colorado"
+
+[params]
+  version = "3.6.8"
