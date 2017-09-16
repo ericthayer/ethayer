@@ -58,7 +58,8 @@
         box-shadow: none;
         color: #FFF;
         &::after {        
-          animation: nav-active .5s ease forwards;
+          background-color: transparent;
+          //animation: nav-active .5s ease forwards;
           border-radius: 0;
           opacity: 1;
         }
