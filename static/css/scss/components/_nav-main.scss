@@ -10,7 +10,7 @@
 }
 @keyframes nav-active {  
   0%, 100% {
-    transform: translateX(0%) translateY(0%);
+    transform: none;
   }
 }
 @keyframes nav-hover-rev {
@@ -55,7 +55,7 @@
       box-shadow: none;
       color: #FFF;
       &::after {        
-        animation: nav-hover .5s ease forwards;
+        animation: nav-active .5s ease forwards;
         border-radius: 0;
         opacity: 1;
         //transform: translateX(101%) translateY(101%);
