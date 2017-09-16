@@ -23,7 +23,6 @@
 }
 
 .nav-main {
-  @include fade-in;
   @include flex;
   @include ai-center;
   margin-bottom: 0;
