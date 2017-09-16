@@ -1,11 +1,16 @@
 <div class="main-menu">   
-  {{ partial "site-title.html" . }}  
-  <nav class="nav-main" role="navigation">
-    <ul>
-      <li><a href="{{ .Site.BaseURL }}portfolio/"><span>Work</span></a></li>
-      <li><a href="{{ .Site.BaseURL }}about/"><span>About</span></a></li>
-      <li><a href="{{ .Site.BaseURL }}process/"><span>Process</span></a></li>
-      <li><a href="{{ .Site.BaseURL }}contact/"><span>Contact</span></a></li>
-    </ul>
-  </nav>
-</div>
+    {{ partial "site-title.html" . }}  
+    <nav class="nav-main" role="navigation">
+      <ul>
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        <li{{if $currentPage.IsMenuCurrent "main" . }} class="active" {{end}}>
+          <a href="{{ .URL}}">
+            {{ .Pre }}
+            <span>{{ .Name }} {{if $currentPage.IsMenuCurrent "main" . }}<span class="sr-only">current page</span>{{end}}</span>              
+          </a>
+        </li>
+        {{end}}
+      </ul>
+    </nav>
+  </div>

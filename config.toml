@@ -2,9 +2,6 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Eric Thayer is a Web Designer and Front-end Developer from Denver Colorado"
 
-# [taxonomies]
-  # version = "3.6.8"
-
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
