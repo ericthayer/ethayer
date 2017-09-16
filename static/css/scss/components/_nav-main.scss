@@ -10,7 +10,7 @@
 }
 @keyframes nav-active {  
   0%, 100% {
-    transform: none;
+    transform: translateX(101%) translateY(101%);
   }
 }
 @keyframes nav-hover-rev {
@@ -36,6 +36,7 @@
     }
   }
   li {
+    background-color: transparent;
     @include flex;
     @include ai-center;
     align-self: stretch;
@@ -51,14 +52,16 @@
     z-index: 1;
     -moz-osx-font-smoothing: auto;  
     -webkit-font-smoothing: auto;
-    &.active a {
-      box-shadow: none;
-      color: #FFF;
-      &::after {        
-        animation: nav-active .5s ease forwards;
-        border-radius: 0;
-        opacity: 1;
-        //transform: translateX(101%) translateY(101%);
+    &.active {
+      background-color: rgba(black, .2);
+      a {
+        box-shadow: none;
+        color: #FFF;
+        &::after {        
+          animation: nav-active .5s ease forwards;
+          border-radius: 0;
+          opacity: 1;
+        }
       }
     }
   }
