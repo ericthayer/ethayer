@@ -79,6 +79,7 @@
     text-shadow: .05rem .05rem .03rem rgba(black, .2);
     text-transform: uppercase;
     &::after {
+      display: none;
       background-color: rgba(black, .2);
       //background: linear-gradient(135deg, rgba(178,167,214,1) 0%,rgba(80,75,96,1) 100%);
       //background: #BBB;
@@ -151,7 +152,7 @@
 }
 
 .home-link {
-  @include fonts-loaded-KO29;
+ //@include fonts-loaded-KO29;
   @include flex;
   @include ai-center;
   @include text-lg;

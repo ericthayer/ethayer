@@ -32,7 +32,7 @@ $break-2400: 150em; // 2400px
 
 $sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
-$sans-serif-narrow: "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, sans-serif;
+$sans-serif-narrow: "Roboto Condensed", $sans-serif;
 
 $serif: "Garamond", "Cambria", Georgia, serif;
 
