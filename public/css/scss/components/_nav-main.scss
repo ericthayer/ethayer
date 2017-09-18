@@ -68,7 +68,10 @@
   a {
     color: #FFF;
     @include fonts-loaded-KO29;
-    font-size: 1.125rem;
+    font-size: .875rem;
+    .fonts-loaded & {
+      font-size: 1.125rem;
+    }
     letter-spacing: .05rem;
     @include flex-grow-1;
     margin-right: 0;
