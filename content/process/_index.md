@@ -8,7 +8,7 @@ weight = "3"
 +++
 
 <!-- Process -->
-<section id="process" class="pt-pb-2">
+<section id="process" class="pt-2">
   <!-- Section Title -->
   <div class="container align-center">
     <h2 id="design-process">Design Workflow</h2>

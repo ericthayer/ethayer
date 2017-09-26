@@ -15,7 +15,7 @@
 @mixin tooltip {
   background-color: hotpink;
   color: #FFF;
-  display: block;
+  display: none;
   font-size: 1.25rem;
   @include fonts-loaded-KO29;
   line-height: 1.2;
