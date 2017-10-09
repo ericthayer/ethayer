@@ -44,3 +44,13 @@ js/libs/smooth-scroll-10.2.1/src/docs/index.md
 js/libs/smooth-scroll-10.2.1/src/js/smooth-scroll.js
 
 _headers
+
+static/css/scss/utilities/mixins/_css-grid 2\.scss
+
+static/css/scss/utilities/mixins/_css-grid 3\.scss
+
+static/css/scss/utilities/mixins/_media 2\.scss
+
+static/css/scss/utilities/mixins/_media 3\.scss
+
+static/css/scss/utilities/modifiers/_mod-media 2\.scss

@@ -12,6 +12,10 @@
   @include flex-auto;
 }
 
+.flex-reset {
+  @include flex-reset;
+}
+
 .flex-basis-auto {
   @include flex-basis-auto;
 }
@@ -36,8 +40,8 @@
   @include flex-grow-4;
 }
 
-.flex-sm {
-  @include flex-sm; 
+.flex-shrink-0 {
+  @include flex-shrink-0; 
 }
 
 // Flex Direction

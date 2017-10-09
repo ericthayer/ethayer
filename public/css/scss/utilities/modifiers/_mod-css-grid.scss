@@ -1,0 +1,23 @@
+.grid {
+  @include grid;
+}
+
+.grid-2-col {
+  @include grid-2-col;
+}
+
+.grid-4-col {
+  @include grid-4-col;
+}
+
+.grid-lg {
+  @include grid-lg;
+}
+
+.grid-banner {
+  @include grid-banner;
+}
+
+.grid-flush {
+  @include grid-gap-0;
+}
