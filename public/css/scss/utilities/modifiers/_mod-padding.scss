@@ -58,6 +58,10 @@
 
 //  Padding Top & Bottom
 
+.pt-pb-0 {
+  @include pt-pb-0;   
+}
+
 .pt-pb-tiny {
   @include pt-pb-tiny;   
 }

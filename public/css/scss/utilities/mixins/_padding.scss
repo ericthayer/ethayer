@@ -61,6 +61,11 @@
 
 //  Padding Top & Bottom
 
+@mixin pt-pb-0 {
+  padding-top: 0;
+  padding-bottom: 0;   
+}
+
 @mixin pt-pb-tiny {
   padding-top: .313em;
   padding-bottom: .313em;   

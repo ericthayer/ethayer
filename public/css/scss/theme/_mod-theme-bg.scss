@@ -44,6 +44,14 @@
   @include bg-rust;
 }
 
+.bg-red-light {
+  @include bg-red-light;
+}
+
+.bg-blue-bold {
+  @include bg-blue-bold;
+}
+
 // custom bg
 
 .bg-light-grey {

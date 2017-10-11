@@ -48,7 +48,10 @@
   // checkered pattern
   //background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23FFFFFF' fill-opacity='0.05'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(-35deg, #40a59f 0%,mix(black, #1e6c67, 20%) 100%);
   //background: linear-gradient(-35deg, #40a59f 0%,mix(black, #1e6c67, 20%) 100%);
-  background: linear-gradient(125deg, #71DCCB 0%,mix(black, #042C68, 20%) 100%);
+  // made with my son Nate
+  background-color: $blue-bold;
+  background: linear-gradient(215deg, #71b073 29.9%, hsla(204, 63%, 41%, 1) 80%), linear-gradient(15deg, #b1c9d8 29.9%, hsla(204, 63%, 41%, 1) 50%);
+  background-blend-mode: hard-light;
   @include bg-dark;
 }
 
@@ -152,6 +155,10 @@
   background-color: $blue;
 }
 
+@mixin bg-blue-bold {
+  background-color: $blue-bold;
+}
+
 @mixin bg-green {
   background-color: $green;
 }
@@ -166,6 +173,10 @@
 
 @mixin bg-rust {
   background-color: $rust;
+}
+
+@mixin bg-red-light {
+  background-color: $red-light;
 }
 
 @mixin bg-teal {
