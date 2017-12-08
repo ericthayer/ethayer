@@ -157,12 +157,7 @@ dfn {
 
 
 h1 {
-  margin: {
-    top: 0;
-    right: 0;
-    bottom: 0.67em;
-    left: 0;
-  }  
+  margin:0 0 .67em 0;
 }
 
 h1,
@@ -509,17 +504,12 @@ ol {
   list-style-type: decimal;
 }
 
-li {
-  //word-break: break-word;
-}
-
 p {
   margin-top: 0;  
 }
 
-// focus style
+// focus style - I handle this in main-menu.scss
 :focus {
   outline: none;
-  //box-shadow: 0 0 15px 0 rgb(0, 0, 0);
   box-shadow: none;
 }

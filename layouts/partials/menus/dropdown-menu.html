@@ -1,0 +1,21 @@
+<div class="main-menu" data-inclusive-menu>
+    {{ partial "site-title.html" . }}
+    
+    <nav role="navigation">
+      <button data-inclusive-menu-opens="nav-main">
+        Edit
+        <span aria-hidden="true">&#x25be;</span>
+      </button> 
+      <ul id="nav-main" data-inclusive-menu-from="left" class="nav-main">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        <li{{if $currentPage.IsMenuCurrent "main" . }} class="active" {{end}}>
+          <a href="{{ .URL}}">
+            <span>{{ .Name }} {{if $currentPage.IsMenuCurrent "main" . }}<span class="sr-only">current page</span>{{end}}</span>              
+          </a>
+        </li>
+        {{end}}
+      </ul>
+    </nav>
+    <!-- {{ partial "menus/menu-button.html" . }} -->
+  </div>

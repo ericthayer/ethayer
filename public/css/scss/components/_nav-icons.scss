@@ -62,7 +62,7 @@
   // > 645
   @media (max-width: 40.313em) {
     .flush-l {
-      left: calc(50% - 60px);
+      left: calc(50% - 2.5rem);
       &::before {
         left: calc(50% - 8px);       
       }

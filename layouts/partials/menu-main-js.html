@@ -1,0 +1,10 @@
+<script>
+  // Instantiation
+  var exampleButton = document.querySelector('[data-inclusive-menu-opens]')
+  var exampleMenuButton = new MenuButton(exampleButton)
+
+  // Listen to choose event
+  exampleMenuButton.on('choose', function (choice) {
+    console.log('You chose "' + choice.textContent + '"')
+  })
+</script>

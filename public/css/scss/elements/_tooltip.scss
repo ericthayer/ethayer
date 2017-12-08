@@ -15,7 +15,7 @@
 @mixin tooltip {
   background-color: hotpink;
   color: #FFF;
-  display: none;
+  //display: none;
   font-size: 1.25rem;
   @include fonts-loaded-KO29;
   line-height: 1.2;
@@ -64,10 +64,13 @@
 
 .icon-tooltip {
   @include tooltip;
-  left: calc(50% - 60px);
+  left: calc(50% - 2.5rem);
   padding-right: .25rem;
   padding-left: .25rem;
   text-align: center;
   white-space: pre;
-  width: 120px;
+  width: 5rem;
+  &::before {
+    bottom: -14px;
+  }
 }

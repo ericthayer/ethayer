@@ -21,12 +21,12 @@ weight = "4"
         <div class="form-group form-group-left flex flex-wrap">
           <!-- Name -->
           <div class="input-row">
-            <label class="flex" for="Name">Name <span class="req-mark ml-a text-sm-r">* required</span></label>
+            <label class="flex" for="Name">Name <span class="req-mark ml-a text-sm-r"><span aria-hidden="true">*</span> required</span></label>
             <input id="Name" name="Name" type="text" class="required" title="This is a required field" required>
           </div>
           <!-- Email Address -->
           <div class="input-row">
-            <label class="flex" for="Email">Email <span class="req-mark ml-a text-sm-r">* required</span></label>
+            <label class="flex" for="Email">Email <span class="req-mark ml-a text-sm-r"><span aria-hidden="true">*</span> required</span></label>
             <input id="Email" name="Email" type="email" class="required" title="This is a required field" required>
           </div>
           <!-- Phone Number -->

@@ -1,0 +1,25 @@
+.toggle-button {
+  
+  // inside .nav-main
+  .nav-main & {
+    background-color: transparent;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    letter-spacing: .1em;
+    margin-left: auto;
+    padding: 1em;
+    text-transform: uppercase;
+    &:hover,
+    &:focus {
+      background-color: rgba(black, .5);
+    }
+  }
+  .toggle-icon {
+    font-size: 1.125rem;
+    margin-right: 0.2rem;
+    position: relative;
+    top: -.125em;
+    -webkit-font-smoothing: antialiased;
+  }
+}

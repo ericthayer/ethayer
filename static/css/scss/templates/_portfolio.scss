@@ -1,0 +1,18 @@
+.portfolio {
+  .site-header {
+    @supports (clip-path: polygon(0% 80%, 27% 92%, 59% 81%, 100% 100%, 100% 0, 0 0)) {
+      clip-path: polygon(0% 80%, 27% 92%, 59% 81%, 100% 100%, 100% 0, 0 0)
+    }
+  }
+  .banner-headline {
+    padding-top: 3em;
+    padding-bottom: 10em;
+  }
+  .home-link {
+    bottom: auto;
+  }
+}
+
+.projects {
+  margin-top: -16em;
+}
