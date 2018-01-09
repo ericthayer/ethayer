@@ -3,8 +3,6 @@ type = "page"
 page = "contact/contact.html"
 title = "Contact"
 description = "Eric Thayer is a Web Designer and Front-end Developer from Denver Colorado"
-menu = "main"
-weight = "4"
 +++
 
 <!-- Contact -->
