@@ -20,31 +20,32 @@ button {
   @include relative;
   text-shadow: .05rem .05rem 0 #E3E3E3;
   box-shadow: 0 .1rem .2rem 0 transparent;
-  box-shadow: 0 .1rem .2rem 0 #AAA;
+  //box-shadow: 0 .1rem .2rem 0 #AAA;
   transition: background .4s ease, color .4s ease, box-shadow .4s ease, text-shadow .4s ease;
   span {
     position: relative;
     z-index: 2;
   }
   &::after {
-    border-radius: .35rem;
+    //border-radius: .35rem;
     @include pseudo-bg;
-    transition: background .4s ease, border-radius .4s ease, opacity .4s ease;
-    top: 0;
+    background: linear-gradient(to bottom, #EEE 10%, #BBB 100%);
+    background: $link;
+    opacity: 0;
+    top: 100%;
     left: 0;
     z-index: 0;
-  }
-  &::after {
-    //background: linear-gradient(to bottom, #EEE 0%, #DDD 100%);
-    background: linear-gradient(to bottom, #EEE 10%, #BBB 100%);
-    opacity: 0;
+    transition: .4s ease;
   }
   &:hover,
   &:focus {
     box-shadow: 0 .1rem .2rem 0 #EEE;
     color: #333;
+    color: #FFF;
+    text-shadow: none;
     &::after {
       opacity: 1;
+      top: 0;
     }
   }
   &:focus {
