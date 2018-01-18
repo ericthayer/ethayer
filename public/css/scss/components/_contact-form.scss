@@ -50,8 +50,8 @@
       }
     }
     .submit-input {
-      @include jc-center;
-      @include pt-2;
+      @include jc-end;
+      //@include pt-2;
     }
     .submit-button {
       flex-basis: 8rem;
