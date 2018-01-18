@@ -2,18 +2,18 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Eric Thayer is a Web Designer and Front-end Developer from Denver Colorado"
 
-[[menu.main]]
-    name = "Work"
-    url = "/portfolio"
-    weight = 2
-[[menu.main]]
-    name = "About"
-    url = "/about"
-    weight = 1
-[[menu.main]]
-    name = "Notes"
-    url = "/notes"
-    weight = 3
+##[[menu.main]]
+##    name = "Work"
+##    url = "/portfolio"
+##    weight = 2
+##[[menu.main]]
+##    name = "About"
+##    url = "/about"
+##    weight = 1
+##[[menu.main]]
+##    name = "Notes"
+##    url = "/notes"
+##    weight = 3
 [[menu.main]]
     name = "Contact"
     url = "/contact"

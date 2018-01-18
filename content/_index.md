@@ -271,6 +271,6 @@ description = "Eric Thayer is a Web Designer and Front-end Developer from Denver
         </noscript>
       </figure>
     </div>
-    <a class="cta-link" href="portfolio/">View Portfolio</a>
+    <!--<a class="cta-link" href="portfolio/">View Portfolio</a>-->
   </div>
 </section>
