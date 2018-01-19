@@ -1,0 +1,2 @@
+# Redirect domain aliases to primary domain
+https://ethayer.design/* https://www.ethayer.co/:splat 301!
