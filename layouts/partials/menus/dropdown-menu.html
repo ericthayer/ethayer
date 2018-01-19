@@ -10,7 +10,7 @@
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
         <li{{if $currentPage.IsMenuCurrent "main" . }} class="active" {{end}}>
-          <a href="{{ .URL}}">
+          <a href="{{ .URL }}">
             <span>{{ .Name }} {{if $currentPage.IsMenuCurrent "main" . }}<span class="sr-only">current page</span>{{end}}</span>              
           </a>
         </li>
