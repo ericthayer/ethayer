@@ -6,14 +6,13 @@ description = "Eric Thayer is a Web Designer and Front-end Developer from Denver
 
 <!-- Project Samples -->
 <section class="pt-4 pb-2">
-  <div class="container container-fluid">
     <!-- Section Title -->
     <div class="container align-center">
       <h2 id="work">Work Samples</h2>
       <p class="sub-header mb-2 mw-35em md-pr-pl-3">Below are some examples of my recent work. I work on all types of design projects so please let me know if I can help or if you have any questions.</p>
     </div>
     <!-- Work Examples -->
-    <div class="flex-layout l-media-grid">
+    <div class="container-fluid flex-layout l-media-grid">
       <!-- Concordus -->
       <figure class="media-item">
         <a class="media-wrap img" href="#0">
@@ -268,12 +267,11 @@ description = "Eric Thayer is a Web Designer and Front-end Developer from Denver
       </figure>
     </div>
     <!--<a class="cta-link" href="portfolio/">View Portfolio</a>-->
-  </div>
 </section>
 
 <!-- About -->
 <section id="about" class="pt-pb-2">
-  <div class="container container-flex lg-p-0">
+  <div class="container-fluid">
     <div class="about-me">
       <!-- About Me -->
       <div class="info-block info-block-about">
@@ -319,9 +317,9 @@ description = "Eric Thayer is a Web Designer and Front-end Developer from Denver
 </section>
 
 <!-- Contact -->
-<section class="pt-pb-2">
+<section id="contact" class="pt-pb-2">
   <div class="container align-center">
-    <h2 id="contact">Contact Me</h2>
+    <h2>Contact Me</h2>
     <p class="sub-header mb-3 mw-35em md-pr-pl-2">Please fill out the contact form or feel free to send me an email.</p>
   </div>
   <div class="container container-fluid">
@@ -333,12 +331,12 @@ description = "Eric Thayer is a Web Designer and Front-end Developer from Denver
         <div class="form-group form-group-left flex flex-wrap">
           <!-- Name -->
           <div class="input-row">
-            <label class="flex" for="Name">Name <span class="req-mark ml-a text-sm-r"><span aria-hidden="true">*</span> required</span></label>
+            <label class="flex" for="Name">Name <span class="req-mark ml-a text-sm-r">required</span></label>
             <input id="Name" name="Name" type="text" class="required" title="This is a required field" required>
           </div>
           <!-- Email Address -->
           <div class="input-row">
-            <label class="flex" for="Email">Email <span class="req-mark ml-a text-sm-r"><span aria-hidden="true">*</span> required</span></label>
+            <label class="flex" for="Email">Email <span class="req-mark ml-a text-sm-r">required</span></label>
             <input id="Email" name="Email" type="email" class="required" title="This is a required field" required>
           </div>
           <!-- Phone Number -->

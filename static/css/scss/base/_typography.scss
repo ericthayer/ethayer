@@ -94,10 +94,26 @@ p {
   -webkit-font-smoothing: antialiased;
   a {
     color: $link;
-    text-decoration: none;
-    @include link-shadow;
+    text-decoration: underline;
+    text-decoration-skip: ink;
+    // text-shadow: 0;
+    // background-image: none;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: 100%;
   }
 
+}
+
+@supports not (text-decoration-skip: ink) {
+  p a {
+    // text-decoration: none;
+    // text-shadow: .05em 0 0 #F9F9F9, -0.05em 0 0 #F9F9F9, 0 .05em 0 #F9F9F9, 0 -0.05em 0 #F9F9F9, .1em 0 0 #F9F9F9, -0.1em 0 0 #F9F9F9, 0 .1em 0 #F9F9F9, 0 -0.1em 0 #F9F9F9;
+    // background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
+    // background-repeat: repeat-x;
+    // background-position: bottom .05em center;
+    // background-size: 100% .07em;
+  }
 }
 
 p a:hover,
@@ -105,19 +121,6 @@ p:focus,
 a:focus {
   @include focus-pink;
   text-shadow: none;
-}
-
-p a,
-u {
-  @supports (text-decoration-skip: ink) {
-    text-decoration: underline;
-    text-decoration-skip: ink;
-    text-shadow: 0;
-    background-image: none;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-  }
 }
 
 a abbr[title] {

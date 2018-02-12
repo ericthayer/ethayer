@@ -1,8 +1,11 @@
-.contact-form {
-  //display: none;
-  [data-scroll-id="contact"] & {
-    display: block;
+#contact {
+  display: none;
+    &[data-scroll-id="contact"] {
+      display: block;
   }
+}
+
+.contact-form {
   input,
   textarea {
     font-family: $sans-serif;
@@ -10,7 +13,7 @@
   .submit-input {
     @include flex;
   }
-  
+
   // < 480 {
   @media (max-width: $break-640) {
     .submit-button {
@@ -21,13 +24,13 @@
   // > 667
   @media (min-width: $break-640) {
     .form-wrap {
-      display: flex;    
+      display: flex;
       align-items: stretch;
     }
-    .form-group {        
+    .form-group {
       display: flex;
       flex-grow: 1;
-      width: 50%; 
+      width: 50%;
       .input-row {
         display: flex;
         flex-direction: column;
@@ -65,15 +68,15 @@
       width: 45%;
       .input-row:last-child {
         @include mb-0;
-      }      
+      }
     }
     .form-group-right {
-      width: 55%; 
+      width: 55%;
     }
   }
   // 1200
   @media (min-width: $break-1200) {
-    
+
   }
 }
 

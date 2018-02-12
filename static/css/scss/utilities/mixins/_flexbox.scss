@@ -154,26 +154,26 @@
 // Flex Layout
 @mixin flex-layout {
   > * {
-    //flex-basis: 100%;
     padding-bottom: 1.5em;
   }
   .media-item {
     margin-bottom: 0;
   }
   // > 640
-  @media (min-width: $break-640) {
+  @media (min-width: $break-540) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
     > * {
       float: left;
-      //flex: 1 1 auto;
-      flex-basis: 15em;
+      flex-basis: 17em;
       flex-grow: 1;
-      padding-top: 1em;
-      padding-right: 1em;
-      padding-bottom: 1em;
-      padding-left: 1em;
+      padding-top: .5em;
+      padding-right: .5em;
+      padding-bottom: .5em;
+      padding-left: .5em;
       min-height: 0;
       min-width: 0;
       &.flex-sm {
@@ -185,8 +185,6 @@
 
 // Media Layout
 @mixin l-media-grid {
-  margin-right: -1em;
-  margin-left: -1em;
   // < 320
   @media (max-width: 300px) {
     figcaption {

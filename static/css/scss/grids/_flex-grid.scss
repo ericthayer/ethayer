@@ -182,8 +182,6 @@
 
 // Media Layout
 .l-media-grid {
-  margin-right: -1em;
-  margin-left: -1em;
   // < 320
   @media (max-width: 300px) {
     figcaption {
