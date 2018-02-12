@@ -10,13 +10,13 @@
 
 @mixin flex-auto {
   flex: 0 1 auto;
-  min-width: 0; 
+  min-width: 0;
   min-height: 0;
 }
 
 @mixin flex-reset {
   flex-shrink: 0;
-  min-width: 0; 
+  min-width: 0;
   min-height: 0;
 }
 
@@ -140,7 +140,7 @@
 
 @mixin flex-lead {
   flex: 1 0 100%;
-  width: 100%;  
+  width: 100%;
 }
 
 @mixin flex-sm {
@@ -154,9 +154,8 @@
 // Flex Layout
 @mixin flex-layout {
   > * {
-    flex-basis: 100%;
+    //flex-basis: 100%;
     padding-bottom: 1.5em;
-    width: auto;
   }
   .media-item {
     margin-bottom: 0;
@@ -167,9 +166,9 @@
     flex-wrap: wrap;
     justify-content: center;
     > * {
-      float: left; 
+      float: left;
       //flex: 1 1 auto;
-      flex-basis: 50%;
+      flex-basis: 15em;
       flex-grow: 1;
       padding-top: 1em;
       padding-right: 1em;
@@ -182,43 +181,25 @@
       }
     }
   }
-  // > 667
-  @media (min-width: $break-640) {
-    .flex-lead {
-      flex-basis: 100%;
-    }
-  }
 }
 
 // Media Layout
 @mixin l-media-grid {
   margin-right: -1em;
   margin-left: -1em;
-  > * {
-    padding: 1em;
-  }
   // < 320
   @media (max-width: 300px) {
     figcaption {
       @include sr-only;
     }
   }
-  // < 640
-  @media (max-width: $break-640) {
+  // > 640
+  @media (min-width: 40em) {
     > * {
-      flex-basis: 100%;
+      padding: .5em;
     }
-  }
-  // > 800
-  @media (min-width: 50em) {
     &.col-2 > * {
-      flex-basis: 50%;
-    }
-  }
-  // > 1200
-  @media (min-width: $break-1200) {
-    > * {
-      flex-basis: 33%;
+      flex-basis: 24em;
     }
   }
 }

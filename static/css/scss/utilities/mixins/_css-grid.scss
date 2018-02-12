@@ -1,6 +1,6 @@
 // CSS Grid Layout
 
-@mixin grid {
+@mixin grid-set {
   @include flex;
   @include flex-wrap;
   //@include pb-2;
@@ -14,17 +14,18 @@
     display: grid;
     grid-gap: 2em;
     > * {
+      @include m-0;
       @include p-0;
     }
     @media (min-width: $break-640) {
-      grid-template-columns: repeat(auto-fit, minmax(10.5em, 1fr));  
+      grid-template-columns: repeat(auto-fit, minmax(10.5em, 1fr));
     }
   }
 
 }
 
 @mixin grid-2-col {
-  @include grid;
+  @include grid-set;
   @supports (grid-gap: 0) {
     @media (min-width: $break-640) {
       grid-gap: 2em 3em;
@@ -46,7 +47,7 @@
 }
 
 @mixin grid-4-col {
-  @include grid;
+  @include grid-set;
   @supports (grid-gap: 0) {
     grid-template-columns: repeat(auto-fit, minmax(16.5em, 1fr));
     grid-gap: 2em;
@@ -65,7 +66,7 @@
   }
   @media (min-width: $break-900) {
     .grid-wrap {
-      @include grid;
+      @include grid-set;
       grid-template-rows: minmax(50vh, 1fr);
       > * {
         display: flex;
@@ -80,8 +81,31 @@
   }
 }
 
-.grid {
-  @include grid;
+.about-me {
+  display: grid;
+  grid-gap: 2rem;
+  .info-block-about {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+  }
+  .info-block-skills {
+    grid-column: 1 / 1;
+    grid-row: 4 / 4;
+  }
+  @media (min-width: 46em) {
+    grid-template-columns: 2fr auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    .info-block-about {
+    }
+    .info-block-skills {
+      grid-column: 3 / 3;
+      grid-row: 2 / 2;
+    }
+  }
+}
+
+.grid-set {
+  @include grid-set;
 }
 
 .grid-2-col {

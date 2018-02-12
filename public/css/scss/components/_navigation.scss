@@ -15,7 +15,7 @@ nav {
   background: none;
   color: $link;
   @include block;
-  @include fonts-loaded-KO29;
+  @include fonts-loaded-KO;
   @include text-lg;
   @include pt-sm;
   @include text-center;
@@ -44,7 +44,7 @@ nav {
 
 // icon link
 .icon-link {
-  //@include fonts-loaded-KO29;
+  //@include fonts-loaded-KO;
   .icon {
     font-size: 1.5rem;
     fill: $link;

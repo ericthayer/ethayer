@@ -5,12 +5,12 @@ description = "Eric Thayer is a Web Designer and Front-end Developer from Denver
 +++
 
 <!-- Project Samples -->
-<section class="pt-pb-2">
+<section class="pt-4 pb-2">
   <div class="container container-fluid">
     <!-- Section Title -->
     <div class="container align-center">
       <h2 id="work">Work Samples</h2>
-      <p class="sub-header mb-1 mw-35em md-pr-pl-3">Below are some examples of my recent work. I work on all types of design projects so please let me know if I can help or if you have any questions.</p>
+      <p class="sub-header mb-2 mw-35em md-pr-pl-3">Below are some examples of my recent work. I work on all types of design projects so please let me know if I can help or if you have any questions.</p>
     </div>
     <!-- Work Examples -->
     <div class="flex-layout l-media-grid">
@@ -45,7 +45,7 @@ description = "Eric Thayer is a Web Designer and Front-end Developer from Denver
             </figcaption>
           </a>
         <noscript>
-          <figure class="media-item media-light"> 
+          <figure class="media-item media-light">
             <a href="#0">
                 <img src="images/content-img/16x9/img-16x9-MaxCentive-2-MD.jpg" srcset="images/content-img/16x9/img-16x9-MaxCentive-2-LG.jpg 2000w, images/content-img/16x9/img-16x9-MaxCentive-2-MD.jpg 1900w" alt="Samples of my CSS Grid collection on CodePen.">
                 <time class="time-stamp" datetime="2017"><span class="sr-only">Currently working on this project since February</span>2017</time>
@@ -268,6 +268,53 @@ description = "Eric Thayer is a Web Designer and Front-end Developer from Denver
       </figure>
     </div>
     <!--<a class="cta-link" href="portfolio/">View Portfolio</a>-->
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="pt-pb-2">
+  <div class="container container-flex lg-p-0">
+    <div class="about-me">
+      <!-- About Me -->
+      <div class="info-block info-block-about">
+        <figure class="circle-mask mug hidden"><img class="lazyload" data-src="../images/content-img/1x1/img-1x1-avatar.jpg" alt="Eric Thayer"></figure>
+        <noscript>
+          <figure class="mug circle-mask"><img src="../images/content-img/1x1/img-1x1-avatar.jpg" alt="Eric Thayer"></figure>
+        </noscript>
+        <h2 id="my-background">Background</h2>
+        <p class="mw-35em mb-0">I started out in San Diego as a <a href="motion-reel/">post-production artist</a> but since moving to Denver I have worked with <a href="//www.linkedin.com/in/commonmovement/" title="view my LinkedIn profile">small and large companies</a> with a focus on web design and front-end development.</p>
+        <!-- example links -->
+        <div class="example-links flex flex-wrap pt-sm text-md">
+          <h3 class="small-header sr-only">current project: in2Marketplace.com</h3>
+          <!-- Resume -->
+          <div class="flex ai-center pt-pb-tiny pr-sm">
+            <strong class="text-sm Roboto">View Resume</strong>
+            <a href="../Eric-Thayer-Resume-Web-Designer-and-Front-end-Developer.pdf" class="has-tooltip">
+              <svg class="icon ml-mr-0 text-lg-r">
+                <use xlink:href="#icon-pdf" />
+              </svg><span class="sr-only"></span>
+              <span class="tooltip">View Resume</span>
+            </a>                
+          </div>
+        </div>
+      </div>
+      <!-- My Status -->
+      <div class="info-block info-block-status hidden">
+        <h2 id="current-status" class="mb-sm">Current Status</h2>
+        <p class="mb-0"><a href="../hire-me/" class="text-link text-md">I'm looking for a team to call my own.</a> Although I enjoy the freedom of freelancing, I want to be part of a product design or development team that cares deeply about <a href="//blog.producthive.org/design-is-a-team-sport-with-jared-spool-a32d73786412/">communication</a>, <a href="http://www.standardista.com/standards/making-basic-web-pages-accessible/">accessibility</a> and <a href="//adactio.com/articles/9465/">performance</a> based solutions.</p>
+      </div>
+      <!-- My Focus -->
+      <div class="info-block info-block-skills">
+        <h2 id="my-focus">My Focus</h2>
+        <ul class="content-list feature-list">
+          <li>Responsive Web Design</li>
+          <li>Front-end Development</li>
+          <li>Performance Audits</li>
+          <li>Inclusive Display Patterns</li>
+          <li><abbr title="user interface and user experience design">UI/UX</abbr> Design Systems</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 

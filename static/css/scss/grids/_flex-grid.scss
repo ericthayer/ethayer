@@ -8,7 +8,7 @@
 
 @mixin flex-auto {
   flex: 0 1 auto;
-  min-width: 0; 
+  min-width: 0;
   min-height: 0;
 }
 
@@ -41,7 +41,7 @@
   @media (min-width: $break-540) {
 		flex-grow: 0;
     width: auto;
-  } 
+  }
 }
 
 // Flex Direction
@@ -136,7 +136,7 @@
 
 @mixin flex-lead {
   flex: 1 0 100%;
-  width: 100%;  
+  width: 100%;
 }
 
 @mixin flex-sm {
@@ -162,14 +162,14 @@
     flex-wrap: wrap;
     justify-content: center;
     > * {
-      float: left; 
+      float: left;
       //flex: 1 1 auto;
       flex-grow: 1;
       padding-right: 2em;
       padding-left: 2em;
       min-height: 0;
       min-width: 0;
-      width: 50%;
+      //width: 50%;
     }
   }
   // > 667
@@ -191,8 +191,7 @@
     }
   } // > 480
   @media (min-width: $break-480) {
-    >* {
-      width: auto;
+    > * {
       &:first-child {
         //width: 100%;
       }
@@ -201,8 +200,8 @@
   // > 540
   @media (min-width: $break-640) {
     > * {
-      flex-basis: 50%;
-      padding: 1em;
+      flex-basis: 18em;
+      padding: .5em;
       width: auto;
     }
   }
@@ -210,14 +209,14 @@
   @media (min-width: 50em) {
     > * {
       .portfolio & {
-        flex-basis: 50%;
+        //flex-basis: 50%;
       }
     }
   }
   // > 1200
   @media (min-width: $break-1200) {
     > * {
-      flex-basis: 33%;
+      //flex-basis: 33%;
     }
   }
 }
@@ -342,4 +341,3 @@
 .jc-between {
   justify-content: space-between;
 }
-

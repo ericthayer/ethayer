@@ -179,7 +179,7 @@
     //@include flex-wrap;
     @include list-clean;
     &:before {
-      color: $orange;
+      //color: $orange;
       content: "→ ";
       @include pr-sm;
     }

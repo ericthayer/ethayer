@@ -7,7 +7,7 @@
   }
   100% {
     opacity: 1;
-  }  
+  }
 }
 @keyframes fade-out {
   0% {
@@ -15,7 +15,7 @@
   }
   100% {
     opacity: 0;
-  }  
+  }
 }
 @mixin fade-in {
   animation: fade-in .4s linear forwards;
@@ -35,7 +35,7 @@
 }
 
 @mixin antialiased {
-  -moz-osx-font-smoothing: greyscale;  
+  -moz-osx-font-smoothing: greyscale;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -223,7 +223,7 @@
   } // 1200
   @media (min-width: $break-1200) {
     //max-height: 400px;
-    //max-width: 400px; 
+    //max-width: 400px;
   }
 }
 
@@ -359,7 +359,7 @@
 
 @mixin pseudo-bg {
   position: absolute;
-  content: "";      
+  content: "";
   height: 100%;
   width: 100%;
 }
@@ -440,7 +440,7 @@
 }
 
 @mixin no-link-shadow {
-  text-shadow: none;
+  text-shadow: 0;
   background-image: none;
   background-repeat: no-repeat;
   background-position: center;
@@ -459,10 +459,10 @@
   @include focus-pink;
 }
 
-@mixin fonts-loaded-KO29 {
+@mixin fonts-loaded-KO {
   font-family: $sans-serif-narrow;
   .fonts-loaded & {
-    font-family: $KO29;
+    font-family: $KO;
     font-weight: normal;
     -moz-osx-font-smoothing: greyscale;
     -webkit-font-smoothing: antialiased;

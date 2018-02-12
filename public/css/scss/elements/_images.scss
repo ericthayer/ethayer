@@ -16,14 +16,14 @@
     a {
       //display: flex;
     }
-  } // Figcaption Animations 
+  } // Figcaption Animations
   .slide-down {
     height: 100%;
   }
   .slide-down,
   .slide-left,
   .slide-right {}
-  // Image Caption		
+  // Image Caption
   .image-caption {
     float: none;
     text-align: center;
@@ -118,7 +118,7 @@
   margin-bottom: 0; //will-change: transform scale;
   transition: all .4s ease;
   @include relative;
-  width: 100%;
+  //width: 100%;
   > a {
     display: inline-block;
     overflow: hidden;
@@ -177,7 +177,7 @@
 .media-caption {
   background-color: rgba(black, .75); //border-radius: 15px 0 0 0;
   color: #FFF;
-  @include fonts-loaded-KO29;
+  @include fonts-loaded-KO;
   font-size: 1rem; //min-height: 10%;
   //min-width: 1%;
   line-height: 1.25;

@@ -67,7 +67,7 @@
   }
   a {
     color: #FFF;
-    @include fonts-loaded-KO29;
+    @include fonts-loaded-KO;
     font-size: .875rem;
     .fonts-loaded & {
       font-size: 1.125rem;
@@ -152,7 +152,7 @@
 }
 
 .home-link {
- //@include fonts-loaded-KO29;
+ //@include fonts-loaded-KO;
   @include flex;
   @include ai-center;
   @include text-lg;
