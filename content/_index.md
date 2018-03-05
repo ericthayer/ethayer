@@ -287,10 +287,10 @@ description = "Eric Thayer is a Web Designer and Front-end Developer from Denver
           <!-- Resume -->
           <div class="flex ai-center pt-pb-tiny pr-sm">
             <strong class="text-sm Roboto">View Resume</strong>
-            <a href="../Eric-Thayer-Resume-Web-Designer-and-Front-end-Developer.pdf" class="has-tooltip" title="View my resume">
+            <a href="../Eric-Thayer-Resume-Web-Designer-and-Front-end-Developer.pdf" class="has-tooltip" title="view my resume in PDF form">
               <svg class="icon ml-mr-0 text-lg-r">
                 <use xlink:href="#icon-pdf" />
-              </svg><span class="sr-only">View Resume</span>
+              </svg>
               <span class="tooltip">View Resume</span>
             </a>                
           </div>
