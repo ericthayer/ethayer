@@ -1,34 +1,36 @@
 // // Typography
-@font-face {
-  font-family: "Knockout-29";
-  src: url("css/fonts/Knockout-HTF29-JuniorLiteweight-subset.woff2") format("woff2"),
-       url("css/fonts/Knockout-HTF29-JuniorLiteweight-subset.woff") format("woff");
-  font-display: swap;
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "Roboto Condensed";
-  src: url("css/fonts/RobotoCondensed-Regular-subset.woff2") format("woff2"),
-       url("css/fonts/RobotoCondensed-Regular-subset.woff") format("woff");
-  font-display: swap;
-  font-style: normal;
-  font-weight: normal;
-}
-
 // @font-face {
 //   font-family: "Knockout-29";
-//   src: url("fonts/Knockout-HTF29-JuniorLiteweight-subset.woff2") format("woff2"), url("fonts/Knockout-HTF29-JuniorLiteweight-subset.woff") format("woff");
-//   font-weight: normal;
+//   src: url("css/fonts/Knockout-HTF29-JuniorLiteweight-subset.woff2") format("woff2"),
+//        url("css/fonts/Knockout-HTF29-JuniorLiteweight-subset.woff") format("woff");
+//   font-display: swap;
 //   font-style: normal;
+//   font-weight: normal;
 // }
-
 // @font-face {
 //   font-family: "Roboto Condensed";
-//   src: url("fonts/RobotoCondensed-Regular-subset.woff2") format("woff2"), url("fonts/RobotoCondensed-Regular-subset.woff") format("woff");
-//   font-weight: normal;
+//   src: url("css/fonts/RobotoCondensed-Regular-subset.woff2") format("woff2"),
+//        url("css/fonts/RobotoCondensed-Regular-subset.woff") format("woff");
+//   font-display: swap;
 //   font-style: normal;
+//   font-weight: normal;
 // }
+
+@font-face {
+  font-family: "Knockout-29";
+  src: url("fonts/Knockout-HTF29-JuniorLiteweight-subset.woff2") format("woff2"), url("fonts/Knockout-HTF29-JuniorLiteweight-subset.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("fonts/RobotoCondensed-Regular-subset.woff2") format("woff2"), url("fonts/RobotoCondensed-Regular-subset.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
 
 .KO29 {
   @include fonts-loaded-KO;
