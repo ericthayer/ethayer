@@ -4,11 +4,11 @@ title = "Eric Thayer is a Web Designer and Front-end Developer from Denver Color
 
 [[menu.main]]
     name = "Work"
-    url = "#work"
+    url = "../index.html#work"
     weight = 2
 [[menu.main]]
    name = "About"
-   url = "#about"
+   url = "../index.html#about"
    weight = 1
 [[menu.main]]
    name = "Notes"
@@ -16,7 +16,7 @@ title = "Eric Thayer is a Web Designer and Front-end Developer from Denver Color
    weight = 3
 [[menu.main]]
     name = "Contact"
-    url = "#contact"
+    url = "../#contact"
     weight = 4
 
 [sitemap]

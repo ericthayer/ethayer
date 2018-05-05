@@ -1,7 +1,7 @@
 <div class="main-menu">   
-  {{ partial "site-title.html" . }}  
+  {{ partial "1_elements/site-title.html" . }}  
   <nav class="nav-main" role="navigation">
-    <!-- {{ partial "menus/toggle-button.html" . }} -->
+    <!-- {{ partial "2_components/menus/toggle-button.html" . }} -->
     <ul>
       {{ $currentPage := . }}
       {{ range .Site.Menus.main }}

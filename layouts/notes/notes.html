@@ -1,6 +1,31 @@
-{{ partial "headers/notes-header.html" . }}
+{{ partial "3_modules/headers/notes-header.html" . }}
 <!-- Main -->
 <main id="main" class="main-content pt-pb-2" role="main">
   {{ .Content }}
+
+  <section class="blog-list">
+
+    <div class="container">
+      <!-- Article -->
+      <article class="pt-pb-2 pr-pl-1">
+        <h2 id="post-name">Blog Title Goes Here</h2>
+        
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, facere, porro, fuga placeat distinctio quia fugiat incidunt libero reprehenderit vitae ipsa non vero? Vel iusto deserunt assumenda illum mollitia id est, dolores aspernatur harum cupiditate.</p>
+        <a href="{{ .Site.BaseURL }}" class="has-tooltip" title="">
+          Read Article
+          <svg class="icon ml-mr-0 text-lg-r">
+            <use xlink:href="#icon-pdf" />
+          </svg>
+          <span class="tooltip">View Resume</span>
+        </a>
+      </article>
+
+
+    </div>
+
+  </section>
+
+
+
 </main>
-{{ partial "footer.html" . }}
+{{ partial "4_templates/footer.html" . }}
