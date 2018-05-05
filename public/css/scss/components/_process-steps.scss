@@ -10,14 +10,18 @@
 }
 
 .process-steps {
-  //color: mix(black, $link, 40%);
-  text-align: center; // > 320
+  .media-item {
+    max-width: 6em;
+  }
+  text-align: center;
+  // > 320
   @media (min-width: $break-240) {
     display: flex;
     flex-wrap: wrap;
     margin-right: -1em;
     margin-left: -1em;
-  } // > 900
+  }
+  // > 900
   @media (min-width: $break-900) {
     .step {
       padding: 2em 1.75em;
