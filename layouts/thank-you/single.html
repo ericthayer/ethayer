@@ -1,8 +1,12 @@
 {{ partial "4_templates/header.html" . }}
-{{ partial "1_elements/svg-icons.html" . }}
+
 <!-- Header -->
 <header id="site-header" class="site-header full-screen gradient-change" role="banner">
+  
     {{ partial "2_components/menus/main-menu.html" . }}
-    {{ partial "2_components/thank-you-banner.html" . }}
+
+    {{ partial "2_components/headlines/thank-you-headline.html" . }}
+    
 </header>
+
 {{ partial "scripts/main-js.html" . }}

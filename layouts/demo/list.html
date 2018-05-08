@@ -1,0 +1,19 @@
+{{ partial "4_templates/header.html" . }}
+
+<!-- Header -->
+<header id="site-header" class="site-header gradient-change" role="banner">
+      
+    {{ partial "2_components/menus/main-menu.html" . }}
+
+</header>
+
+<!-- Main -->
+<main id="main" class="main-content flex flex-grow-1 ai-center pt-pb-4 pr-pl-2" role="main">
+
+  {{ partial "2_components/media-video-motion-demo.html" . }}
+
+  {{ .Content }}
+
+</main>
+
+{{ partial "4_templates/footer.html" . }}

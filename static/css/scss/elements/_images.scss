@@ -263,8 +263,8 @@
   @include ml-a;
   max-height: 100%;
   max-width: 100%;
-  height: 10em;
-  width: 10em;
+  height: 12em;
+  width: 12em;
   shape-outside: circle();
   img {
     opacity: 0;
@@ -273,9 +273,9 @@
   @media (min-width: $break-540) {
     display: block;
     float: right;
-    height: 15em;
-    width: 15em;
-    margin-top: -1em;
+    //height: 15em;
+    //width: 15em;
+    //margin-top: -1em;
     @include ml-4;
   }
 }

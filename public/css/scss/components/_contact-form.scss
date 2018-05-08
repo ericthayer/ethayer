@@ -1,7 +1,7 @@
 #contact {
-  display: none;
-    &[data-scroll-id="contact"] {
-      display: block;
+  //display: none;
+    &:target {
+      //display: block;
   }
 }
 
