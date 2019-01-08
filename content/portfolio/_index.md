@@ -13,7 +13,7 @@ description = "Eric Thayer is a Web Designer and Front-end Developer from Denver
       <!-- Concordus -->
       <figure class="media-item">
         <a class="media-wrap img" href="../concordus/">
-            <img class="lazyload" data-src="../images/content-img/16x9/img-16x9-Concordus-RWD-MD.jpg" data-srcset="../images/content-img/16x9/img-16x9-Concordus-RWD-LG.jpg 1400w, ../images/content-img/16x9/img-16x9-Concordus-RWD-MD.jpg 1400w" alt="Concordus Applications design and development for Kentico CMS.">
+            <img class="lazyload" data-src="../images/content-img/16x9/img-16x9-Concordus-RWD-MD.jpg" data-srcset="../images/content-img/16x9/img-16x9-Concordus-RWD-LG.jpg 2000w, ../images/content-img/16x9/img-16x9-Concordus-RWD-MD.jpg 1400w" alt="Concordus Applications design and development for Kentico CMS.">
             <time class="time-stamp" datetime="2017"><span class="sr-only">Successfully delivered</span>2017</time>
             <figcaption class="media-caption" aria-hidden="true">
               <span class="project-title">Concordus Applications</span>                  
@@ -22,7 +22,7 @@ description = "Eric Thayer is a Web Designer and Front-end Developer from Denver
         <noscript>
           <figure class="media-item">
             <a class="media-wrap img" href="../concordus/">
-                <img src="../images/content-img/16x9/img-16x9-Concordus-RWD-MD.jpg" srcset="../images/content-img/16x9/img-16x9-Concordus-RWD-LG.jpg 1400w, ../images/content-img/16x9/img-16x9-Concordus-RWD-MD.jpg 1400w" alt="Concordus Applications design and development for Kentico CMS.">
+                <img src="../images/content-img/16x9/img-16x9-Concordus-RWD-MD.jpg" srcset="../images/content-img/16x9/img-16x9-Concordus-RWD-LG.jpg 2000w, ../images/content-img/16x9/img-16x9-Concordus-RWD-MD.jpg 1400w" alt="Concordus Applications design and development for Kentico CMS.">
                 <time class="time-stamp" datetime="2017"><span class="sr-only">Successfully delivered</span>2017</time>
                 <figcaption class="media-caption" aria-hidden="true">
                   <span class="project-title">Concordus Applications</span>                  
@@ -36,20 +36,20 @@ description = "Eric Thayer is a Web Designer and Front-end Developer from Denver
             site.</p>
           <a href="../concordus/">See Details</a>
         </div>
-      </figure>
+      </fcodeigure>
       <!-- MaxCentive -->
       <figure class="media-item">
         <a class="media-wrap img" href="../maxcentive/">
-            <img class="lazyload" data-src="../images/content-img/16x9/img-16x9-MaxCentive-2-MD.jpg" data-srcset="../images/content-img/16x9/img-16x9-MaxCentive-2-LG.jpg 1400w, ../images/content-img/16x9/img-16x9-MaxCentive-2-MD.jpg 1400w" alt="Samples of my CSS Grid collection on CodePen.">
+            <img class="lazyload" data-src="../images/content-img/16x9/img-16x9-MaxCentive-2-MD.jpg" data-srcset="../images/content-img/16x9/img-16x9-MaxCentive-2-LG.jpg 2000w, ../images/content-img/16x9/img-16x9-MaxCentive-2-MD.jpg 1400w" alt="Samples of my CSS Grid collection on CodePen.">
             <time class="time-stamp" datetime="2017"><span class="sr-only">Currently working on this project since February</span>2017</time>
             <figcaption class="media-caption" aria-hidden="true">
               <span class="project-title">MaxCentive</span>
             </figcaption>
           </a>
         <noscript>
-          <figure class="media-item media-light"> 
+          <figure class="media-item media-light">
             <a href="../maxcentive/">
-                <img src="../images/content-img/16x9/img-16x9-MaxCentive-2-MD.jpg" srcset="../images/content-img/16x9/img-16x9-MaxCentive-2-LG.jpg 1400w, ../images/content-img/16x9/img-16x9-MaxCentive-2-MD.jpg 1400w" alt="Samples of my CSS Grid collection on CodePen.">
+                <img src="../images/content-img/16x9/img-16x9-MaxCentive-2-MD.jpg" srcset="../images/content-img/16x9/img-16x9-MaxCentive-2-LG.jpg 2000w, ../images/content-img/16x9/img-16x9-MaxCentive-2-MD.jpg 1400w" alt="Samples of my CSS Grid collection on CodePen.">
                 <time class="time-stamp" datetime="2017"><span class="sr-only">Currently working on this project since February</span>2017</time>
             <figcaption class="media-caption" aria-hidden="true">
               <span class="project-title">MaxCentive</span>

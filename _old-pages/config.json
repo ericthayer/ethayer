@@ -1,0 +1,30 @@
+{
+  "baseURL": "",
+  "languageCode": "en-us",
+  "title": "Eric Thayer is a Web Designer and Front-end Developer from Denver Colorado",
+  "name": "static",
+  "version": "1.0.0",
+  "description": "",
+  "menu": {
+    "main": [
+
+      {
+        "name": "About",
+        "url": "/#about",
+        "weight": 1
+      },
+
+      {
+       "name": "Work",
+       "url": "/#work",
+       "weight": 2
+      },
+
+      {
+       "name": "Contact",
+       "url": "#contact",
+       "weight": 3
+      }
+    ]
+  }
+}

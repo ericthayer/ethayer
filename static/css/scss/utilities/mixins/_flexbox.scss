@@ -186,17 +186,20 @@
 
 // Media Layout
 @mixin l-media-grid {
-  // < 320
-  @media (max-width: 300px) {
+  // < 300
+  @media (max-width: 18.75em) {
     figcaption {
       @include sr-only;
     }
   }
+  // < 480px
+  @media (max-width: 30em) {
+    > * {
+      padding-bottom: 2.75rem;
+    }
+  }
   // > 640
   @media (min-width: 40em) {
-    > * {
-      padding: .5em;
-    }
     &.col-2 > * {
       flex-basis: 24em;
     }

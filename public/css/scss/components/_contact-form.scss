@@ -1,7 +1,7 @@
-#contact {
-  //display: none;
-    &:target {
-      //display: block;
+#contact-form {
+  display: none;
+  &:target {
+    display: block;
   }
 }
 

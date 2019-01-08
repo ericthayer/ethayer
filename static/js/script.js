@@ -44,42 +44,42 @@ if ('serviceWorker' in navigator) {
   });
 
   // Set variables for use in the event listener
-  var currentPath = window.location.pathname;
-  var cacheButton = document.querySelector('.offline-btn');
-  var imageArray = document.querySelectorAll('img');
-
-  var audioTrack = function() {
-    if(document.querySelector('audio') !== null) {
-      return (document.querySelector('audio source').src);
-    } else {
-      return;
-    }
-  };
+  // var currentPath = window.location.pathname;
+  // var cacheButton = document.querySelector('.offline-btn');
+  // var imageArray = document.querySelectorAll('img');
+  //
+  // var audioTrack = function() {
+  //   if(document.querySelector('audio') !== null) {
+  //     return (document.querySelector('audio source').src);
+  //   } else {
+  //     return;
+  //   }
+  // };
 
   // Event listener
-  if(cacheButton) {
-    cacheButton.addEventListener('click', function(event) {
-     event.preventDefault();
-     // Build an array of the page-specific resources.
-     var pageResources = [currentPath, audioTrack()];
-
-     // Add images to the array
-     for (i = 0; i < imageArray.length; i++) {
-       pageResources.push(imageArray[i].src);
-     }
-
-      // Open the unique cache for this URL
-      caches.open('offline-' + currentPath).then(function(cache) {
-        var updateCache = cache.addAll(pageResources);
-
-        // Update UI to indicate success
-        // Or catch any errors if it doesn't succeed
-        updateCache.then(function() {
-          console.log('Article is now available offline.');
-        }).catch(function (error) {
-          console.log('Article could not be saved offline.');
-        });
-      });
-    });
-  }
+  // if(cacheButton) {
+  //   cacheButton.addEventListener('click', function(event) {
+  //    event.preventDefault();
+  //    // Build an array of the page-specific resources.
+  //    var pageResources = [currentPath, audioTrack()];
+  //
+  //    // Add images to the array
+  //    for (i = 0; i < imageArray.length; i++) {
+  //      pageResources.push(imageArray[i].src);
+  //    }
+  //
+  //     // Open the unique cache for this URL
+  //     caches.open('offline-' + currentPath).then(function(cache) {
+  //       var updateCache = cache.addAll(pageResources);
+  //
+  //       // Update UI to indicate success
+  //       // Or catch any errors if it doesn't succeed
+  //       updateCache.then(function() {
+  //         console.log('Article is now available offline.');
+  //       }).catch(function (error) {
+  //         console.log('Article could not be saved offline.');
+  //       });
+  //     });
+  //   });
+  // }
 }
