@@ -5,6 +5,27 @@
   <script>
     
     document.documentElement.className += "enhanced";
+ 
+    var html = document.documentElement;
+
+    if (sessionStorage.fontsLoaded) {
+      html.classList.add("fonts-loaded");
+    } else {
+      var script = document.createElement("script");
+      script.src = "\/js/libs/fontfaceobserver.js";
+      script.async = true;
+
+      script.onload = function() {
+        var KO94 = new FontFaceObserver("Knockout-29");
+        var Roboto = new FontFaceObserver("Roboto Condensed", {});
+
+        Promise.all([KO94.load(), Roboto.load()]).then(function() {
+          html.classList.add("fonts-loaded");
+          sessionStorage.fontsLoaded = true;
+        });
+      };
+      document.head.appendChild(script);
+    }
   </script>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -434,29 +455,5 @@
 </header>
 
 <script src="/js/min/script.min.js"></script>
-<script>
-  var html = document.documentElement;
 
-  if (sessionStorage.fontsLoaded) {
-    html.classList.add("fonts-loaded");
-  } else {
-    var script = document.createElement("script");
-    script.src = "\/js/libs/fontfaceobserver.js";
-    script.async = true;
-
-    script.onload = function () {
-      var KO94 = new FontFaceObserver("Knockout-29");
-      var Roboto = new FontFaceObserver("Roboto Condensed", {});
-
-      Promise.all([
-        KO94.load(),
-        Roboto.load()
-      ]).then(function () {
-        html.classList.add("fonts-loaded");
-        sessionStorage.fontsLoaded = true;
-      });
-    };
-    document.head.appendChild(script);
-  }
-</script>
 
