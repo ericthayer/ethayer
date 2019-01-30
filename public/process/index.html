@@ -5,27 +5,6 @@
   <script>
     
     document.documentElement.className += "enhanced";
- 
-    var html = document.documentElement;
-
-    if (sessionStorage.fontsLoaded) {
-      html.classList.add("fonts-loaded");
-    } else {
-      var script = document.createElement("script");
-      script.src = "\/js/libs/fontfaceobserver.js";
-      script.async = true;
-
-      script.onload = function() {
-        var KO94 = new FontFaceObserver("Knockout-29");
-        var Roboto = new FontFaceObserver("Roboto Condensed", {});
-
-        Promise.all([KO94.load(), Roboto.load()]).then(function() {
-          html.classList.add("fonts-loaded");
-          sessionStorage.fontsLoaded = true;
-        });
-      };
-      document.head.appendChild(script);
-    }
   </script>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -40,8 +19,7 @@
   <link rel="apple-touch-icon" href="/images/icons/icon-180.png">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/css/styles.css">
-  <link rel="preload" as="font" href="/css/fonts/Knockout-HTF29-JuniorLiteweight-subset.woff2" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" as="font" href="/css/fonts/RobotoCondensed-Regular-subset.woff2" type="font/woff2" crossorigin="anonymous">
+  
 </head>
 
 
@@ -575,6 +553,29 @@
 
   
 <script src="/js/min/script.min.js"></script>
+
+<script>
+  var html = document.documentElement;
+
+  if (sessionStorage.fontsLoaded) {
+    html.classList.add("fonts-loaded");
+  } else {
+    var script = document.createElement("script");
+    script.src = "\/js/libs/fontfaceobserver.js";
+    script.async = true;
+
+    script.onload = function() {
+      var KO94 = new FontFaceObserver("Knockout-29");
+      var Roboto = new FontFaceObserver("Roboto Condensed", {});
+
+      Promise.all([KO94.load(), Roboto.load()]).then(function() {
+        html.classList.add("fonts-loaded");
+        sessionStorage.fontsLoaded = true;
+      });
+    };
+    document.head.appendChild(script);
+  }
+</script>
 
 
 
