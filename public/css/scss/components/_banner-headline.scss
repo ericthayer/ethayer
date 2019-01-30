@@ -32,9 +32,6 @@
     abbr[title] {
       text-decoration: none;
     }
-    @media (min-width: $break-540) {
-      //font-size: calc(1vw + 3.875em);
-    }
   }
 
   .sub-header {
@@ -56,13 +53,21 @@
     }
   }
 
-  @media (min-width: $break-800) {
+  @media (min-width: $break-540) {
+    .fonts-loaded & {
+      h1 {
+        font-size: calc(1vw + 3.875em);
+      }
+    }
+  }
+
+  @media (min-width: 44em) {
     h1 {
       max-width: calc(1vw + 10em);
     }
     .fonts-loaded & {
       h1 {
-        font-size: calc(1vw + 4.25rem);
+        font-size: calc(1vw + 4.25em);
         max-width: calc(1vw + 8em);
       }
     }
