@@ -231,7 +231,6 @@
   @include bg-swirls-light-top;
 }
 
-
 @mixin bg-swirls-light-bottom {
   //@include bg-dark;
   background: url("../images/content-img/bg/bg-swirls-light-bottom.svg") no-repeat center bottom;
@@ -242,3 +241,18 @@
   @include bg-swirls-light-bottom;
 }
 
+@mixin bg-swirls-light-top-bottom {
+  //@include bg-dark;
+  background-image: url("../images/content-img/bg/bg-swirls-light-top.svg"),
+                    url("../images/content-img/bg/bg-swirls-light-bottom.svg");
+  background-position: center -1px,
+                       center 101%;
+  background-repeat: no-repeat,
+                     no-repeat;
+  background-size: 100%,
+                   100%;
+}
+
+.bg-swirls-light-top-bottom {
+  @include bg-swirls-light-top-bottom;
+}

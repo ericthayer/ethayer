@@ -15,7 +15,7 @@ disableHugoGeneratorInject = true
 
 [[menu.main]]
   name = "Hire"
-  url = "/#hire-me"
+  url = "/hire-me"
   weight = 5
 
 #[[menu.main]]
