@@ -200,7 +200,7 @@
 
 @mixin bg-modern-blobs {
   @include bg-dark;
-  background: url("../images/content-img/bg/bg-modern-blobs.svg") no-repeat center top;
+  background: url("../images/content-img/bg/bg-modern-blobs.svg") no-repeat left top;
   background-size: cover;
   background-attachment: fixed;
 }
