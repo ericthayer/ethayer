@@ -2,10 +2,10 @@
 @import "utilities/variables";
 @import "utilities/mixins";
 
-// Theme
-@import "theme/theme-colors";
-@import "theme/gradients";
-@import "theme/theme-bg";
+// Theme Utilities
+@import "utilities/mixins/theme-colors";
+@import "utilities/mixins/gradients";
+@import "utilities/mixins/theme-backgrounds";
 
 // Base
 @import "base/normalize.7.0";
@@ -58,9 +58,9 @@
 @import "utilities/modifiers/enhancements";
 
 // Theme Modifiers
-@import "theme/mod-theme-colors";
-@import "theme/mod-gradients";
-@import "theme/mod-theme-bg";
+@import "utilities/modifiers/mod-theme-colors";
+@import "utilities/modifiers/mod-gradients";
+@import "utilities/modifiers/mod-theme-backgrounds";
 
 // Templates
 @import "templates/portfolio";

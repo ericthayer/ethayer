@@ -92,8 +92,10 @@
 @mixin gradient-change {
   //background: linear-gradient(145deg, #e96443 , #904e95);
   //background: linear-gradient(54deg, #ED165D, #071828);
+  @include bg-dark;
   background: linear-gradient(120deg, #ED165D, #10273f);
   position: relative;
+
   &::before,
   &::after {
     //display: none;
@@ -113,7 +115,6 @@
     opacity: 0;
   }
 
-  @include bg-dark;
 
   > * {
     position: relative;
@@ -195,5 +196,49 @@
   background-color: $blue-rich;
 }
 
+// SVG BG
 
+@mixin bg-modern-blobs {
+  @include bg-dark;
+  background: url("../images/content-img/bg/bg-modern-blobs.svg") no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-modern-blobs {
+  @include bg-modern-blobs;
+}
+
+@mixin bg-vibrant {
+  @include bg-dark;
+  background: url("../images/content-img/bg/bg-vibrant.svg") no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-vibrant {
+  @include bg-vibrant;
+}
+
+
+@mixin bg-swirls-light-top {
+  //@include bg-dark;
+  background: url("../images/content-img/bg/bg-swirls-light-top.svg") no-repeat center top;
+  background-size: 100%;
+}
+
+.bg-swirls-light-top {
+  @include bg-swirls-light-top;
+}
+
+
+@mixin bg-swirls-light-bottom {
+  //@include bg-dark;
+  background: url("../images/content-img/bg/bg-swirls-light-bottom.svg") no-repeat center bottom;
+  background-size: 100%;
+}
+
+.bg-swirls-light-bottom {
+  @include bg-swirls-light-bottom;
+}
 

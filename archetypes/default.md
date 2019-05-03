@@ -1,5 +1,4 @@
----
-date: {{ .Date }}
-draft: true
----
-
++++
+tags = ["development", "design"]
+categories = ["Development", "Design"]
++++

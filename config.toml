@@ -4,21 +4,28 @@ title = "Eric Thayer is a Web Designer and Front-end Developer from Denver Color
 disableHugoGeneratorInject = true
 
 [[menu.main]]
-    name = "Work"
-    url = "/#work"
-    weight = 2
+  name = "About"
+  url = "/#about"
+  weight = 1
+
 [[menu.main]]
-   name = "About"
-   url = "/#about"
-   weight = 1
-# [[menu.main]]
-  # name = "Home"
-  # url = "/"
-  # weight = 0
+  name = "Work"
+  url = "/#work"
+  weight = 3
+
+#[[menu.main]]
+#  name = "Notes"
+#  url = "/notes"
+#  weight = 2
+
 [[menu.main]]
-    name = "Contact"
-    url = "#contact"
-    weight = 4
+  name = "Contact"
+  url = "#contact"
+  weight = 4
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
 
 [sitemap]
   changefreq = "monthly"

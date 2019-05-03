@@ -1,5 +1,5 @@
 +++
-type = "case-study"
+type = ""
 title = ""
 
 projectPreviewImage = ""
