@@ -1,5 +1,11 @@
-<!-- Dependencies -->
-<script src="{{ .Site.BaseURL }}js/min/script.min.js"></script>
+{{ $lazyload := resources.Get "js/libs/lazysizes.js" }}
+{{ $glider := resources.Get "js/libs/glider.min.js" }}
+{{ $fsLightbox := resources.Get "js/libs/fslightbox.min.js" }}
+
+{{ $global := resources.Get "js/script.js" }}
+{{ $js := slice $lazyload $glider $fsLightbox $global | resources.Concat "js/min/script.js" | resources.Minify }}
+
+<script src='{{ $js.Permalink }}'></script>
 
 <script>
   var html = document.documentElement;

@@ -36,7 +36,7 @@ description = "Eric Thayer is a Web Designer and Front-end Developer from Denver
             site.</p>
           <a href="../concordus/">See Details</a>
         </div>
-      </fcodeigure>
+      </figure>
       <!-- MaxCentive -->
       <figure class="media-item">
         <a class="media-wrap img" href="../maxcentive/">

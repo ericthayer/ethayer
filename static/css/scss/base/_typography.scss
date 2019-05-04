@@ -83,7 +83,7 @@ h6,.h6 {
   @include headline;
 }
 
-h1,.h1 {}
+// h1,.h1 {}
 
 a {
   color: currentColor;
@@ -101,7 +101,7 @@ p {
   a {
     color: $link;
     text-decoration: underline;
-    text-decoration-skip: ink;
+    text-decoration-skip-ink: auto;
     // text-shadow: 0;
     // background-image: none;
     // background-repeat: no-repeat;
@@ -111,15 +111,15 @@ p {
 
 }
 
-@supports not (text-decoration-skip: ink) {
-  p a {
-    // text-decoration: none;
-    // text-shadow: .05em 0 0 #F9F9F9, -0.05em 0 0 #F9F9F9, 0 .05em 0 #F9F9F9, 0 -0.05em 0 #F9F9F9, .1em 0 0 #F9F9F9, -0.1em 0 0 #F9F9F9, 0 .1em 0 #F9F9F9, 0 -0.1em 0 #F9F9F9;
-    // background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
-    // background-repeat: repeat-x;
-    // background-position: bottom .05em center;
-    // background-size: 100% .07em;
-  }
+@supports not (text-decoration-skip-ink: auto) {
+  // p a {
+  //   // text-decoration: none;
+  //   // text-shadow: .05em 0 0 #F9F9F9, -0.05em 0 0 #F9F9F9, 0 .05em 0 #F9F9F9, 0 -0.05em 0 #F9F9F9, .1em 0 0 #F9F9F9, -0.1em 0 0 #F9F9F9, 0 .1em 0 #F9F9F9, 0 -0.1em 0 #F9F9F9;
+  //   // background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
+  //   // background-repeat: repeat-x;
+  //   // background-position: bottom .05em center;
+  //   // background-size: 100% .07em;
+  // }
 }
 
 p a:hover,
@@ -133,9 +133,9 @@ a abbr[title] {
   text-decoration: inherit;
 }
 
-a .icon {
-  //fill: $link;
-}
+// a .icon {
+//   //fill: $link;
+// }
 
 strong {
   font-weight: 600;
@@ -190,9 +190,9 @@ p ol {
   a {
     white-space: pre;
   }
-  .fonts-loaded & {
-    //font-size: 1.65rem;
-  }
+  // .fonts-loaded & {
+  //   //font-size: 1.65rem;
+  // }
   // > 540
   @media (min-width: $break-540) {
     margin-bottom: 2em;

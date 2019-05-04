@@ -20,7 +20,13 @@
   <!--[if IEMobile]><meta http-equiv="cleartype" content="on" /><![endif]-->
   <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}images/icons/icon-180.png">
   <link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.ico">
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/styles.css">
+  <!-- <link rel="stylesheet" href="{{ .Site.BaseURL }}css/styles.css"> -->
   <link rel="preload" href="{{ .Site.BaseURL }}css/fonts/Knockout-HTF29-JuniorLiteweight-subset.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="{{ .Site.BaseURL }}css/fonts/RobotoCondensed-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
+  {{ $styleSCSS := resources.Get "css/styles.scss" }}
+  {{ $styleCSS := $styleSCSS | resources.ToCSS (dict "targetPath" "styles.css" "enableSourceMap" false) }}
+  {{ $styleAutoprefixed := $styleCSS | resources.PostCSS }}
+  {{ $styleMinified := $styleAutoprefixed | resources.Minify }}
+  {{ $style := resources.Get "css/styles.scss" | toCSS | postCSS | minify }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}" as="style">
 </head>

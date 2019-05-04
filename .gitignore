@@ -66,3 +66,9 @@ redesign-placeholder\.zip
 *.sketch
 
 _assets/
+
+node_modules/
+
+public/js/libs/
+
+public/css/scss/

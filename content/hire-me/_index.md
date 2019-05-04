@@ -55,52 +55,35 @@ description = "Eric Thayer is a Web Designer and Front-end Developer from Denver
 
   <ul class="grid-list">
     <li>
-      <svg class="icon c-blue">
-        <use xlink:href="#icon-draw" />
-      </svg>
+      <svg class="icon c-blue"><use xlink:href="#icon-draw" /></svg>
       <span><strong>Design and maintain living styleguides.</strong> Create pattern libraries or any other resource to help with the design or development of any brand or product elements needed. We are sticklers for organization and visual order and believe in one code base to rule them all.</span>
     </li>
     <li>
-      <svg class="icon c-green">
-        <use xlink:href="#icon-people" />
-      </svg>
+      <svg class="icon c-green"><use xlink:href="#icon-people" /></svg>
       <span><strong>Share a genuine passion for helping people.</strong> Accessibility is built in and tested from the start. Everyone should have the same access to content regardless of a disability or limited data plan. We care about everyone from the start and how we impact them with our decisions.</span>
     </li>
     <li>
-      <svg class="icon icon-audits c-orange">
-        <use xlink:href="#icon-audits" />
-      </svg>
+      <svg class="icon icon-audits c-orange"><use xlink:href="#icon-audits" /></svg>
       <span><strong>Perform frequent performance and usability audits.</strong> Develop ways to make sure our interactive experiences are the fastest and are as natural as can be. We can’t stand irresponsible design and development and wonder about the cost of using our product.</span>
     </li>
     <li>
-      <svg class="icon c-purple">
-        <use xlink:href="#icon-touch" />
-      </svg>
+      <svg class="icon c-purple"><use xlink:href="#icon-touch" /></svg>
       <span><strong>Make user research based design decisions.</strong> Provide solutions based on working with real people. Discovering ways to make our users' lives better. We strive to make it easy and enjoyable to use anything we build.</span>
     </li>
     <li>
-      <svg class="icon c-blue-rich">
-        <use xlink:href="#icon-tools-alt" />
-      </svg>
+      <svg class="icon c-blue-rich"><use xlink:href="#icon-tools-alt" /></svg>
       <span><strong>Develop internal tooling and devops processes.</strong> Find ways to make everything we “build” better. We stress the importance to improve the code and the processes our interactive experiences are built on.</span>
     </li>
     <li>
-      <svg class="icon c-rust">
-        <use xlink:href="#icon-chat" />
-      </svg>
+      <svg class="icon c-rust"><use xlink:href="#icon-chat" /></svg>
       <span><strong>Design in the open and communicate often.</strong> It's important we explain what we learn along the way. We share our progress and struggles and explain why we do what we do.</span>
     </li>
     <li>
-      <svg class="icon c-yellow">
-        <use xlink:href="#icon-puzzle" />
-      </svg>
-      <span><strong>Contribute to open source projects.</strong> Try to give back to a non-profit project once a year. We are thankful for the wonderful community
-                    in which we a part of and want to give back.</span>
+      <svg class="icon c-yellow"><use xlink:href="#icon-puzzle" /></svg>
+      <span><strong>Contribute to open source projects.</strong> Try to give back to a non-profit project once a year. We are thankful for the wonderful community in which we a part of and want to give back.</span>
     </li>
     <li>
-      <svg class="icon icon-top-adjust c-pink">
-        <use xlink:href="#icon-devices-alt" />
-      </svg>
+      <svg class="icon icon-top-adjust c-pink"><use xlink:href="#icon-devices-alt" /></svg>
       <span><strong>Build interactive prototypes.</strong> Create static or code based designs and send them out for development. We don’t really want to worry so much about fixing them bugs. Okay this one is a bit selfish but it is my dream 😜</span>
     </li>
   </ul>

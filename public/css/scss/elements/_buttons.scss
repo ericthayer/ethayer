@@ -6,8 +6,6 @@ button {
   @include pr-1;
   padding-bottom: .45em;
   @include pl-1;
-
-  &:hover {}
 }
 
 .submit-button {
@@ -97,8 +95,6 @@ button {
       right: 0;
       margin-bottom: 0;
       bottom: 0;
-
-      &::before {}
     }
   }
 }
