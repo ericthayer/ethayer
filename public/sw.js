@@ -6,8 +6,8 @@ const RUNTIME = 'runtime'
 
 // A list of local resources we always want to be cached.
 const PRECACHE_URLS = [
+  './',
   'index.html',
-  './', // Alias for index.html
   '/css/styles.min.css',
   '/js/min/script.min.js',
   '/images/content-img/1x1/img-1x1-avatar-2.jpg',

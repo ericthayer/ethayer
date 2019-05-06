@@ -1,20 +1,32 @@
-
 @mixin bg-dark {
-  color: white;
-  * {
-    color: white;
-    fill: white;
+  color: #FFFFFF;
+  text-shadow: .05rem .05rem .03rem rgba(black, .2);
+
+  p,
+  p a {
+    color: #FFFFFF;
   }
-  input[type="text"], 
-  input[type="number"], 
-  input[type="search"], 
-  input[type="password"], 
-  input[type="email"], 
-  input[type="tel"], 
+  
+  .icon {  
+    fill: #FFFFFF;
+  }
+
+  .alt-logo {
+    filter: drop-shadow(.1rem .1rem 0 rgba(0,0,0,.2));
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="search"],
+  input[type="password"],
+  input[type="email"],
+  input[type="tel"],
   textarea {
-    border: 1px solid white;
+    border: .12rem solid #FFFFFF;
+    background: rgba(#FFFFFF, .7);
     color: initial;
   }
+
   p a {
     background-size: 100% .06em;
     text-shadow: none;
@@ -24,10 +36,12 @@
 @mixin bg-light {
   color: initial;
   fill: initial;
+
   * {
     color: initial;
     fill: initial;
   }
+
   a {
     color: $link;
     fill: $link;
@@ -67,7 +81,7 @@
 
 @mixin bg-red-pink {
   //background: linear-gradient(-135deg, rgb(22, 198, 237), rgb(179, 59, 41));
-  background: linear-gradient(to left, #e96443 , #904e95);
+  background: linear-gradient(to left, #e96443, #904e95);
   @include bg-dark;
 }
 
@@ -108,42 +122,51 @@
     left: 0;
     transition: opacity 3s ease;
   }
+
   &::before {
-    background: linear-gradient(to left, #e96443 , #904e95);   
+    background: linear-gradient(to left, #e96443, #904e95);
   }
+
   &::after {
     opacity: 0;
   }
 
 
-  > * {
+  >* {
     position: relative;
     z-index: 1;
   }
+
   //transition: 3s ease;
 
   @media (min-width: $break-640) {
     //background: linear-gradient(54deg, #ED165D, #071828);
     //background: linear-gradient(-37deg, rgb(148, 160, 186), rgb(52, 127, 92));
     background: linear-gradient(270deg, #903f96, #77a2b7);
+
     &::before {
       opacity: 0;
     }
+
     &::after {
       background: linear-gradient(120deg, #ED165D, #10273f);
       opacity: 1;
     }
   }
+
   @media (min-width: $break-900) {
     //background: linear-gradient(-37deg, rgb(148, 160, 186), rgb(52, 127, 92));
     background: linear-gradient(270deg, #903f96, #77a2b7);
+
     &::before {
       background: linear-gradient(-112deg, #39A1BE, #639);
     }
+
     &::after {
       opacity: 0;
     }
   }
+
   @media (min-width: $break-1200) {
     &::before {
       background: linear-gradient(-112deg, #39A1BE, #639);
@@ -224,7 +247,7 @@
 @mixin bg-swirls-light-top {
   //@include bg-dark;
   background: url("../images/content-img/bg/bg-swirls-light-top.svg") no-repeat center top;
-  background-size: 100%;
+  background-size: 150%;
 }
 
 .bg-swirls-light-top {
@@ -233,9 +256,8 @@
 
 @mixin bg-swirls-light-bottom {
   //@include bg-dark;
-  background: url("../images/content-img/bg/bg-swirls-light-bottom.svg") no-repeat center bottom;
+  background: url("../images/content-img/bg/bg-swirls-light-bottom.svg") no-repeat center 102%;
   background-size: 100%;
-  padding-bottom: 5rem;
 }
 
 .bg-swirls-light-bottom {
@@ -245,13 +267,13 @@
 @mixin bg-swirls-light-top-bottom {
   //@include bg-dark;
   background-image: url("../images/content-img/bg/bg-swirls-light-top.svg"),
-                    url("../images/content-img/bg/bg-swirls-light-bottom.svg");
+    url("../images/content-img/bg/bg-swirls-light-bottom.svg");
   background-position: center -1px,
-                       center 101%;
+    center 101%;
   background-repeat: no-repeat,
-                     no-repeat;
+    no-repeat;
   background-size: 100%,
-                   100%;
+    100%;
 }
 
 .bg-swirls-light-top-bottom {
