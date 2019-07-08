@@ -4,6 +4,10 @@ title = "Eric Thayer is a Web Designer and Front-end Developer from Denver Color
 disableHugoGeneratorInject = true
 assetDir = "static"
 
+[params]
+  author = "Eric Thayer"
+  description = "I'm a freelance consultant with a passion for building design systems and inclusive components with other like-minded people."
+
 [[menu.main]]
   name = "Work"
   url = "/#work"
