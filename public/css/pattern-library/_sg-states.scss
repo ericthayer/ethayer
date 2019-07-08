@@ -1,0 +1,219 @@
+// Menu Toggle Button
+
+.toggle-button {
+  background-color: transparent;
+  border-radius: 0;
+  border-right: 1px solid #e0e0e0;
+  color: #777;
+  @include flex;
+  @include ai-center;
+  @include jc-center;
+  font-family: $sans-serif !important;
+  font-size: 1.25rem;
+  letter-spacing: 0;
+  @include pt-pb-sm;
+  @include pr-pl-1;
+  @include text-u-none;
+  @include all-caps;
+  width: 3.5rem;
+
+  &:hover,
+  &:focus, {
+    color: #444;
+    @include text-u-none;
+  }
+}
+
+#menu-toggle {
+
+  &[aria-expanded="true"] {
+    background-color: #fffafa;
+    color: #444;
+    // font-size: 1.25rem;
+    // @include pt-pb-0;
+    // @include pr-pl-sm;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+  }
+}
+
+.tab-content>.tab-pane {
+  &.show {
+    display: block;
+  }
+}
+
+// MQ Resize Dropdown
+
+.option-select {
+  @include flex;
+  @include flex-1;
+  @include ai-center;
+  @include jc-between;
+  @include pt-pb-sm;
+  @include pr-1;
+  padding-left: 1.5em;
+  @include text-sm;
+
+  .title {
+    @include font-Polaris-Book;
+    font-weight: normal;
+    line-height: 0;
+    @include mb-0;
+    @include text-sm-r;
+
+    a {
+      border: 0;
+      color: $grey;
+      font-family: inherit;
+      font-weight: normal;
+
+      padding-top: 2px;
+      text-decoration: underline;
+      text-transform: none;
+    }
+
+    a.home-link {
+      text-decoration: none;
+    }
+  }
+
+  @media (max-width: $break-375) {
+    @include jc-end;
+  }
+}
+
+.dropdown {
+  @include relative;
+  @include p-0;
+
+  @media (max-width: $break-375) {
+    display: none;
+  }
+}
+
+.screen-size-toggle {
+  background: none;
+  border-radius: 0;
+  color: #888;
+  //box-shadow: inset 0 0 0 1px #ddd;
+  @include flex;
+  @include ai-center;
+  @include jc-between;
+  @include relative;
+  @include m-0;
+  @include pt-pb-0;
+  @include pr-pl-0;
+
+  .icon {
+    font-size: 1.7rem;
+    margin-right: 2px;
+    margin-left: 0;
+    top: auto;
+    transition: .4s ease;
+  }
+
+  &:hover,
+  &:focus,
+  &.is-active {
+    color: #444;
+  }
+
+  &[aria-expanded="true"] {
+    //margin-right: 11rem;
+  }
+
+
+}
+
+// Resizer
+
+.toggle-list {
+  @include list-clean;
+  background-color: #333;
+  @include absolute;
+  @include m-0;
+  @include p-0;
+  top: 39px;
+  right: 0;
+  //top: -.625rem;
+  right: -1rem;
+
+  &:not([hidden]) {
+    @include flex;
+    @include flex-d-col;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  button {
+    background: $grey-777;
+    cursor: pointer;
+    @include flex;
+    @include ai-center;
+    border-radius: 0;
+    box-shadow: none;
+    color: #eee;
+    font-family: $sans-serif;
+    @include pt-pb-1;
+    padding-right: .875rem;
+    @include pl-sm;
+    white-space: pre;
+    @include w-100;
+
+    &:hover,
+    &:focus,
+    &.is-active {
+      background-color: $charcoal;
+    }
+  }
+
+  .icon {
+    @include mr-sm;
+    @include text-md;
+  }
+
+  > li {
+    @include mb-0;
+
+    @media (max-width: $break-800) {
+      &.md {
+        display: none;
+      }
+    }
+
+    @media (max-width: $break-1200 + 1em) {
+
+      &.lg {
+        display: none;
+      }
+    }
+
+    @media (min-width: $break-800) {
+      &:last-child {
+        grid-column: span 2;
+      }
+    }
+
+    @media (min-width: $break-1200 + 1em) {
+      &:last-child {
+        grid-column: initial;
+      }
+    }
+  }
+}
+
+// code preview
+
+.sg-code-wrap {
+  @include flex;
+  @include flex-d-col;
+  // @include jc-end;
+}
+
+.code-snippet {
+  &.is-active {
+    margin-top: 1rem;
+  }
+}

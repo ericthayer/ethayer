@@ -5,24 +5,24 @@ disableHugoGeneratorInject = true
 assetDir = "static"
 
 [[menu.main]]
-  name = "About"
-  url = "/#about"
-  weight = 1
-
-[[menu.main]]
   name = "Work"
   url = "/#work"
-  weight = 3
+  weight = 1
+  
+[[menu.main]]
+  name = "About"
+  url = "/#about"
+  weight = 2
+
+#[[menu.main]]
+#  name = "Notes"
+#  url = "/notes"
+#  weight = 3
 
 [[menu.main]]
   name = "Hire"
   url = "/hire-me"
   weight = 5
-
-#[[menu.main]]
-#  name = "Notes"
-#  url = "/notes"
-#  weight = 2
 
 [[menu.main]]
   name = "Contact"

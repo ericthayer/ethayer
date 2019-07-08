@@ -1,13 +1,13 @@
 {{ $lazyload := resources.Get "js/libs/lazysizes.js" }}
-{{ $glider := resources.Get "js/libs/glider.min.js" }}
-{{ $fsLightbox := resources.Get "js/libs/fslightbox.min.js" }}
+<!-- {{ $glider := resources.Get "js/libs/glider.min.js" }}
+{{ $fsLightbox := resources.Get "js/libs/fslightbox.min.js" }} -->
 
 {{ $global := resources.Get "js/script.js" }}
-{{ $js := slice $lazyload $glider $fsLightbox $global | resources.Concat "js/min/script.js" | resources.Minify }}
+{{ $js := slice $lazyload $global | resources.Concat "js/min/script.js" | resources.Minify }}
 
-<script src='{{ $js.Permalink }}'></script>
+<script src='{{ $js.Permalink }}' defer></script>
 
-<script>
+<script defer>
   var html = document.documentElement;
 
   if (sessionStorage.fontsLoaded) {
@@ -29,27 +29,3 @@
     document.head.appendChild(script);
   }
 </script>
-
-<!-- <script>
-  var toggleButton = document.querySelector('.toggle-button');
-
-  var mainMenu = document.querySelector('.nav-main ul');
-
-  mainMenu.hidden = true;
-
-  // toggle
-  toggleButton.addEventListener('click', function() {
-    let expanded = this.getAttribute('aria-expanded') === 'true' || false;
-    this.setAttribute('aria-expanded', !expanded);
-    // swap text
-    if (toggleButton.getAttribute("data-text-swap") == toggleButton.innerHTML) {
-      toggleButton.innerHTML = toggleButton.getAttribute("data-text-original");
-    } else {
-      toggleButton.setAttribute("data-text-original", toggleButton.innerHTML);
-      toggleButton.innerHTML = toggleButton.getAttribute("data-text-swap");
-    }
-    // show menu
-    let menu = this.nextElementSibling;
-    menu.hidden = !menu.hidden;
-  });
-</script> -->
