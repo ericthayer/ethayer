@@ -2,6 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Eric Thayer is a Web Designer and Front-end Developer from Denver Colorado"
 disableHugoGeneratorInject = true
+disableLiveReload = true
 assetDir = "static"
 
 [params]
@@ -18,20 +19,20 @@ assetDir = "static"
   url = "/#about"
   weight = 2
 
-#[[menu.main]]
-#  name = "Notes"
-#  url = "/notes"
-#  weight = 3
-
 [[menu.main]]
-  name = "Hire"
-  url = "/hire-me"
-  weight = 5
+  name = "Notes"
+  url = "/notes"
+  weight = 3
 
 [[menu.main]]
   name = "Contact"
   url = "#contact"
   weight = 4
+
+[[menu.main]]
+  name = "Hire"
+  url = "/hire-me"
+  weight = 5
 
 [taxonomies]
   tag = "tags"

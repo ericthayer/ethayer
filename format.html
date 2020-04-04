@@ -428,3 +428,12 @@
     </form>
   </div>
 </section>
+
+
+    <!-- {{ $PatternLibrarySCSS := resources.Get "css/pattern-library/pattern-library.scss" }}
+    {{ $PatternLibraryCSS := $PatternLibrarySCSS | resources.ToCSS (dict "targetPath" "css/pattern-library/pattern-library.css" "enableSourceMap" false) }}
+    {{ $PatternLibraryAutoprefixed := $PatternLibraryCSS | resources.PostCSS }}
+    {{ $PatternLibraryMinified := $PatternLibraryAutoprefixed | resources.Minify }}
+    {{ $PatternLibrary := resources.Get "css/pattern-library/pattern-library.scss" | toCSS | postCSS | minify }} -->
+    <!-- <link rel="stylesheet" href="{{ $PatternLibrary.Permalink }}"> -->
+    <!-- <link rel="stylesheet" href="{{ .Site.BaseURL }}css/pattern-library/pattern-library.min.css"> -->

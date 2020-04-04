@@ -27,5 +27,5 @@
   {{ $styleAutoprefixed := $styleCSS | resources.PostCSS }}
   {{ $styleMinified := $styleAutoprefixed | resources.Minify }}
   {{ $style := resources.Get "css/styles.scss" | toCSS | postCSS | minify }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}" as="style">
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
 </head>

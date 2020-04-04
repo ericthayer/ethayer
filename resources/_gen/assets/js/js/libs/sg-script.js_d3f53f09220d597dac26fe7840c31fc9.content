@@ -1,0 +1,78 @@
+const mainToggle=document.querySelector('#menu-toggle');const sideBar=document.querySelector('#sg-sidebar');(function(){const forEachSideNav=function(array,callback,scope){for(var i=0;i<array.length;i++){callback.call(scope,i,array[i]);}};mainToggle.setAttribute('aria-expanded','false')
+mainToggle.hidden=false
+sideBar.hidden=true
+mainToggle.addEventListener('click',function(){const expanded=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',String(!expanded))
+if(mainToggle.getAttribute('data-text-swap')==mainToggle.innerHTML){mainToggle.innerHTML=mainToggle.getAttribute('data-text-original')}else{mainToggle.setAttribute('data-text-original',mainToggle.innerHTML)
+mainToggle.innerHTML=mainToggle.getAttribute('data-text-swap')}
+sideBar.hidden=expanded},false)})();(function(){if(matchMedia){const mqMD=window.matchMedia('(min-width: 56.25em)')
+mqMD.addListener(WidthChange)
+WidthChange(mqMD)}
+function WidthChange(mqMD){if(mqMD.matches){mainToggle.setAttribute('aria-expanded','true')
+mainToggle.innerHTML=mainToggle.getAttribute('data-text-swap')
+sideBar.hidden=false}else{mainToggle.setAttribute('aria-expanded','false')
+mainToggle.innerHTML=mainToggle.getAttribute('data-text-original')
+sideBar.hidden=true}}})();(function(){const screenToggle=document.querySelector('#resize-toggle')
+const resizeButton=Array.from(document.querySelectorAll('.toggle-list button'))
+const forEachResizeButton=function(array,callback,scope){for(var i=0;i<array.length;i++){callback.call(scope,i,array[i]);}}
+const screenSM=document.querySelector('#toggle-sm')
+const screenMD=document.querySelector('#toggle-md')
+const screenLG=document.querySelector('#toggle-lg')
+const screenFull=document.querySelector('#toggle-full')
+const screenSizeMenu=document.querySelector('.toggle-list')
+const resizedClasses=['resized-sm','resized-md','resized-lg']
+const screens=['screenSM','screenMD','screenLG']
+const contentWrap=document.querySelector('.sg-content-wrap');screenToggle.setAttribute('aria-expanded','false')
+screenToggle.hidden=false
+screenSizeMenu.hidden=true
+screenToggle.addEventListener('click',function(){const expanded=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',String(!expanded))
+this.classList.toggle('is-active')
+screenSizeMenu.hidden=expanded},false)
+forEachResizeButton(resizeButton,function(i,el){el.addEventListener('click',function(){screenToggle.setAttribute('aria-expanded','false')
+screenSizeMenu.hidden=true
+document.querySelector(".toggle-list button.is-active").classList.remove("is-active")
+this.classList.add('is-active')})},false)
+screenSM.addEventListener('click',function(){contentWrap.setAttribute('style','max-width: 23.438rem; min-width: 15rem;')
+contentWrap.classList.add('resized-sm')
+contentWrap.classList.remove('resized-md','resized-lg')},false)
+screenMD.addEventListener('click',function(){contentWrap.setAttribute('style','max-width: 48rem;')
+contentWrap.classList.add('resized-md')
+contentWrap.classList.remove('resized-sm','resized-lg')},false)
+screenLG.addEventListener('click',function(){contentWrap.setAttribute('style','max-width: 71.25rem;')
+contentWrap.classList.add('resized-lg')
+contentWrap.classList.remove('resized-sm','resized-md')},false)
+screenFull.addEventListener('click',function(){contentWrap.setAttribute('style','max-width: 100%;')
+contentWrap.classList.remove(...resizedClasses)},false)
+if(matchMedia){const mqSM=window.matchMedia('(max-width: 23.438em)')
+mqSM.addListener(WidthChangeSM)
+WidthChangeSM(mqSM)}
+function WidthChangeSM(mqSM){if(mqSM.matches){contentWrap.removeAttribute('style')
+contentWrap.classList.remove('resized-sm','resized-md','resized-lg')
+document.querySelector(".toggle-list button.is-active").classList.remove("is-active")
+screenToggle.setAttribute('aria-expanded','false')
+screenSizeMenu.hidden=true}else{}}})();(function(){const codeToggle=Array.from(document.querySelectorAll('.toggle-code'))
+const codeSnippet=Array.from(document.querySelectorAll('.code-snippet'))
+const forEachCodePreview=function(array,callback,scope){for(var i=0;i<array.length;i++){callback.call(scope,i,array[i])}}
+codeSnippet.hidden=true
+forEachCodePreview(codeToggle,function(i,el){el.addEventListener('click',function(){var expanded=this.getAttribute('aria-expanded')==='true'
+this.setAttribute('aria-expanded',String(!expanded))
+this.nextElementSibling.hidden=expanded
+this.nextElementSibling.classList.toggle('resized')
+this.classList.toggle('resized')})},false)})();(function(){var scroll=new SmoothScroll('[data-scroll], a.view-all-tabs',{header:'[data-scroll-header]',speed:1500,easing:'easeInOutCubic',offset:function(anchor,toggle){if(toggle){const mqSidebar=window.matchMedia('(max-width: 38.688em)');mqSidebar.addListener(WidthChange)
+WidthChange(mqSidebar)
+function WidthChange(mqSidebar){if(mqSidebar.matches){mainToggle.setAttribute('aria-expanded','false')
+mainToggle.innerHTML=mainToggle.getAttribute('data-text-original')
+sideBar.hidden=true}else{mainToggle.setAttribute('aria-expanded','true')
+mainToggle.innerHTML=mainToggle.getAttribute('data-text-swap')
+sideBar.hidden=false}}
+return 0}else{return 0}},});})();(function(){const viewAll=document.querySelector('.view-all-tabs')
+$('.view-all-tabs').on('click',function(e){e.preventDefault()
+$('.sg-content .tab-pane').toggleClass('show-all')
+if(viewAll.getAttribute('data-text-swap')==viewAll.innerHTML){viewAll.innerHTML=viewAll.getAttribute('data-text-original')}else{viewAll.setAttribute('data-text-original',viewAll.innerHTML)
+viewAll.innerHTML=viewAll.getAttribute('data-text-swap')}})
+$('.sg-sidebar-nav .nav-link:not(.view-all-tabs)').on('click',function(e){e.preventDefault()
+$('.sg-sidebar-nav .nav-link.show').removeClass('active show')
+$('.sg-content .tab-pane').removeClass('show-all')
+viewAll.innerHTML=viewAll.getAttribute('data-text-original')})})();(function(){const dropdownItem=Array.from(document.querySelectorAll('.sg-sidebar-nav .dropdown-item, .nav-link'))
+const forEachDropdownItem=function(array,callback,scope){for(var i=0;i<array.length;i++){callback.call(scope,i,array[i])}}
+forEachDropdownItem(dropdownItem,function(i,el){el.addEventListener('click',function(){document.querySelector(".is-active").classList.remove("is-active")
+this.classList.add('is-active')})},false)})();

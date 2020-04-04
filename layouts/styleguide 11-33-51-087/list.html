@@ -1,0 +1,20 @@
+{{ partial "1_elements/head.html" . }}
+  {{ $StyleGuideSCSS := resources.Get "css/styleguide/sg-styles.scss" }}
+  {{ $StyleGuideCSS := $StyleGuideSCSS | resources.ToCSS (dict "targetPath" "css/styleguide/sg-styles.css" "enableSourceMap" false) }}
+  {{ $StyleGuideAutoprefixed := $StyleGuideCSS | resources.PostCSS }}
+  {{ $StyleGuideMinified := $StyleGuideAutoprefixed | resources.Minify }}
+  {{ $StyleGuide := resources.Get "css/styleguide/sg-styles.scss" | toCSS | postCSS | minify }}
+  <link rel="stylesheet" href="{{ $StyleGuide.Permalink }}">
+  <body>
+
+      {{ partial "1_elements/svg-icons.html" . }}
+
+    <div class="sg-wrap">
+
+      {{ .Content }}
+
+    </div>
+    {{ partial "scripts/sg-js.html" . }}
+    {{ partial "scripts/smooth-scroll-js.html" . }}
+  </body>
+</html>

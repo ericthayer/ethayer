@@ -461,6 +461,7 @@
 
 @mixin fonts-loaded-KO {
   font-family: $sans-serif-narrow;
+
   .fonts-loaded & {
     font-family: $KO;
     font-weight: normal;
@@ -471,6 +472,7 @@
 
 @mixin fonts-loaded-Roboto {
   font-family: $sans-serif-narrow;
+  
   .fonts-loaded & {
     font-family: $Roboto;
     font-weight: normal;

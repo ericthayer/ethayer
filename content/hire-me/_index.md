@@ -13,13 +13,13 @@ description = "Eric Thayer is a Web Designer and Front-end Developer from Denver
     <span>Where are you currently working?</span>
   </p>
 
-  <p class="answer">"I'm currently working as a freelance web designer and front-end developer with a focus on product design."</p>
+  <p class="answer">"I'm currently working as a UI/UX designer and front-end developer at <a href="//healthscholars.com/">Health Scholars</a>."</p>
 
   <p class="question bg-rust">
-    <span>Why are you looking for a new opportunity?</span>
+    <span>Are you looking for in a new opportunity?</span>
   </p>
 
-  <p class="answer">"I want to learn how to contribute and grow a product or brand with the collaboration of a senior design team. My goal is to be part of a team that values communication over deliverables."<br><br>    "What I need more than anything is what I have never had. <strong class="text-md-r">Mentorship.</strong>"</p>
+  <p class="answer">"I want the chance to contribute and grow a product or brand with the collaboration of a senior design team. My goal is to be part of a team that values communication over deliverables."</p>
 
   <p class="question bg-purple">
     <span>What type of role are you looking for?</span>

@@ -1,9 +1,8 @@
-{{ $lazyload := resources.Get "js/libs/lazysizes.js" }}
-<!-- {{ $glider := resources.Get "js/libs/glider.min.js" }}
-{{ $fsLightbox := resources.Get "js/libs/fslightbox.min.js" }} -->
-
 {{ $global := resources.Get "js/script.js" }}
-{{ $js := slice $lazyload $global | resources.Concat "js/min/script.js" | resources.Minify }}
+{{ $lazyload := resources.Get "js/libs/lazysizes.js" }}
+<!-- {{ $glider := resources.Get "js/libs/glider.min.js" }} -->
+{{ $fsLightbox := resources.Get "js/libs/fslightbox.min.js" }} 
+{{ $js := slice $global $lazyload $fsLightbox | resources.Concat "js/min/script.js" | resources.Minify }}
 
 <script src='{{ $js.Permalink }}' defer></script>
 

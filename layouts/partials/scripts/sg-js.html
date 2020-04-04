@@ -1,0 +1,19 @@
+{{ $prismJS := resources.Get "js/libs/prism.js" }}
+{{ $styleGuide := resources.Get "js/libs/sg-script.js" }}
+{{ $styleGuideJS := slice $prismJS $styleGuide | resources.Concat "js/min/styleguide.js" | resources.Minify }}
+
+<!-- Pattern Library scripts -->
+<script src='{{ $styleGuideJS.Permalink }}'></script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('../sw.js').then(function() {
+      // Success
+      console.log('ServiceWorker registration successful');
+    }).catch(function(err) {
+      // Fail
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  }
+</script>
+

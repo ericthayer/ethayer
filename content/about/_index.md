@@ -16,7 +16,7 @@ description = "Eric Thayer is a Web Designer and Front-end Developer from Denver
           <figure class="mug circle-mask"><img src="../images/content-img/1x1/img-1x1-avatar.jpg" alt="Eric Thayer"></figure>
         </noscript>
         <h2 id="my-background">Background</h2>
-        <p class="mw-35em mb-0 lg-pr-4">I started out in San Diego as a <a href="motion-reel/">post-production artist</a> but since moving to Denver I have worked with <a href="//www.linkedin.com/in/commonmovement/" title="view my LinkedIn profile">small and large companies</a> with a focus on web design and front-end development.</p>
+        <p class="mw-35em mb-0 lg-pr-4">I started out in San Diego as a <a data-fslightbox href="//player.vimeo.com/video/143960525">post-production artist</a> but since moving to Denver I have worked with <a href="//www.linkedin.com/in/commonmovement/" title="view my LinkedIn profile">small and large companies</a> with a focus on web design and front-end development.</p>
         <!-- example links -->
         <div class="example-links flex flex-wrap pt-sm text-md">
           <h3 class="small-header sr-only">current project: in2Marketplace.com</h3>
@@ -24,9 +24,7 @@ description = "Eric Thayer is a Web Designer and Front-end Developer from Denver
           <div class="flex ai-center pt-pb-tiny pr-sm">
             <strong class="text-sm Roboto">View Resume</strong>
             <a href="../Eric-Thayer-Resume-Web-Designer-and-Front-end-Developer.pdf" class="has-tooltip">
-              <svg class="icon ml-mr-0 text-lg-r">
-                <use xlink:href="#icon-pdf" />
-              </svg><span class="sr-only"></span>
+              <svg class="icon ml-mr-0 text-lg-r"><use xlink:href="#icon-pdf" /></svg><span class="sr-only"></span>
               <span class="tooltip">View Resume</span>
             </a>                
           </div>

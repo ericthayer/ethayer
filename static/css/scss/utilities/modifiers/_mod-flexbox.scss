@@ -20,29 +20,30 @@
   @include flex-basis-auto;
 }
 
-.flex-grow-0 {
-  @include flex-grow-0;
+.flex-0 {
+  @include flex-0;
 }
 
-.flex-grow-1 {
-  @include flex-grow-1;
+.flex-100 {
+  @include flex-100;
 }
 
-.flex-grow-2 {
-  @include flex-grow-2;
+.flex-1 {
+  @include flex-1;
 }
 
-.flex-grow-3 {
-  @include flex-grow-3;
+.flex-2 {
+  @include flex-2;;
 }
 
-.flex-grow-4 {
-  @include flex-grow-4;
+.flex-3 {
+  @include flex-3;
 }
 
-.flex-shrink-0 {
-  @include flex-shrink-0; 
+.flex-4 {
+  @include flex-4;
 }
+
 
 // Flex Direction
 
@@ -125,11 +126,65 @@
 }
 
 .jc-around {
-  @include jc-around ;
+  @include jc-around;
 }
 
 .jc-between {
   @include jc-between;
+}
+
+.jc-evenly {
+  @include jc-evenly;
+}
+
+// Layout
+
+// Flex Rows
+
+.flex-between {
+  @include flex-between;
+}
+
+.flex-across-center {
+  @include flex-across-center;
+}
+
+.flex-across-end {
+  @include flex-across-end;
+}
+
+// Flex Columns
+
+.flex-column-center {
+  @include flex-column-center;
+}
+
+.flex-column-end {
+  @include flex-column-end;
+}
+
+.flex-around {
+  @include flex-around;
+}
+
+.flex-evenly {
+  @include flex-evenly;
+}
+
+.flex-align-center {
+  @include flex-align-center;
+}
+
+.flex-align-bottom-right {
+  @include flex-align-bottom-right;
+}
+
+.flex-align-bottom-left {
+  @include flex-align-bottom-left;
+}
+
+.flex-align-top-right {
+  @include flex-align-top-right;
 }
 
 .flex-layout {
@@ -155,26 +210,28 @@
       width: 25%;
     }
     >*:nth-child(even) {
-      //width: 50%;   
+      //width: 50%;
     }
   }
 }
 
-.flex-33 {
+.flex-50 {
+  @include flex;
+  @include flex-wrap;
   // 480
   @media (min-width: $break-375) {
     > * {
-      //padding: .3em;
+      margin-bottom: 2em;
       flex-basis: 50%;
     }
   }
-  // 640
-  @media (min-width: $break-640) {
-    > * {
-      //padding: .3em;
-      flex-basis: 33%;
-    }
-  }
+  // // 640
+  // @media (min-width: $break-640) {
+  //   > * {
+  //     //padding: .3em;
+  //     flex-basis: 33%;
+  //   }
+  // }
 }
 
 .flex-25 {
@@ -190,7 +247,7 @@
 // Flex Order
 
 .flex-lead {
-  @include flex-lead;  
+  @include flex-lead;
 }
 
 .flex-sm {
