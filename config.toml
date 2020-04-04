@@ -20,11 +20,6 @@ assetDir = "static"
   weight = 2
 
 [[menu.main]]
-  name = "Notes"
-  url = "/notes"
-  weight = 3
-
-[[menu.main]]
   name = "Contact"
   url = "#contact"
   weight = 4
