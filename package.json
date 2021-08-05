@@ -1,13 +1,13 @@
 {
   "license": "MIT",
   "name": "ethayer.design",
-  "version": "3.10.0",
+  "version": "4.0.0",
   "description": "The front-end development pipeline for https://ethayer.design/",
   "author": "Eric Thayer",
   "private": false,
   "dependencies": {
     "autoprefixer": "^9.1.5",
-    "postcss-cli": "^6.1.1"
+    "postcss": "^8.3.6"
   },
   "repository": {
     "type": "git",

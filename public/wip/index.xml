@@ -5,10 +5,6 @@
     <link>/wip/</link>
     <description>Recent content in Work in Progress on Eric Thayer is a Web Designer and Front-end Developer from Denver Colorado</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/wip/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/wip/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
