@@ -85,6 +85,6 @@ description = "Eric Thayer is a Web Designer and Front-end Developer from Denver
 
   <!-- <p class="mb-0 text-center">Sound like a good fit?</p> -->
 
-  <a href="contact.html" class="cta-link h5 mb-0 pt-0">Sound like a good fit?</a>
+  <a data-scroll href="/#contact-form" class="cta-link h5 mb-0 pt-0">Sound like a good fit?</a>
 
 </div>
