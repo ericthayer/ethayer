@@ -31,4 +31,6 @@
 
 .step {
   @include counter-item;
+  min-width: 11em;
+  max-width: 13em;
 }
