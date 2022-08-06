@@ -1,226 +1,6 @@
-<!DOCTYPE html>
-<html lang="en-us">
 
-<head>
-  <script>
-    
-    document.documentElement.className += "enhanced";
-  </script>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="theme-color" content="#FCFCFC">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Styleguide</title>
-  <meta name="description" content="I&#39;m a freelance consultant with a passion for building design systems and inclusive components with other like-minded people."> 
-  <meta name="author" content="Eric Thayer">
-  <meta name="msapplication-TileColor" content="#222222">
-  <meta name="msapplication-TileImage" content="/images/icons/icon-144.png">
-  <link rel="manifest" href="/manifest.json">
-  
-  <link rel="apple-touch-icon" href="/images/icons/icon-180.png">
-  <link rel="shortcut icon" href="/favicon.ico">
-  
-  <link rel="preload" href="/css/fonts/Knockout-HTF29-JuniorLiteweight-subset.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/css/fonts/RobotoCondensed-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
-  
-  
-  
-  
-  
-  <link rel="stylesheet" href="/css/styles.min.css" as="style">
-</head>
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/css/scss/styleguide/sg-styles.min.css">
-
-  <body>
-
-      <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-  
-    
-    <symbol id="icon-arrow" viewBox="0 0 32 32" aria-labelledby="icon-arrow-title icon-arrow-desc">
-      <title id="icon-arrow-title"></title>
-      <desc id="icon-arrow-desc"></desc>
-      <path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path>
-    </symbol>
-
-    
-    <symbol id="icon-check-cir" viewBox="0 0 32 32" aria-labelledby="icon-check-cir-title icon-check-cir-desc">
-      <title id="icon-check-cir-title"></title>
-      <desc id="icon-check-cir-desc"></desc>
-      <path d="M16 0c-8.836 0-16 7.164-16 16s7.164 16 16 16 16-7.164 16-16-7.164-16-16-16zM13.52 23.383l-7.362-7.363 2.828-2.828 4.533 4.535 9.617-9.617 2.828 2.828-12.444 12.445z"></path>
-    </symbol>
-  
-    
-    <symbol id="icon-caret" viewBox="0 0 366 1024" aria-labelledby="caret-title caret-desc">
-      <title id="caret-title">Caret</title>
-      <desc id="caret-desc">a small triangle symbol</desc>
-      <path d="M365.568 256v512q0 14.336-10.24 25.6t-26.624 11.264-25.6-11.264l-256-256q-10.24-11.264-10.24-25.6t10.24-25.6l256-256q11.264-11.264 25.6-11.264t26.624 11.264 10.24 25.6z"></path>
-    </symbol>
-
-    
-    <symbol id="icon-map" viewBox="0 0 32 32" aria-labelledby="map-title map-desc">
-      <title id="map-title">map</title>
-      <desc id="map-desc">a small triangle symbol</desc>
-      <path d="M0 6l10-4v24l-10 4z"></path>
-      <path d="M12 1l10 6v23l-10-5z"></path>
-      <path d="M24 7l8-6v24l-8 6z"></path>
-    </symbol>
-
-    
-    <symbol id="icon-plus" viewBox="0 0 950 1024" aria-labelledby="plus-title plus-desc">
-      <title id="plus-title">Plus</title>
-      <desc id="plus-desc">an addition symbol</desc>
-      <path d="M695.296 548.864v-73.728q0-14.336-11.264-25.6t-25.6-10.24h-146.432v-146.432q0-15.36-11.264-25.6t-25.6-11.264h-72.704q-15.36 0-25.6 11.264t-11.264 25.6v146.432h-146.432q-14.336 0-25.6 10.24t-10.24 25.6v73.728q0 14.336 10.24 25.6t25.6 11.264h146.432v145.408q0 15.36 11.264 25.6t25.6 11.264h72.704q15.36 0 25.6-11.264t11.264-25.6v-145.408h146.432q14.336 0 25.6-11.264t11.264-25.6zM877.568 512q0 119.808-58.368 220.16t-159.744 159.744-220.16 59.392-221.184-59.392-158.72-159.744-59.392-220.16 59.392-220.16 158.72-159.744 221.184-59.392 220.16 59.392 159.744 159.744 58.368 220.16z"></path>
-    </symbol>
-    
-    
-    <symbol id="icon-minus" viewBox="0 0 950 1024" aria-labelledby="minus-title minus-desc">
-      <title id="minus-title">Minus</title>
-      <desc id="minus-desc">a subtraction symbol</desc>
-      <path d="M476.16 54.272q188.416 0 322.56 134.144t134.144 323.584-134.144 322.56-322.56 135.168-323.584-135.168-134.144-322.56 134.144-323.584 323.584-134.144zM704.512 568.32v-114.688h-457.728v114.688h457.728z"></path>
-    </symbol>
-
-    
-    <symbol id="icon-twitter" viewBox="0 0 942 1024" aria-labelledby="twitter-title twitter-desc">
-      <title id="twitter-title">Twitter</title>
-      <desc id="twitter-desc">twitter social media icon</desc>
-      <path d="M942.080 219.136q-36.864 55.296-96.256 100.352v24.576q0 133.12-61.44 256t-190.464 207.872-296.96 84.992q-163.84 0-296.96-86.016 14.336 2.048 47.104 2.048 135.168 0 239.616-81.92-63.488-2.048-112.64-38.912t-67.584-96.256q10.24 4.096 34.816 4.096 26.624 0 51.2-6.144-67.584-14.336-110.592-67.584t-43.008-122.88v-2.048q36.864 20.48 86.016 24.576-86.016-59.392-86.016-161.792 0-49.152 26.624-96.256 157.696 192.512 399.36 200.704-6.144-18.432-6.144-43.008 0-79.872 56.32-136.192t138.24-56.32q83.968 0 139.264 59.392 61.44-12.288 122.88-45.056-20.48 67.584-83.968 106.496 57.344-8.192 110.592-30.72z"></path>
-    </symbol>
-
-    
-    <symbol id="icon-dribbble" viewBox="1249 2808.676 93.828 93.828" aria-labelledby="dribbble-title dribbble-desc">
-      <title id="dribbble-title">dribbble</title>
-      <desc id="dribbble-desc">dribbble social media icon</desc>
-      <path d="M1007.88,4687.733a196.511,196.511,0,0,0-15-22.98,40.29,40.29,0,0,0-22.021,28.085C971.817,4692.519,988.732,4692.838,1007.88,4687.733Zm5.106,13.4c.638-.32.957-.32,1.6-.639-.957-2.234-2.234-4.467-3.191-6.7a154.282,154.282,0,0,1-41.169,5.744v1.275a39.945,39.945,0,0,0,10.213,26.808h0c-.319,0,10.851-19.466,32.553-26.487Zm-27.446,31.276h0c-.319-.319-.638-.319-.957-.639A4.589,4.589,0,0,0,985.54,4732.413Zm15-70.532Zm36.063,8.939a40.456,40.456,0,0,0-26.489-9.895,32.991,32.991,0,0,0-9.574,1.275,200.539,200.539,0,0,1,15,23.3c15.319-5.744,21.063-14.678,21.063-14.678Zm-26.489,76.911a46.914,46.914,0,1,1,46.914-46.915A46.99,46.99,0,0,1,1010.114,4747.73Zm6.7-40.21c-23.617,8.3-31.276,24.575-31.6,24.893a39,39,0,0,0,24.574,8.617,42.751,42.751,0,0,0,15.638-3.191c-.319-3.512-2.553-15.958-8.617-30.318C1017.135,4707.2,1017.135,4707.521,1016.816,4707.521Zm1.915-16.276a45.263,45.263,0,0,1,2.553,5.743l.957,1.916c13.723-1.6,27.446,1.275,28.084,1.275a39.5,39.5,0,0,0-9.255-25.212c0,.638-6.7,9.895-22.34,16.277Zm6.064,14.361a167.582,167.582,0,0,1,7.659,28.722,40.678,40.678,0,0,0,17.234-26.807c-.958-.639-12.128-4.151-24.893-1.916Z" transform="translate(285.8 -1845.226)"></path>
-    </symbol>
-    
-    
-    <symbol id="icon-codepen" viewBox="0 0 32 32">
-      <title id="codepen-title">CodePen</title>
-      <desc id="codepen-desc">the brand icon</desc>
-      <path d="M3.872 20.864l10.752 7.2v-6.432l-5.952-3.968zM2.752 18.304l3.456-2.304-3.456-2.304v4.608zM17.376 28.064l10.752-7.2-4.8-3.2-5.952 3.968v6.432zM16 19.264l4.864-3.264-4.864-3.264-4.864 3.264zM8.672 14.336l5.952-3.968v-6.432l-10.752 7.2zM25.792 16l3.456 2.304v-4.608zM23.328 14.336l4.8-3.2-10.752-7.2v6.432zM32 11.136v9.728q0 0.736-0.608 1.152l-14.624 9.76q-0.384 0.224-0.768 0.224t-0.768-0.224l-14.624-9.76q-0.608-0.416-0.608-1.152v-9.728q0-0.736 0.608-1.152l14.624-9.76q0.384-0.224 0.768-0.224t0.768 0.224l14.624 9.76q0.608 0.416 0.608 1.152z"></path>
-    </symbol>
-    
-    
-    <symbol id="icon-chat" viewBox="0 0 795 1024" aria-labelledby="chat-title chat-desc">
-      <title id="chat-title">Chat</title>
-      <desc id="chat-desc">a chat bubble</desc>
-      <path d="M87.040 103.424h622.592c58.368 0 84.992 26.624 84.992 87.040v396.288c0 56.32-26.624 83.968-84.992 83.968h-280.576l-310.272 249.856 64.512-249.856h-96.256c-58.368 0-87.040-27.648-87.040-86.016v-394.24c0-60.416 28.672-88.064 87.040-87.040zM163.84 264.192v84.992h466.944v-84.992h-466.944zM630.784 508.928v-83.968h-466.944v83.968h466.944z"></path>
-    </symbol>
-    
-    
-    <symbol id="icon-book" viewBox="0 0 650 1024" aria-labelledby="book-title book-desc">
-      <title id="book-title">Book</title>
-      <desc id="book-desc">a book icon</desc>
-      <path class="path1" d="M614.4 225.28h35.84v688.128h-514.048c-75.776 0-136.192-53.248-136.192-131.072v-594.944c0-41.984 34.816-76.8 76.8-76.8h476.16v589.824h-416.768c-53.248 0-90.112 28.672-90.112 79.872v2.048c0 51.2 36.864 84.992 90.112 84.992h478.208v-642.048zM552.96 800.768h-411.648c-12.288 0-22.528-7.168-22.528-19.456 0-10.24 10.24-16.384 22.528-16.384h411.648v35.84z"></path>
-    </symbol>
-    
-    
-    <symbol id="icon-info" viewBox="0 0 471 1024" aria-labelledby="info-title info-desc">
-      <title id="info-title">Info</title>
-      <desc id="info-desc">an information symbol</desc>
-      <path d="M360.448 0q49.152 0 75.776 27.648t26.624 70.656q0 51.2-39.936 90.112t-97.28 38.912q-49.152 0-75.776-26.624t-24.576-73.728q0-47.104 35.84-87.040t99.328-39.936zM149.504 1024q-102.4 0-55.296-182.272l61.44-260.096q14.336-57.344 0-57.344-12.288 0-55.296 18.432t-73.728 38.912l-26.624-45.056q92.16-79.872 193.536-129.024t154.624-49.152q79.872 0 36.864 165.888l-71.68 272.384q-16.384 65.536 6.144 65.536 45.056 0 120.832-61.44l30.72 40.96q-86.016 88.064-179.2 135.168t-142.336 47.104z"></path>
-    </symbol>
-    
-    
-    <symbol id="icon-github" viewBox="0 0 32 32" aria-labelledby="github-title github-desc">
-      <title id="github-title">GitHub</title>
-      <desc id="github-desc">a GitHub icon</desc>
-      <path d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path>
-    </symbol>
-
-    
-    <symbol id="icon-mobile" viewBox="0 0 32 32" aria-labelledby="mobile-title mobile-desc">
-      <title id="mobile-title">Mobile</title>
-      <desc id="mobile-desc">a mobile phone</desc>
-      <path d="M26 0h-20c-1.104 0-2 0.894-2 2v28c0 1.105 0.896 2 2 2h20c1.105 0 2-0.895 2-2v-28c0-1.105-0.895-2-2-2zM24 24h-16v-20h16v20z"></path>
-    </symbol>    
-    
-    
-    <symbol id="icon-tablet" viewBox="0 0 32 32" aria-labelledby="tablet-title tablet-desc">
-      <title id="tablet-title">Tablet</title>
-      <desc id="tablet-desc">a tablet symbol</desc>
-      <path d="M24 0h-18c-1.1 0-2 0.9-2 2v28c0 1.1 0.9 2 2 2h18c1.1 0 2-0.9 2-2v-28c0-1.1-0.9-2-2-2zM15 30.556c-0.859 0-1.556-0.697-1.556-1.556s0.697-1.556 1.556-1.556 1.556 0.697 1.556 1.556-0.697 1.556-1.556 1.556zM24 26h-18v-22h18v22z"></path>
-    </symbol>
-    
-    
-    <symbol id="icon-laptop" viewBox="0 0 1024 1024" aria-labelledby="laptop-title laptop-desc">
-      <title id="laptop-title">Laptop</title>
-      <desc id="laptop-desc">a laptop computer symbol</desc>
-      <path d="M0 822.272v-90.112h1024v90.112l-52.224 53.248h-919.552zM102.4 684.032v-536.576h819.2v536.576h-819.2zM203.776 585.728h616.448v-342.016h-616.448v342.016zM417.792 843.776h188.416v-81.92h-188.416v81.92z"></path>
-    </symbol>
-    
-    
-    <symbol id="icon-desktop" viewBox="0 0 32 32" aria-labelledby="desktop-title desktop-desc">
-      <title id="desktop-title">Desktop</title>
-      <desc id="desktop-desc">a desktop computer display</desc>
-      <path d="M0 2v20h32v-20h-32zM30 20h-28v-16h28v16zM21 24h-10l-1 4-2 2h16l-2-2z"></path>
-    </symbol>
-
-    
-    <symbol id="icon-link-ext" viewBox="0 0 32 32" aria-labelledby="link-ext-title link-ext-desc">
-      <title id="link-ext-title">external link</title>
-      <desc id="link-ext-desc">an external link arrow</desc>
-      <path d="M20 24h-16v-15.94l4-0.060v-4h-8v24h24v-10h-4v6zM12 4l4 4-6 6 4 4 6-6 4 4v-12h-12z"></path>
-    </symbol>
-
-    
-    <symbol id="icon-file-code" viewBox="0 0 32 32" aria-labelledby="file-code-title file-code-desc">
-      <title id="file-code-title">external link</title>
-      <desc id="file-code-desc">an external link arrow</desc>
-      <path d="M9 12l-5 5 5 5 2-2-3-3 3-3-2-2zM13 14l3 3-3 3 2 2 5-5-5-5-2 2zM18 2h-18v28h24v-22l-6-6zM22 28h-20v-24h14l6 6v18z"></path>
-    </symbol>
-
-    
-    <symbol id="icon-envelope" viewBox="0 0 1024 1024" aria-labelledby="envelope-title envelope-desc">
-      <title id="envelope-title">Envelope</title>
-      <desc id="envelope-desc">an envelope symbol</desc>
-      <path d="M1024 405.504v453.632q0 37.888-26.624 64.512t-64.512 27.648h-841.728q-36.864 0-64.512-27.648t-26.624-64.512v-453.632q25.6 28.672 57.344 50.176 206.848 140.288 284.672 196.608 32.768 24.576 52.224 37.888t54.272 27.648 62.464 13.312h2.048q28.672 0 62.464-13.312t54.272-27.648 52.224-37.888q97.28-69.632 284.672-196.608 32.768-22.528 57.344-50.176zM1024 237.568q0 45.056-27.648 86.016t-69.632 70.656q-215.040 149.504-268.288 185.344-5.12 4.096-23.552 17.408t-30.72 22.528-29.696 18.432-33.792 15.36-27.648 5.12h-2.048q-12.288 0-27.648-5.12t-33.792-15.36-29.696-18.432-30.72-22.528-23.552-17.408q-52.224-35.84-150.528-103.424t-116.736-81.92q-35.84-23.552-66.56-65.536t-31.744-78.848q0-44.032 23.552-73.728t67.584-29.696h841.728q36.864 0 63.488 26.624t27.648 64.512z"></path>
-    </symbol>
-    
-    
-    <symbol id="icon-search" viewBox="0 0 808 1024" aria-labelledby="search-title search-desc">
-      <title id="search-title">Search</title>
-      <desc id="search-desc">a magnifying glass symbol</desc>
-      <path d="M790.528 790.528q30.72 34.816 6.144 63.488l-47.104 47.104q-36.864 32.768-69.632 0l-194.56-194.56q-75.776 43.008-159.744 43.008-131.072 0-228.352-97.28t-97.28-228.352 92.16-224.256 223.232-93.184 229.376 97.28 98.304 228.352q0 90.112-47.104 165.888zM96.256 423.936q0 90.112 69.632 159.744t159.744 69.632 154.624-64.512 64.512-156.672q0-90.112-69.632-158.72t-159.744-68.608-154.624 64.512-64.512 154.624z"></path>
-    </symbol>
-
-    
-    <symbol id="icon-pdf" viewBox="0 0 32 32" aria-labelledby="pdf-title pdf-desc">
-      <title id="pdf-title">open PDF</title>
-      <desc id="pdf-desc">a PDF document icon</desc>
-      <path d="M18.688 15.313v-4h1.313v4h-1.313zM5.313 8v18.688h18.688v2.625h-18.688c-1.438 0-2.625-1.188-2.625-2.625v-18.688h2.625zM12 12.688v-1.375h1.313v1.375h-1.313zM27.313 11.313v-2h-4v8h2v-2.625h2v-2h-2v-1.375h2zM22 15.313v-4c0-1.125-0.875-2-2-2h-3.313v8h3.313c1.125 0 2-0.875 2-2zM15.313 12.688v-1.375c0-1.125-0.875-2-2-2h-3.313v8h2v-2.625h1.313c1.125 0 2-0.875 2-2zM26.688 2.688c1.438 0 2.625 1.188 2.625 2.625v16c0 1.438-1.188 2.688-2.625 2.688h-16c-1.438 0-2.688-1.25-2.688-2.688v-16c0-1.438 1.25-2.625 2.688-2.625h16z"></path>
-    </symbol>
-
-    
-    <symbol id="icon-linkedin" viewBox="0 0 32 32" aria-labelledby="linkedin-title linkedin-desc">
-      <title id="linkedin-title">open linkedin</title>
-      <desc id="linkedin-desc">a linkedin document icon</desc>
-      <path d="M16 0.64c-8.483 0-15.36 6.877-15.36 15.36s6.877 15.36 15.36 15.36 15.36-6.877 15.36-15.36-6.877-15.36-15.36-15.36zM12.24 22.366h-3.11v-10.010h3.11v10.010zM10.666 11.128c-0.982 0-1.618-0.696-1.618-1.557 0-0.878 0.654-1.554 1.658-1.554s1.618 0.675 1.637 1.554c0 0.861-0.634 1.557-1.677 1.557zM23.6 22.366h-3.11v-5.547c0-1.291-0.451-2.168-1.576-2.168-0.859 0-1.37 0.594-1.595 1.165-0.083 0.203-0.104 0.491-0.104 0.778v5.771h-3.112v-6.816c0-1.25-0.040-2.294-0.082-3.194h2.702l0.142 1.39h0.062c0.41-0.653 1.413-1.616 3.091-1.616 2.046 0 3.581 1.371 3.581 4.318v5.918z"></path>
-    </symbol>
-
-    
-    <symbol id="icon-home" viewBox="0 0 32 32" aria-labelledby="home-title home-desc">
-      <title id="home-title">home page</title>
-      <desc id="home-desc">back to home page</desc>
-      <path d="M32 19l-6-6v-9h-4v5l-6-6-16 16v1h4v10h10v-6h4v6h10v-10h4z"></path>
-    </symbol>
-
-  </svg>
-
-  
-  <a class="skip-link" href="#main">skip to main content</a>
-
-    <div class="sg-wrap">
-
-      <!-- header-->
-
+<main id="main" class="main-content" role="main">
+  <!-- header-->
 <header class="sg-header" role="banner" data-scroll-header>
   <button class="toggle-button" id="menu-toggle" data-text-original="☰" data-text-swap="✕" role="button" aria-label="open-main-menu" aria-expanded="false">☰</button>
   <div class="option-select">
@@ -236,9 +16,7 @@
     </div>
   </div>
 </header>
-
 <!-- nav-->
-
 <nav class="sg-sidebar" id="sg-sidebar" aria-label="sidebar" hidden>
   <ul class="sg-sidebar-nav nav flex-column" id="pattern-library-sidenav" role="tablist" aria-orientation="vertical">
     <li class="nav-item dropdown">
@@ -289,413 +67,479 @@
     </li>
   </ul>
 </nav>
-
 <main class="sg-main" id="main" role="main">
   <div class="sg-content">
     <!-- Patterns -->
     <div class="sg-content-wrap tab-content">
-
       <!-- Elements -->
       <div class="tab-pane fade active show" id="elements-tab-content" role="tabpanel" aria-labelledby="elements-tab">
-
-        <!-- Introduction -->
-        <section class="sg-module sg-module-intro" id="elements-overview">
-          <h2 class="sg-module-title">Elements</h2>
-          <p class="sg-module-description mb-0">The <strong>Elements</strong> of our interfaces serve as the foundational building blocks that comprise all our user interfaces. These elements include basic HTML elements like form labels, inputs, buttons, and others that can’t be broken down any further without ceasing to be functional.</p>
-        </section>
-
-        <!-- Typography -->
-        <section class="sg-module" id="typography">
-          <h2 class="sg-module-title">Typography</h2>
-          <p class="sg-module-description"></p>
-
-          <!-- Fonts Stack -->
-          <div class="sg-sample sg-sub-module flex flex-d-col">
-            <h3 class="title-sm" id="headings">Font Stack</h3>
-            <h2 class="polaris-book mb-3">Galaxie Polaris Book <span class="flex text-tiny">1234567890!@#$%^&*()</span></h2>
-            <h2 class="polaris-bold mb-3">Galaxie Polaris Bold <span class="flex text-tiny">1234567890!@#$%^&*()</span></h2>
-            <h2 class="futura-bold mb-3">Futura Bold <span class="flex text-tiny">1234567890!@#$%^&*()</span></h2>
-          </div>
-
-          <!-- Headings -->
-          <div class="sg-sample sg-sub-module flex flex-d-col">
-            <h3 class="title-sm" id="headings">Headings</h3>
-            <div>
-              <h1>heading h1</h1>
-              <h2>heading h2</h2>
-              <h3>heading h3</h3>
-              <h4>heading h4</h4>
-              <h5>heading h5</h5>
-              <h6>heading h6</h6>
-              <br/>
-              <p class="h1">.h1</p>
-              <p class="h2">.h2</p>
-              <p class="h3">.h3</p>
-              <p class="h4">.h4</p>
-              <p class="h5">.h5</p>
-              <p class="h6">.h6</p>
-            </div>
-          </div>
-
-          <!-- Titles -->
-          <div class="sg-sample sg-sub-module flex flex-d-col">
-            <h3 class="title-sm" id="titles">Titles</h3>
-
-            <!-- Title Styles -->
-            <div class="flex flex-d-col">
-              <p class="title-lg">Title Large</p>
-              <p class="title-highlight">Title Highlight</p>
-              <p class="title-md">Title Medium</p>
-              <p class="title-sm">Title Small</p>
-              <p class="title-tiny">Title Tiny</p>
-              <br />
-              <p class="title-lg title-bold">Title Large</p>
-              <p class="title-md title-bold">Title Medium</p>
-              <p class="title-sm title-bold">Title Small</p>
-              <p class="title-tiny title-bold">Title Tiny</p>
-              <br />
-              <p class="title-base title-caps">Title Caps</p>
-              <p class="title-base title-underline">Title Underline</p>
-              <p class="title-base title-bold">Title Bold</p>
-              <span class="main-menu bg-trans p-0" style="min-height: initial;">
-                <span class="title">Menu Title</span>
-              </span>
-              <br />
-            </div>
-          </div>
-
-          <!-- Labels -->
-          <div class="sg-sample sg-sub-module">
-            <h3 class="title-sm" id="labels">Labels</h3>
-
-            <div class="flex flex-d-col">
-              <p class="label-sm">Label Small</p>
-              <p class="label-bold">Label Bold</p>
-            </div>
-          </div>
-
-
-          <!-- Blockquote -->
-          <div class="sg-sample sg-sub-module">
-            <h3 class="title-sm" id="blockquote">Blockquote</h3>
-            <blockquote class="blockquote">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-              <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-            </blockquote>
-          </div>
-
-          <!-- Address -->
-          <div class="sg-sample sg-sub-module">
-            <h3 class="title-sm" id="address">Address</h3>
-            <address>
-              <strong>Denver Museum of Nature & Science</strong>
-              <p>2001 Colorado Blvd.</p>
-              <p>Denver, CO 80205</p>
-              <p><a href="tel:3033706000">303.370.6000</a><p>
-            </address>
-          </div>
-
-          <!-- Copy -->
-          <div class="sg-sample sg-sub-module">
-            <h3 class="title-sm" id="copy">Copy</h3>
-
-            <article class="content-post">
-            <h2 id="what-to-expect" class="title-sm">What to Expect</h2>
-
-              <p class="title-highlight">The Dead Sea Scrolls are one of the greatest archaeological discoveries of all time.</p>
-
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quasi culpa ipsam cupiditate non, mollitia dolorum, eligendi earum nam eum voluptatibus commodi repudiandae, placeat aliquid rem natus cum nemo atque quisquam in aliquam obcaecati saepe minima dolor. Ea excepturi velit cumque nisi nulla deleniti magni esse, molestias laborum ipsum voluptatum non eveniet sed</p>
-
-              <p class="title-underline">Here is a subtitle</p>
-
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quasi culpa ipsam cupiditate non, mollitia dolorum, eligendi earum nam eum voluptatibus commodi repudiandae, placeat aliquid rem natus cum nemo atque quisquam in aliquam obcaecati saepe minima dolor. Ea excepturi velit cumque nisi nulla deleniti magni esse, molestias laborum ipsum voluptatum non eveniet sed</p>
-
-              <ul>
-                <li>    Peek into the darkness of a New Zealand cave and look up to see twinkling over your head—not from stars but from simulated glowworms.</li>
-                <li>    Stroll across an interactive Puerto Rican lagoon as you light up a trail of flashes from tiny “pyrotechnic” plankton.</li>
-                <li>    Explore a North American meadow filled with flashing fireflies and try your hand at re-creating their dazzling mating signals.</li>
-                <li>    Marvel at gigantic models of bioluminescent mushrooms, fireflies and jellyfish.</li>
-                </ul>
-              <ol>
-                <li>    Peek into the darkness of a New Zealand cave and look up to see twinkling over your head—not from stars but from simulated glowworms.</li>
-        <li>    Stroll across an interactive Puerto Rican lagoon as you light up a trail of flashes from tiny “pyrotechnic” plankton.</li>
-        <li>    Explore a North American meadow filled with flashing fireflies and try your hand at re-creating their dazzling mating signals.</li>
-        <li>    Marvel at gigantic models of bioluminescent mushrooms, fireflies and jellyfish.</li>
-              </ol>
-
-              <p>Doloribus magni inventore, necessitatibus aut assumenda illum iusto consequuntur officia ratione quod, harum nostrum obcaecati! Sunt minima deserunt, dolor <a href="#0">beatae ipsam aut et consectetur praesentium</a> musto, porro eligendi est repellendus tempora nihil veritatis excepturi incidunt placeat saepe optio autem! Consequatur ipsam quos voluptates delectus, saepe magni. Nesciunt ullam ipsa voluptatum, a porro, asperiores aspernatur atque.</p>
-
-              <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-              <p><del>This line of text is meant to be treated as deleted text.</del></p>
-              <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-              <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-              <p><u>This line of text will render as underlined</u></p>
-              <p><small>This line of text is meant to be treated as fine print.</small></p>
-              <p><strong>This line rendered as bold text.</strong></p>
-              <p><em>This line rendered as italicized text.</em></p>
-            </article>
-          </div>
-
-        </section>
-
-        <!-- Colors -->
-        <section class="sg-module" id="colors">
-          <h2 class="sg-module-title">Colors</h2>
-          <p class="sg-module-description"></p>
-
-
-          <div class="sg-color-swatches">
-
-            <div class="bg-blue">#00a3f2</div>
-            <div class="bg-blue-light">#80d1f9</div>
-            <div class="bg-blue-dark">#0070d1</div>
-
-            <div class="bg-green">#a4c824</div>
-            <div class="bg-green-bright">#69d200</div>
-            <div class="bg-green-dark">#719e0d</div>
-
-            <div class="bg-orange">#f4911e</div>
-            <div class="bg-orange-light">#f8b86d</div>
-            <div class="bg-orange-dark">#b76d17</div>
-
-            <div class="bg-light">#f1f1f1</div>
-            <div class="bg-dark">#343a40</div>
-            <div class="bg-grey">#dfe2e3</div>
-
-          </div>
-
-        </section>
-
-        <!-- Buttons -->
-        <section class="sg-module" id="buttons">
-          <h2 class="sg-module-title">Buttons</h2>
-          <p class="sg-module-description"></p>
-
-          <!-- Bootstrap -->
-          <div class="sg-sample sg-sub-module grid">
-            <div><button type="button" class="btn btn-primary">Primary</button></div>
-            <div><button type="button" class="btn btn-secondary">Secondary</button></div>
-            <div><button type="button" class="btn btn-success">Success</button></div>
-            <div><button type="button" class="btn btn-danger">Danger</button></div>
-            <div><button type="button" class="btn btn-warning">Warning</button></div>
-            <div><button type="button" class="btn btn-info">Info</button></div>
-            <div><button type="button" class="btn btn-light">Light</button></div>
-            <div><button type="button" class="btn btn-dark">Dark</button></div>
-            <div><button type="button" class="btn btn-text">Text</button></div>
-
-            <!-- Text -->
-            <div>
-              <button type="button" class="btn btn-link">
-                <span class="btn-label">Link</span>
-              </button>
-            </div>
-
-            <!-- w/ inline SVG symbol -->
-            <div>
-              <button type="button" class="btn btn-link btn-flex">
-                <span class="btn-label">Media Right</span>
-                <div class="media-item">
-                  <svg class="icon icon-arrow-custom">
-                    <use xlink:href="#icon-arrow-custom" />
-                  </svg>
-                </div>
-              </button>
-            </div>
-
-            <!--  w/ inline media left -->
-            <div>
-              <button type="button" class="btn btn-link btn-flex">
-                <span class="btn-label">Media Left</span>
-                <div class="media-item media-left">
-                  <img class="icon icon-arrow-custom" src="{{ .Site.BaseURL }}images/icons/svg/icon-arrow-blue.svg" data-fallback="{{ .Site.BaseURL }}images/icons/png/icon-arrow-blue.png" alt="" role="presentation">
-                </div>
-              </button>
-            </div>
-
-          </div>
-
-          <!-- Functional -->
-          <div class="sg-sample sg-sub-module">
-
-            <div class="grid">
-
-              <div>
-              </div>
-
-              <div>
-              </div>
-
-              <div>
-              </div>
-
-              <div>
-              </div>
-
-            </div>
-
-          </div>
-        </section>
-
-        <!-- Media -->
-        <section class="sg-module" id="elements-media" hidden>
-          <h2 class="sg-module-title">Media</h2>
-          <p class="sg-module-description"></p>
-
-          <!-- Icons -->
-          <div class="sg-sample sg-sub-module">
-            <h3 class="title-sm" id="icons">Icons</h3>
-            <div class="grid p-2" style="background: #DDD;">
-              <img src="{{ .Site.BaseURL }}images/icons/svg/icon-arrow-blue.svg" alt="">
-              <img src="{{ .Site.BaseURL }}images/icons/svg/icon-arrow-green.svg" alt="">
-              <img src="{{ .Site.BaseURL }}images/icons/svg/icon-arrow-white.svg" alt="">
-              <img src="{{ .Site.BaseURL }}images/icons/svg/icon-brain-white.svg" alt="">
-              <img src="{{ .Site.BaseURL }}images/icons/svg/icon-calendar.svg" alt="">
-              <img src="{{ .Site.BaseURL }}images/icons/svg/icon-check-mark-blue.svg" alt="">
-            </div>
-          </div>
-
-          <!-- Images -->
-          <div class="sg-sample sg-sub-module">
-            <h3 class="title-sm" id="icons">Icons</h3>
-            <div class="l-media-layout bg-blue-dark p-2">
-              <img src="{{ .Site.BaseURL }}images/icons/svg/icon-anchor-link.svg" alt="">
-            </div>
-          </div>
-
-        </section>
-      </div>
-
-      <!-- Components -->
-      <div class="tab-pane fade" id="components-tab-content" role="tabpanel" aria-labelledby="components-tab">
-
-        <!-- Introduction -->
-        <section class="sg-module sg-module-intro" id="components-overview">
-          <h2 class="sg-module-title">Components</h2>
-          <p class="sg-module-description mb-0">In interfaces, <strong>Components</strong> are relatively simple groups of UI elements functioning together as a unit. For example, a form label, search input, and button can join together to create a search form molecule</p>
-        </section>
-
-        <!-- Callouts -->
-        <section class="sg-module" id="callouts">
-          <h2 class="sg-module-title">Callouts</h2>
-          <p class="sg-module-description"></p>
-
-          <!-- Callouts: Default & Buy -->
-          <div class="sg-sample sg-sub-module grid">
-
-            <!-- CTA default -->
-            <div>
-            </div>
-
-            <!-- CTA Buy -->
-            <div>
-            </div>
-
-          </div>
-
-        <!-- Carousel -->
-        <section class="sg-module" id="carousels">
-          <h2 class="sg-module-title">Carousels</h2>
-          <p class="sg-module-description"></p>
-          <div class="sg-sample">
-          </div>
-        </section>
-
-        <!-- Features -->
-        <section class="sg-module" id="features">
-          <h2 class="sg-module-title">Features</h2>
-          <p class="sg-module-description"></p>
-
-          <!-- Media Grid -->
-          <div class="sg-sample sg-sub-module">
-            <h3 class="title-sm" id="sg-media-grid">Media Grid</h3>
-          </div>
-
-          <!-- Media Grid -->
-          <div class="sg-sample sg-sub-module">
-            <h3 class="title-sm" id="media-grid">Media Grid (features)</h3>
-          </div>
-
-          <!-- Media Video -->
-          <div class="sg-sample sg-sub-module">
-            <h3 class="title-sm" id="components-media">Media Video</h3>
-          </div>
-        </section>
-
-        <!-- Filter -->
-        <section class="sg-module" id="calendar-filter">
-          <h2 class="sg-module-title">Calendar Filter</h2>
-          <p class="sg-module-description"></p>
-          <div class="sg-sample">
-          </div>
-        </section>
-
-        <!-- Tables -->
-        <section class="sg-module" id="comparison-table">
-          <h2 class="sg-module-title">Comparison Table</h2>
-          <p class="sg-module-description"></p>
-          <div class="sg-sample sg-sub-module">
-          </div>
-        </section>
-
-        <!-- Tabs -->
-        <section class="sg-module" id="tabs">
-          <h2 class="sg-module-title">Tabs</h2>
-          <p class="sg-module-description"></p>
-
-          <!-- Panel Tabs -->
-          <div class="sg-sample sg-sub-module">
-            <h3 class="title-sm" id="hero">Panel Tabs</h3>
-            <p class="sg-module-description"></p>
-
-
-            <div class="sg-frame">
-              <iframe class="lazyload" data-src="../panel-tabs/index.html" width="100%" frameborder="0"></iframe>
-            </div>
-
-          </div>
-
-          <!-- Panel Tabs: slim -->
-          <div class="sg-sample sg-sub-module">
-            <h3 class="title-sm" id="hero">Panel Tabs Slim</h3>
-            <p class="sg-module-description"></p>
-          </div>
-        </section>
-
-        <!-- Text -->
-        <section class="sg-module" id="text">
-          <h2 class="sg-module-title">Text Blocks</h2>
-          <p class="sg-module-description"></p>
-
-          <!-- Social Media Post -->
-          <div class="sg-sample sg-sub-module">
-            <h3 class="title-sm" id="social-media-post">Social Media Post</h3>
-          </div>
-
-          <!-- Info List Group -->
-          <div class="sg-sample sg-sub-module">
-            <h3 class="title-sm" id="info-list-group">Info List Group</h3>
-          </div>
-
-          <!-- Copyrights -->
-          <div class="sg-sample sg-sub-module">
-            <h3 class="title-sm" id="copyrights">Copyrights</h3>
-          </div>
-
-        </section>
-
-      </div>
-    <!-- END / SG Content Wrap-->
-    </div>
+<pre><code>    &lt;!-- Introduction --&gt;
+    &lt;section class=&quot;sg-module sg-module-intro&quot; id=&quot;elements-overview&quot;&gt;
+      &lt;h2 class=&quot;sg-module-title&quot;&gt;Elements&lt;/h2&gt;
+      &lt;p class=&quot;sg-module-description mb-0&quot;&gt;The &lt;strong&gt;Elements&lt;/strong&gt; of our interfaces serve as the foundational building blocks that comprise all our user interfaces. These elements include basic HTML elements like form labels, inputs, buttons, and others that can’t be broken down any further without ceasing to be functional.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Typography --&gt;
+    &lt;section class=&quot;sg-module&quot; id=&quot;typography&quot;&gt;
+      &lt;h2 class=&quot;sg-module-title&quot;&gt;Typography&lt;/h2&gt;
+      &lt;p class=&quot;sg-module-description&quot;&gt;&lt;/p&gt;
+
+      &lt;!-- Fonts Stack --&gt;
+      &lt;div class=&quot;sg-sample sg-sub-module flex flex-d-col&quot;&gt;
+        &lt;h3 class=&quot;title-sm&quot; id=&quot;headings&quot;&gt;Font Stack&lt;/h3&gt;
+        &lt;h2 class=&quot;polaris-book mb-3&quot;&gt;Galaxie Polaris Book &lt;span class=&quot;flex text-tiny&quot;&gt;1234567890!@#$%^&amp;*()&lt;/span&gt;&lt;/h2&gt;
+        &lt;h2 class=&quot;polaris-bold mb-3&quot;&gt;Galaxie Polaris Bold &lt;span class=&quot;flex text-tiny&quot;&gt;1234567890!@#$%^&amp;*()&lt;/span&gt;&lt;/h2&gt;
+        &lt;h2 class=&quot;futura-bold mb-3&quot;&gt;Futura Bold &lt;span class=&quot;flex text-tiny&quot;&gt;1234567890!@#$%^&amp;*()&lt;/span&gt;&lt;/h2&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Headings --&gt;
+      &lt;div class=&quot;sg-sample sg-sub-module flex flex-d-col&quot;&gt;
+        &lt;h3 class=&quot;title-sm&quot; id=&quot;headings&quot;&gt;Headings&lt;/h3&gt;
+        &lt;div&gt;
+          &lt;h1&gt;heading h1&lt;/h1&gt;
+          &lt;h2&gt;heading h2&lt;/h2&gt;
+          &lt;h3&gt;heading h3&lt;/h3&gt;
+          &lt;h4&gt;heading h4&lt;/h4&gt;
+          &lt;h5&gt;heading h5&lt;/h5&gt;
+          &lt;h6&gt;heading h6&lt;/h6&gt;
+          &lt;br/&gt;
+          &lt;p class=&quot;h1&quot;&gt;.h1&lt;/p&gt;
+          &lt;p class=&quot;h2&quot;&gt;.h2&lt;/p&gt;
+          &lt;p class=&quot;h3&quot;&gt;.h3&lt;/p&gt;
+          &lt;p class=&quot;h4&quot;&gt;.h4&lt;/p&gt;
+          &lt;p class=&quot;h5&quot;&gt;.h5&lt;/p&gt;
+          &lt;p class=&quot;h6&quot;&gt;.h6&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Titles --&gt;
+      &lt;div class=&quot;sg-sample sg-sub-module flex flex-d-col&quot;&gt;
+        &lt;h3 class=&quot;title-sm&quot; id=&quot;titles&quot;&gt;Titles&lt;/h3&gt;
+
+        &lt;!-- Title Styles --&gt;
+        &lt;div class=&quot;flex flex-d-col&quot;&gt;
+          &lt;p class=&quot;title-lg&quot;&gt;Title Large&lt;/p&gt;
+          &lt;p class=&quot;title-highlight&quot;&gt;Title Highlight&lt;/p&gt;
+          &lt;p class=&quot;title-md&quot;&gt;Title Medium&lt;/p&gt;
+          &lt;p class=&quot;title-sm&quot;&gt;Title Small&lt;/p&gt;
+          &lt;p class=&quot;title-tiny&quot;&gt;Title Tiny&lt;/p&gt;
+          &lt;br /&gt;
+          &lt;p class=&quot;title-lg title-bold&quot;&gt;Title Large&lt;/p&gt;
+          &lt;p class=&quot;title-md title-bold&quot;&gt;Title Medium&lt;/p&gt;
+          &lt;p class=&quot;title-sm title-bold&quot;&gt;Title Small&lt;/p&gt;
+          &lt;p class=&quot;title-tiny title-bold&quot;&gt;Title Tiny&lt;/p&gt;
+          &lt;br /&gt;
+          &lt;p class=&quot;title-base title-caps&quot;&gt;Title Caps&lt;/p&gt;
+          &lt;p class=&quot;title-base title-underline&quot;&gt;Title Underline&lt;/p&gt;
+          &lt;p class=&quot;title-base title-bold&quot;&gt;Title Bold&lt;/p&gt;
+          &lt;span class=&quot;main-menu bg-trans p-0&quot; style=&quot;min-height: initial;&quot;&gt;
+            &lt;span class=&quot;title&quot;&gt;Menu Title&lt;/span&gt;
+          &lt;/span&gt;
+          &lt;br /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Labels --&gt;
+      &lt;div class=&quot;sg-sample sg-sub-module&quot;&gt;
+        &lt;h3 class=&quot;title-sm&quot; id=&quot;labels&quot;&gt;Labels&lt;/h3&gt;
+
+        &lt;div class=&quot;flex flex-d-col&quot;&gt;
+          &lt;p class=&quot;label-sm&quot;&gt;Label Small&lt;/p&gt;
+          &lt;p class=&quot;label-bold&quot;&gt;Label Bold&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+
+      &lt;!-- Blockquote --&gt;
+      &lt;div class=&quot;sg-sample sg-sub-module&quot;&gt;
+        &lt;h3 class=&quot;title-sm&quot; id=&quot;blockquote&quot;&gt;Blockquote&lt;/h3&gt;
+        &lt;blockquote class=&quot;blockquote&quot;&gt;
+          &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+          &lt;footer&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+        &lt;/blockquote&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Address --&gt;
+      &lt;div class=&quot;sg-sample sg-sub-module&quot;&gt;
+        &lt;h3 class=&quot;title-sm&quot; id=&quot;address&quot;&gt;Address&lt;/h3&gt;
+        &lt;address&gt;
+          &lt;strong&gt;Denver Museum of Nature &amp; Science&lt;/strong&gt;
+          &lt;p&gt;2001 Colorado Blvd.&lt;/p&gt;
+          &lt;p&gt;Denver, CO 80205&lt;/p&gt;
+          &lt;p&gt;&lt;a href=&quot;tel:3033706000&quot;&gt;303.370.6000&lt;/a&gt;&lt;p&gt;
+        &lt;/address&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Copy --&gt;
+      &lt;div class=&quot;sg-sample sg-sub-module&quot;&gt;
+        &lt;h3 class=&quot;title-sm&quot; id=&quot;copy&quot;&gt;Copy&lt;/h3&gt;
+
+        &lt;article class=&quot;content-post&quot;&gt;
+        &lt;h2 id=&quot;what-to-expect&quot; class=&quot;title-sm&quot;&gt;What to Expect&lt;/h2&gt;
+
+          &lt;p class=&quot;title-highlight&quot;&gt;The Dead Sea Scrolls are one of the greatest archaeological discoveries of all time.&lt;/p&gt;
+
+          &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quasi culpa ipsam cupiditate non, mollitia dolorum, eligendi earum nam eum voluptatibus commodi repudiandae, placeat aliquid rem natus cum nemo atque quisquam in aliquam obcaecati saepe minima dolor. Ea excepturi velit cumque nisi nulla deleniti magni esse, molestias laborum ipsum voluptatum non eveniet sed&lt;/p&gt;
+
+          &lt;p class=&quot;title-underline&quot;&gt;Here is a subtitle&lt;/p&gt;
+
+          &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quasi culpa ipsam cupiditate non, mollitia dolorum, eligendi earum nam eum voluptatibus commodi repudiandae, placeat aliquid rem natus cum nemo atque quisquam in aliquam obcaecati saepe minima dolor. Ea excepturi velit cumque nisi nulla deleniti magni esse, molestias laborum ipsum voluptatum non eveniet sed&lt;/p&gt;
+
+          &lt;ul&gt;
+            &lt;li&gt;	Peek into the darkness of a New Zealand cave and look up to see twinkling over your head—not from stars but from simulated glowworms.&lt;/li&gt;
+            &lt;li&gt;	Stroll across an interactive Puerto Rican lagoon as you light up a trail of flashes from tiny “pyrotechnic” plankton.&lt;/li&gt;
+            &lt;li&gt;	Explore a North American meadow filled with flashing fireflies and try your hand at re-creating their dazzling mating signals.&lt;/li&gt;
+            &lt;li&gt;	Marvel at gigantic models of bioluminescent mushrooms, fireflies and jellyfish.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;ol&gt;
+            &lt;li&gt;	Peek into the darkness of a New Zealand cave and look up to see twinkling over your head—not from stars but from simulated glowworms.&lt;/li&gt;
+    &lt;li&gt;	Stroll across an interactive Puerto Rican lagoon as you light up a trail of flashes from tiny “pyrotechnic” plankton.&lt;/li&gt;
+    &lt;li&gt;	Explore a North American meadow filled with flashing fireflies and try your hand at re-creating their dazzling mating signals.&lt;/li&gt;
+    &lt;li&gt;	Marvel at gigantic models of bioluminescent mushrooms, fireflies and jellyfish.&lt;/li&gt;
+          &lt;/ol&gt;
+
+          &lt;p&gt;Doloribus magni inventore, necessitatibus aut assumenda illum iusto consequuntur officia ratione quod, harum nostrum obcaecati! Sunt minima deserunt, dolor &lt;a href=&quot;#0&quot;&gt;beatae ipsam aut et consectetur praesentium&lt;/a&gt; musto, porro eligendi est repellendus tempora nihil veritatis excepturi incidunt placeat saepe optio autem! Consequatur ipsam quos voluptates delectus, saepe magni. Nesciunt ullam ipsa voluptatum, a porro, asperiores aspernatur atque.&lt;/p&gt;
+
+          &lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;
+          &lt;p&gt;&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;&lt;/p&gt;
+          &lt;p&gt;&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;&lt;/p&gt;
+          &lt;p&gt;&lt;ins&gt;This line of text is meant to be treated as an addition to the document.&lt;/ins&gt;&lt;/p&gt;
+          &lt;p&gt;&lt;u&gt;This line of text will render as underlined&lt;/u&gt;&lt;/p&gt;
+          &lt;p&gt;&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;&lt;/p&gt;
+          &lt;p&gt;&lt;strong&gt;This line rendered as bold text.&lt;/strong&gt;&lt;/p&gt;
+          &lt;p&gt;&lt;em&gt;This line rendered as italicized text.&lt;/em&gt;&lt;/p&gt;
+        &lt;/article&gt;
+      &lt;/div&gt;
+
+    &lt;/section&gt;
+
+    &lt;!-- Colors --&gt;
+    &lt;section class=&quot;sg-module&quot; id=&quot;colors&quot;&gt;
+      &lt;h2 class=&quot;sg-module-title&quot;&gt;Colors&lt;/h2&gt;
+      &lt;p class=&quot;sg-module-description&quot;&gt;&lt;/p&gt;
+
+
+      &lt;div class=&quot;sg-color-swatches&quot;&gt;
+
+        &lt;div class=&quot;bg-blue&quot;&gt;#00a3f2&lt;/div&gt;
+        &lt;div class=&quot;bg-blue-light&quot;&gt;#80d1f9&lt;/div&gt;
+        &lt;div class=&quot;bg-blue-dark&quot;&gt;#0070d1&lt;/div&gt;
+
+        &lt;div class=&quot;bg-green&quot;&gt;#a4c824&lt;/div&gt;
+        &lt;div class=&quot;bg-green-bright&quot;&gt;#69d200&lt;/div&gt;
+        &lt;div class=&quot;bg-green-dark&quot;&gt;#719e0d&lt;/div&gt;
+
+        &lt;div class=&quot;bg-orange&quot;&gt;#f4911e&lt;/div&gt;
+        &lt;div class=&quot;bg-orange-light&quot;&gt;#f8b86d&lt;/div&gt;
+        &lt;div class=&quot;bg-orange-dark&quot;&gt;#b76d17&lt;/div&gt;
+
+        &lt;div class=&quot;bg-light&quot;&gt;#f1f1f1&lt;/div&gt;
+        &lt;div class=&quot;bg-dark&quot;&gt;#343a40&lt;/div&gt;
+        &lt;div class=&quot;bg-grey&quot;&gt;#dfe2e3&lt;/div&gt;
+
+      &lt;/div&gt;
+
+    &lt;/section&gt;
+
+    &lt;!-- Buttons --&gt;
+    &lt;section class=&quot;sg-module&quot; id=&quot;buttons&quot;&gt;
+      &lt;h2 class=&quot;sg-module-title&quot;&gt;Buttons&lt;/h2&gt;
+      &lt;p class=&quot;sg-module-description&quot;&gt;&lt;/p&gt;
+
+      &lt;!-- Bootstrap --&gt;
+      &lt;div class=&quot;sg-sample sg-sub-module grid&quot;&gt;
+        &lt;div&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary&lt;/button&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-light&quot;&gt;Light&lt;/button&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&gt;Dark&lt;/button&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-text&quot;&gt;Text&lt;/button&gt;&lt;/div&gt;
+
+        &lt;!-- Text --&gt;
+        &lt;div&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;
+            &lt;span class=&quot;btn-label&quot;&gt;Link&lt;/span&gt;
+          &lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;!-- w/ inline SVG symbol --&gt;
+        &lt;div&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-link btn-flex&quot;&gt;
+            &lt;span class=&quot;btn-label&quot;&gt;Media Right&lt;/span&gt;
+            &lt;div class=&quot;media-item&quot;&gt;
+              &lt;svg class=&quot;icon icon-arrow-custom&quot;&gt;
+                &lt;use xlink:href=&quot;#icon-arrow-custom&quot; /&gt;
+              &lt;/svg&gt;
+            &lt;/div&gt;
+          &lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;!--  w/ inline media left --&gt;
+        &lt;div&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-link btn-flex&quot;&gt;
+            &lt;span class=&quot;btn-label&quot;&gt;Media Left&lt;/span&gt;
+            &lt;div class=&quot;media-item media-left&quot;&gt;
+              &lt;img class=&quot;icon icon-arrow-custom&quot; src=&quot;{{ .Site.BaseURL }}images/icons/svg/icon-arrow-blue.svg&quot; data-fallback=&quot;{{ .Site.BaseURL }}images/icons/png/icon-arrow-blue.png&quot; alt=&quot;&quot; role=&quot;presentation&quot;&gt;
+            &lt;/div&gt;
+          &lt;/button&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+      &lt;!-- Functional --&gt;
+      &lt;div class=&quot;sg-sample sg-sub-module&quot;&gt;
+
+        &lt;div class=&quot;grid&quot;&gt;
+
+          &lt;div&gt;
+          &lt;/div&gt;
+
+          &lt;div&gt;
+          &lt;/div&gt;
+
+          &lt;div&gt;
+          &lt;/div&gt;
+
+          &lt;div&gt;
+          &lt;/div&gt;
+
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Media --&gt;
+    &lt;section class=&quot;sg-module&quot; id=&quot;elements-media&quot; hidden&gt;
+      &lt;h2 class=&quot;sg-module-title&quot;&gt;Media&lt;/h2&gt;
+      &lt;p class=&quot;sg-module-description&quot;&gt;&lt;/p&gt;
+
+      &lt;!-- Icons --&gt;
+      &lt;div class=&quot;sg-sample sg-sub-module&quot;&gt;
+        &lt;h3 class=&quot;title-sm&quot; id=&quot;icons&quot;&gt;Icons&lt;/h3&gt;
+        &lt;div class=&quot;grid p-2&quot; style=&quot;background: #DDD;&quot;&gt;
+          &lt;img src=&quot;{{ .Site.BaseURL }}images/icons/svg/icon-arrow-blue.svg&quot; alt=&quot;&quot;&gt;
+          &lt;img src=&quot;{{ .Site.BaseURL }}images/icons/svg/icon-arrow-green.svg&quot; alt=&quot;&quot;&gt;
+          &lt;img src=&quot;{{ .Site.BaseURL }}images/icons/svg/icon-arrow-white.svg&quot; alt=&quot;&quot;&gt;
+          &lt;img src=&quot;{{ .Site.BaseURL }}images/icons/svg/icon-brain-white.svg&quot; alt=&quot;&quot;&gt;
+          &lt;img src=&quot;{{ .Site.BaseURL }}images/icons/svg/icon-calendar.svg&quot; alt=&quot;&quot;&gt;
+          &lt;img src=&quot;{{ .Site.BaseURL }}images/icons/svg/icon-check-mark-blue.svg&quot; alt=&quot;&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Images --&gt;
+      &lt;div class=&quot;sg-sample sg-sub-module&quot;&gt;
+        &lt;h3 class=&quot;title-sm&quot; id=&quot;icons&quot;&gt;Icons&lt;/h3&gt;
+        &lt;div class=&quot;l-media-layout bg-blue-dark p-2&quot;&gt;
+          &lt;img src=&quot;{{ .Site.BaseURL }}images/icons/svg/icon-anchor-link.svg&quot; alt=&quot;&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+    &lt;/section&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Components --&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;components-tab-content&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;components-tab&quot;&gt;
+
+    &lt;!-- Introduction --&gt;
+    &lt;section class=&quot;sg-module sg-module-intro&quot; id=&quot;components-overview&quot;&gt;
+      &lt;h2 class=&quot;sg-module-title&quot;&gt;Components&lt;/h2&gt;
+      &lt;p class=&quot;sg-module-description mb-0&quot;&gt;In interfaces, &lt;strong&gt;Components&lt;/strong&gt; are relatively simple groups of UI elements functioning together as a unit. For example, a form label, search input, and button can join together to create a search form molecule&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Callouts --&gt;
+    &lt;section class=&quot;sg-module&quot; id=&quot;callouts&quot;&gt;
+      &lt;h2 class=&quot;sg-module-title&quot;&gt;Callouts&lt;/h2&gt;
+      &lt;p class=&quot;sg-module-description&quot;&gt;&lt;/p&gt;
+
+      &lt;!-- Callouts: Default &amp; Buy --&gt;
+      &lt;div class=&quot;sg-sample sg-sub-module grid&quot;&gt;
+
+        &lt;!-- CTA default --&gt;
+        &lt;div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- CTA Buy --&gt;
+        &lt;div&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+    &lt;!-- Carousel --&gt;
+    &lt;section class=&quot;sg-module&quot; id=&quot;carousels&quot;&gt;
+      &lt;h2 class=&quot;sg-module-title&quot;&gt;Carousels&lt;/h2&gt;
+      &lt;p class=&quot;sg-module-description&quot;&gt;&lt;/p&gt;
+      &lt;div class=&quot;sg-sample&quot;&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Features --&gt;
+    &lt;section class=&quot;sg-module&quot; id=&quot;features&quot;&gt;
+      &lt;h2 class=&quot;sg-module-title&quot;&gt;Features&lt;/h2&gt;
+      &lt;p class=&quot;sg-module-description&quot;&gt;&lt;/p&gt;
+
+      &lt;!-- Media Grid --&gt;
+      &lt;div class=&quot;sg-sample sg-sub-module&quot;&gt;
+        &lt;h3 class=&quot;title-sm&quot; id=&quot;sg-media-grid&quot;&gt;Media Grid&lt;/h3&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Media Grid --&gt;
+      &lt;div class=&quot;sg-sample sg-sub-module&quot;&gt;
+        &lt;h3 class=&quot;title-sm&quot; id=&quot;media-grid&quot;&gt;Media Grid (features)&lt;/h3&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Media Video --&gt;
+      &lt;div class=&quot;sg-sample sg-sub-module&quot;&gt;
+        &lt;h3 class=&quot;title-sm&quot; id=&quot;components-media&quot;&gt;Media Video&lt;/h3&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Filter --&gt;
+    &lt;section class=&quot;sg-module&quot; id=&quot;calendar-filter&quot;&gt;
+      &lt;h2 class=&quot;sg-module-title&quot;&gt;Calendar Filter&lt;/h2&gt;
+      &lt;p class=&quot;sg-module-description&quot;&gt;&lt;/p&gt;
+      &lt;div class=&quot;sg-sample&quot;&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Tables --&gt;
+    &lt;section class=&quot;sg-module&quot; id=&quot;comparison-table&quot;&gt;
+      &lt;h2 class=&quot;sg-module-title&quot;&gt;Comparison Table&lt;/h2&gt;
+      &lt;p class=&quot;sg-module-description&quot;&gt;&lt;/p&gt;
+      &lt;div class=&quot;sg-sample sg-sub-module&quot;&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Tabs --&gt;
+    &lt;section class=&quot;sg-module&quot; id=&quot;tabs&quot;&gt;
+      &lt;h2 class=&quot;sg-module-title&quot;&gt;Tabs&lt;/h2&gt;
+      &lt;p class=&quot;sg-module-description&quot;&gt;&lt;/p&gt;
+
+      &lt;!-- Panel Tabs --&gt;
+      &lt;div class=&quot;sg-sample sg-sub-module&quot;&gt;
+        &lt;h3 class=&quot;title-sm&quot; id=&quot;hero&quot;&gt;Panel Tabs&lt;/h3&gt;
+        &lt;p class=&quot;sg-module-description&quot;&gt;&lt;/p&gt;
+
+
+        &lt;div class=&quot;sg-frame&quot;&gt;
+          &lt;iframe class=&quot;lazyload&quot; data-src=&quot;../panel-tabs/index.html&quot; width=&quot;100%&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+      &lt;!-- Panel Tabs: slim --&gt;
+      &lt;div class=&quot;sg-sample sg-sub-module&quot;&gt;
+        &lt;h3 class=&quot;title-sm&quot; id=&quot;hero&quot;&gt;Panel Tabs Slim&lt;/h3&gt;
+        &lt;p class=&quot;sg-module-description&quot;&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Text --&gt;
+    &lt;section class=&quot;sg-module&quot; id=&quot;text&quot;&gt;
+      &lt;h2 class=&quot;sg-module-title&quot;&gt;Text Blocks&lt;/h2&gt;
+      &lt;p class=&quot;sg-module-description&quot;&gt;&lt;/p&gt;
+
+      &lt;!-- Social Media Post --&gt;
+      &lt;div class=&quot;sg-sample sg-sub-module&quot;&gt;
+        &lt;h3 class=&quot;title-sm&quot; id=&quot;social-media-post&quot;&gt;Social Media Post&lt;/h3&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Info List Group --&gt;
+      &lt;div class=&quot;sg-sample sg-sub-module&quot;&gt;
+        &lt;h3 class=&quot;title-sm&quot; id=&quot;info-list-group&quot;&gt;Info List Group&lt;/h3&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Copyrights --&gt;
+      &lt;div class=&quot;sg-sample sg-sub-module&quot;&gt;
+        &lt;h3 class=&quot;title-sm&quot; id=&quot;copyrights&quot;&gt;Copyrights&lt;/h3&gt;
+      &lt;/div&gt;
+
+    &lt;/section&gt;
+
+  &lt;/div&gt;
+&lt;!-- END / SG Content Wrap--&gt;
+&lt;/div&gt;
+</code></pre>
   </div>
 </main>
+</main>
+  
+  <footer class="site-footer pt-pb-1" role="contentinfo">
 
-
-    </div> 
-
+  
+<section class="contact-banner container">
+  <h2 class="h3 mb-sm hidden">Contact Me</h2>
+  
+  <div class="flex flex-wrap ai-center jc-between">
     
+    
+<div class="contact-nav mb-sm">
+  <nav class="nav-icons" role="navigation">
+    <ul aria-label="contact-nav">
+      <li class="has-tooltip">
+        <a class="icon-link" href="mailto:ethayer.design@gmail.com?subject=Hi%20Eric.%20Let's%20talk%20about...%20&amp;body=(answering%20these%20items%20will%20help%20me%20better%20understand%20your%20goals)%0A%0AContact%20information%20(company%2C%20name%2C%20role%2C%20phone%20number%2C%20etc)%3A%0A%0AWhat%20can%20I%20help%20you%20with?%20(project%20type%2C%20concept %2C%20outline%2C%20etc)%3A%0A%0ATimeline%20(start%20date%2C%20end%20date)%3A%0A%0AProject%20budget%20(greater%20than%20%2450%2C000%20range%20%7C%20%2430%2C000%E2%80%93%2420%2C000%20range%20%7C%20%2420%2C000%E2%80%93%2410%2C000%20range%20%7C%20less%20than%20%245%2C000)%3A%0A%0ASincerely%2C&#10;">
+          <svg class="icon">
+            <use xlink:href="#icon-envelope" />
+          </svg><span class="sr-only">Send me an email</span>
+          <span class="icon-tooltip flush-l">Email Me</span>
+        </a>
+      </li>
+      <li class="has-tooltip">
+        <a class="icon-link" href="//twitter.com/_ericthayer/">
+          <svg class="icon mr-0">
+            <use xlink:href="#icon-twitter" />
+          </svg><span class="sr-only">Find me on Twitter.</span>
+          <span class="icon-tooltip">Twitter</span>
+        </a>
+      </li>
+      <li class="has-tooltip">
+        <a class="icon-link" href="//github.com/ericthayer/">
+          <svg class="icon mr-0">
+            <use xlink:href="#icon-github" />
+          </svg><span class="sr-only">Visit my GitHub profile.</span>
+          <span class="icon-tooltip">GitHub</span>
+        </a>
+      </li>
+      <li class="has-tooltip">
+        <a class="icon-link" href="//codepen.io/ericthayer/">
+          <svg class="icon mr-0">
+            <use xlink:href="#icon-codepen" />
+          </svg><span class="sr-only">Visit my CodePen page.</span>
+          <span class="icon-tooltip">CodePen</span>
+        </a>
+      </li>
+      <li class="has-tooltip">
+        <a class="icon-link" href="//dribbble.com/ethayer/">
+          <svg class="icon mr-0">
+            <use xlink:href="#icon-dribbble" />
+          </svg><span class="sr-only">View my Dribbble profile.</span>
+          <span class="icon-tooltip">Dribbble</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+    <p class="copyrights mb-sm">&copy; Eric Thayer <a href="//github.com/ericthayer/ethayer/">
+  <span class="sr-only">release version</span>
+  <span aria-hidden="true">v</span>4.0.0</a> -
+  
+  <span>Powered with <a href="//gohugo.io/">Hugo</a></span>
+  <span>/ <a href="//app.netlify.com/">Netlify</a></span>
+</p>
 
 
+  </div>
+</section>
+  
+  </footer>
 
+  
+
+
+ 
 
 
 <script src='/js/min/script.min.js' defer></script>

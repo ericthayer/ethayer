@@ -31,12 +31,6 @@
   </url>
   
   <url>
-    <loc>/hire-me/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>/maxcentive/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -80,6 +74,12 @@
   
   <url>
     <loc>/thank-you/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/hire-me/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
