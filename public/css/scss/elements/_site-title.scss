@@ -18,7 +18,7 @@
   }
   // < 540
   @media (max-width: $break-640 - .01em) {
-    display: none;
+    // display: none;
   }
   // > 540
   @media (min-width: $break-640) {
