@@ -9,20 +9,20 @@ assetDir = "static"
   author = "Eric Thayer"
   description = "I'm a freelance consultant with a passion for building design systems and inclusive components with other like-minded people."
 
-[[menu.main]]
-  name = "Work"
-  url = "/#work"
-  weight = 1
+## [[menu.main]]
+  ## name = "About"
+  ## url = "/#about"
+  ## weight = 1
   
-[[menu.main]]
-  name = "About"
-  url = "/#about"
-  weight = 2
-
-[[menu.main]]
-  name = "Contact"
-  url = "#contact"
-  weight = 4
+## [[menu.main]]
+ ##  name = "Work"
+  ## url = "/#work"
+  ## weight = 2
+  
+## [[menu.main]]
+  ## name = "Contact"
+  ## url = "/contact"
+  ## weight = 4
 
 [[menu.main]]
   name = "Hire"
@@ -37,3 +37,8 @@ assetDir = "static"
   changefreq = "monthly"
   priority = 0.5
   filename = "sitemap.xml"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,9 +1,0 @@
-// Place your settings in this file to overwrite default and user settings.
-{
-  // Controls whether the editor should highlight similar matches to the selection
-  "editor.selectionHighlight": false,
-
-  // Controls how the editor should render the current line highlight, possibilities are 'none', 'gutter', 'line', and 'all'.
-  "editor.renderLineHighlight": "none"
-
-}

@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hire Me on Eric Thayer is a Web Designer and Front-end Developer from Denver Colorado</title>
+    <title>What I love on Eric Thayer is a Web Designer and Front-end Developer from Denver Colorado</title>
     <link>/hire-me/</link>
-    <description>Recent content in Hire Me on Eric Thayer is a Web Designer and Front-end Developer from Denver Colorado</description>
+    <description>Recent content in What I love on Eric Thayer is a Web Designer and Front-end Developer from Denver Colorado</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/hire-me/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/hire-me/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
