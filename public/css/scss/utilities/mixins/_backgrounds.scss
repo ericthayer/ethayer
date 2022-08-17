@@ -88,6 +88,11 @@
   background-size: 20%;
 }
 
+@mixin slug-web-bg {
+  background: url("../images/UI/ui-icons/icon-browser.svg") center no-repeat #DDD;
+  background-size: 20%;
+}
+
 @mixin slug-video-bg {
   background: url("../images/UI/ui-icons/icon-video.svg") center no-repeat #DDD;
   background-size: 20%;

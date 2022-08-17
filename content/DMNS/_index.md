@@ -1,21 +1,21 @@
 +++
 type = "page"
-page = "case-studies/concordus/"
-title = "Concordus Applications"
+page = "case-studies/dmns/"
+title = "Denver Museum of Nature and Science"
 
-projectPreviewImage = ""
-projectName = ""
-projectDate = ""
-projectURL = ""
-projectDescription = ""
+projectPreviewImage = "/images/content-img/16x9/img-16x9-DMNS.webp"
+projectName = "Denver Museum of Nature and Science"
+projectDate = "12/2018"
+projectURL = "//dmns.netlify.app/"
+projectDescription = "Front-end development and style guide for the Denver Museum of Nature and Science"
 
-projectServices = ""
-projectResponsibilities = ""
-projectTechnologies = ""
-projectLibsFrameworks = ""
+projectServices = "front-end development, design systems"
+projectResponsibilities = "front-end developer"
+projectTechnologies = "hugo"
+projectLibsFrameworks = "custom"
 +++
 
-<!-- Concordus Applications -->
+<!-- DMNS -->
 <section class="pt-2">
   <!-- Section Title -->
   <div class="container align-center">

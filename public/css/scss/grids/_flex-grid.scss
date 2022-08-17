@@ -192,9 +192,8 @@
     }
   } // > 480
   @media (min-width: $break-480) {
-    > * {
-      &:first-child {
-        //width: 100%;
+      .spotlight {
+        flex-basis: 100vw;
       }
     }
   }
@@ -202,15 +201,14 @@
   @media (min-width: $break-640) {
     > * {
       flex-basis: 18em;
-      //padding: .5em;
       width: auto;
     }
   }
   // > 800
   @media (min-width: 50em) {
     > * {
-      .portfolio & {
-        //flex-basis: 50%;
+      &.spotlight {
+        flex-basis: 45vw;
       }
     }
   }

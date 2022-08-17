@@ -29,6 +29,9 @@
   &.img {
     @include slug-img-bg;
   }
+  &.web {
+    @include slug-web-bg;
+  }
   &.video {
     @include slug-video-bg;
     figcaption {

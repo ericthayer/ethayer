@@ -153,6 +153,11 @@
   }
 }
 
+.flex-basis-100.flex-basis-100 {
+  flex-basis: 100vw;
+  // width: 100vw;
+}
+
 // adds border for lighter examples
 .media-light {
   .media-caption {
