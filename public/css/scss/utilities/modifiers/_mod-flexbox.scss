@@ -192,7 +192,8 @@
 }
 
 .l-media-grid {
-  @include l-media-grid;
+  display: flex;
+  // @include l-media-grid;
 }
 
 .flex-layout-grid {

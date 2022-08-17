@@ -563,8 +563,8 @@ ServerSignature Off
 # https://developer.yahoo.com/blogs/ydn/pushing-beyond-gzipping-25601.html
 <IfModule mod_setenvif.c>
 <IfModule mod_headers.c>
-SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
-RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|compress|deflate|br)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+RequestHeader append Accept-Encoding "gzip,compress,deflate, br" env=HAVE_Accept-Encoding
 </IfModule>
 </IfModule>
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

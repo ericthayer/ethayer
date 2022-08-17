@@ -266,6 +266,10 @@
   > * {
     flex: 1;
     margin-bottom: 1.5em;
+
+    &:first-child {
+      flex-basis: 100vw;
+    }
   }
   .media-item {
     margin-bottom: 0;
@@ -289,6 +293,13 @@
       padding-left: 1em;
       &.flex-sm {
         flex-basis: auto;
+      }
+    }
+  }
+  @media (min-width: 1050px) {
+    > * {
+      &.spotlight {
+        flex-basis: 45vw;
       }
     }
   }
