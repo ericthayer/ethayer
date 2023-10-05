@@ -7,7 +7,7 @@
   "private": false,
   "dependencies": {
     "autoprefixer": "^9.1.5",
-    "postcss": "^8.3.6"
+    "postcss": "^8.4.31"
   },
   "repository": {
     "type": "git",
